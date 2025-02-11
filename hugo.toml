@@ -1,0 +1,8 @@
+baseURL = 'https://avb-academy.com/'
+languageCode = 'en-us'
+title = 'AVB Academy'
+theme = 'hugo-theme-relearn'
+
+[params]
+  disableLandingPageButton = true
+  disableSearch = true

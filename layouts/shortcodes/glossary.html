@@ -1,0 +1,5 @@
+{{ range $term, $definition := site.Data.glossary }}
+  <h3 id="{{ $term | urlize }}">{{ $term }}</h3>
+  <p>{{ $definition }}</p>
+  <hr>  <!-- Adds a subtle separator -->
+{{ end }}

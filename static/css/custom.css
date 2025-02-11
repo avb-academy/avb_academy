@@ -1,0 +1,15 @@
+.tooltip {
+    border-bottom: 1px dotted #0077cc;  /* Dotted underline */
+    color: #0077cc;  /* Blue color */
+    cursor: help;  /* Question mark cursor */
+    font-weight: 600;  /* Slightly bold */
+    transition: color 0.2s ease-in-out;
+}
+
+.tooltip:hover {
+    color: #0055aa;  /* Darker blue on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
