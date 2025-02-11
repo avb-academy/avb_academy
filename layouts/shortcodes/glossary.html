@@ -1,5 +1,43 @@
-{{ range $term, $definition := site.Data.glossary }}
-  <h3 id="{{ $term | urlize }}">{{ $term }}</h3>
-  <p>{{ $definition }}</p>
-  <hr>  <!-- Adds a subtle separator -->
-{{ end }}
+<input type="text" id="glossarySearch" placeholder="Search glossary..." onkeyup="filterGlossary()">
+
+<div id="glossaryContainer">
+  {{ range $term, $definition := site.Data.glossary }}
+    <div class="glossary-entry" id="{{ $term | urlize }}">
+      <h2>{{ $term }}</h2>
+      <p>{{ $definition }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash) {
+        let term = document.querySelector(window.location.hash);
+        if (term) {
+            term.scrollIntoView({ behavior: "smooth" });
+
+            // Apply highlight effect
+            term.style.background = "#fdf6c9"; // Soft yellow
+            term.style.color = "#000"; // Black text for contrast
+
+            setTimeout(() => term.style.transition = "background 1.5s ease-out, color 1.5s ease-out", 100);
+            setTimeout(() => {
+                term.style.background = "transparent";
+                term.style.color = ""; // Revert to default text color
+            }, 1500);
+        }
+    }
+});
+
+
+
+function filterGlossary() {
+    let input = document.getElementById("glossarySearch").value.toLowerCase();
+    let terms = document.querySelectorAll(".glossary-entry");
+
+    terms.forEach(term => {
+        let text = term.textContent.toLowerCase();
+        term.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+</script>

@@ -6,3 +6,4 @@ theme = 'hugo-theme-relearn'
 [params]
   disableLandingPageButton = true
   disableSearch = true
+  

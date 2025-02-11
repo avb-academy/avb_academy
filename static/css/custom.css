@@ -6,10 +6,47 @@
     transition: color 0.2s ease-in-out;
 }
 
-.tooltip:hover {
-    color: #0055aa;  /* Darker blue on hover */
+.tooltip a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.tooltip a:hover {
+    text-decoration: underline;
+    color: #0055aa;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+#glossarySearch {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.glossary-entry {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.glossary-entry:target {
+    background: #fdf6c9;
+}
+
+.glossary-entry h2 {
+    margin-bottom: 5px;
+    color: #0077cc;
+}
+
+.glossary-entry p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
