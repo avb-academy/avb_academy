@@ -1,7 +1,7 @@
 ---
 title: "Traffic shaping"
 date: 2025-02-11
-weight: 1
+weight: 2
 ---
 
 Traffic shaping is an essential part of Milan and the biggest difference compared to other networked audio protocols.
