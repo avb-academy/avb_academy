@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 type: "glossary"
-weight: 99
+weight: 98
 ---
 
 {{< glossary >}}
