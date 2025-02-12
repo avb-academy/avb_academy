@@ -4,7 +4,7 @@
 AAF: "AVTP Audio Format as specified in IEEE1722-2016"  
 # ADC: "Analog to digital converter"  
 # ADCs: "Analog to digital converters"  
-# ATDECC: "Protocol for Device Discovery, Connection Management, and Control Protocol for Time-Sensitive Networking System. Specified in IEEE 1722.1-2021"  
+ATDECC: "Protocol for Device Discovery, Connection Management, and Control Protocol for Time-Sensitive Networking System. Specified in IEEE 1722.1-2021"  
 AVB: "Audio Video Bridging"  
 AVTP: "Audio Video Transport Protocol. The protocol defines the media transport in a Milan network. It is defined in IEEE1722-2016"  
 # AVTPDU: "AVTP data units as defined in IEEE1722-2016. Utilize the commonly known Protocol Data Unit (PDU) format"  
