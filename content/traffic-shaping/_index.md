@@ -1,15 +1,15 @@
 ---
 title: "Traffic shaping"
 date: 2025-02-11
-weight: 2
+weight: 4
 ---
 
 Traffic shaping is an essential part of Milan and the biggest difference compared to other networked audio protocols.
 
 Two components are crucial for traffic shaping:
 
-1. The [Stream Reservation Protocol]({{% ref "stream-reservation" %}}) ({{< tooltip "SRP" >}}) that configures a path from a Talker to a Listener.
-2. The traffic shaper in a switch. The technology is based on the credit-based shaper and is often referred to as [Forwarding and Queuing for Time-Sensitive Streams]({{% ref "fqtss" %}}) ({{< tooltip "FQTSS" >}}).
+1. The [Stream Reservation Protocol](./stream-reservation/_index.md) ({{< tooltip "SRP" >}}) that configures a path from a Talker to a Listener.
+2. The traffic shaper in a switch. The technology is based on the credit-based shaper and is often referred to as [Forwarding and Queuing for Time-Sensitive Streams](./fqtss/_index.md) ({{< tooltip "FQTSS" >}}).
 
 
 {{% notice info %}}
