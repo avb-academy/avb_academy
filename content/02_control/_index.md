@@ -1,7 +1,7 @@
 ---
 title: "Control"
 date: 2025-02-11
-weight: 5
+weight: 3
 ---
 
 {{% notice info %}}

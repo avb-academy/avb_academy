@@ -1,7 +1,7 @@
 ---
 title: "Network Timing"
 date: 2025-02-11
-weight: 2
+weight: 1
 ---
 
 Having a well-synchronized network is crucial for the performance of the network. An unsynchronized network could lead to sampling signals at different points in time. In a less severe scenario, this can result in mixed signals that exhibit a comb filter characteristic, distorting the audio. In a worst-case scenario, the lack of synchronization could cause audio dropouts, glitches, and clicks, significantly degrading the listening experience and likely displeasing your audience. Therefore, maintaining precise synchronization is essential to ensure seamless and high-quality audio transmission across the network.
