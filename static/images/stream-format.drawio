@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="kQSoABH0KIZqvFSMWP8h" name="Page-1">
+        <mxGraphModel dx="763" dy="297" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="39" value="" style="shape=flexArrow;endArrow=classic;html=1;width=160;endSize=26.142857142857142;endWidth=66.85714285714286;dashed=1;align=left;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="310" y="275" as="sourcePoint"/>
+                        <mxPoint x="730" y="275" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="Stream" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="39">
+                    <mxGeometry x="0.767" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="Audio data Channel 1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="230" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Ethernet information" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="200" width="285" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Audio data Channel 2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="245" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Audio data Channel 3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="260" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Audio data Channel 4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="275" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Audio data Channel 5" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="290" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Audio data Channel 6" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="305" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Audio data Channel 7" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="320" width="285" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Audio data Channel 8" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="335" width="285" height="15" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
