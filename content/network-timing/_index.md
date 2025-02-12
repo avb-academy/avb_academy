@@ -17,27 +17,6 @@ Milan employs the Generalized Precision Timing Protocol ({{< tooltip "gPTP" >}})
 
 ## Clock Leader Election
 
-<!-- <div style="display: flex; align-items: center; justify-content: space-between;">
-  <div style="flex: 1; padding-right: 20px;">
-    <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches">}}. In a first step, a Grand Master ({{< tooltip "GM">}}) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm ({{< tooltip "BTCA">}}). The algorithm is executed automatically when a change in the network is detected.</p>
-  </div>
-  <div class="image-container" style="flex: 1; padding-left: 20px;">
-    <img src="/images/gPTP-BTCA.drawio.svg" alt="Image" style="max-width: 100%; height: auto; display: block;">
-  </div>
-</div>
-
-<style>
-  @media (max-width: 767px) {
-    .image-container {
-      display: none; /* Hide image on smaller screens */
-    }
-    
-    div {
-      flex-direction: column; /* Stack text and image vertically on small screens */
-    }
-  }
-</style> -->
-
 <div class="text-image-container">
   <div class="text">
     <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches">}}. In a first step, a Grand Master ({{< tooltip "GM">}}) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm ({{< tooltip "BTCA">}}). The algorithm is executed automatically when a change in the network is detected.</p>
