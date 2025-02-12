@@ -50,3 +50,27 @@ html {
     line-height: 1.5;
 }
 
+.inline-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inline-images img {
+    max-width: 48%;  /* Prevent images from being too large */
+    margin-right: 10px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+
+  

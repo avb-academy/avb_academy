@@ -6,4 +6,9 @@ theme = 'hugo-theme-relearn'
 [params]
   disableLandingPageButton = true
   disableSearch = true
-  
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+ignoreLogs = ["warning-goldmark-raw-html"]
