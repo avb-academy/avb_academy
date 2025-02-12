@@ -4,8 +4,7 @@ title = 'AVB Academy'
 theme = 'hugo-theme-relearn'
 
 [params]
-  disableLandingPageButton = true
-  disableSearch = true
+  themeVariantAuto = ['zen-light', 'zen-dark']
 
 [markup]
   [markup.goldmark.renderer]
