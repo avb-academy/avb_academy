@@ -17,7 +17,7 @@ To enhance readability, this chapter minimizes the use of technical terms and re
 ## Milan terms
 Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme in a Milan network. The terms are explained in the following.
 
-{{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" title="Milan Names" id="fig-milan-names">}}
+{{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Names" id="fig-milan-names">}}
 
 ### Endstation
 A device that converts audio from or into the Milan network. Endstations can contain either Talker or Listener functionality or contain both. Endstations are Milan certified.

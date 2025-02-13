@@ -21,7 +21,7 @@ This figure illustrates an example of three {{< tooltip "ingress port">}} with p
 
 In strict priority forwarding, **time-critical** packets are always forwarded first, preventing lower-priority packets from being transmitted as long as high-priority packets remain in the transmission queue. This results in a blocking effect on lower-priority packets whenever high-priority packets are present at an {{< tooltip "ingress port">}} that needs to forward packets to an {{< tooltip "egress port">}}.
 
-{{< figure src="/images/traffic-shaping-strict-prio.drawio.svg" alt="Strict priority packet forwarding" title="Strict Priority Packet Forwarding" id="fig-strict-prio" >}}
+{{< figure src="/images/traffic-shaping-strict-prio.drawio.svg" alt="Strict priority packet forwarding" fig-num="1" title="Strict Priority Packet Forwarding" id="fig-strict-prio" >}}
 
 
 ## Credit-based forwarding
@@ -37,5 +37,5 @@ As soon as there is an opportunity to send data and the credit for a particular 
 
 This approach spreads packet transmissions more evenly over time, reducing burstiness and smoothing traffic flow. In this example, we assume that when a packet is being transmitted, the credit decreases **twice as fast** as it builds up when waiting for a transmission opportunity.
 
-{{< figure src="/images/traffic-shaping-qav.drawio.svg" alt="Credit-based packet forwarding" title="Credit-Based Packet Forwarding" id="fig-credit-based">}}
+{{< figure src="/images/traffic-shaping-qav.drawio.svg" alt="Credit-based packet forwarding" fig-num="2" title="Credit-Based Packet Forwarding" id="fig-credit-based">}}
 

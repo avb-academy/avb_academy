@@ -4,14 +4,14 @@ date: 2025-02-11
 weight: 1
 ---
 
-Having a well-synchronized network is crucial for the performance of the network. An unsynchronized network could lead to sampling signals at different points in time. In a less severe scenario, this can result in mixed signals that exhibit a comb filter characteristic, distorting the audio. In a worst-case scenario, the lack of synchronization could cause audio dropouts, glitches, and clicks, significantly degrading the listening experience and likely displeasing your audience. Therefore, maintaining precise synchronization is essential to ensure seamless and high-quality audio transmission across the network.
-
 {{% notice info %}}
 - A Milan network has one clock leader. The BTCA is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
-- The GM is elected based on parameters that describe the clock quality of the device. The best quality wins.
-- Switches are preferred over a Bridged Endstation
+- The {{< tooltip "GM">}} is elected based on parameters that describe the clock quality of the device. The best quality wins.
+- {{< tooltip "Switches" "Switch">}} are preferred over a Bridged Endstation
 - Synchronization between participants is done from port to port. This reduces effects of variation in the network.
 {{% /notice %}}
+
+Having a well-synchronized network is crucial for the performance of the network. An unsynchronized network could lead to sampling signals at different points in time. In a less severe scenario, this can result in mixed signals that exhibit a comb filter characteristic, distorting the audio. In a worst-case scenario, the lack of synchronization could cause audio dropouts, glitches, and clicks, significantly degrading the listening experience and likely displeasing your audience. Therefore, maintaining precise synchronization is essential to ensure seamless and high-quality audio transmission across the network.
 
 Milan employs the Generalized Precision Timing Protocol ({{< tooltip "gPTP" >}}) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therfore capable of understanding network time.
 

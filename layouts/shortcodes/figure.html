@@ -1,12 +1,13 @@
-{{- $figNum := 1 }}
-{{- if .Page.Scratch.Get "figureCounter" }}
-    {{- $figNum = add (.Page.Scratch.Get "figureCounter") 1 }}
+{{- $figNum := "" }}
+{{- if .Get "fig-num" }}
+    {{- $figNum = printf "Fig. %s: " (.Get "fig-num") }}
+{{- else if .Get "title" }}
+    {{- $figNum = "Fig: " }}
 {{- end }}
-{{- .Page.Scratch.Set "figureCounter" $figNum }}
 
 <figure id="{{ .Get "id" }}">
     <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" />
     {{- if .Get "title" }}
-        <figcaption>Fig. {{ $figNum }}: {{ .Get "title" }}</figcaption>
+        <figcaption>{{ $figNum }}{{ .Get "title" }}</figcaption>
     {{- end }}
 </figure>
