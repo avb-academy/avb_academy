@@ -98,4 +98,12 @@ color: #555;
         display: none; /* Hide image on smaller screens */
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    img[src$=".svg"] {
+        filter: invert(85%) brightness(90%) contrast(95%);
+    }
+}
+
+
   

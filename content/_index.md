@@ -1,5 +1,5 @@
 ---
-title: " Welcome to the AVB Academy"
+title: " AVB Academy"
 ---
 
 # Introduction

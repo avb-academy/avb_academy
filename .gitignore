@@ -1,3 +1,5 @@
 public/
+*.drawio.bkp
 *.lock
 .DS_Store
+todo.md
