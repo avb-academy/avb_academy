@@ -15,7 +15,7 @@ Milan is based on a set of IEEE specifications. As explained in the [Introductio
 To enhance readability, this chapter minimizes the use of technical terms and references. The content is organized by the logical functions of an audio network transmission. The unique features of Milan are explained with minimal technical detail to ensure clarity.
 
 ## Milan terms
-Have a look at [Fig. 3](#fig-milan-names) which shows the general naming scheme in a Milan network. The terms are explained in the following.
+Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme in a Milan network. The terms are explained in the following.
 
 {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" title="Milan Names" id="fig-milan-names">}}
 

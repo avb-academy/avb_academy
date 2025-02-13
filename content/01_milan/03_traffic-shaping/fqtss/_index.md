@@ -26,7 +26,7 @@ In strict priority forwarding, **time-critical** packets are always forwarded fi
 
 ## Credit-based forwarding
 
-The blocking effect caused by [strict priority forwarding](#fig-strict-prio) can be mitigated using a credit-based shaper. To keep this example straightforward, we will focus only on **time-critical** and **less critical** packets, leaving out **legacy** packet behavior for simplicity.
+The blocking effect of strict prioirity forwarding as shown in  [Fig. 1](#fig-strict-prio) can be mitigated using a credit-based shaper. To keep this example straightforward, we will focus only on **time-critical** and **less critical** packets, leaving out **legacy** packet behavior for simplicity.
 
 The core idea behind the credit-based shaper is simple:  
 Each priority level has a **credit counter**.  
