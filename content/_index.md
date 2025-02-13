@@ -4,6 +4,8 @@ title: " Welcome to the AVB Academy"
 
 # Introduction
 
+You are looking for information about the Milan protocol, and someone mentioned that you can find it at the AVB Academy. However, you might be wondering: why AVB Academy when you are interested in Milan? Before answering that question, let us take a step back. What forms the foundation of Milan?
+
 ## Introduction to Time-Sensitive Networking (TSN)
 
 Time-Sensitive Networking ({{< tooltip "TSN">}}) is a set of {{< tooltip "IEEE">}} standards that extend standard Ethernet to support real-time, deterministic communication. It enables guaranteed bandwidth, low latency, and synchronization for critical applications.
