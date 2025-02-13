@@ -1,3 +1,25 @@
-<a href="/glossary/#{{ .Get 0 | urlize }}" class="tooltip" title="{{ index .Site.Data.glossary (.Get 0) }}">
-    {{ .Get 0 }}
-</a>
+{{- $displayedWord := .Get 0 -}}
+{{- $referencedWord := $displayedWord -}}
+
+{{- if gt .Params 1 -}}
+    {{- $referencedWord = .Get 1 -}}
+{{- end -}}
+
+{{- $tooltipText := "" -}}
+{{- $glossaryKey := "" -}}
+
+{{- range $key, $value := .Site.Data.glossary -}}
+    {{- if eq (lower $key) (lower $referencedWord) -}}
+        {{- $tooltipText = $value -}}
+        {{- $glossaryKey = $key -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if eq $tooltipText "" -}}
+    {{- $tooltipText = "Definition not found." -}}
+{{- end -}}
+
+{{- printf `<a href="/glossary/#%s" class="tooltip" title="%s">%s</a>` 
+    ($glossaryKey | urlize) 
+    $tooltipText 
+    $displayedWord | safeHTML -}}

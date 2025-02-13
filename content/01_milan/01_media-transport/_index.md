@@ -5,7 +5,7 @@ weight: 2
 ---
 
 {{% notice info %}}
-- Data is encapsulated in {{< tooltip "Streams">}} to use available bandwidth more efficiently.
+- Data is encapsulated in {{< tooltip "Streams" "Stream">}} to use available bandwidth more efficiently.
 - Audio transport in {{< tooltip "Milan">}}: 32bit {{< tooltip "PCM">}} data.
 - Clock Reference Format ({{< tooltip "CRF">}}): Additional media clock information, optional for small devices.
 - A {{< tooltip "Stream">}} has a configurable delay in the range of 0.25ms to 2ms.
@@ -13,13 +13,13 @@ weight: 2
 
 ## Audio Data
 
-In {{< tooltip "Milan">}} audio data is transmitted via {{< tooltip "Streams">}}. The audio transport in {{< tooltip "Milan">}} uses the Audio Video Transmission Protocol ({{< tooltip "AVTP">}}). This protocol specifies the strucuture of the data frames that are tansmitted in the network.
+In {{< tooltip "Milan">}} audio data is transmitted via {{< tooltip "Streams" "Stream">}}. The audio transport in {{< tooltip "Milan">}} uses the Audio Video Transmission Protocol ({{< tooltip "AVTP">}}). This protocol specifies the strucuture of the data frames that are tansmitted in the network.
 
-The {{< tooltip "Milan">}} specification utilizes the {{< tooltip "AVTP">}} Audio Format ({{< tooltip "AAF">}}) as the format for audio transmissions. This is not to be confused with the Advanced Authoring Format. It specifies that each {{< tooltip "PCM">}} sample is transmitted as a 32-bit value. If a sample has less than 32-bit, it is zero padded.
+The {{< tooltip "Milan">}} specification utilizes the {{< tooltip "AVTP">}} Audio Format ({{< tooltip "AAF">}}) as the format for audio transmissions. This is not to be confused with the *Advanced Authoring Format*. It specifies that each {{< tooltip "PCM">}} sample is transmitted as a 32-bit value. If a sample has less than 32-bit, it is zero padded.
 
 {{< tooltip "Milan">}} specifies that a {{< tooltip "Talker">}} defines the outgoing {{< tooltip "Stream">}} format. This refers to the number of audio channels that are contained in a {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} has to adapt to the {{< tooltip "Stream">}} format of the {{< tooltip "Talker">}}.
 
-The {{< tooltip "Milan">}} Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listener">}} and part of the {{< tooltip "Milan">}} certification. This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
+The {{< tooltip "Milan">}} Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listeners" "Listener">}} and part of the {{< tooltip "Milan">}} certification. This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
 
 <div class="text-image-container">
   <div class="text">
@@ -38,4 +38,4 @@ The previous section [Network Timing](../network-timing/_index.md) has explained
 
 This format allows Endstations to synchronize their media clocks to a common nominator. Without going too much into the details, {{< tooltip "CRF">}} adds an additional layer that is related to the gPTP time stamps but allows to generate the actual media clock signal for the audio unit of an Endstation.
 
-The support for {{< tooltip "CRF">}} is dependent on the device capabilities. Especially small devices do not necessarily need to support the {{< tooltip "CRF">}} format. They extract the relevant Media Clock information from the audio {{< tooltip "Stream">}}.
+The support for {{< tooltip "CRF">}} is dependent on the device capabilities. Especially small devices do not necessarily need to support the {{< tooltip "CRF">}} format. They extract the relevant Media Clock information from the {{< tooltip "AAF">}} Audio {{< tooltip "Stream">}}.

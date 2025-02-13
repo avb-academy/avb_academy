@@ -19,7 +19,7 @@ Milan employs the Generalized Precision Timing Protocol ({{< tooltip "gPTP" >}})
 
 <div class="text-image-container">
   <div class="text">
-    <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches">}}. In a first step, a Grand Master ({{< tooltip "GM">}}) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm ({{< tooltip "BTCA">}}). The algorithm is executed automatically when a change in the network is detected.</p>
+    <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a Grand Master ({{< tooltip "GM">}}) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm ({{< tooltip "BTCA">}}). The algorithm is executed automatically when a change in the network is detected.</p>
   </div>
   <div class="image">
     <img src="/images/gPTP-BTCA.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
