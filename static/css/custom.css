@@ -56,9 +56,15 @@ html {
     width: 100%;
 }
 
+.inline-images a {
+    display: inline-block; /* Ensures the anchor tag doesn't change the layout */
+    width: 48%; /* Controls the width of each image link */
+}
+
 .inline-images img {
-    max-width: 48%;  /* Prevent images from being too large */
-    margin-right: 10px;
+    width: 100%;  /* Makes the image scale to fill its parent container */
+    height: auto;  /* Retains the aspect ratio */
+    display: block; /* Ensures images align properly */
 }
 
 figure {

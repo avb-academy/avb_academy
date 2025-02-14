@@ -72,6 +72,10 @@ Follow these steps to calculate the bandwidth required for a given stream config
 
 
 <div class="inline-images">
-  <img src="/msrp_milan_cheat_sheet/msrp_details-AVTP.drawio.svg" alt="Calculation steps for Milan"/>
-  <img src="/msrp_milan_cheat_sheet/msrp_details-CRF.drawio.svg" alt="Calculation steps for CRF"/>
+  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank">
+    <img src="/msrp_milan_cheat_sheet/msrp_details-AVTP.drawio.svg" alt="Calculation steps for Milan"/>
+  </a>
+  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank">
+    <img src="/msrp_milan_cheat_sheet/msrp_details-CRF.drawio.svg" alt="Calculation steps for CRF"/>
+  </a>
 </div>

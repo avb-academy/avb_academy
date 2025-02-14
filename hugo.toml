@@ -4,7 +4,6 @@ title = 'AVB Academy'
 theme = 'hugo-theme-relearn'
 
 [params]
-  # themeVariant = ['zen-light', 'zen-dark']
   themeVariantAuto = ['zen-light', 'zen-dark']
 
 [markup]
@@ -12,3 +11,10 @@ theme = 'hugo-theme-relearn'
     unsafe = true
 
 ignoreLogs = ["warning-goldmark-raw-html"]
+
+[module]
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+  excludeFiles = ['**/*.drawio', '**/*.bkp', 'images/*.sh']
+
