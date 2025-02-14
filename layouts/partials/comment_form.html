@@ -1,0 +1,15 @@
+<!-- layouts/partials/comment_form.html -->
+<h2>Leave a Comment</h2>
+
+<form method="POST" action="https://api.staticman.net/v3/entry/github/avb-academy/avb_academy/main/comments">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="message">Comment</label>
+  <textarea name="message" id="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>

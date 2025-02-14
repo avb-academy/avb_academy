@@ -1,0 +1,6 @@
+gitHub:
+  username: avb-academy
+  repository: avb_academy
+  token: ${{ secrets.STATICMAN_GITHUB_TOKEN }}  # Reference the secret from GitHub Secrets
+  branch: main
+  commitMessage: "Add new comment"
