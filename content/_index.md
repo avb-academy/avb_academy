@@ -2,6 +2,14 @@
 title: " AVB Academy"
 ---
 
+## Help Us Improve the AVB Academy
+
+With the AVB Academy freshly released to the world, developed by dedicated individuals in their spare time, we are eager to know where to focus our efforts next. Your feedback is crucial in helping us shape the future of the Academy.
+
+Please take a moment to fill out our brief survey and share your thoughts. Your input helps us prioritize and improve the content and services we offer, ensuring we continue to meet your needs.
+
+{{% button href="https://forms.gle/wL78x5h2VFWfEmJ68" style="green" icon="comments" %}}Take the survey{{% /button %}}
+
 # Introduction
 
 You are looking for information about the Milan protocol, and someone mentioned that you can find it at the AVB Academy. However, you might be wondering: why AVB Academy when you are interested in Milan? Before answering that question, let us take a step back. What forms the foundation of Milan?
