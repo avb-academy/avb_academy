@@ -15,6 +15,9 @@ Simon Gapp, February 2025
 ## Disclaimer
 The content on this page reflects personal views and statements. AVB Academy is not affiliated with Avnu or any other organization involved in the standardization of Milan.
 
+## Disclaimer
+The content on this page reflects personal views and statements. AVB Academy is not affiliated with Avnu or any other organization involved in the standardization of Milan.
+
 ## Contributions  
 Special thanks to the contributors for their invaluable efforts in reviewing, correcting, and explaining. Their dedication and countless hours of free time have helped make AVB Academy better for everyone.  
 - Alexandre Malki  
