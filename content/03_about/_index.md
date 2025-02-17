@@ -18,7 +18,8 @@ The content on this page reflects personal views and statements. AVB Academy is 
 ## Contributions  
 Special thanks to the contributors for their invaluable efforts in reviewing, correcting, and explaining. Their dedication and countless hours of free time have helped make AVB Academy better for everyone.  
 - Alexandre Malki  
-- David Morales  
+- David Morales
+- Philipp Hortig
 
 Contributions are welcome!  
 You can contribute by opening issues or submitting pull requests on GitHub, or feel free to reach out by email.  

@@ -3,3 +3,4 @@ public/
 *.lock
 .DS_Store
 todo.md
+static/logo/*.png
