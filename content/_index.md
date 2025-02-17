@@ -8,11 +8,43 @@ You are looking for information about the Milan protocol, and someone mentioned 
 
 ## Help Us Improve the AVB Academy
 
-With the AVB Academy freshly released to the world, developed by dedicated individuals in their spare time, we are eager to know where to focus our efforts next. Your feedback is crucial in helping us shape the future of the Academy.
+<div class="survey-notice">
+  <p>With the AVB Academy freshly released to the world, developed by dedicated individuals in their spare time, we are eager to know where to focus our efforts next. Your feedback is crucial in helping us shape the future of the Academy.</p>
+  <p>Please take a moment to fill out our brief survey and share your thoughts. Your input helps us prioritize and improve the content and services we offer, ensuring we continue to meet your needs.</p>
+</div>
 
-Please take a moment to fill out our brief survey and share your thoughts. Your input helps us prioritize and improve the content and services we offer, ensuring we continue to meet your needs.
+<div class="survey-button-container">
+  {{% button href="https://forms.gle/wL78x5h2VFWfEmJ68" style="green" icon="comments" %}}Take the survey{{% /button %}}
+</div>
 
-{{% button href="https://forms.gle/wL78x5h2VFWfEmJ68" style="green" icon="comments" %}}Take the survey{{% /button %}}
+<style>
+  .survey-notice {
+    background-color: #f9f9f9; /* Light background for light theme */
+    color: #333; /* Dark text for light theme */
+    padding: 20px;
+    border-left: 5px solid #4CAF50; /* Green accent */
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .survey-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Dark theme adjustments */
+  body.dark-theme .survey-notice {
+    background-color: #333; /* Dark background for dark theme */
+    color: #f9f9f9; /* Light text for dark theme */
+    border-left: 5px solid #80e27e; /* Lighter green for better visibility */
+  }
+
+  body.dark-theme .survey-button-container {
+    color: #f9f9f9; /* Light text for the button container */
+  }
+</style>
+
+
 
 ## Introduction to Time-Sensitive Networking (TSN)
 
