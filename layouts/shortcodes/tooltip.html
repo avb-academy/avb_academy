@@ -9,12 +9,13 @@
 {{- $glossaryKey := "" -}}
 
 {{- with index .Site.Data.glossary $referencedWord -}}
-    {{- if reflect.IsMap . -}}
-        {{- $tooltipText = .summary -}}
-    {{- else -}}
-        {{- $tooltipText = . -}}  <!-- Use old format if no summary field -->
-    {{- end -}}
     {{- $glossaryKey = $referencedWord -}}
+
+    {{- if reflect.IsMap . -}}
+        {{- $tooltipText = .summary | default "Click for more information." -}}  <!-- Use summary if available, fallback to default text -->
+    {{- else -}}
+        {{- $tooltipText = . | default "Click for more information." -}}  <!-- Use the old format with fallback text -->
+    {{- end -}}
 {{- end -}}
 
 {{- printf `<a href="/glossary/#%s" class="tooltip" title="%s">%s</a>` 

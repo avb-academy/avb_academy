@@ -3,58 +3,61 @@
 # 1000BASE-T: "Describes the speed and configuration of an Ethernet network"
 
 AAF:
-  summary: "Audio Format used in Milan Streams"
+  summary: "Audio Format in Milan Streams"
   details: "{{< tooltip \"AVTP\">}} Audio Format."
   source: "{{< global_reference ref=\"IEEE1722\" clause=\"7\" >}}"
 
-ADC: "Analog to digital converter"
+ADC: "Analog to Digital converter"
 
 ATDECC: 
-  summary: "Control protocol used in Milan"
-  details: "AVB/TSN Device Discovery, Enumeration, Connection Management, and Control Protocol."
+  summary: "Control protocol for Milan"
+  details: "Short for \"AVB/TSN Device Discovery, Enumeration, Connection Management, and Control\"."
   source: "{{< global_reference ref=\"IEEE17221\" >}}"
 
 AVB: 
   summary: "Audio Video Bridging"
-  details: "Protocol that describes the basis for Milan."
+  details: "Describes the basis for {{< tooltip \"Milan\">}}."
   source: "{{< global_reference ref=\"IEEE8021BA\" >}}"  
 
 AVTP:
   summary: "Audio Video Transport Protocol" 
-  details: "The protocol specifies the media transport in a Milan network."
+  details: "Specifies the media transport in a {{< tooltip \"Milan\">}} network."
   source: "{{< global_reference ref=\"IEEE1722\" >}}"
 
 # AVTPDU: "AVTP data units as defined in IEEE1722-2016. Utilize the commonly known Protocol Data Unit (PDU) format"  
 
 Avnu Alliance:
   summary: "Industry alliance to develop Milan"
-  details: "Avnu Alliance is a consortium of member companies working together to create an interoperable ecosystem of low-latency, time-synchronized, highly reliable networking devices using the IEEE open standard TSN."
+  details: "Avnu Alliance is a consortium of member companies working together to create an interoperable ecosystem of low-latency, time-synchronized, highly reliable networking devices using the {{< tooltip \"IEEE\">}} open standard {{< tooltip \"TSN\" >}}."
   source: "[Avnu Alliance Website](https://avnu.org/)"
 
 # BMCA: "Best TimeTransmitter Clock Algorithm. Formerly known as Best Master Clock Algorithm. Used to determine the best gPTP Clock Leader in a network. Specified in gPTP"  
-# Bridge: "Switch and Bridge are used synonymously. A Switch forwards traffic from one port to another. Milan switches must be time-aware and support traffic shaping"  
+
+Bridge: 
+  details: "{{< tooltip \"Switch\">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip \"AVB\">}} switches must be time-aware and support traffic shaping."
+
 # Bridged Endstation: "A device that contains a Switch as well as an Endstation"  
 # Bridges: "Switch and Bridge are used synonymously. A Switch forwards traffic from one port to another. Milan switches must be time-aware and support traffic shaping"  
 
 BTCA: 
   summary: "Best TimeTransmitter Clock Algorithm"
-  details: "Formerly known as Best Master Clock Algorithm. Used to determine the best gPTP Clock Leader in a network."
+  details: "Formerly known as \"Best Master Clock Algorithm\". Used to determine the best {{< tooltip \"gPTP\">}} Clock Leader in a network."
   source: "{{< global_reference ref=\"IEEE8021AS\" clause=\"10.3\">}}"
 
 CRF: 
   summary: "Clock Reference Format"
-  details: "Mechanism to improve clock accuracy in Milan networks. Commonly referred to as Media Clock."
+  details: "Mechanism to improve audio clock accuracy in {{< tooltip \"Milan\" >}} networks. Commonly referred to as Media Clock."
   source: "{{< global_reference ref=\"IEEE1722\" clause=\"10\" >}}"
 
 DAC: "Digital to Analog converter"
 
 Egress port:
   summary: "Traffic exit port"
-  details: "Describes a port through which traffic is exiting. Used to describe the traffic flow in a Switch."  
+  details: "Describes a port through which traffic is exiting a device. Used to describe the traffic flow in a {{< tooltip \"Switch\">}}."  
 
 Endstation:
   summary: "Converts audio from/to Milan"
-  details: "A device converting audio into or from the Milan network. An Endstation is Milan certified."
+  details: "A device converting audio into or from the {{< tooltip \"Milan\">}} network. An Endstation is Milan certified."
   source: "{{< global_reference ref=\"IEEE802\" >}}"
 
 # EPON: "Ethernet Passive Optical Network"
@@ -62,42 +65,56 @@ Endstation:
 
 FQTSS:
   summary: "Forwarding and Queuing for Time-Sensitive Streams"
-  details: "Specifies how to handle traffic of different priorities. And makes sure that Milan traffic arrives on time at the Listener."
+  details: "Specifies how to handle traffic of different priorities. And makes sure that {{< tooltip \"Milan\">}} traffic arrives on time at the {{< tooltip \"Listener\">}}."
   source: "{{< global_reference ref=\"IEEE8021Q\" clause=\"34\">}}"
 
 GM: 
   summary: "GrandMaster"
-  details: "The GrandMaster provides the global network time. It has been elected using the {{< tooltip \"BTCA\">}}."
+  details: "The GrandMaster provides the global network time with the {{< tooltip \"gPTP\">}} protocol. It has been elected using the {{< tooltip \"BTCA\">}}."
+  source: "{{<global_reference ref=\"IEEE8021AS\">}}"
 
 gPTP: 
   summary: "Generalized Precision Timing Protocol"
-  details: "The Generalized Precision Timing Protocol (gPTP) is a profile of {{< tooltip \"PTPv2\" >}}. This profile is specified in IEEE 802.1AS-2011, providing precise timing and synchronization in Ethernet networks."
+  details: "The Generalized Precision Timing Protocol (gPTP) is a profile of {{< tooltip \"PTPv2\" >}}. It provides precise timing and synchronization in Ethernet networks."
   source: "{{< global_reference ref=\"IEEE8021AS\" >}}"
 
 # Hop: "The process of a packet traversing a switch. The number of hops defines latency in a Milan network"
 
-IEEE: "Institute of Electrical and Electronics Engineers"  
+IEEE: 
+  summary: "Institute of Electrical and Electronics Engineers"
+  details: "The IEEE is an American professional association for electrical engineering, electronics engineering, and other related disciplines."
+  source: "[IEEE Website](https://www.ieee.org/)"
 
 Ingress port: 
   summary: "Traffic input port"
-  details: "Describes a port through which traffic is entering. Used to describe the traffic flow in a Switch."  
+  details: "Describes a port through which traffic is entering a device. Used to describe the traffic flow in a Switch."  
 
-Listener: "The destination or sink of a signal, e.g., a mixing console"
+Listener:
+  summary: "Receiver of a Stream"
+  details: "The receiver of a {{< tooltip \"Stream\">}} created by a {{< tooltip \"Talker\">}}, e.g., an amplifier."
+  source: "{{< global_reference ref=\"IEEE8021BA\" clause=\"3\">}}"
 
-MAC: "Medium access control address"
+MAC: 
+  summary: "Medium Access Control"
+  details: "Layer that controls the hardware responsible for interaction with the wired or wireless transmission medium."
+  source: "{{< global_reference ref=\"IEEE802\">}}"
 
-MSRP: "Multiple Registration Protocol"
+MSRP: 
+  summary: "Multiple Stream Registration Protocol"
+  details: "Facilitates the reservation and management of multiple {{< tooltip \"Streams\" \"Stream\">}} in a coordinated manner. Is an extension to {{< tooltip \"SRP\">}}."
+  source: "{{< global_reference ref=\"IEEE8021Q\" clause=\"35\">}}"
 
 Milan: 
   summary: "Media Independent Local Area Network"
-  details: "The term Milan is used to describe a ProAV network based on the {{< tooltip \"TSN\" >}} specifications."
+  details: "The term Milan is used to describe a ProAV network based on the {{< tooltip \"AVB\" >}} specifications."
   source: "{{< global_reference ref=\"MILANSpec\">}}"
-
-# MILAN: "Media Independent Local Area Network"
 
 # OS: "Open System Interconnection"  
 
-OSI Layer: "The OSI Layer model is an abstract way to describe the path a packet has to take through a computer system"  
+OSI Layer: 
+  summary: "Path through a computer system"
+  details: "The OSI Layer model is an abstract way to describe the path a packet has to take through a computer system."
+  source: "[Wikipedia OSI model](https://en.wikipedia.org/wiki/OSI_model)"
 
 # PDU: "Protocol Data Unit"  
 
@@ -105,16 +122,22 @@ OSI Layer: "The OSI Layer model is an abstract way to describe the path a packet
 
 # PCP: "Priority Code Point. Specifies a priority value between 0 and 7 used by QoS disciplines to differentiate traffic"  
 
-Primary: "In case the network is made redundant, the first connection is called Primary. The second connection is called Secondary"  
+Primary:
+  summary: "Primary connection"
+  details: "In a redundant network, the first connection is called Primary. The second connection is called {{< tooltip \"Secondary\">}}."
+  source: "{{< global_reference ref=\"MILANSpec\" clause=\"8.2.2\">}}"
 
 PTPv2: 
   summary: "Precision Timing Protocol v2"
-  details: "Precision Timing Protocol version 2. This is the basis for {{< tooltip \"gPTP\" >}}"
+  details: "Precision Timing Protocol version 2. This is the basis for {{< tooltip \"gPTP\" >}}."
   source: "{{< global_reference ref=\"IEEE1588\">}}"  
 
 # QoS: "Quality of Service"  
 
-Secondary: "In case the network is made redundant, the second connection is called Secondary. The first connection is called Primary"  
+Secondary:
+  summary: "Secondary connection"
+  details: "In a redundant network, the second connection is called Secondary. The first connection is called {{< tooltip \"Primary\">}}."
+  source: "{{< global_reference ref=\"MILANSpec\" clause=\"8.2.2\">}}"
 
 # SR class: "Stream Reservation class"  
 
@@ -122,15 +145,27 @@ Secondary: "In case the network is made redundant, the second connection is call
 
 # SR class B: "Stream Reservation class B. Max. end-to-end latency: 50ms"  
 
-SRP: "Stream Reservation Protocol"  
+SRP:
+  summary: "Stream Reservation Protocol"
+  details: "Handles the reservation of resources for individual {{<tooltip \"Streams\" \"Stream\">}}."
+  source: "{{< global_reference ref=\"IEEE8021Q\" clause=\"35\" >}}"
 
-Stream: "A Stream refers to the transmission of data between a Talker and a Listener within a network. It encapsulates the relevant information required for communication"  
+Stream:
+  summary: "Container for udio channels"
+  details: "Used to transmit data between a {{< tooltip \"Talker\">}} and a {{< tooltip \"Listener\" >}} within a network. Basis for the bandwidth reservation calculation. [More details](../00_introduction-to-audio-networks/stream.md)"
+  source: "{{< global_reference ref=\"IEEE1722\" >}}"
 
-Switch: "Switch and Bridge are used synonymously. A Switch forwards traffic from one port to another. Milan switches must be time-aware and support traffic shaping"  
+Switch:
+  details: "Switch and {{< tooltip \"Bridge\">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip \"AVB\">}} switches must be time-aware and support traffic shaping"  
 
-Talker: "The source of a signal, e.g., a stage box"  
+Talker: 
+  summary: "Producer of a Stream"
+  details: "The source of a {{< tooltip \"Stream\">}} to be received by a {{< tooltip \"Listener\">}}, e.g., a stage box."
+  source: "{{< global_reference ref=\"IEEE8021BA\" clause=\"3\" >}}"
 
-TSN: "Time Sensitive Networks"  
+TSN: 
+  summary: "Time Sensitive Networks"
+  details: "Describes the basis for {{< tooltip \"AVB\">}}."
 
 # VLAN: "Virtual LAN"
 
