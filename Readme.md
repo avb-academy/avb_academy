@@ -26,7 +26,7 @@ To set up the AVB Academy locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone --recurse-submodules https://github.com/avb-academy/avb-academy.git
+   git clone --recurse-submodules https://github.com/avb-academy/avb_academy.git
    cd avb-academy
    ```
 2. Install Hugo: https://gohugo.io/installation/
@@ -61,7 +61,7 @@ AVB Academy is a personal statement and is not affiliated with Avnu or any other
 For any questions or feedback, please reach out to:
 
 - Email: info #at# avb-academy.com
-- GitHub Issues: https://github.com/avb-academy/avb-academy/issues
+- GitHub Issues: https://github.com/avb-academy/avb_academy/issues
 
 ## Acknowledgments
 
