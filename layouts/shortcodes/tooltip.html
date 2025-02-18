@@ -5,18 +5,17 @@
     {{- $referencedWord = .Get 1 -}}
 {{- end -}}
 
-{{- $tooltipText := "" -}}
+{{- $tooltipText := "Definition not found." -}}
 {{- $glossaryKey := "" -}}
 
-{{- range $key, $value := .Site.Data.glossary -}}
-    {{- if eq (lower $key) (lower $referencedWord) -}}
-        {{- $tooltipText = $value -}}
-        {{- $glossaryKey = $key -}}
-    {{- end -}}
-{{- end -}}
+{{- with index .Site.Data.glossary $referencedWord -}}
+    {{- $glossaryKey = $referencedWord -}}
 
-{{- if eq $tooltipText "" -}}
-    {{- $tooltipText = "Definition not found." -}}
+    {{- if reflect.IsMap . -}}
+        {{- $tooltipText = .short | default "Click for more information." -}}  <!-- Use summary if available, fallback to default text -->
+    {{- else -}}
+        {{- $tooltipText = . | default "Click for more information." -}}  <!-- Use the old format with fallback text -->
+    {{- end -}}
 {{- end -}}
 
 {{- printf `<a href="/glossary/#%s" class="tooltip" title="%s">%s</a>` 

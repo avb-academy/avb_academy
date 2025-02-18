@@ -1,0 +1,38 @@
+IEEE1722:
+  title: "IEEE 1722"
+  year: 2016
+  link: "https://ieeexplore.ieee.org/document/7782716"
+
+IEEE8021BA:
+  title: "IEEE 802.1BA"
+  year: 2011
+  link: "https://ieeexplore.ieee.org/document/6032690"
+
+IEEE17221:
+  title: "IEEE 1722.1"
+  year: 2021
+  link: "https://ieeexplore.ieee.org/document/9744630"
+
+IEEE8021AS:
+  title: "IEEE 802.1AS"
+  year: 2011
+  link: "https://ieeexplore.ieee.org/document/5741898"
+
+IEEE802:
+  title: "IEEE 802"
+  link: "https://standards.ieee.org/ieee/802/1025/"
+
+IEEE8021Q:
+  title: "IEEE 802.1Q"
+  year: 2014
+  link: "https://ieeexplore.ieee.org/document/6991462"
+
+MILANSpec:
+  title: "Milan"
+  year: "v1.2"
+  link: "https://avnu.org/resource/milan-specification/"
+
+IEEE1588:
+  title: "IEEE 1588"
+  year: "2008"
+  link: "https://ieeexplore.ieee.org/document/4579760"

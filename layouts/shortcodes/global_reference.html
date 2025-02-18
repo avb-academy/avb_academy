@@ -1,0 +1,19 @@
+<!-- layouts/shortcodes/ieee_reference.html -->
+{{ $ref := .Get "ref" }}
+{{ $entry := index .Site.Data.global_references $ref }}  <!-- Update this to pull from ieee_references -->
+{{ if $entry }}
+  {{ $clause := .Get "clause" }}
+  {{ if isset $entry "year" }}
+    {{ if $clause }}
+      <a href="{{ $entry.link }}" target="_blank">{{ $entry.title }}-{{ $entry.year }}, Clause {{ $clause }}</a>
+    {{ else }}
+      <a href="{{ $entry.link }}" target="_blank">{{ $entry.title }}-{{ $entry.year }}</a>
+    {{ end }}
+  {{ else }}
+    {{ if $clause }}
+      <a href="{{ $entry.link }}" target="_blank">{{ $entry.title }}, Clause {{ $clause }}</a>
+    {{ else }}
+      <a href="{{ $entry.link }}" target="_blank">{{ $entry.title }}</a>
+    {{ end }}
+  {{ end }}
+{{ end }}

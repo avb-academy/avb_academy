@@ -1,10 +1,20 @@
 <input type="text" id="glossarySearch" placeholder="Search glossary..." onkeyup="filterGlossary()">
 
 <div id="glossaryContainer">
-  {{ range $term, $definition := site.Data.glossary }}
+  {{ range $term, $entry := site.Data.glossary }}
     <div class="glossary-entry" id="{{ $term | urlize }}">
       <h2>{{ $term }}</h2>
-      <p>{{ $definition }}</p>
+      {{- if reflect.IsMap $entry -}}
+        {{- if $entry.short -}}
+          <p><strong>Short definiton:</strong> {{ $entry.short }}</p>
+        {{- end -}}
+        <p><strong>Explanation: </strong>{{ $entry.explanation | markdownify }}</p>
+        {{- if $entry.reference -}}
+          <p><strong>Reference:</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
+        {{- end -}}
+      {{- else -}}
+        <p><strong>Short definition: </strong>{{ $entry | markdownify }}</p>
+      {{- end -}}
     </div>
   {{ end }}
 </div>

@@ -26,7 +26,5 @@ Contributions are welcome!
 You can contribute by opening issues or submitting pull requests on GitHub, or feel free to reach out by email.  
 [Check out the GitHub repository here](https://github.com/avb-academy/avb_academy).
 
-
-
 ## Contact
 info #at# avb-academy.com
