@@ -30,11 +30,11 @@ The {{< tooltip "Milan">}} Base Format specifies support for channel counts of e
   </div>
 </div>
 
-It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed delay time before it starts streaming. The value range for delays is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with {{< tooltip "Milan">}} to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../traffic-shaping/_index.md).
+It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed delay time before it starts streaming. The value range for delays is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with {{< tooltip "Milan">}} to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md).
 
 ## Clock Data
 
-The previous section [Network Timing](../network-timing/_index.md) has explained the core principle of network time in {{< tooltip "Milan">}}. The {{< tooltip "Milan">}} specification uses an additional clocking mechanism called Clock Reference Format ({{< tooltip "CRF">}}).
+The previous section [Network Timing](../00_network-timing/_index.md) has explained the core principle of network time in {{< tooltip "Milan">}}. The {{< tooltip "Milan">}} specification uses an additional clocking mechanism called Clock Reference Format ({{< tooltip "CRF">}}).
 
 This format allows Endstations to synchronize their media clocks to a common nominator. Without going too much into the details, {{< tooltip "CRF">}} adds an additional layer that is related to the gPTP time stamps but allows to generate the actual media clock signal for the audio unit of an Endstation.
 
