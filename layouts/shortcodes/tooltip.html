@@ -12,7 +12,7 @@
     {{- $glossaryKey = $referencedWord -}}
 
     {{- if reflect.IsMap . -}}
-        {{- $tooltipText = .summary | default "Click for more information." -}}  <!-- Use summary if available, fallback to default text -->
+        {{- $tooltipText = .short | default "Click for more information." -}}  <!-- Use summary if available, fallback to default text -->
     {{- else -}}
         {{- $tooltipText = . | default "Click for more information." -}}  <!-- Use the old format with fallback text -->
     {{- end -}}

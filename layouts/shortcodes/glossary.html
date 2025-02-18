@@ -5,15 +5,15 @@
     <div class="glossary-entry" id="{{ $term | urlize }}">
       <h2>{{ $term }}</h2>
       {{- if reflect.IsMap $entry -}}
-        {{- if $entry.summary -}}
-          <p><strong>Summary:</strong> {{ $entry.summary }}</p>
+        {{- if $entry.short -}}
+          <p><strong>Short definiton:</strong> {{ $entry.short }}</p>
         {{- end -}}
-        <p><strong>Details: </strong>{{ $entry.details | markdownify }}</p>
-        {{- if $entry.source -}}
-          <p><strong>Source:</strong> {{ $entry.source | safeHTML | markdownify }}</p>
+        <p><strong>Explanation: </strong>{{ $entry.explanation | markdownify }}</p>
+        {{- if $entry.reference -}}
+          <p><strong>Reference:</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
         {{- end -}}
       {{- else -}}
-        <p><strong>Summary: </strong>{{ $entry | markdownify }}</p>
+        <p><strong>Short definition: </strong>{{ $entry | markdownify }}</p>
       {{- end -}}
     </div>
   {{ end }}
