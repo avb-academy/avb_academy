@@ -116,9 +116,7 @@ OSI Layer:
   reference: "[Wikipedia OSI model](https://en.wikipedia.org/wiki/OSI_model)"
 
 # PDU: "Protocol Data Unit"  
-
-# PCM: "Pulse Code Modulation"  
-
+PCM: "Pulse Code Modulation"  
 # PCP: "Priority Code Point. Specifies a priority value between 0 and 7 used by QoS disciplines to differentiate traffic"  
 
 Primary:

@@ -20,6 +20,7 @@ Special thanks to the contributors for their invaluable efforts in reviewing, co
 - Alexandre Malki  
 - David Morales
 - Philipp Hortig
+- Stijn Geysen
 
 Contributions are welcome!  
 You can contribute by opening issues or submitting pull requests on GitHub, or feel free to reach out by email.  

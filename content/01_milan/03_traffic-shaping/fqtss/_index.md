@@ -1,6 +1,6 @@
 ---
 title: "Forward Queuing for Time-Sensitive Streams (FQTSS)"
-date: 2025-02-11
+date: 2025-02-18
 ---
 
 Milan utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
@@ -35,7 +35,7 @@ Each priority level has a **credit counter**.
 
 As soon as there is an opportunity to send data and the credit for a particular priority level is above zero, packets of that priority can be transmitted.
 
-This approach spreads packet transmissions more evenly over time, reducing burstiness and smoothing traffic flow. In this example, we assume that when a packet is being transmitted, the credit decreases **twice as fast** as it builds up when waiting for a transmission opportunity.
+This approach spreads packet transmissions more evenly over time, reducing burstiness and smoothing traffic flow. **In this example**, we assume that when a packet is being transmitted, the credit decreases **twice as fast** as it builds up when waiting for a transmission opportunity. In practice, the rate at which credit decreases (*sendSlope*) and increases (*idleSlope*) is calculated based on the amount of bandwidth that is reserved.
 
 {{< figure src="/images/traffic-shaping-qav.drawio.svg" alt="Credit-based packet forwarding" fig-num="2" title="Credit-Based Packet Forwarding" id="fig-credit-based">}}
 
