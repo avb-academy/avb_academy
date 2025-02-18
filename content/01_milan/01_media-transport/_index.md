@@ -26,7 +26,7 @@ The {{< tooltip "Milan">}} Base Format specifies support for channel counts of e
     <p>A {{< tooltip "Stream">}} can be viewed as a container for audio data. In addition to the audio content, it also includes Ethernet information, such as the source and destination {{< tooltip "MAC">}} addresses. Ethernet information is present in every packet. This mandatory overhead for each packet should make it evident that using a larger number of audio channels per {{< tooltip "Stream">}} is more efficient than using a smaller number.</p>
   </div>
   <div class="image">
-    <img src="/images/Stream-format.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
+    <img src="/images/stream-format.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
   </div>
 </div>
 
