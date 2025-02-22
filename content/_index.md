@@ -9,12 +9,11 @@ You are looking for information about the Milan protocol, and someone mentioned 
 ## Help Us Improve the AVB Academy
 
 <div class="survey-notice">
-  <p>With the AVB Academy freshly released to the world, developed by dedicated individuals in their spare time, we are eager to know where to focus our efforts next. Your feedback is crucial in helping us shape the future of the Academy.</p>
-  <p>Please take a moment to fill out our brief survey and share your thoughts. Your input helps us prioritize and improve the content and services we offer, ensuring we continue to meet your needs.</p>
-</div>
-
-<div class="survey-button-container">
-  {{% button href="https://forms.gle/wL78x5h2VFWfEmJ68" style="green" icon="comments" %}}Take the survey{{% /button %}}
+  <p>AVB Academy is a passion project built in our spare time. To make it even better, we need your input! Your feedback will help us prioritize improvements and create content that truly benefits you.</p>
+  <p>Take a minute to share your thoughts—your voice shapes the future of AVB Academy!</p>
+  <div class="survey-button-container">
+    {{% button href="https://forms.gle/wL78x5h2VFWfEmJ68" style="green" icon="circle-right"%}} Click here to take the survey{{% /button %}}
+  </div>
 </div>
 
 <style>
@@ -42,6 +41,11 @@ You are looking for information about the Milan protocol, and someone mentioned 
   body.dark-theme .survey-button-container {
     color: #f9f9f9; /* Light text for the button container */
   }
+
+  .survey-notice {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 </style>
 
 
