@@ -51,6 +51,7 @@ Contributions very welcome! If you'd like to help improve AVB Academy, you can:
 1. Fork the repository and clone your fork locally.
 2. Make changes and submit a pull request.
 3. Ensure that all new content follows the established guidelines (e.g., adding new glossary terms, improving existing explanations).
+4. Review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Disclaimer
 
