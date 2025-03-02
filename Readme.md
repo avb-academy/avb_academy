@@ -53,6 +53,8 @@ Contributions very welcome! If you'd like to help improve AVB Academy, you can:
 3. Ensure that all new content follows the established guidelines (e.g., adding new glossary terms, improving existing explanations).
 4. Review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
+By participating in AVB Academy, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## Disclaimer
 
 AVB Academy is a personal statement and is not affiliated with Avnu or any other organizations involved in Milan standardization. The content presented on this website is for educational purposes and does not represent official positions or standards.
