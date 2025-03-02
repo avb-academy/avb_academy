@@ -26,7 +26,7 @@ AVB Academy moderators and administrators have the authority to enforce this Cod
 - Reporting severe violations to relevant authorities if necessary.
 
 ## 5. Reporting Concerns
-If you witness or experience behavior that violates this Code of Conduct, please report it to the AVB Academy administrators. Reports will be handled confidentially and addressed appropriately.
+If you witness or experience behavior that violates this Code of Conduct, please report it to the AVB Academy administrators via email at info #at# avb-academy.com. Reports will be handled confidentially and addressed appropriately.
 
 ## 6. Scope
 This Code of Conduct applies to all AVB Academy spaces, including but not limited to online forums, discussions, documentation contributions, and events.
