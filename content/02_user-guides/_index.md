@@ -16,8 +16,8 @@ weight: 3
 
 More details can be found in the following sections:
 
-- Number of hops
-- Switches
-- Redundancy
-- Quick Start Guide for Milan Manager
+- [Number of hops](number-of-hops.md)
+- [Switches](switches.md)
+- [Redundancy](redundancy.md)
+- [Quick Start Guide for Milan Manager](getting-started-milan-manager.md)
 
