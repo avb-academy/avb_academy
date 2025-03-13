@@ -165,5 +165,16 @@ TSN:
   explanation: "Has evolved from the IEEE AVB working group. TSN the basis for {{< tooltip \"AVB\">}}."
   reference: "[IEEE TSN TG website](https://1.ieee802.org/tsn/)"
 
+PTO:
+  short: "Presentation Time Offset"
+  explanation: The playout time for a packet transmitted from a {{< tooltip "Talker">}}. Also known as {{< tooltip "Delay">}}.
+
+Delay:
+  short: The time offset applied to a Stream before playback.
+  explanation: >
+    In audio streaming, Delay refers to the time offset applied to a {{< tooltip "Stream">}} before it is played out.  
+    The technical specification defines this as Presentation Time Offset ({{< tooltip "PTO">}}), while the Milan Manager refers to it as Presentation Time.  
+    Regardless of terminology, the function remains the same: it ensures that streams are synchronized by introducing a controlled delay before playback.  
+
 # VLAN: "Virtual LAN"
 
