@@ -9,11 +9,13 @@ The maxiumum number of hops is dependant on the network speed.
 - A 1Gbit network allows for max. 14 hops before it reaches the 2ms presentation time offset.
 {{% /notice %}}
 
-A Milan network is fully time-aware, meaning that switches also recognize the worst-case residency time for a packet. Each transition a packet makes through a switch is referred to as a hop.
+A Milan network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "Delay">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. 
+
+Each transition a packet makes through a switch is known as a hop.
 
 As a rule of thumb, the worst-case residency time for a packet in a switch is approximately 140µs on a 1Gbit/s network and 280µs on a 100Mbit/s network.
 
-Milan specifies a latency ceiling of 2ms for guaranteed packet delivery. This allows for a maximum of 14 hops on a 1Gbit/s network and 7 hops on a 100Mbit/s network. As shown in [Fig. 1](#fig-number-of-hops-100Mbps) and [Fig. 2](#fig-number-of-hops-1000Mbps), fewer hops result in lower latency within a Milan network.
+Milan specifies a latency limit of 2ms for guaranteed packet delivery. This allows for a maximum of 14 hops on a 1Gbit/s network and 7 hops on a 100Mbit/s network. As shown in [Fig. 1](#fig-number-of-hops-100Mbps) and [Fig. 2](#fig-number-of-hops-1000Mbps), fewer hops result in lower latency within a Milan network.
 
 |                 | 100Mbit/s | 1Gbit/s |
 |-----------------|-----------|---------|
