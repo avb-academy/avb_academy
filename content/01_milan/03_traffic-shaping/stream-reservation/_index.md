@@ -14,56 +14,9 @@ It is important to point out that **up to 75%** of the available bandwidth **can
 
 The following table provides a quick guide on how much bandwidth is reserved for different combinations of channels and sample rates.
 
-<table>
-  <thead>
-    <tr>
-      <th># Channels</th>
-      <th>48k in Mbit/s</th>
-      <th>96k in Mbit/s</th>
-      <th>192k in Mbit/s</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>5.82</td>
-      <td>7.36</td>
-      <td>10.43</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>7.36</td>
-      <td>10.43</td>
-      <td>16.58</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>10.43</td>
-      <td>16.58</td>
-      <td>28.86</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>13.50</td>
-      <td>22.72</td>
-      <td>41.15</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>16.58</td>
-      <td>28.86</td>
-      <td>53.44</td>
-    </tr>
-    <tr>
-      <td colspan="4"></td> <!-- Empty line above the CRF stream -->
-    </tr>
-    <tr>
-      <td>CRF</td>
-      <td colspan="3">always 5.63Mbit/s</td> <!-- Combined cell for CRF -->
-    </tr>
-  </tbody>
-</table>
-
+<a href="/msrp_milan_cheat_sheet/msrp_summary.drawio.pdf" target="_blank">
+<img src="/msrp_milan_cheat_sheet/msrp_summary.drawio.svg" alt="Calculation steps for Milan"/>
+</a>
 
 ## Detailed calculation
 The calculation is described in detail in the respective {{< tooltip "IEEE">}} specifications and is not explained further here.
