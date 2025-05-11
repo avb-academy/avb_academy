@@ -34,11 +34,13 @@ After the election process, the {{< tooltip "GM">}} provides its time to all net
 
 In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter.
 
+The Peer Delay is measured by sending a PDelay Request to a neighbor and recording the time it takes to receive a PDelay Response. By also including timestamps of when the response was sent and received, the protocol can accurately calculate the link delay between two peers.
+
 {{< figure src="/images/gPTP-sync.drawio.svg" alt="Port to Port sync" fig-num="1" title="gPTP sync process is Port to Port" id="fig-gPTP-sync">}}
 
 This contrasts with PTPv1, which uses the end-to-end approach that may introduce additional uncertainties in time synchronization due to varying network conditions.
 
-{{< figure src="/images/PTPv1-sync.drawio.svg" alt="Port to Port sync" fig-num="2" title="PTP sync process is End to End" id="fig-gPTP-sync">}}
+{{< figure src="/images/PTPv1-sync.drawio.svg" alt="Port to Port sync" fig-num="2" title="PTPv1 sync process is End to End" id="fig-gPTP-sync">}}
 
 ## Domain
 All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster ({{< tooltip "GM">}}) belong to a single domain. Each domain is exclusively clocked by one {{< tooltip "gPTP" >}} {{< tooltip "GM">}}. In {{< tooltip "Milan">}}, audio streams cannot be shared between different {{< tooltip "gPTP" >}} domains because there is no timing relationship between them.
