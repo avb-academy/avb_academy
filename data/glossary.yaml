@@ -174,7 +174,15 @@ Delay:
   explanation: >
     In audio streaming, Delay refers to the time offset applied to a {{< tooltip "Stream">}} before it is played out.  
     The technical specification defines this as Presentation Time Offset ({{< tooltip "PTO">}}), while the Milan Manager refers to it as Presentation Time.  
-    Regardless of terminology, the function remains the same: it ensures that streams are synchronized by introducing a controlled delay before playback.  
+    Regardless of terminology, the function remains the same: it ensures that streams are synchronized by introducing a controlled delay before playback.
+
+Network Time:
+  short: "Shared time base"
+  explanation: "A common time reference shared by all devices in a Milan network, established using the {{< tooltip \"gPTP\" >}} protocol. This ensures precise synchronization across the entire network."
+
+Media Time:
+  short: "Audio clock timing"
+  explanation: "The local timing used to control audio sampling rates on a device. Media Time is derived from Network Time but is used specifically for media clock recovery and sample-accurate playback."
 
 # VLAN: "Virtual LAN"
 
