@@ -7,17 +7,18 @@ weight: 2
 {{% notice info %}}
 - Data is encapsulated in {{< tooltip "Streams" "Stream">}} to use available bandwidth more efficiently.
 - Audio transport in {{< tooltip "Milan">}}: 32bit {{< tooltip "PCM">}} data.
-- Clock Reference Format ({{< tooltip "CRF">}}): Additional media clock information, optional for small devices.
+- {{< tooltip "Media Time">}} controls playback/recording in relation to the {{< tooltip "Network Time">}}
 - A {{< tooltip "Stream">}} has a configurable delay in the range of 0.25ms to 2ms.
+- Bandwidth usage of Streams is explained in the [Traffic Shaping](../03_traffic-shaping/stream-reservation/_index.md#how-much-traffic-is-reserved-for-my-audio-stream) section.
 {{% /notice %}}
 
 ## Audio Data
 
-In {{< tooltip "Milan">}} audio data is transmitted via {{< tooltip "Streams" "Stream">}}. The audio transport in {{< tooltip "Milan">}} uses the Audio Video Transmission Protocol ({{< tooltip "AVTP">}}). This protocol specifies the strucuture of the data frames that are tansmitted in the network.
+In {{< tooltip "Milan">}}, audio data is transmitted via {{< tooltip "Streams" "Stream">}} using the Audio Video Transmission Protocol ({{< tooltip "AVTP">}}), which defines the structure of the data frames sent across the network.
 
-The {{< tooltip "Milan">}} specification utilizes the {{< tooltip "AVTP">}} Audio Format ({{< tooltip "AAF">}}) as the format for audio transmissions. This is not to be confused with the *Advanced Authoring Format*. It specifies that each {{< tooltip "PCM">}} sample is transmitted as a 32-bit value. If a sample has less than 32-bit, it is zero padded.
+The specification adopts the AVTP Audio Format (AAF) for audio transport—not to be confused with the Advanced Authoring Format. It mandates that each {{< tooltip "PCM">}} sample be transmitted as a 32-bit value, with shorter samples zero-padded as needed.
 
-{{< tooltip "Milan">}} specifies that a {{< tooltip "Talker">}} defines the outgoing {{< tooltip "Stream">}} format. This refers to the number of audio channels that are contained in a {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} has to adapt to the {{< tooltip "Stream">}} format of the {{< tooltip "Talker">}}.
+A {{< tooltip "Talker">}} in a {{< tooltip "Milan">}} network defines the outgoing {{< tooltip "Stream">}} format, specifying the number of audio channels in the {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} is required to adapt to the format provided by the {{< tooltip "Talker">}}.
 
 The {{< tooltip "Milan">}} Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listeners" "Listener">}} and part of the {{< tooltip "Milan">}} certification. This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
 
@@ -32,10 +33,13 @@ The {{< tooltip "Milan">}} Base Format specifies support for channel counts of e
 
 It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed delay time before it starts streaming. The value range for delays is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with {{< tooltip "Milan">}} to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md).
 
-## Clock Data
+## Media Clock Data
 
-The previous section [Network Timing](../00_network-timing/_index.md) has explained the core principle of network time in {{< tooltip "Milan">}}. The {{< tooltip "Milan">}} specification uses an additional clocking mechanism called Clock Reference Format ({{< tooltip "CRF">}}).
+The previous section [Network Timing](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in {{< tooltip "Milan">}}.
 
-This format allows Endstations to synchronize their media clocks to a common nominator. Without going too much into the details, {{< tooltip "CRF">}} adds an additional layer that is related to the gPTP time stamps but allows to generate the actual media clock signal for the audio unit of an Endstation.
+In summary:
 
-The support for {{< tooltip "CRF">}} is dependent on the device capabilities. Especially small devices do not necessarily need to support the {{< tooltip "CRF">}} format. They extract the relevant Media Clock information from the {{< tooltip "AAF">}} Audio {{< tooltip "Stream">}}.
+- **Network Time** is the shared global time base provided to all devices in the network by {{< tooltip "gPTP">}}.
+- **Media Time** is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
+
+From a transport perspective, a {{< tooltip "Stream">}} can carry either Network Time synchronization data or Media Time clocking data.
