@@ -110,3 +110,63 @@ color: #555;
         filter: invert(85%) brightness(90%) contrast(95%);
     }
 }
+
+/* TOOLTIP STYLING */
+#R-body-inner a.tooltip {
+    border-bottom: 1px dotted #005fa3;
+    color: #005fa3;
+    cursor: help;
+    font-weight: 600;
+    font-style: italic;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;  /* prevent default underline */
+}
+
+/* For tooltip links: prevent break between text and (i) icon */
+#R-body-inner a.tooltip {
+    white-space: nowrap;
+}
+
+/* Tooltip i icon after the text */
+#R-body-inner a.tooltip::after {
+    content: " ⓘ";
+    font-weight: bold;
+    color: #005fa3;
+    margin-left: 0.1em;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+/* NON-TOOLTIP LINKS */
+#R-body-inner a:not(.tooltip):not(.no-triangle)::before {
+    content: "▶ ";
+    color: #0077cc;
+    font-size: 0.8em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Make sure the whole link text + triangle doesn't break */
+#R-body-inner a:not(.tooltip):not(.no-triangle) {
+    white-space: nowrap;
+}
+
+#R-body-inner .btn a::before {
+    content: none !important;  /* remove triangle from links inside buttons */
+}
+
+#R-body-inner a:not(.tooltip) {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#R-body-inner a:not(.tooltip):hover {
+    text-decoration: underline;
+    color: #0055aa;
+}
+
+#R-body-inner footer.footline a::before {
+    content: none !important;
+}
