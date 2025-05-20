@@ -14,21 +14,21 @@ It is important to point out that **up to 75%** of the available bandwidth **can
 
 The following table provides a quick guide on how much bandwidth is reserved for different combinations of channels and sample rates.
 
-<a href="/msrp_milan_cheat_sheet/msrp_summary.drawio.pdf" target="_blank">
+<a href="/msrp_milan_cheat_sheet/msrp_summary.drawio.pdf" target="_blank" class="highlight no-triangle">
 <img src="/msrp_milan_cheat_sheet/msrp_summary.drawio.svg" alt="Calculation steps for Milan"/>
 </a>
 
 ## Detailed calculation
 The calculation is described in detail in the respective {{< tooltip "IEEE">}} specifications and is not explained further here.
 Follow these steps to calculate the bandwidth required for a given stream configuration
-{{% button href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" icon="download" %}}Download MSRP Details Cheat Sheet{{% /button %}}
+{{% button href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" icon="download" class="no-triangle"%}}Download MSRP Details Cheat Sheet{{% /button %}}
 
 
 <div class="inline-images">
-  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank">
+  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank" class="highlight no-triangle">
     <img src="/msrp_milan_cheat_sheet/msrp_details-AVTP.drawio.svg" alt="Calculation steps for Milan"/>
   </a>
-  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank">
+  <a href="/msrp_milan_cheat_sheet/msrp_details.drawio.pdf" target="_blank" class="highlight no-triangle">
     <img src="/msrp_milan_cheat_sheet/msrp_details-CRF.drawio.svg" alt="Calculation steps for CRF"/>
   </a>
 </div>

@@ -35,4 +35,4 @@ A Switch forwards streams from a Talker to a Listener. Usually, a Switch is the 
 A Bridged Endstation incorporates the Talker and or Listener functionality as well as the Switch functionality.
 
 ## OSI layers
-Milan operates on Open Systems Interconnection ({{< tooltip "OSI layer">}}) 2. Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control ({{< tooltip "MAC">}}) addresses.
+Milan operates on Open Systems Interconnection (OSI layer) 2. Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control (MAC) addresses.

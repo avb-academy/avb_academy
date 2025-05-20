@@ -6,20 +6,20 @@ date: 2025-02-18
 Milan utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
 
 Switch ports are described based on the traffic direction for the current observation.  
-- An {{< tooltip "ingress port">}} describes traffic flowing into a switch.  
-- An {{< tooltip "egress port">}} describes traffic flowing out of a switch.  
+- An {{< tooltip "ingress port" "Ingress port">}} describes traffic flowing into a switch.  
+- An {{< tooltip "egress port" "Egress port">}} describes traffic flowing out of a switch.  
 
 ## Strict priority forwarding
 
 Consider the example shown in the figure below.
 
-This figure illustrates an example of three {{< tooltip "ingress port">}} with packets that are all sent to the same {{< tooltip "egress port">}}. The prioritization of packets is as follows:
+This figure illustrates an example of three {{< tooltip "ingress port" "Ingress port">}} with packets that are all sent to the same {{< tooltip "egress port" "Egress port">}}. The prioritization of packets is as follows:
 
 - **Time-critical:** packets have the highest priority.
 - **Less critical:** packets have medium priority.
 - **Legacy:** packets have low priority.
 
-In strict priority forwarding, **time-critical** packets are always forwarded first, preventing lower-priority packets from being transmitted as long as high-priority packets remain in the transmission queue. This results in a blocking effect on lower-priority packets whenever high-priority packets are present at an {{< tooltip "ingress port">}} that needs to forward packets to an {{< tooltip "egress port">}}.
+In strict priority forwarding, **time-critical** packets are always forwarded first, preventing lower-priority packets from being transmitted as long as high-priority packets remain in the transmission queue. This results in a blocking effect on lower-priority packets whenever high-priority packets are present at an {{< tooltip "ingress port" "Ingress port">}} that needs to forward packets to an {{< tooltip "egress port" "Egress port">}}.
 
 {{< figure src="/images/traffic-shaping-strict-prio.drawio.svg" alt="Strict priority packet forwarding" fig-num="1" title="Strict Priority Packet Forwarding" id="fig-strict-prio" >}}
 
