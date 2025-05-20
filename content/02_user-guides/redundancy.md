@@ -1,6 +1,7 @@
 ---
 title: "Redundancy"
 date: 2025-02-11
+weight: 50
 ---
 
 Redundancy is an optional feature in Milan. Therefore, not all Milan devices support redundancy.

@@ -52,7 +52,7 @@ You are looking for information about the Milan protocol, and someone mentioned 
 
 ## Introduction to Time-Sensitive Networking (TSN)
 
-Time-Sensitive Networking ({{< tooltip "TSN">}}) is a set of {{< tooltip "IEEE">}} standards that extend standard Ethernet to support real-time, deterministic communication. It enables guaranteed bandwidth, low latency, and synchronization for critical applications.
+Time-Sensitive Networking (TSN) is a set of {{< tooltip "IEEE">}} standards that extend standard Ethernet to support real-time, deterministic communication. It enables guaranteed bandwidth, low latency, and synchronization for critical applications.
 
 One of the first implementations of {{< tooltip "TSN">}} is {{< tooltip "AVB" >}}, designed for professional audio/video transport. {{< tooltip "AVB">}} provides features such as:
 
