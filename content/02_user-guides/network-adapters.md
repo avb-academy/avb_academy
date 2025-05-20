@@ -1,6 +1,7 @@
 ---
 title: "Network Adapters"
-date: 2025-05-19
+date: 2020-05-19
+weight: 60
 ---
 
 {{% notice warning %}}
