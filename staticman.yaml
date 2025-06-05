@@ -1,6 +1,20 @@
-gitHub:
-  username: avb-academy
-  repository: avb_academy
-  token: ${{ secrets.STATICMAN_GITHUB_TOKEN }}  # Reference the secret from GitHub Secrets
-  branch: main
-  commitMessage: "Add new comment"
+name: "AVB Academy"
+moderation: true
+honeypot: website
+branch: comments
+path: "data/comments/{options.slug}"
+
+allowedFields:
+  - name
+  - message
+
+requiredFields:
+  - name
+  - message
+
+format: "yaml"
+generatedFields:
+  date:
+    type: date
+    options:
+      format: iso8601
