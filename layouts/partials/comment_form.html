@@ -1,4 +1,5 @@
 <h2>Leave a Comment</h2>
+<p><em>Note: Comments are moderated and will appear after approval.</em></p>
 
 <form method="POST" action="https://comment-worker.simongapp.workers.dev">
   <input type="hidden" name="slug" value="{{ .File.Path | urlize }}">
@@ -14,8 +15,6 @@
     <label for="website">Do not fill this out if you're human:</label>
     <input type="text" name="website" id="website">
   </div>
-
-  <p><em>Note: Comments are moderated and will appear after approval.</em></p>
 
   <button type="submit">Submit</button>
 </form>
