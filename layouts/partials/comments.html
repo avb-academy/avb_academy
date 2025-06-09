@@ -5,16 +5,16 @@
 {{ $commentsFolder := index site.Data.comments $slugKey }}
 
 {{ if $commentsFolder }}
-  <h2>Comments</h2>
-  {{ range $filename, $comment := $commentsFolder }}
-    <div class="comment" style="margin-bottom:1.5em; padding:1em; border:1px solid var(--border-color, #ccc); border-radius:6px; background:var(--background-secondary, transparent);">
-      <strong style="display:block; font-size:1.1em; margin-bottom:0.3em; color: var(--text-primary, inherit);">{{ $comment.name }}</strong>
-      <small style="color: var(--text-muted, #666); font-size:0.85em; margin-bottom:0.8em; display:block;">
-        {{ $comment.date | time.Format "Jan 2, 2006 at 15:04" }}
-      </small>
-      <p style="margin:0; font-size:1em; line-height:1.5; color: var(--text-primary, inherit);">{{ $comment.message }}</p>
-    </div>
-  {{ end }}
+  <div class="comments-container">
+    <h2>Comments</h2>
+    {{ range $filename, $comment := $commentsFolder }}
+      <div class="comment">
+        <strong>{{ $comment.name }}</strong>
+        <small>{{ $comment.date | time.Format "Jan 2, 2006 at 15:04" }}</small>
+        <p>{{ $comment.message }}</p>
+      </div>
+    {{ end }}
+  </div>
 {{ else }}
   <p>No comments yet.</p>
 {{ end }}
