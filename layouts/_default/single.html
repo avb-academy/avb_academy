@@ -1,0 +1,13 @@
+<!-- layouts/_default/single.html -->
+
+<div class="post">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+  
+  <!-- Debug message -->
+  <p>Debug: Comment form should appear below this line.</p>
+  
+  <!-- Include the comment form -->
+  {{ partial "comment_form.html" . }}
+  

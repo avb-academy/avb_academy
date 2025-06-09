@@ -1,0 +1,21 @@
+<h2>Leave a Comment</h2>
+
+<form method="POST" action="https://comment-worker.simongapp.workers.dev">
+  <input type="hidden" name="slug" value="{{ .File.Path | urlize }}">
+
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="message">Comment</label>
+  <textarea name="message" id="message" required></textarea>
+
+  <!-- Honeypot field for spam protection -->
+  <div style="display:none">
+    <label for="website">Do not fill this out if you're human:</label>
+    <input type="text" name="website" id="website">
+  </div>
+
+  <p><em>Note: Comments are moderated and will appear after approval.</em></p>
+
+  <button type="submit">Submit</button>
+</form>
