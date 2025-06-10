@@ -1,20 +1,24 @@
-{{ $slug := .File.Path | urlize }}
-{{ $slugKey := replace $slug "-" "_" }}
-{{ $slugKey = replace $slugKey "." "_" }}
+{{/* Extract parts of the path */}}
+{{ $parts := split .File.Path "/" }}
+{{ if ge (len $parts) 2 }}
+  {{ $key1 := replace (index $parts 0) "-" "_" }}
+  {{ $key2 := replace (index $parts 1) "." "_" }}
+  {{ $comments := index (index site.Data.comments $key1) $key2 }}
 
-{{ $commentsFolder := index site.Data.comments $slugKey }}
-
-{{ if $commentsFolder }}
-  <div class="comments-container">
-    <h2>Comments</h2>
-    {{ range $filename, $comment := $commentsFolder }}
-      <div class="comment">
-        <strong>{{ $comment.name }}</strong>
-        <small>{{ $comment.date | time.Format "Jan 2, 2006 at 15:04" }}</small>
-        <p>{{ $comment.message }}</p>
-      </div>
-    {{ end }}
-  </div>
+  {{ if $comments }}
+    <div class="comments-container">
+      <h2>Comments</h2>
+      {{ range $filename, $comment := $comments }}
+        <div class="comment">
+          <strong>{{ $comment.name }}</strong><br>
+          <small>{{ $comment.date }}</small>
+          <p>{{ $comment.message }}</p>
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p>No comments yet.</p>
+  {{ end }}
 {{ else }}
   <p>No comments yet.</p>
 {{ end }}
