@@ -1,24 +1,33 @@
-{{/* Extract parts of the path */}}
-{{ $parts := split .File.Path "/" }}
-{{ if ge (len $parts) 2 }}
-  {{ $key1 := replace (index $parts 0) "-" "_" }}
-  {{ $key2 := replace (index $parts 1) "." "_" }}
-  {{ $comments := index (index site.Data.comments $key1) $key2 }}
+{{/* Normalize the content path to match the data/comments directory */}}
+{{ $path := .File.Path }}
+{{ $path = replace $path "-" "_" }}
+{{ $path = replace $path "." "_" }}
 
-  {{ if $comments }}
-    <div class="comments-container">
-      <h2>Comments</h2>
-      {{ range $filename, $comment := $comments }}
-        <div class="comment">
-          <strong>{{ $comment.name }}</strong><br>
-          <small>{{ $comment.date }}</small>
-          <p>{{ $comment.message }}</p>
-        </div>
-      {{ end }}
-    </div>
-  {{ else }}
-    <p>No comments yet.</p>
+{{ $parts := split $path "/" }}
+{{ $commentsFolder := site.Data.comments }}
+{{ range $parts }}
+  {{ $commentsFolder = index $commentsFolder . }}
+{{ end }}
+
+{{ if $commentsFolder }}
+  {{/* Use Scratch to accumulate comments into a slice */}}
+  {{ $.Scratch.Set "comments" (slice) }}
+  {{ range $key, $comment := $commentsFolder }}
+    {{ $.Scratch.Add "comments" (slice $comment) }}
   {{ end }}
+  {{ $comments := $.Scratch.Get "comments" }}
+  {{ $sorted := sort $comments "date" "desc" }}
+
+  <div class="comments-container">
+    <h2>Comments</h2>
+    {{ range $comment := $sorted }}
+      <div class="comment">
+        <strong>{{ $comment.name }}</strong><br>
+        <small>{{ $comment.date }}</small>
+        <p>{{ $comment.message }}</p>
+      </div>
+    {{ end }}
+  </div>
 {{ else }}
   <p>No comments yet.</p>
 {{ end }}
