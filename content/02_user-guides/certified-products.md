@@ -8,3 +8,7 @@ The Avnu Alliance offers an overview of all certified products, ensuring they me
 
 - **Milan certified devices**: [Certified Milan devices](https://avnu.org/certified-product-registry/?cert=Milan&type=)
 - **AVB certified switches**: [Certified AVB switches](https://avnu.org/certified-product-registry/?cert=Network%20Device&type=)
+
+## Certification process
+
+The Avnu Alliance manages the certification of Milan endstations and AVB Switches. For a detailed description of the certification process, please visit [milanav.com/certification](https://milanav.com/certification/).
