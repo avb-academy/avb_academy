@@ -26,3 +26,8 @@ The {{< tooltip "Secondary">}} port “mirrors” the data {{< tooltip "Primary"
 The relevant traffic of an audio network can be categorized into three different data types: Clock Data, Audio Data and Control Data. All signals in the audio network are digital signals. The general principle is shown in [Fig. 2](#fig-traffic-components-all).
 
 {{< figure src="/images/traffic-components-all.drawio.svg" alt="Three main traffic components in an audio network" fig-num="2" title="Three main traffic components in an audio network" id="fig-traffic-components-all">}}
+
+{{% notice tip %}}
+Prefer a less technical explanation?
+Visit [milanav.com/about](milanav.com/about) for a broader perspective.
+{{% /notice %}}
