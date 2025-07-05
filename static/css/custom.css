@@ -36,10 +36,6 @@ html {
     border-bottom: 2px solid #ddd;
 }
 
-.glossary-entry:target {
-    background: #fdf6c9;
-}
-
 .glossary-entry h2 {
     margin-bottom: 5px;
     color: #0077cc;
