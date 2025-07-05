@@ -20,25 +20,31 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.hash) {
-        let term = document.querySelector(window.location.hash);
-        if (term) {
-            term.scrollIntoView({ behavior: "smooth" });
+function highlightTermByHash() {
+    const hash = window.location.hash;
+    if (!hash) return;
 
-            // Apply highlight effect
-            term.style.background = "#fdf6c9"; // Soft yellow
-            term.style.color = "#000"; // Black text for contrast
+    const term = document.querySelector(hash);
+    if (!term) return;
 
-            setTimeout(() => term.style.transition = "background 1.5s ease-out, color 1.5s ease-out", 100);
-            setTimeout(() => {
-                term.style.background = "transparent";
-                term.style.color = ""; // Revert to default text color
-            }, 1500);
-        }
-    }
-});
+    term.scrollIntoView({ behavior: "smooth" });
 
+    term.style.transition = "none";
+    term.style.background = "#fdf6c9";
+    term.style.color = "#000";
+
+    // Force reflow to restart transition
+    term.offsetHeight;
+
+    setTimeout(() => {
+        term.style.transition = "background 1.5s ease-out, color 1.5s ease-out";
+        term.style.background = "transparent";
+        term.style.color = "";
+    }, 100);
+}
+
+document.addEventListener("DOMContentLoaded", highlightTermByHash);
+window.addEventListener("hashchange", highlightTermByHash);
 
 
 function filterGlossary() {
