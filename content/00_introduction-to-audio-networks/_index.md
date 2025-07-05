@@ -29,5 +29,5 @@ The relevant traffic of an audio network can be categorized into three different
 
 {{% notice tip %}}
 Prefer a less technical explanation?
-Visit [milanav.com/about](milanav.com/about) for a broader perspective.
+Visit [milanav.com/about](https://milanav.com/about) for a broader perspective.
 {{% /notice %}}
