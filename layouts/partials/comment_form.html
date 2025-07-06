@@ -2,7 +2,8 @@
 <p><em>Note: Comments are moderated and will appear after approval.</em></p>
 
 <form method="POST" action="https://comment-worker.simongapp.workers.dev">
-  <input type="hidden" name="slug" value="{{ .RelPermalink | plainify }}">
+  {{/*  <p><strong>Debug Slug:</strong> {{ .File.Path }}</p>  */}}
+  <input type="hidden" name="slug" value="{{ .File.Path }}">
 
   <label for="name">Name</label>
   <input type="text" name="name" id="name" required>
