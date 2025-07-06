@@ -1,12 +1,14 @@
 {{ $slug := .Page.File.Path | replaceRE "^/" "" | replaceRE "/$" "" }}
 
-{{ $safeSlug := "" }}
+{{ $safeSlug := $slug }}
 
-{{ if or (eq $slug "") (eq $slug "_index.md") }}
-  {{ $safeSlug = "root" }}
-{{ else }}
-  {{ $safeSlug = $slug | replaceRE "-" "_" | replaceRE "\\." "_" }}
+{{ if strings.HasSuffix $slug "_index.md" }}
+  {{ $safeSlug = (print (substr $slug 0 (sub (len $slug) 9)) "_index_md") }}
 {{ end }}
+
+{{ $safeSlug = $safeSlug | replaceRE "-" "_" | replaceRE "\\." "_" }}
+
+{{/*  <p><em>Debug slug: {{ $safeSlug }}</em></p>  */}}
 
 {{ $parts := split $safeSlug "/" }}
 
@@ -28,7 +30,8 @@
     {{ range $comment := $sorted }}
       <div class="comment">
         <strong>{{ $comment.name }}</strong><br>
-        <small>{{ $comment.date }}</small>
+        {{ $date := time $comment.date }}
+        <small>{{ $date.Format "2006-01-02 15:04:05" }}</small>
         <p>{{ $comment.message }}</p>
       </div>
     {{ end }}
