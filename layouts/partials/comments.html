@@ -1,16 +1,21 @@
-{{/* Normalize the content path to match the data/comments directory */}}
-{{ $path := .File.Path }}
-{{ $path = replace $path "-" "_" }}
-{{ $path = replace $path "." "_" }}
+{{ $slug := .Page.File.Path | replaceRE "^/" "" | replaceRE "/$" "" }}
 
-{{ $parts := split $path "/" }}
+{{ $safeSlug := "" }}
+
+{{ if or (eq $slug "") (eq $slug "_index.md") }}
+  {{ $safeSlug = "root" }}
+{{ else }}
+  {{ $safeSlug = $slug | replaceRE "-" "_" | replaceRE "\\." "_" }}
+{{ end }}
+
+{{ $parts := split $safeSlug "/" }}
+
 {{ $commentsFolder := site.Data.comments }}
 {{ range $parts }}
   {{ $commentsFolder = index $commentsFolder . }}
 {{ end }}
 
 {{ if $commentsFolder }}
-  {{/* Use Scratch to accumulate comments into a slice */}}
   {{ $.Scratch.Set "comments" (slice) }}
   {{ range $key, $comment := $commentsFolder }}
     {{ $.Scratch.Add "comments" (slice $comment) }}
