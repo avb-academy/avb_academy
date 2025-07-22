@@ -1,13 +1,24 @@
-{{- $figNum := "" }}
-{{- if .Get "fig-num" }}
-    {{- $figNum = printf "Fig. %s: " (.Get "fig-num") }}
-{{- else if .Get "title" }}
-    {{- $figNum = "Fig: " }}
-{{- end }}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $id := printf "R-image-%x" (sha1 $src) }}
+{{ $figNum := .Get "fig-num" }}
+{{ $title := .Get "title" }}
+{{ $caption := .Get "caption" }}
 
 <figure id="{{ .Get "id" }}">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" />
-    {{- if .Get "title" }}
-        <figcaption>{{ $figNum }}{{ .Get "title" }}</figcaption>
-    {{- end }}
+  <!-- Lightbox trigger -->
+  <a href="#{{ $id }}" class="lightbox-link" title="{{ $alt }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" class="figure-image lazy lightbox" loading="lazy" />
+  </a>
+
+  <!-- Lightbox target -->
+  <a href="javascript:history.back();" class="lightbox-back" id="{{ $id }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" class="lazy lightbox-image" loading="lazy" />
+  </a>
+
+  {{ if $figNum }}
+    <figcaption>Fig. {{ $figNum }}: {{ $title }}</figcaption>
+  {{ else if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
 </figure>
