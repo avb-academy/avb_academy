@@ -1,3 +1,3 @@
 {{ range .Page.Sections }}
-  <a href="{{ .RelPermalink }}">{{ .Date.Format "January 2, 2006" }} - {{ .Title }}</a><br>
+  <a class="child-link" href="{{ .RelPermalink }}">{{ .Date.Format "January 2, 2006" }} - {{ .Title }}</a><br>
 {{ end }}

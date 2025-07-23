@@ -279,3 +279,10 @@ ul li a {
   overflow-wrap: anywhere;
   max-width: 100%;
 }
+
+a.child-link {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
