@@ -267,3 +267,9 @@ ul.columnize li .breadcrumbs {
   color: #666;
 }
 
+ul li a {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
