@@ -179,10 +179,16 @@ footer.footline a::before {
     flex-direction: column;
   }
 
+  .text-image-container .text,
   .text-image-container .image {
-    display: none;
+    padding: 0;
+  }
+
+  .text-image-container .image {
+    margin-top: 1em; /* Optional spacing between text and image */
   }
 }
+
 
 /* Dark Mode SVG Handling */
 @media (prefers-color-scheme: dark) {
