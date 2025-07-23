@@ -1,0 +1,58 @@
+/* Light mode */
+.comments-container {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.comment {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 12px 16px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.comment:hover {
+  background-color: #f0f8ff;
+}
+
+.comment strong {
+  color: #0077cc;
+}
+
+.comment small {
+  color: #666;
+  font-style: italic;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .comments-container {
+    background-color: #222;
+    border: 1px solid #444;
+  }
+
+  .comment {
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+    color: #ddd;
+  }
+
+  .comment:hover {
+    background-color: #3a3f4b;
+  }
+
+  .comment strong {
+    color: #66aaff;
+  }
+
+  .comment small {
+    color: #aaa;
+  }
+}
