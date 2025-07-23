@@ -190,12 +190,19 @@ footer.footline a::before {
 }
 
 
-/* Dark Mode SVG Handling */
 @media (prefers-color-scheme: dark) {
+  /* Only apply filter to inline figure images, not to lightbox */
   img[src$=".svg"] {
     filter: invert(85%) brightness(90%) contrast(95%);
   }
+
+  /* White background on clicked image so original dark lines show properly */
+  .lightbox-back img,
+  .lightbox-back svg {
+    background-color: white !important;
+  }
 }
+
 
 /* Tag colors default (optional, adjust if you want) */
 .R-taxonomy.taxonomy-tags.cstyle {
