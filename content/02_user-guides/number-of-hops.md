@@ -5,7 +5,7 @@ weight: 40
 ---
 
 {{% notice info %}}
-The maxiumum number of hops is dependant on the network speed.
+The maximum number of hops is dependant on the network speed.
 - A 100Mbit network allows for max. 7 hops before it reaches the 2ms presentation time offset.
 - A 1Gbit network allows for max. 14 hops before it reaches the 2ms presentation time offset.
 {{% /notice %}}
