@@ -23,7 +23,7 @@ Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme 
 A device that converts audio from or into the Milan network. Endstations can contain either Talker or Listener functionality or contain both. Endstations are Milan certified.
 
 ### Talker
-A Talker converts an audio signal into the network. Could be a digital microphone or a stagebox.
+A Talker converts an audio signal into the network. Could be a digital microphone or a stage box.
 
 ### Listener
 A Listener extracts an audio signal from the network. Could be an amplifier.
