@@ -13,7 +13,7 @@ weight: 1
 - In Milan, a Stream is used to send data from a source to a destination. Stream formats are defined by the Milan specification. All Streams are multicast, meaning they do not consume additional bandwidth if connected to multiple destinations.
 {{% /notice %}}
 
-Consider the following scenario: A microphone is connected to a stage box. The stage box transmits digital audio to the mixing console. The transmission often uses an audio network, as illustrated in the following Figure.
+Consider the following scenario: A microphone is connected to a stage box. The stage box transmits digital audio to the mixing console. The transmission often uses an audio network, as illustrated [Fig. 1](#fig-audio-setup).
 
 {{< figure src="/images/audio-setup.drawio.svg" alt="Typical audio setup" fig-num="1" title="Exemplary stage setup that includes all relevant components for an audio network" id="fig-audio-setup">}}
 
