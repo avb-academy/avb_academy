@@ -10,7 +10,7 @@ weight: 2
 - Milan operates on OSI layer 2. Therefore, all addressing is done with MAC addresses.
 {{% /notice %}}
 
-Milan is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specfication that is tailored to the needs of the ProAV industry.
+Milan is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specification that is tailored to the needs of the ProAV industry.
 
 To enhance readability, this chapter minimizes the use of technical terms and references. The content is organized by the logical functions of an audio network transmission. The unique features of Milan are explained with minimal technical detail to ensure clarity.
 
@@ -23,7 +23,7 @@ Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme 
 A device that converts audio from or into the Milan network. Endstations can contain either Talker or Listener functionality or contain both. Endstations are Milan certified.
 
 ### Talker
-A Talker converts an audio signal into the network. Could be a digital microphone or a stagebox.
+A Talker converts an audio signal into the network. Could be a digital microphone or a stage box.
 
 ### Listener
 A Listener extracts an audio signal from the network. Could be an amplifier.
