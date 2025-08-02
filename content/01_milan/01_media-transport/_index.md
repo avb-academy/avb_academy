@@ -35,7 +35,7 @@ It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed {{<
 
 ## Media Clock Data
 
-The previous section [Network Timing](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in Milan.
+The previous section [Network Synchronization](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in {{< tooltip "Milan">}}.
 
 In summary:
 
