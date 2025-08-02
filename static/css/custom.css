@@ -61,11 +61,14 @@ a.tooltip::after {
 
 #R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn),
 .content a:not(.tooltip):not(.no-triangle):not(.btn) {
-  white-space: nowrap;
+  white-space: normal;          /* allow wrapping */
+  word-break: break-word;       /* break long tokens */
+  overflow-wrap: anywhere;      /* modern behavior */
   color: #0077cc;
   font-weight: bold;
   text-decoration: none;
 }
+
 
 #R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn):hover,
 .content a:not(.tooltip):not(.no-triangle):not(.btn):hover {
