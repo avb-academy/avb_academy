@@ -1,5 +1,5 @@
 ---
-title: "Network Timing"
+title: "Network Synchronization"
 date: 2025-02-11
 weight: 1
 ---
@@ -32,7 +32,7 @@ The election of the the {{< tooltip "gPTP" >}} GrandMaster is based on parameter
   
 After the election process, the {{< tooltip "GM">}} provides its time to all network participants.
 
-## Network Clock Device Synchronisation
+## Network Clock Device Synchronization
 
 In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter.
 
