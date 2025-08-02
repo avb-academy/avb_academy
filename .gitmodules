@@ -3,7 +3,4 @@
 	url = https://github.com/McShelby/hugo-theme-relearn.git
 [submodule "msrp_milan_cheat_sheet"]
 	path = static/msrp_milan_cheat_sheet
-	url = git@github.com:avb-academy/msrp_milan_cheat_sheet.git
-[submodule "static/msrp_milan_cheat_sheet"]
-	path = static/msrp_milan_cheat_sheet
-	url = git@github.com:avb-academy/msrp_milan_cheat_sheet.git
+	url = https://github.com/avb-academy/msrp_milan_cheat_sheet.git

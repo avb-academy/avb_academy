@@ -6,7 +6,7 @@ weight: 4
 
 {{% notice info %}}
 - The bounded latency of Milan is ensured by using traffic shaping mechanisms.  
-- The Stream Reservation Protocol (SRP) makes sure that the required bandwidth is available between a Talker and a Listener.  
+- The Stream Reservation Protocol (SRP) reserves only the required bandwidth for each stream, exclusively between the Talker and Listener. The remaining bandwidth stays available for other traffic.
 - The Forward Queuing for Time-Sensitive Streams (FQTSS) ensures that packets are transmitted so that they reach their destination in time.  
 - **Up to** 75% of the available bandwidth can be used for Milan traffic. If no stream requires the bandwidth, it is available for all other traffic.  
 {{% /notice %}}
