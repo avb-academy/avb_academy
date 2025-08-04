@@ -47,8 +47,8 @@ a.tooltip::after {
 }
 
 /* Triangles for content links only */
-#R-body-inner a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn)::before,
-.content a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn)::before {
+#R-body-inner a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn):not(:empty)::before,
+.content a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn):not(:empty)::before {
   content: "▶ ";
   color: #0077cc;
   font-size: 0.8em;
@@ -56,6 +56,7 @@ a.tooltip::after {
   vertical-align: middle;
   white-space: nowrap;
 }
+
 
 #R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn),
 .content a:not(.tooltip):not(.no-triangle):not(.btn) {
