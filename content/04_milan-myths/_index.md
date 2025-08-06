@@ -11,8 +11,9 @@ This page addresses the most common misconceptions with clear, technically accur
 - [Myth: AVB is obsolete](#myth-avb-is-obsolete)
 - [Myth: Milan is proprietary](#myth-milan-is-proprietary)
 - [Myth: Milan is old and outdated](#myth-milan-is-old-and-outdated)
+- [Myth: Milan always has a latency of 2ms](#myth-milan-always-has-a-latency-of-2ms)
 - [Myth: There are no AVB-capable switches available](#myth-there-are-no-avb-capable-switches-available)
-- [Myth: Milan blocks 75% of the available network bandwidth](#myth-milan-blocks-75-of-the-available-network-bandwidth)
+- [Myth: Milan always blocks 75% of the available network bandwidth](#myth-milan-blocks-75-of-the-available-network-bandwidth)
 - [Myth: Milan control is still under development](#myth-milan-control-is-still-under-development)
 
 {{% notice info %}}  
@@ -60,6 +61,21 @@ Milan is not proprietary. It is a clearly defined, open specification built on t
 
 The Milan protocol is developed collaboratively by leading ProAV manufacturers within the Avnu Alliance, ensuring it meets the real-world needs of professional users. Any manufacturer can implement Milan without licensing fees, and the full specification is freely available from the [Avnu Alliance website](https://avnu.org/resource/milan-specification/).
 {{% /notice %}}
+
+---
+
+<a id="myth-milan-always-has-a-latency-of-2ms"></a>
+
+{{% notice style="warning" title="Myth: Milan always has a latency of 2ms" icon="fa-solid fa-circle-question"%}}
+Because AVB networks originally introduced a default latency of 2ms, some believe this is the fixed or only possible latency for Milan systems.
+{{% /notice %}}
+
+{{% notice style="tip" title="Reality: Milan guarantees a bounded latency, not a fixed one" icon="fa-solid fa-circle-check"%}}
+Milan networks are fully time-aware. All devices, including switches, share a synchronized understanding of time. This enables them to calculate and guarantee precise end-to-end transmission delays.
+
+As a result, Milan can guarantee a minimum playout delay tailored to the specific path and stream characteristics. Typical configurations range from 0.25 ms to 2 ms.
+{{% /notice %}}
+
 
 ---
 
