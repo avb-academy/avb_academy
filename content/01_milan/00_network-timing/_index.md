@@ -1,5 +1,5 @@
 ---
-title: "Network Timing"
+title: "Network Synchronization"
 date: 2025-02-11
 weight: 1
 ---
@@ -32,7 +32,7 @@ The election of the the {{< tooltip "gPTP" >}} GrandMaster is based on parameter
   
 After the election process, the {{< tooltip "GM">}} provides its time to all network participants.
 
-## Network Clock Device Synchronisation
+## Network Clock Device Synchronization
 
 In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter.
 
@@ -51,6 +51,6 @@ All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster belong t
 
 To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called Media Clocking.
 
-Media Clocking can be achieved in two ways: by locking to the timing information in an {{< tooltip "AAF" >}} {{< tooltip "Stream" >}}, or by using a Clock Reference Format (CRF" >}}) stream. Both methods allow devices to align their local audio clocks with the rest of the network.
+Media Clocking can be achieved in two ways: by locking to the timing information in an Audio {{< tooltip "Stream" >}}, or by using a Clock Reference Format (CRF) Stream. Both methods allow devices to align their local audio clocks with the rest of the network. More details on the Media formats can be found in [Media Transport](../01_media-transport/_index.md).
 
 Support for {{< tooltip "CRF" >}} is optional and depends on the device capabilities. Smaller devices often rely on AAF streams alone for Media Clocking.

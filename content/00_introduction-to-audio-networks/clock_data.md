@@ -8,4 +8,4 @@ In a digital audio network, precise clocking is the basis for a functioning netw
 
 This master clock data keeps the system in sync, allowing everything to work smoothly. Transmitting clock data is the most important task to keep the audio network running correctly. Incorrect or missing clock data will lead to audio drop outs and system failures.
 
-{{< figure src="/images/traffic-components-clock.drawio.svg" alt="Clocking">}}
+{{< figure src="/images/traffic-components-clock.drawio.svg" alt="Clocking" fig-num="1" title="Clock Data" id="fig-clock-data">}}
