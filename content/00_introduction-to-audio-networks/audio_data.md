@@ -8,4 +8,4 @@ The audio data in a network is the digital representation of the analog sound. T
 
 In concert situations, audio data must be played out in the very close future after it is captured, meeting strict real-time demands. Any loss of audio data can cause distortion, making the sound unpleasant for the audience.
 
-{{< figure src="/images/traffic-components-audio.drawio.svg" alt="Clocking">}}
+{{< figure src="/images/traffic-components-audio.drawio.svg" alt="Audio" fig-num="1" title="Audio Data" id="fig-audio-data">}}

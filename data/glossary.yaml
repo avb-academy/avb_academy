@@ -161,7 +161,7 @@ Talker:
   reference: "{{< global_reference ref=\"IEEE8021BA\" clause=\"3\" >}}"
 
 TSN: 
-  short: "Time Sensitive Networks"
+  short: "Time Sensitive Networking"
   explanation: "Has evolved from the IEEE AVB working group. TSN the basis for {{< tooltip \"AVB\">}}."
   reference: "[IEEE TSN TG website](https://1.ieee802.org/tsn/)"
 

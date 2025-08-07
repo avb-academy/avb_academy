@@ -24,7 +24,7 @@ In order to keep the survey results clear and lean, the results for each questio
 ---
 
 ## Table of contents
-- [Q00: Particpants by preferred language](q000.md)
+- [Q00: Participants by preferred language](q000.md)
 - [Q01: Roles in the Event Industry](q001.md)
 - [Q02: What types of events do you work on?](q002.md)
 - [Q03: What is your experience with audio networking](q003.md)
