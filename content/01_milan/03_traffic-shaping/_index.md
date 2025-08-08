@@ -5,13 +5,13 @@ weight: 4
 ---
 
 {{% notice info %}}
-- The bounded latency of Milan is ensured by using traffic shaping mechanisms.  
+- The bounded latency of Milan AVB is ensured by using traffic shaping mechanisms.  
 - The Stream Reservation Protocol (SRP) reserves only the required bandwidth for each stream, exclusively between the Talker and Listener. The remaining bandwidth stays available for other traffic.
 - The Forward Queuing for Time-Sensitive Streams (FQTSS) ensures that packets are transmitted so that they reach their destination in time.  
 - **Up to** 75% of the available bandwidth can be used for Milan traffic. If no stream requires the bandwidth, it is available for all other traffic.  
 {{% /notice %}}
 
-Traffic shaping is an essential part of Milan and the biggest difference compared to other networked audio protocols.
+Traffic shaping is an essential part of Milan AVB and the biggest difference compared to other networked audio protocols.
 
 Two components are crucial for traffic shaping:
 

@@ -1,5 +1,5 @@
 ---
-title: " AVB Academy"
+title: "AVB Academy"
 ---
 
 # Introduction
@@ -23,7 +23,7 @@ One of the first implementations of {{< tooltip "TSN">}} is {{< tooltip "AVB" >}
 
 ## Milan: The ProAV Flavor of AVB
 
-{{< tooltip "Milan">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a **deterministic** and **fully standardized** network transport layer for professional audio and video devices.
+{{< tooltip "Milan">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a deterministic and fully standardized network transport layer for professional audio and video devices.
 
 {{% notice info %}}
 This knowledge base dives deep into the technical details of {{< tooltip "Milan">}}, helping engineers and integrators get a solid understanding of how it works and what it offers. For a broader overview and high-level summary, you might want to visit [milanav.com](https://milanav.com).

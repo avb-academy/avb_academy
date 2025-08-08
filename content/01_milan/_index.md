@@ -1,5 +1,5 @@
 ---
-title: "Milan"
+title: "Milan AVB"
 date: 2025-02-11
 weight: 2
 ---
@@ -10,7 +10,7 @@ weight: 2
 - Milan operates on OSI layer 2. Therefore, all addressing is done with MAC addresses.
 {{% /notice %}}
 
-Milan is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specification that is tailored to the needs of the ProAV industry.
+Milan AVB is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specification that is tailored to the needs of the ProAV industry.
 
 To enhance readability, this chapter minimizes the use of technical terms and references. The content is organized by the logical functions of an audio network transmission. The unique features of Milan are explained with minimal technical detail to ensure clarity.
 

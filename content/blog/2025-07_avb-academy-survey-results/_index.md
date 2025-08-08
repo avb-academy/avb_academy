@@ -7,7 +7,7 @@ tags: ["survey-2025"]
 
 First of all, a heartfelt thank you to all participants. Your feedback not only brings real value to this project but also clearly demonstrates the need for a public, unbranded knowledge base focused on AVB. The level of interest, willingness to contribute, and preferred learning styles all point toward a strong, engaged community ready to learn, share, and grow together.
 
-The AVB Academy is an open educational project dedicated to making the technical details of AVB/Milan accessible to a broad audience that does not want to read the full IEEE specifications for an initial understanding.
+The AVB Academy is an open educational project dedicated to making the technical details of Milan AVB accessible to a broad audience that does not want to read the full IEEE specifications for an initial understanding.
 
 To validate assumptions about our potential user base, we launched this survey alongside the public beta release in February 2025.
 

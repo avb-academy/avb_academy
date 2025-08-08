@@ -5,7 +5,7 @@ weight: 1
 ---
 
 {{% notice info %}}
-- A Milan network has one clock leader. The {{< tooltip "BTCA">}} is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
+- A Milan AVB network has one clock leader. The {{< tooltip "BTCA">}} is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
 - The {{< tooltip "GM">}} is elected based on parameters that describe the clock quality of the device. The best quality wins.
 - Network Time is the shared global time base provided to all devices in the network by {{< tooltip "gPTP">}}.
 - Media Time is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
@@ -13,7 +13,7 @@ weight: 1
 
 Having a well-synchronized network is crucial for the performance of the network. An unsynchronized network could lead to sampling signals at different points in time. In a less severe scenario, this can result in mixed signals that exhibit a comb filter characteristic, distorting the audio. In a worst-case scenario, the lack of synchronization could cause audio dropouts, glitches, and clicks, significantly degrading the listening experience. Therefore, maintaining precise synchronization is essential to ensure seamless and high-quality audio transmission across the network.
 
-Milan employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time.
+Milan AVB employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time.
 
 Milan timing is divided into two parts: the {{< tooltip "Network Time">}}, provided to all participants of the network via {{< tooltip "gPTP" >}}, and the timing information that controls the audio sampling clock, referred to as {{< tooltip "Media Time">}}. To avoid confusion between the two domains, these terms clearly distinguish global synchronization from audio-specific clock control.
 

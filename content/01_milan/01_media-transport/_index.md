@@ -14,7 +14,7 @@ weight: 2
 
 ## Audio Data
 
-In Milan, audio data is transmitted via {{< tooltip "Streams" "Stream">}} using the Audio Video Transmission Protocol (AVTP), which defines the structure of the data frames sent across the network.
+In Milan AVB, audio data is transmitted via {{< tooltip "Streams" "Stream">}} using the Audio Video Transmission Protocol (AVTP), which defines the structure of the data frames sent across the network.
 
 The specification adopts the AVTP Audio Format (AAF) for audio transport. This is not to be confused with the Advanced Authoring Format. It mandates that each {{< tooltip "PCM">}} sample be transmitted as a 32-bit value, with shorter samples zero-padded as needed.
 
