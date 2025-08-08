@@ -5,7 +5,7 @@ weight: 4
 ---
 
 {{% notice info %}}
-- Milan requires time-aware switches. Use Switches that are Avnu certified. Other TSN Switches will likely not work out of the box.
+- Milan AVB requires time-aware switches. Use Switches that are Avnu certified. Other TSN Switches will likely not work out of the box.
 - AVB Switches do not require QoS configuration like other Audio over IP protocols do.
 - Make sure to set up the network in star topology
 - Obey the rule of thumb for the maximum number of hops: 14hops for 1Gbps and 7 hops for 100Mbps.

@@ -26,7 +26,7 @@ Examples of unacceptable behavior include:
 
 ## Independence from Corporate Influence
 
-AVB Academy is a **community-driven initiative** that must remain unbranded and free from corporate influence. Contributions from individuals affiliated with companies involved in Milan/AVB are welcome, provided they participate as individuals and do not use AVB Academy for corporate interests or branding.
+AVB Academy is a **community-driven initiative** that must remain unbranded and free from corporate influence. Contributions from individuals affiliated with companies involved in Milan AVB are welcome, provided they participate as individuals and do not use AVB Academy for corporate interests or branding.
 
 ## Enforcement Responsibilities
 

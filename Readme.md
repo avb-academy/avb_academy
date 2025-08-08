@@ -1,6 +1,6 @@
 # AVB Academy
 
-AVB Academy is a knowledge base dedicated to AVB Milan, focusing on providing detailed and reliable resources about the Milan protocol and its applications in Audio-Visual Bridging (AVB) networks.
+AVB Academy is a knowledge base dedicated to Milan AVB, focusing on providing detailed and reliable resources about the Milan protocol and its applications in Audio Video Bridging (AVB) networks.
 
 Please check out the website under https://avb-academy.com for the full experience.
 
@@ -38,7 +38,7 @@ To set up the AVB Academy locally, follow these steps:
 
 ## Usage
 
-AVB Academy offers various features to help users learn about AVB Milan:
+AVB Academy offers various features to help users learn about Milan AVB:
 
 - **Glossary**: A searchable glossary that includes terms and detailed descriptions.
 - **Tooltips**: Glossary terms are highlighted and provide tooltips for quick explanations.

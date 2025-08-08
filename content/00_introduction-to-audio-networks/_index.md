@@ -10,7 +10,7 @@ weight: 1
     - [Clock Data](clock_data): Ensures correct operation of the entire audio systems
     - [Audio Data](audio_data): Digital representation of the analog signal. With a tight real-time requirement.
     - [Control Data](control_data): Set up and monitor the system. Less real-time constraint.
-- In Milan, a Stream is used to send data from a source to a destination. Stream formats are defined by the Milan specification. All Streams are multicast, meaning they do not consume additional bandwidth if connected to multiple destinations.
+- In Milan AVB, a Stream is used to send data from a source to a destination. Stream formats are defined by the Milan specification. All Streams are multicast, meaning they do not consume additional bandwidth if connected to multiple destinations.
 {{% /notice %}}
 
 Consider the following scenario: A microphone is connected to a stage box. The stage box transmits digital audio to the mixing console. The transmission often uses an audio network, as illustrated [Fig. 1](#fig-audio-setup).

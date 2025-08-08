@@ -5,12 +5,12 @@ weight: 60
 ---
 
 {{% notice warning %}}
-    This section presents adapters that should work with AVB Milan networks.
+    This section presents adapters that should work with Milan AVB networks.
 
     **Please make sure before you buy that the adapter is working with your system.** 
 {{% /notice %}}
 
-Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware.
+Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware.
 
 ## Apple systems 
 
