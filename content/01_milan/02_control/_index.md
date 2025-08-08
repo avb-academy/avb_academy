@@ -5,11 +5,11 @@ weight: 3
 ---
 
 {{% notice info %}}
-- Control of Milan devices is specified in the AVB/TSN Discovery, Enumeration, Connection management, and Control protocol ({{< tooltip "ATDECC">}}).
+- Control of Milan devices is specified in the AVB/TSN Discovery, Enumeration, Connection management, and Control protocol (ATDECC).
 - Available controllers: [Milan Manager](https://milanmanager.com), [Nebra](https://meyersound.com/product/nebra/), [Hive](https://github.com/christophe-calmejane/Hive/releases)
 {{% /notice %}}
 
-Milan comes with a specification how to configure and montior the devices. This is specified in the *AVB/TSN Discovery, Enumeration, Connection management, and Control* protocol ({{< tooltip "ATDECC">}}).
+Milan AVB comes with a specification how to configure and monitor the devices. This is specified in the *AVB/TSN Discovery, Enumeration, Connection management, and Control* protocol (ATDECC).
 
 The three main tasks are:
 

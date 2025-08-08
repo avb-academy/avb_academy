@@ -3,39 +3,47 @@ title: "Forward Queuing for Time-Sensitive Streams (FQTSS)"
 date: 2025-02-18
 ---
 
-Milan utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
+Milan AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
 
 Switch ports are described based on the traffic direction for the current observation.  
-- An {{< tooltip "ingress port">}} describes traffic flowing into a switch.  
-- An {{< tooltip "egress port">}} describes traffic flowing out of a switch.  
+- An {{< tooltip "ingress port" "Ingress port">}} describes traffic flowing into a switch.  
+- An {{< tooltip "egress port" "Egress port">}} describes traffic flowing out of a switch. 
 
-## Strict priority forwarding
+{{% notice info %}}
 
-Consider the example shown in the figure below.
+The following examples refer to the following setup: All three streams that enter at three different ports of a switch are forwarded to the remaining port.
+{{% /notice %}}
 
-This figure illustrates an example of three {{< tooltip "ingress port">}} with packets that are all sent to the same {{< tooltip "egress port">}}. The prioritization of packets is as follows:
+{{< figure src="/images/traffic-shaping-routing.drawio.svg" alt="Example Routing of 3 Streams" fig-num="1" title="Example Routing of 3 Streams" id="fig-fqtss-routing" >}}
 
-- **Time-critical:** packets have the highest priority.
-- **Less critical:** packets have medium priority.
-- **Legacy:** packets have low priority.
+## Strict Priority Forwarding
 
-In strict priority forwarding, **time-critical** packets are always forwarded first, preventing lower-priority packets from being transmitted as long as high-priority packets remain in the transmission queue. This results in a blocking effect on lower-priority packets whenever high-priority packets are present at an {{< tooltip "ingress port">}} that needs to forward packets to an {{< tooltip "egress port">}}.
+The following figure shows all three streams from their respective {{< tooltip "ingress port" "Ingress port">}} forwarded to the {{< tooltip "egress port" "Egress port">}} considering Strict Priority Scheduling only. The packets are forwarded according to their priority immediately. 
 
-{{< figure src="/images/traffic-shaping-strict-prio.drawio.svg" alt="Strict priority packet forwarding" fig-num="1" title="Strict Priority Packet Forwarding" id="fig-strict-prio" >}}
+- AV packets: packets have a high priority.
+- Best-Effort: packets have low priority.
+
+Considering strict priority forwarding only leads to time-critical packets being forwarded always first when the forwarding algorithm would have the choice between a time-critical and a Best-Effort packet.
+
+This results in a blocking delay on lower-priority packets whenever high-priority packets are prioritized.
+
+Due to the fact, that without traffic shaping, packets that ingress the switch almost simultaneously will be forwarded immediately, the combined resulting stream will have a bursty temporal structure.
+
+{{< figure src="/images/traffic-shaping-strict-prio.drawio.svg" alt="Strict priority packet forwarding" fig-num="2" title="Strict Priority Packet Forwarding" id="fig-strict-prio" >}}
 
 
-## Credit-based forwarding
+## Credit-based Forwarding
 
-The blocking effect of strict prioirity forwarding as shown in  [Fig. 1](#fig-strict-prio) can be mitigated using a credit-based shaper. To keep this example straightforward, we will focus only on **time-critical** and **less critical** packets, leaving out **legacy** packet behavior for simplicity.
+Using the Credit-based Shaper additionally to Strict Priority Scheduling as shown in [Fig. 1](#fig-strict-prio), can on one hand shape the resulting traffic stream into a uniformly distributed stream and on the other hand increase fairness towards lower priority traffic.
 
-The core idea behind the credit-based shaper is simple:  
-Each priority level has a **credit counter**.  
-- This counter **builds up** when packets are waiting to be sent.  
-- It **decreases** when packets are being transmitted.  
+The core idea behind the Credit-based Shaper is simple:  
+
+Each priority level has a credit counter.  
+- It decreases when packets are being transmitted.  
+- This counter builds up when packets are waiting to be sent.  
 
 As soon as there is an opportunity to send data and the credit for a particular priority level is above zero, packets of that priority can be transmitted.
 
-This approach spreads packet transmissions more evenly over time, reducing burstiness and smoothing traffic flow. **In this example**, we assume that when a packet is being transmitted, the credit decreases **twice as fast** as it builds up when waiting for a transmission opportunity. In practice, the rate at which credit decreases (*sendSlope*) and increases (*idleSlope*) is calculated based on the amount of bandwidth that is reserved.
+This approach spreads packet transmissions more evenly over time, reducing burstiness and smoothing traffic flow. Simultaneously lower priority traffic has the opportunity to be forwarded in the resulting gaps, when higher priority packet transmission is temporally not allowed due to a credit value lower than 0. In practice, the rate at which credit decreases (*sendSlope*) and increases (*idleSlope*) is calculated based on the amount of bandwidth that is reserved.
 
-{{< figure src="/images/traffic-shaping-qav.drawio.svg" alt="Credit-based packet forwarding" fig-num="2" title="Credit-Based Packet Forwarding" id="fig-credit-based">}}
-
+{{< figure src="/images/traffic-shaping-qav.drawio.svg" alt="Credit-based packet forwarding" fig-num="3" title="Credit-Based Packet Forwarding" id="fig-credit-based">}}

@@ -1,112 +1,299 @@
-.tooltip {
-    border-bottom: 1px dotted #0077cc;  /* Dotted underline */
-    color: #0077cc;  /* Blue color */
-    cursor: help;  /* Question mark cursor */
-    font-weight: 600;  /* Slightly bold */
-    transition: color 0.2s ease-in-out;
-}
-
-.tooltip a {
-    text-decoration: none;
-    color: #0077cc;
-    font-weight: bold;
-}
-
-.tooltip a:hover {
-    text-decoration: underline;
-    color: #0055aa;
-}
-
+/* General Styling */
 html {
-    scroll-behavior: smooth;
-}
-
-#glossarySearch {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.glossary-entry {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-}
-
-.glossary-entry:target {
-    background: #fdf6c9;
-}
-
-.glossary-entry h2 {
-    margin-bottom: 5px;
-    color: #0077cc;
-}
-
-.glossary-entry p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.inline-images {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.inline-images a {
-    display: inline-block; /* Ensures the anchor tag doesn't change the layout */
-    width: 48%; /* Controls the width of each image link */
-}
-
-.inline-images img {
-    width: 100%;  /* Makes the image scale to fill its parent container */
-    height: auto;  /* Retains the aspect ratio */
-    display: block; /* Ensures images align properly */
+  scroll-behavior: smooth;
 }
 
 figure {
-    text-align: center;
-    margin: 20px 0;
-}
-  
-figcaption {
-font-style: italic;
-font-size: 0.9em;
-color: #555;
+  text-align: center;
+  margin: 20px 0;
 }
 
+figcaption {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Tooltip Styling */
+.tooltip,
+a.tooltip {
+  border-bottom: 1px dotted #0077cc;
+  color: #0077cc;
+  cursor: help;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.tooltip::after {
+  content: " ⓘ";
+  font-weight: bold;
+  color: #005fa3;
+  margin-left: 0.1em;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.tooltip a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.tooltip a:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+/* Triangles for content links only */
+#R-body-inner a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn):not(:empty)::before,
+.content a:not(.tooltip):not(.no-triangle):not(.lightbox-link):not(.lightbox-back):not(.btn):not(:empty)::before {
+  content: "▶ ";
+  color: #0077cc;
+  font-size: 0.8em;
+  margin-right: 0.2em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+#R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn),
+.content a:not(.tooltip):not(.no-triangle):not(.btn) {
+  white-space: normal;          /* allow wrapping */
+  word-break: break-word;       /* break long tokens */
+  overflow-wrap: anywhere;      /* modern behavior */
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+#R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn):hover,
+.content a:not(.tooltip):not(.no-triangle):not(.btn):hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+/* Remove triangle from special links */
+a.lightbox-link::before,
+a.lightbox-back::before,
+.btn a::before,
+footer.footline a::before {
+  content: none;
+  display: none;
+}
+
+/* Glossary Search */
+#glossarySearch {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.glossary-entry {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.glossary-entry h2 {
+  margin-bottom: 5px;
+  color: #0077cc;
+}
+
+.glossary-entry p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Inline Images */
+.inline-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inline-images a {
+  display: inline-block;
+  width: 48%;
+}
+
+.inline-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text and Image Layout */
 .text-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Optional: Adds space between blocks */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-  
-.text-image-container .text {
-    flex: 1;
-    padding-right: 20px;
-}
-  
+
+.text-image-container .text,
 .text-image-container .image {
-    flex: 1;
-    padding-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-  
+
+.text-image-container .text {
+  padding-right: 20px;
+}
+
+.text-image-container .image {
+  padding-left: 20px;
+}
+
+.text-image-container .image figure,
+.text-image-container .image img {
+  margin: 0;
+  display: block;
+}
+
+/* Tighter spacing for lists in text columns */
+.text-image-container .text ul,
+.text-image-container .text ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+  line-height: 1.4;
+}
+
+.text-image-container .text li {
+  margin-bottom: 0.4em;
+}
+
+.text-image-container .text li > p {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+  line-height: 1.4;
+}
+
+/* Mobile Styles */
 @media (max-width: 767px) {
-    .text-image-container {
-        flex-direction: column; /* Stack text and image vertically on small screens */
-    }
-    
-    .text-image-container .image {
-        display: none; /* Hide image on smaller screens */
-    }
+  .text-image-container {
+    flex-direction: column;
+  }
+
+  .text-image-container .text,
+  .text-image-container .image {
+    padding: 0;
+  }
+
+  .text-image-container .image {
+    margin-top: 1em; /* Optional spacing between text and image */
+  }
 }
+
 
 @media (prefers-color-scheme: dark) {
-    img[src$=".svg"] {
-        filter: invert(85%) brightness(90%) contrast(95%);
-    }
+  /* Only apply filter to inline figure images, not to lightbox */
+  img[src$=".svg"] {
+    filter: invert(85%) brightness(90%) contrast(95%);
+  }
+
+  /* White background on clicked image so original dark lines show properly */
+  .lightbox-back img,
+  .lightbox-back svg {
+    background-color: white !important;
+  }
 }
+
+
+/* Tag colors default (optional, adjust if you want) */
+.R-taxonomy.taxonomy-tags.cstyle {
+  --INTERNAL-TAG-BG-color: #eee;
+  --INTERNAL-TAG-TEXT-color: #333;
+}
+
+/* Dark mode tag colors */
+@media (prefers-color-scheme: dark) {
+  .R-taxonomy.taxonomy-tags.cstyle {
+    --INTERNAL-TAG-BG-color: #333;
+    --INTERNAL-TAG-TEXT-color: #eee;
+  }
+
+  .R-taxonomy.taxonomy-tags.cstyle a.term-link {
+    color: var(--INTERNAL-TAG-TEXT-color);
+  }
+}
+
+.R-taxonomy.taxonomy-tags.cstyle a.term-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+ul.columnize {
+  column-count: 3;
+  column-gap: 1.5rem;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+ul.columnize li {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+/* This forces the link text to wrap inside the column */
+ul.columnize li a {
+  display: inline-block;       /* or block */
+  white-space: normal !important; /* override any nowrap */
+  word-break: break-word;      /* break long words */
+  overflow-wrap: anywhere;     /* modern CSS for wrapping anywhere */
+  color: #0077cc;
+  text-decoration: none;
+  max-width: 100%;             /* constrain to column width */
+}
+
+ul.columnize li a:hover,
+ul.columnize li a:focus {
+  text-decoration: underline;
+}
+
+ul.columnize {
+  list-style-type: disc;  /* keep bullet */
+  padding-left: 1.2em;    /* default indent */
+  margin: 0;
+}
+
+ul.columnize li {
+  display: flex;
+  flex-direction: column;
+  /* The bullet stays outside by default */
+  /* But flex container means the bullet aligns to the start */
+}
+
+ul.columnize li > a {
+  display: inline;  /* keep inline */
+  /* no margin or padding needed */
+}
+
+ul.columnize li .breadcrumbs {
+  margin-left: 0em;  /* indent breadcrumbs */
+  margin-top: 0.25em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+ul li a {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+a.child-link {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+

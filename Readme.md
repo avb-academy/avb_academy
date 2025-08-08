@@ -1,6 +1,6 @@
 # AVB Academy
 
-AVB Academy is a knowledge base dedicated to AVB Milan, focusing on providing detailed and reliable resources about the Milan protocol and its applications in Audio-Visual Bridging (AVB) networks.
+AVB Academy is a knowledge base dedicated to Milan AVB, focusing on providing detailed and reliable resources about the Milan protocol and its applications in Audio Video Bridging (AVB) networks.
 
 Please check out the website under https://avb-academy.com for the full experience.
 
@@ -38,7 +38,7 @@ To set up the AVB Academy locally, follow these steps:
 
 ## Usage
 
-AVB Academy offers various features to help users learn about AVB Milan:
+AVB Academy offers various features to help users learn about Milan AVB:
 
 - **Glossary**: A searchable glossary that includes terms and detailed descriptions.
 - **Tooltips**: Glossary terms are highlighted and provide tooltips for quick explanations.
@@ -52,6 +52,12 @@ Contributions very welcome! If you'd like to help improve AVB Academy, you can:
 2. Make changes and submit a pull request.
 3. Ensure that all new content follows the established guidelines (e.g., adding new glossary terms, improving existing explanations).
 4. Review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Converting drawio figures
+
+**Important**: The script is designed for macOS applications. It will likely not work with other OS.
+
+The conversion of drawio to svg is currently a manual process. There is a bash script available. Run `convert_drawio.sh` in the in `static/images/` folder. Run `convert_drawio.sh -h` to see available options.
 
 By participating in AVB Academy, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 

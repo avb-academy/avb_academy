@@ -6,21 +6,21 @@ weight: 2
 
 {{% notice info %}}
 - Data is encapsulated in {{< tooltip "Streams" "Stream">}} to use available bandwidth more efficiently.
-- Audio transport in {{< tooltip "Milan">}}: 32bit {{< tooltip "PCM">}} data.
+- Audio transport in Milan: 32bit {{< tooltip "PCM">}} data.
 - {{< tooltip "Media Time">}} controls playback/recording in relation to the {{< tooltip "Network Time">}}
-- A {{< tooltip "Stream">}} has a configurable delay in the range of 0.25ms to 2ms.
+- A {{< tooltip "Stream">}} has a configurable Presentation Time Offset in the range of 0.25ms to 2ms.
 - Bandwidth usage of Streams is explained in the [Traffic Shaping](../03_traffic-shaping/stream-reservation/_index.md#how-much-traffic-is-reserved-for-my-audio-stream) section.
 {{% /notice %}}
 
 ## Audio Data
 
-In {{< tooltip "Milan">}}, audio data is transmitted via {{< tooltip "Streams" "Stream">}} using the Audio Video Transmission Protocol ({{< tooltip "AVTP">}}), which defines the structure of the data frames sent across the network.
+In Milan AVB, audio data is transmitted via {{< tooltip "Streams" "Stream">}} using the Audio Video Transmission Protocol (AVTP), which defines the structure of the data frames sent across the network.
 
-The specification adopts the AVTP Audio Format (AAF) for audio transport—not to be confused with the Advanced Authoring Format. It mandates that each {{< tooltip "PCM">}} sample be transmitted as a 32-bit value, with shorter samples zero-padded as needed.
+The specification adopts the AVTP Audio Format (AAF) for audio transport. This is not to be confused with the Advanced Authoring Format. It mandates that each {{< tooltip "PCM">}} sample be transmitted as a 32-bit value, with shorter samples zero-padded as needed.
 
-A {{< tooltip "Talker">}} in a {{< tooltip "Milan">}} network defines the outgoing {{< tooltip "Stream">}} format, specifying the number of audio channels in the {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} is required to adapt to the format provided by the {{< tooltip "Talker">}}.
+A {{< tooltip "Talker">}} in a Milan network defines the outgoing {{< tooltip "Stream">}} format, specifying the number of audio channels in the {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} is required to adapt to the format provided by the {{< tooltip "Talker">}}.
 
-The {{< tooltip "Milan">}} Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listeners" "Listener">}} and part of the {{< tooltip "Milan">}} certification. This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
+The Milan Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listeners" "Listener">}} and part of the Milan [certification](../../02_user-guides/certified-products.md). This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
 
 <div class="text-image-container">
   <div class="text">
@@ -31,11 +31,11 @@ The {{< tooltip "Milan">}} Base Format specifies support for channel counts of e
   </div>
 </div>
 
-It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed delay time before it starts streaming. The value range for delays is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with {{< tooltip "Milan">}} to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md).
+It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed {{< tooltip "PTO" >}} before it starts streaming. The value range for the PTO is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with Milan to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md).
 
 ## Media Clock Data
 
-The previous section [Network Timing](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in {{< tooltip "Milan">}}.
+The previous section [Network Synchronization](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in {{< tooltip "Milan">}}.
 
 In summary:
 

@@ -1,11 +1,11 @@
 ---
-title: "Network Timing"
+title: "Network Synchronization"
 date: 2025-02-11
 weight: 1
 ---
 
 {{% notice info %}}
-- A Milan network has one clock leader. The {{< tooltip "BTCA">}} is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
+- A Milan AVB network has one clock leader. The {{< tooltip "BTCA">}} is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
 - The {{< tooltip "GM">}} is elected based on parameters that describe the clock quality of the device. The best quality wins.
 - Network Time is the shared global time base provided to all devices in the network by {{< tooltip "gPTP">}}.
 - Media Time is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
@@ -13,7 +13,7 @@ weight: 1
 
 Having a well-synchronized network is crucial for the performance of the network. An unsynchronized network could lead to sampling signals at different points in time. In a less severe scenario, this can result in mixed signals that exhibit a comb filter characteristic, distorting the audio. In a worst-case scenario, the lack of synchronization could cause audio dropouts, glitches, and clicks, significantly degrading the listening experience. Therefore, maintaining precise synchronization is essential to ensure seamless and high-quality audio transmission across the network.
 
-Milan employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time.
+Milan AVB employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time.
 
 Milan timing is divided into two parts: the {{< tooltip "Network Time">}}, provided to all participants of the network via {{< tooltip "gPTP" >}}, and the timing information that controls the audio sampling clock, referred to as {{< tooltip "Media Time">}}. To avoid confusion between the two domains, these terms clearly distinguish global synchronization from audio-specific clock control.
 
@@ -32,7 +32,7 @@ The election of the the {{< tooltip "gPTP" >}} GrandMaster is based on parameter
   
 After the election process, the {{< tooltip "GM">}} provides its time to all network participants.
 
-## Network Clock Device Synchronisation
+## Network Clock Device Synchronization
 
 In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter.
 
@@ -51,6 +51,6 @@ All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster belong t
 
 To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called Media Clocking.
 
-Media Clocking can be achieved in two ways: by locking to the timing information in an {{< tooltip "AAF" >}} {{< tooltip "Stream" >}}, or by using a Clock Reference Format ({{< tooltip "CRF" >}}) stream. Both methods allow devices to align their local audio clocks with the rest of the network.
+Media Clocking can be achieved in two ways: by locking to the timing information in an Audio {{< tooltip "Stream" >}}, or by using a Clock Reference Format (CRF) Stream. Both methods allow devices to align their local audio clocks with the rest of the network. More details on the Media formats can be found in [Media Transport](../01_media-transport/_index.md).
 
 Support for {{< tooltip "CRF" >}} is optional and depends on the device capabilities. Smaller devices often rely on AAF streams alone for Media Clocking.

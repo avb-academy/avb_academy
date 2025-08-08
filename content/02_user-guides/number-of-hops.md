@@ -1,15 +1,16 @@
 ---
 title: "Number of hops"
 date: 2025-02-11
+weight: 40
 ---
 
 {{% notice info %}}
-The maxiumum number of hops is dependant on the network speed.
+The maximum number of hops is dependant on the network speed.
 - A 100Mbit network allows for max. 7 hops before it reaches the 2ms presentation time offset.
 - A 1Gbit network allows for max. 14 hops before it reaches the 2ms presentation time offset.
 {{% /notice %}}
 
-A Milan network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "Delay">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. 
+A Milan AVB network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "PTO">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. 
 
 Each transition a packet makes through a switch is known as a hop.
 

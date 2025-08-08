@@ -1,6 +1,7 @@
 ---
 title: "Getting started with Milan Manager"
 date: 2025-02-11
+weight: 20
 ---
 
 {{% notice info %}}
