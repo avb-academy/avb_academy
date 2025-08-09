@@ -1,0 +1,8 @@
+name: Simon
+message: |
+  Feedback via private message:
+  
+  To make it clearer that AVB is part of TSN, you could perhaps mention this explicitly right at the beginning.
+  The current wording “ One of the first implementations of TSN is AVB... ” unfortunately still allows the interpretation
+  that AVB has been “ superseded ” by TSN.
+date: 2025-08-09T17:40:14.329Z
