@@ -57,7 +57,7 @@ Some claim that Milan is a proprietary protocol, used exclusively by a selected 
 {{% /notice %}}
 
 {{% notice style="tip" title="Reality: Milan is based on open IEEE standards" icon="fa-solid fa-circle-check"%}}
-Milan is not proprietary. It is a clearly defined, open specification built on top of IEEE open standards including 802.1AS (time synchronization), 802.1Qav (traffic shaping), 1722 (streaming transport), and 1722.1 (device discovery and control).
+Milan is not proprietary. It is a clearly defined, open specification built on top of IEEE open standards including 802.1AS (time synchronization), 802.1Q (traffic shaping), 1722 (streaming transport), and 1722.1 (device discovery and control).
 
 The Milan protocol is developed collaboratively by leading ProAV manufacturers within the Avnu Alliance, ensuring it meets the real-world needs of professional users. Any manufacturer can implement Milan without licensing fees, and the full specification is freely available from the [Avnu Alliance website](https://avnu.org/resource/milan-specification/).
 {{% /notice %}}
