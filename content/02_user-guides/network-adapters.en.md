@@ -10,7 +10,7 @@ weight: 60
     **Please make sure before you buy that the adapter is working with your system.** 
 {{% /notice %}}
 
-Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware.
+Due to the [strict timing requirements](../01_milan/00_network-timing/_index.en.md) of Milan AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware.
 
 ## Apple systems 
 

@@ -17,9 +17,9 @@ Time-Sensitive Networking (TSN) is a set of {{< tooltip "IEEE">}} standards that
 
 Audio Video Bridging (AVB) is a set of standards within the broader {{< tooltip "TSN">}} family, designed for professional audio and video transport. Among the first TSN profiles to be implemented, it continues to be actively maintained and provides features such as:
 
-- Stream reservation for guaranteed bandwidth: [Details about Stream reservation](01_milan/03_traffic-shaping/stream-reservation/_index.md)
-- Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.md)
-- Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.md)
+- Stream reservation for guaranteed bandwidth: [Details about Stream reservation](01_milan/03_traffic-shaping/stream-reservation/_index.en.md)
+- Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.en.md)
+- Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.en.md)
 
 ## Milan: The ProAV Flavor of AVB
 

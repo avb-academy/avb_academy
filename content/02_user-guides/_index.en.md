@@ -16,11 +16,11 @@ weight: 4
 
 More details can be found in the following sections:
 
-- [Certified Products](certified-products.md)
-- [Getting started with Milan Manager](getting-started-milan-manager.md)
-- [Network Adapters](network-adapters.md)
-- [Number of hops](number-of-hops.md)
-- [Redundancy](redundancy.md)
-- [Switches](switches.md)
+- [Certified Products](certified-products.en.md)
+- [Getting started with Milan Manager](getting-started-milan-manager.en.md)
+- [Network Adapters](network-adapters.en.md)
+- [Number of hops](number-of-hops.en.md)
+- [Redundancy](redundancy.en.md)
+- [Switches](switches.en.md)
 
 

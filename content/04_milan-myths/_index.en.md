@@ -18,7 +18,7 @@ This page addresses the most common misconceptions with clear, technically accur
 
 {{% notice info %}}  
 This page assumes you are familiar with the relationship between AVB and Milan.  
-For a brief overview, see the [AVB Academy introduction](../_index.md).  
+For a brief overview, see the [AVB Academy introduction](../_index.en.md).  
 {{% /notice %}}
 
 ---
@@ -102,7 +102,7 @@ There is a persistent belief that Milan blocks 75% of the network bandwidth, sev
 {{% notice style="tip" title="Reality: Your network is not 75% full by default" icon="fa-solid fa-circle-check"%}}
 Milan uses bandwidth reservation to guarantee time-sensitive delivery, but only reserves the bandwidth required by each stream. For example, an 8-channel stream at 48 kHz reserves around 17 Mbps.
 
-All remaining bandwidth is available for other traffic. The 75% figure refers to the maximum possible reservation (based on AVB Class A and B limits), not the typical usage. You can find a detailed calculation in the description of the [Stream Reservation Protocol](../01_milan/03_traffic-shaping/stream-reservation/_index.md).
+All remaining bandwidth is available for other traffic. The 75% figure refers to the maximum possible reservation (based on AVB Class A and B limits), not the typical usage. You can find a detailed calculation in the description of the [Stream Reservation Protocol](../01_milan/03_traffic-shaping/stream-reservation/_index.en.md).
 {{% /notice %}}
 
 ---
