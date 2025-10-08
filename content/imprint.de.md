@@ -1,5 +1,5 @@
 ---
-title: "Imprint"
+title: "Impressum"
 layout: "single"
 weight: 100
 languages: ["en", "de"]
