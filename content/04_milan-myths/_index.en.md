@@ -8,9 +8,10 @@ There are several persistent myths surrounding Milan and its foundational techno
 
 This page addresses the most common misconceptions with clear, technically accurate explanations.
 
+## Table of contents
 - [Myth: AVB is obsolete](#myth-avb-is-obsolete)
-- [Myth: Milan is proprietary](#myth-milan-is-proprietary)
 - [Myth: Milan is old and outdated](#myth-milan-is-old-and-outdated)
+- [Myth: Milan is proprietary](#myth-milan-is-proprietary)
 - [Myth: Milan always has a latency of 2ms](#myth-milan-always-has-a-latency-of-2ms)
 - [Myth: There are no AVB-capable switches available](#myth-there-are-no-avb-capable-switches-available)
 - [Myth: Milan always blocks 75% of the available network bandwidth](#myth-milan-blocks-75-of-the-available-network-bandwidth)
@@ -73,7 +74,7 @@ Because AVB networks originally introduced a default latency of 2ms, some believ
 {{% notice style="tip" title="Reality: Milan guarantees a bounded latency, not a fixed one" icon="fa-solid fa-circle-check"%}}
 Milan networks are fully time-aware. All devices, including switches, share a synchronized understanding of time. This enables them to calculate and guarantee precise end-to-end transmission delays.
 
-As a result, Milan can guarantee a minimum playout delay tailored to the specific path and stream characteristics. Typical configurations range from 0.25 ms to 2 ms.
+As a result, Milan can guarantee a minimum playout delay tailored to the specific path and stream characteristics. Typical configurations range from 0.25ms to 2ms.
 {{% /notice %}}
 
 

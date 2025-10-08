@@ -9,17 +9,10 @@ weight: 3
 Es gibt einige hartnäckige Mythen über das Milan-Protokoll und die zugrunde liegende AVB-Technologie.  
 Auf dieser Seite werden die häufigsten Missverständnisse erläutert und die tatsächliche Sachlage verständlich erklärt.
 
-## Inhaltverzeichnis
-<!-- - [Myth: AVB is obsolete](#myth-avb-is-obsolete)
-- [Myth: Milan is proprietary](#myth-milan-is-proprietary)
-- [Myth: Milan is old and outdated](#myth-milan-is-old-and-outdated)
-- [Myth: Milan always has a latency of 2ms](#myth-milan-always-has-a-latency-of-2ms)
-- [Myth: There are no AVB-capable switches available](#myth-there-are-no-avb-capable-switches-available)
-- [Myth: Milan always blocks 75% of the available network bandwidth](#myth-milan-blocks-75-of-the-available-network-bandwidth)
-- [Myth: Milan control is still under development](#myth-milan-control-is-still-under-development) -->
+## Inhaltsverzeichnis
 - [Mythos: AVB ist veraltet](#myth-avb-is-obsolete)
 - [Mythos: Milan ist nicht mehr zeitgemäß](#myth-milan-is-old-and-outdated)
-- [Mythos: Milan Bei Milan handelt es sich um ein proprietäres Protokoll](#myth-milan-is-proprietary)
+- [Mythos: Bei Milan handelt es sich um ein proprietäres Protokoll](#myth-milan-is-proprietary)
 - [Mythos: Milan hat immer eine Latenz von 2 ms](#myth-milan-always-has-a-latency-of-2ms)
 - [Mythos: Es gibt kaum Switches, die AVB unterstützen](#myth-there-are-no-avb-capable-switches-available)
 - [Mythos: Milan blockiert immer 75 % der verfügbaren Netzwerk-Bandbreite](#myth-milan-blocks-75-of-the-available-network-bandwidth)
@@ -29,7 +22,6 @@ Auf dieser Seite werden die häufigsten Missverständnisse erläutert und die ta
 This page assumes you are familiar with the relationship between AVB and Milan.  
 For a brief overview, see the [AVB Academy introduction](../_index.md).  
 {{% /notice %}} -->
-
 {{% notice info %}}
 Die Informationen auf dieser Seite setzen voraus, dass du mit den Grundlagen von AVB und Milan vertraut bist.  
 Für eine kurze Übersicht kannst du die [AVB Academy Einleitung](../_index.md) lesen.
@@ -53,7 +45,7 @@ Audio and video transport remains a core use case within TSN, alongside newer ap
 {{% notice style="tip" title="Realität: AVB ist nach wie vor aktiv" icon="fa-solid fa-circle-check"%}}
 Die AVB-Spezifikation (IEEE 802.1BA) ist weiterhin aktiv und wird stetig gepflegt; die aktuellste Veröffentlichung stammt aus dem Jahr 2021. Die Umbenennung der Arbeitsgruppe spiegelt lediglich eine Erweiterung ihres Aufgabenbereichs wider, nicht das Ende von AVB.
 
-Die Übertragung von Audio- und Videodaten bleibt ein zentraler Anwendungsbereich innerhalb von TSN. Gleichzeitig gibt es neue Einsatzgebiete wie die Industrieautomatisierung, der Automotive-Bereich und in der Luft- und Raumfahrt. AVB ist also keineswegs veraltet, sondern hat sich innerhalb einer größeren Standardfamilie weiterentwickelt.
+Die Übertragung von Audio- und Videodaten bleibt ein zentraler Anwendungsbereich innerhalb von TSN. Gleichzeitig gibt es neue Einsatzgebiete wie die Industrieautomatisierung, der Automotive-Bereich und die Luft- und Raumfahrt. AVB ist also keineswegs veraltet, sondern hat sich innerhalb einer größeren Standardfamilie weiterentwickelt.
 {{% /notice %}}
 
 ---
@@ -65,7 +57,7 @@ Milan is sometimes perceived as a legacy solution that has been surpassed by new
 See also: [Myth: AVB is obsolete](#myth-avb-is-obsolete)
 {{% /notice %}} -->
 {{% notice style="warning" title="Mythos: Milan ist nicht mehr zeitgemäß" icon="fa-solid fa-circle-question"%}}
-Milan wird manchmal als veraltete Technologie wahrgenommen. Kritiker meinen, es sei von neueren, IP-basierten Audio-Netzwerken überholt worden.
+Manche glauben, dass Milan veraltet sei. Kritiker meinen, es sei von neueren, IP-basierten Audio-Netzwerken überholt worden.
 {{% /notice %}}
 
 <!-- {{% notice style="tip" title="Reality: Milan is one of the most modern audio networking standards" icon="fa-solid fa-circle-check"%}}
@@ -107,7 +99,7 @@ Das Milan-Protokoll wird von führenden ProAV-Herstellern innerhalb der Avnu All
 Because AVB networks originally introduced a default latency of 2ms, some believe this is the fixed or only possible latency for Milan systems.
 {{% /notice %}} -->
 {{% notice style="warning" title="Mythos: Milan hat immer eine Latenz von 2 ms" icon="fa-solid fa-circle-question"%}}
-Manche glauben, dass Milan immer eine Latenz von 2ms hat. Hintergrund ist der Standardwert für AVB-Netzwerke, der bei 2ms liegt. Daraus entsteht die Annahme, dass dieser Wert unveränderlich sei und die einzige mögliche Einstellung für Milan darstellen würde.
+Manche glauben, dass Milan immer eine Latenz von 2 ms hat. Hintergrund ist der Standardwert für AVB-Netzwerke, der bei 2 ms liegt. Daraus entsteht die Annahme, dass dieser Wert unveränderlich sei und die einzige mögliche Einstellung für Milan darstellen würde.
 {{% /notice %}}
 
 <!-- {{% notice style="tip" title="Reality: Milan guarantees a bounded latency, not a fixed one" icon="fa-solid fa-circle-check"%}}
@@ -118,7 +110,7 @@ As a result, Milan can guarantee a minimum playout delay tailored to the specifi
 {{% notice style="tip" title="Realität: Milan garantiert eine begrenzte, aber nicht feste Latenz" icon="fa-solid fa-circle-check"%}}
 Milan-Netzwerke sind vollständig time-aware. Alle Geräte im Netzwerk, einschließlich der Switches, haben die gleiche absolute Zeit. Dadurch lassen sich die Ende-zu-Ende-Übertragungszeiten präzise berechnen und garantieren.
 
-Milan kann eine minimale Ausspielverzögerung bereitstellen, die auf dem Netzwerkpfad und den Eigenschaften des Audio-Streams basiert. Typische Werte liegen zwischen 0,25ms und 2ms.
+Milan kann eine minimale Ausspielverzögerung bereitstellen, die auf dem Netzwerkpfad und den Eigenschaften des Audio-Streams basiert. Typische Werte liegen zwischen 0,25 ms und 2 ms.
 {{% /notice %}}
 
 ---
@@ -164,7 +156,7 @@ All remaining bandwidth is available for other traffic. The 75% figure refers to
 {{% notice style="tip" title="Realität: Dein Netzwerk ist nicht zu 75 % blockiert" icon="fa-solid fa-circle-check"%}}
 Milan nutzt Bandbreiten-Reservierung, um zeitkritische Daten zuverlässig zu übertragen. Es wird jedoch nur so viel Bandbreite reserviert, wie für jeden Stream nötig ist. Zum Beispiel benötigt ein 8-Kanal-Stream bei 48 kHz etwa 17 Mbps.
 
-Die restliche Bandbreite bleibt frei und kann für andere Anwendungen genutzt werden. Die Zahl 75 % beschreibt lediglich die maximale mögliche Reservierung (basierend auf den AVB Class A und Class B Grenzen). Eine detaillierte Berechnung für die Stream-Reservierung findest du hier: [Stream Reservation Protocol](../01_milan/03_traffic-shaping/stream-reservation/_index.md).
+Die restliche Bandbreite bleibt frei und kann für andere Anwendungen genutzt werden. Die Zahl 75 % beschreibt lediglich die maximale mögliche Reservierung (basierend auf den AVB Class A und Class B Grenzen). Eine detaillierte Berechnung für die Stream-Reservierung findest du hier: [Stream Reservation Protocol](../01_milan/03_traffic-shaping/stream-reservation/_index.md).
 {{% /notice %}}
 
 ---
@@ -183,7 +175,7 @@ Milan uses the ATDECC protocol (defined in IEEE 1722.1) for control, which defin
 These control capabilities have been part of the Milan specification since its initial release and are already implemented in certified Milan devices.
 {{% /notice %}} -->
 {{% notice style="tip" title="Realität: Das Milan-Steuerprotokoll ist vollständig entwickelt und standardisiert" icon="fa-solid fa-circle-check"%}}
-Milan nutzt das ATDECC-Protokoll (definiert in IEEE 1722.1) für die Steuerung. Es legt standardisierte Mechanismen für Geräteerkennung, -enumeration und Stream-Management fest.
+Milan nutzt das ATDECC-Protokoll (definiert in IEEE 1722.1) für die Steuerung. Es legt standardisierte Mechanismen für Geräte-Discovery, -Enumeration und Stream-Management fest.
 
 Diese Steuerfunktionen sind seit der ersten Milan-Spezifikation definiert und bereits in zertifizierten Milan-Geräten implementiert.
 {{% /notice %}}
