@@ -68,9 +68,9 @@ Avnu Alliance:
 
 Bridge:
   en:
-    explanation: '{{< tooltip "Switch">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: {{< safelink text="Network timing" ref="01_milan/00_network-timing/_index.md" >}}) and support traffic shaping (see: {{< safelink text="Traffic shaping" ref="01_milan/03_traffic-shaping/_index.md" >}}).'
+    explanation: '{{< tooltip "Switch">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
   de:
-    explanation: 'Die Begriffe {{< tooltip "Switch">}} und Bridge werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen time-aware sein (siehe: {{< safelink text="Network timing" ref="01_milan/00_network-timing/_index.md" >}}) und Traffic Shaping unterstützen (siehe: {{< safelink text="Traffic shaping" ref="01_milan/03_traffic-shaping/_index.md" >}}).'
+    explanation: 'Die Begriffe {{< tooltip "Switch">}} und Bridge werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen time-aware sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
 
 # Bridged Endstation: "A device that contains a Switch as well as an Endstation"  
 
@@ -279,16 +279,16 @@ Stream:
   reference: '{{< global_reference ref="IEEE1722" >}}'
   en:
     short: 'Container for audio channels.'
-    explanation: 'Used to transmit data between a {{< tooltip "Talker">}} and a {{< tooltip "Listener" >}} within a network. Basis for the bandwidth reservation calculation. {{< safelink text="More explanation" ref="../00_introduction-to-audio-networks/stream.md" >}}'
+    explanation: 'Used to transmit data between a {{< tooltip "Talker">}} and a {{< tooltip "Listener" >}} within a network. Basis for the bandwidth reservation calculation. [More explanation](../00_introduction-to-audio-networks/stream.md)'
   de:
     short: 'Container für Audiokanäle.'
-    explanation: 'Dient dazu, Daten zwischen einem {{< tooltip "Talker">}} und einem {{< tooltip "Listener">}} innerhalb eines Netzwerks zu übertragen. Bildet die Grundlage für die Bandbreitenreservierung. {{< safelink text="Weitere Infos" ref="../00_introduction-to-audio-networks/stream.md" >}}'
+    explanation: 'Dient dazu, Daten zwischen einem {{< tooltip "Talker">}} und einem {{< tooltip "Listener">}} innerhalb eines Netzwerks zu übertragen. Bildet die Grundlage für die Bandbreitenreservierung. [Weitere Infos](../00_introduction-to-audio-networks/stream.md)'
 
 Switch:
   en:
-    explanation: 'Switch and {{< tooltip "Bridge">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: {{< safelink text="Network timing" ref="01_milan/00_network-timing/_index.md" >}}) and support traffic shaping (see: {{< safelink text="Traffic shaping" ref="01_milan/03_traffic-shaping/_index.md" >}}).'
+    explanation: 'Switch and {{< tooltip "Bridge">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
   de:
-    explanation: 'Die Begriffe {{< tooltip "Switch">}} und {{< tooltip "Bridge">}} werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen „time-aware“ sein (siehe: {{< safelink text="Network timing" ref="01_milan/00_network-timing/_index.md" >}}) und Traffic Shaping unterstützen (siehe: {{< safelink text="Traffic shaping" ref="01_milan/03_traffic-shaping/_index.md" >}}).'
+    explanation: 'Die Begriffe {{< tooltip "Switch">}} und {{< tooltip "Bridge">}} werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen „time-aware“ sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
 
 Talker:
   reference: '{{< global_reference ref="IEEE8021BA" clause="3" >}}'
