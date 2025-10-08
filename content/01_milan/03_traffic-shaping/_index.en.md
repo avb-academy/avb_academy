@@ -15,5 +15,5 @@ Traffic shaping is an essential part of Milan AVB and the biggest difference com
 
 Two components are crucial for traffic shaping:
 
-1. The [Stream Reservation Protocol](./stream-reservation/_index.en.md) (SRP) that configures a path from a Talker to a Listener.
-2. The traffic shaper in a switch. The technology is based on the credit-based shaper and is often referred to as [Forwarding and Queuing for Time-Sensitive Streams](./fqtss/_index.en.md) (FQTSS).
+1. The [Stream Reservation Protocol](./stream-reservation/_index.md) (SRP) that configures a path from a Talker to a Listener.
+2. The traffic shaper in a switch. The technology is based on the credit-based shaper and is often referred to as [Forwarding and Queuing for Time-Sensitive Streams](./fqtss/_index.md) (FQTSS).

@@ -24,12 +24,12 @@ Time-Sensitive Networking (TSN) ist eine Sammlung von {{< tooltip "IEEE" >}}-Spe
 <!-- Audio Video Bridging (AVB) is a set of standards within the broader {{< tooltip "TSN">}} family, designed for professional audio and video transport. Among the first TSN profiles to be implemented, it continues to be actively maintained and provides features such as: -->
 Audio Video Bridging (AVB) ist ein Satz von Spezifikationen innerhalb der größeren {{< tooltip "TSN" >}}-Familie, die für den professionellen Audio- und Video-Transport entwickelt wurden. AVB war eines der ersten TSN-Profile, das implementiert wurde, und wird weiterhin aktiv gepflegt. Die Spezifikationen bieten unter anderem folgende Funktionen:
 
-<!-- - Stream reservation for guaranteed bandwidth: [Details about Stream reservation](01_milan/03_traffic-shaping/stream-reservation/_index.en.md)
-- Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.en.md)
-- Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.en.md) -->
-- Stream-Reservierung zur garantierten Bandbreitenzuteilung: [Weitere Infos zur Stream-Reservierung](01_milan/03_traffic-shaping/stream-reservation/_index.de.md)  
-- Präzise Zeitsynchronisation im Netzwerk mittels {{< tooltip "gPTP" >}}: [Weitere Infos zum Netzwerk-Timing](01_milan/00_network-timing/_index.de.md)  
-- Latenzarme Paketweiterleitung durch Credit-Based Traffic Shaping: [Weitere Infos zum Traffic Shaping](01_milan/03_traffic-shaping/fqtss/_index.de.md)
+<!-- - Stream reservation for guaranteed bandwidth: [Details about Stream reservation](01_milan/03_traffic-shaping/stream-reservation/_index.md)
+- Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.md)
+- Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.md) -->
+- Stream-Reservierung zur garantierten Bandbreitenzuteilung: [Weitere Infos zur Stream-Reservierung](01_milan/03_traffic-shaping/stream-reservation/_index.md)  
+- Präzise Zeitsynchronisation im Netzwerk mittels {{< tooltip "gPTP" >}}: [Weitere Infos zum Netzwerk-Timing](01_milan/00_network-timing/_index.md)  
+- Latenzarme Paketweiterleitung durch Credit-Based Traffic Shaping: [Weitere Infos zum Traffic Shaping](01_milan/03_traffic-shaping/fqtss/_index.md)
 
 <!-- ## Milan: The ProAV Flavor of AVB -->
 ## Milan: Der ProAV-Flavor von AVB
