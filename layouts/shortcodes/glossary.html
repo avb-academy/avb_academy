@@ -1,21 +1,44 @@
-<input type="text" id="glossarySearch" placeholder="Search glossary..." onkeyup="filterGlossary()">
+{{ $lang := .Site.Language.Lang }}
+{{ $glossary := site.Data.glossary }}
+
+<input type="text" id="glossarySearch" placeholder="{{ i18n "search_placeholder" }}" onkeyup="filterGlossary()">
 
 <div id="glossaryContainer">
-  {{ range $term, $entry := site.Data.glossary }}
-    <div class="glossary-entry" id="{{ $term | urlize }}">
-      <h2>{{ $term }}</h2>
-      {{- if reflect.IsMap $entry -}}
-        {{- if $entry.short -}}
-          <p><strong>Short definiton:</strong> {{ $entry.short }}</p>
-        {{- end -}}
-        <p><strong>Explanation: </strong>{{ $entry.explanation | markdownify }}</p>
-        {{- if $entry.reference -}}
-          <p><strong>Reference:</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
-        {{- end -}}
-      {{- else -}}
-        <p><strong>Short definition: </strong>{{ $entry | markdownify }}</p>
+  {{ range $term, $entry := $glossary }}
+    {{- $termsToShow := slice $term -}}
+    {{- if $entry.aliases -}}
+      {{- range $i, $alias := $entry.aliases -}}
+        {{- $termsToShow = append $termsToShow (slice $alias) -}}
       {{- end -}}
-    </div>
+    {{- end -}}
+
+    {{- range $t := $termsToShow -}}
+      <div class="glossary-entry" id="{{ $t | urlize }}">
+        <h2>{{ $t }}</h2>
+
+        {{- $termLang := index $entry $lang -}}
+        {{- if reflect.IsMap $termLang -}}
+          {{- if $termLang.short -}}
+            <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang.short }}</p>
+          {{- end -}}
+          <p><strong>{{ i18n "explanation" }}</strong> {{ $termLang.explanation | markdownify }}</p>
+        {{- else -}}
+          <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang | markdownify }}</p>
+        {{- end -}}
+
+        {{- if $entry.reference -}}
+          <p><strong>{{ i18n "reference" }}</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
+        {{- end -}}
+
+        {{- if $entry.see_also -}}
+          <p><strong>{{ i18n "see_also" }}</strong>
+            {{- range $i, $related := $entry.see_also -}}
+              <a href="#{{ $related | urlize }}">{{ $related }}</a>{{ if lt (add $i 1) (len $entry.see_also) }}, {{ end }}
+            {{- end -}}
+          </p>
+        {{- end -}}
+      </div>
+    {{- end -}}
   {{ end }}
 </div>
 
@@ -45,7 +68,6 @@ function highlightTermByHash() {
 
 document.addEventListener("DOMContentLoaded", highlightTermByHash);
 window.addEventListener("hashchange", highlightTermByHash);
-
 
 function filterGlossary() {
     let input = document.getElementById("glossarySearch").value.toLowerCase();

@@ -1,0 +1,17 @@
+imprint:
+  other: Impressum
+licensing:
+  other: Lizenzierung
+newsletter:
+  other: Newsletter
+short_definition:
+  other: "Definition:"
+explanation:
+  other: "Erklärung:"
+reference:
+  other: "Referenz:"
+search_placeholder:
+  other: "Glossar durchsuchen..."
+tooltip_not_found:
+  other: "Definition nicht gefunden."
+
