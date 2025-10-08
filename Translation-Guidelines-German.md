@@ -178,7 +178,19 @@ Example:
 ## 13. Termbase Template (Appendix)
 Use this template to capture and approve translations. Store it in your shared repo or translation management system.
 
-| English Term | Preferred German | Acronym | Source / Notes | Approved (Y/N) | Date Approved | Reviewer |
-|--------------|------------------|---------|----------------|----------------|----------------|----------|
-| AVB          | AVB              | AVB     | Standard       | Y              | 2025-10-07     | Dr. AVB   |
-| Stream       | Stream           |         | Common usage   | Y              | 2025-10-07     | Dr. TSN    |
+| English Term       | Preferred German         | Acronym  | Source / Notes                            | Approved (Y/N) | Date Approved  | Reviewer  |
+|--------------------|--------------------------|----------|-------------------------------------------|----------------|----------------|-----------|
+| AVB                | AVB                      | AVB      | Bezeichnung bleibt englisch               | Y              | 2025-10-07     | Simon     |
+| TSN                | TSN                      | TSN      | Time-Sensitive Networking                 | Y              | 2025-10-07     | Simon     |
+| IEEE               | IEEE                     | IEEE     | Standardisierungsorganisation             | Y              | 2025-10-07     | Simon     |
+| Milan              | Milan                    | —        | Protokollname, bleibt englisch            | Y              | 2025-10-07     | Simon     |
+| Stream             | Stream                   | —        | Common usage                              | Y              | 2025-10-07     | Simon     |
+| Stream Reservation | Stream-Reservierung      | —        | Fachbegriff, wörtlich übernommen          | Y              | 2025-10-08     | Simon     |
+| Traffic Shaping    | Traffic Shaping          | —        | Fachbegriff, bleibt englisch              | Y              | 2025-10-08     | Simon     |
+| gPTP               | gPTP                     | —        | Generalized Precision Time Protocol       | Y              | 2025-10-08     | Simon     |
+| Bandwidth          | Bandbreite               | —        | Allgemeiner technischer Begriff           | Y              | 2025-10-08     | Simon     |
+| Low Latency        | geringe Latenz           | —        | Fachterminus                              | Y              | 2025-10-08     | Simon     |
+| Interoperability   | Interoperabilität        | —        | Fachterminus                              | Y              | 2025-10-08     | Simon     |
+| Transport Layer    | Netzwerk-Transportschicht| —        | Technische Übersetzung                    | Y              | 2025-10-08     | Simon     |
+| Avnu Alliance      | Avnu Alliance            | —        | Organisation, bleibt englisch             | Y              | 2025-10-08     | Simon     |
+
