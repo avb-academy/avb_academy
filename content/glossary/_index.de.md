@@ -1,5 +1,5 @@
 ---
-title: "Glossary"
+title: "Glossar"
 type: "glossary"
 weight: 99
 ---
