@@ -175,32 +175,5 @@ Example:
 - ✅ Hyphenate English terms when forming German compounds (e.g., `{{< tooltip "AVB">}}-Streams`).  
 - ✅ Peer-review every translation and update the shared termbase.
 
-## 13. Termbase Template (Appendix)
-Use this template to capture and approve translations. Store it in your shared repo or translation management system.
-
-| English Term           | Preferred German                   | Acronym | Source / Notes                           | Approved (Y/N) | Date Approved | Reviewer |
-|------------------------|------------------------------------|---------|------------------------------------------|----------------|---------------|---------|
-| AVB                    | AVB                                | AVB     | Bezeichnung bleibt englisch              | Y              | 2025-10-07    | Simon   |
-| TSN                    | TSN                                | TSN     | Time-Sensitive Networking                | Y              | 2025-10-07    | Simon   |
-| IEEE                   | IEEE                               | IEEE    | Standardisierungsorganisation            | Y              | 2025-10-07    | Simon   |
-| Milan                  | Milan                              | —       | Protokollname, bleibt englisch           | Y              | 2025-10-07    | Simon   |
-| Stream                 | Stream                             | —       | Common usage                             | Y              | 2025-10-07    | Simon   |
-| Stream Reservation     | Stream-Reservierung                | —       | Fachbegriff, wörtlich übernommen         | Y              | 2025-10-08    | Simon   |
-| Traffic Shaping        | Traffic Shaping                    | —       | Fachbegriff, bleibt englisch             | Y              | 2025-10-08    | Simon   |
-| gPTP                   | gPTP                               | —       | Generalized Precision Time Protocol      | Y              | 2025-10-08    | Simon   |
-| Bandwidth              | Bandbreite                         | —       | Allgemeiner technischer Begriff          | Y              | 2025-10-08    | Simon   |
-| Low Latency            | geringe Latenz                     | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
-| Interoperability       | Interoperabilität                  | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
-| Transport Layer        | Netzwerk-Transportschicht          | —       | Technische Übersetzung                   | Y              | 2025-10-08    | Simon   |
-| Avnu Alliance          | Avnu Alliance                      | —       | Organisation, bleibt englisch            | Y              | 2025-10-08    | Simon   |
-| time aware             | time-aware                         | —       | Fachbegriff, bleibt englisch             | Y              | 2025-10-08    | Simon   |
-| Network traffic        | Netzwerkverkehr                    | —       | Allgemeiner technischer Begriff          | Y              | 2025-10-08    | Simon   |
-| Control protocol       | Steuerprotokoll                    | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
-| Device discovery       | Geräte-Discovery                   | —       | Teil des ATDECC-Protokolls               | Y              | 2025-10-08    | Simon   |
-| Enumeration            | Enumeration                        | —       | Teil des ATDECC-Protokolls               | Y              | 2025-10-08    | Simon   |
-| Playout delay          | Ausspielverzögerung                | —       | Fachterminus, für Latenz-Messung         | Y              | 2025-10-08    | Simon   |
-| Switch                 | Switch                             | —       | Allgemeiner Begriff, Hardware-Komponente | Y              | 2025-10-08    | Simon   |
-| Audio stream           | Audio-Stream                       | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
-| Latency                | Latenz                             | —       | Technischer Begriff                      | Y              | 2025-10-08    | Simon   |
-| Deterministic delivery | deterministische Übertragung       | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
-| Guaranteed delivery    | garantierte Zustellung             | —       | Fachterminus                             | Y              | 2025-10-08    | Simon   |
+## 13. Termbase
+Please refer to the [Termbase-English-German](Termbase-English-German.md)
