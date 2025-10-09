@@ -140,7 +140,7 @@ Example:
 - ✅ Peer-review every translation and update the shared termbase.
 
 ## 12. Termbase
-Please refer to the [Termbase-English-German](data/termbase.yaml) for the complete termbase. In case you need to update the termbase, please include it in your PR.
+Please refer to the [Termbase-English-German](data/termbase.yaml) for the complete termbase. In case you need to update the termbase, please include it in your PR. The general idea is to use the `{{< termbase "TERM">}}` shortcode to have consistent translation between languages.
 
 Use standard German technical vocabulary for general networking or AV terms; where industry usage prefers the English word, prefer that.
 

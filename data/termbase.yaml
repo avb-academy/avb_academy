@@ -21,15 +21,15 @@ Stream:
   en: "Stream"
   de: "Stream"
 
-Stream_Reservation:
+Stream Reservation:
   en: "Stream Reservation"
   de: "Stream-Reservierung"
 
-Traffic_Shaping:
+Traffic Shaping:
   en: "Traffic Shaping"
   de: "Traffic Shaping"
 
-Clock_synchronization:
+Clock synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
 
@@ -41,7 +41,7 @@ Bandwidth:
   en: "Bandwidth"
   de: "Bandbreite"
 
-Low_Latency:
+Low Latency:
   en: "Low Latency"
   de: "geringe Latenz"
 
@@ -49,19 +49,19 @@ Interoperability:
   en: "Interoperability"
   de: "Interoperabilität"
 
-Transport_Layer:
+Transport Layer:
   en: "Transport Layer"
   de: "Netzwerk-Transportschicht"
 
-Avnu_Alliance:
+Avnu Alliance:
   en: "Avnu Alliance"
   de: "Avnu Alliance"
 
-time_aware:
+time aware:
   en: "time-aware"
   de: "time-aware"
 
-Network_traffic:
+Network traffic:
   en: "Network traffic"
   de: "Netzwerkverkehr"
 
@@ -69,11 +69,11 @@ Packet:
   en: "Packet"
   de: "Paket"
 
-Control_protocol:
+Control protocol:
   en: "Control protocol"
   de: "Steuerprotokoll"
 
-Device_discovery:
+Device discovery:
   en: "Device discovery"
   de: "Geräte-Discovery"
 
@@ -81,7 +81,7 @@ Enumeration:
   en: "Enumeration"
   de: "Enumeration"
 
-Playout_delay:
+Playout delay:
   en: "Playout delay"
   de: "Ausspielverzögerung"
 
@@ -89,7 +89,7 @@ Switch:
   en: "Switch"
   de: "Switch"
 
-Audio_stream:
+Audio stream:
   en: "Audio stream"
   de: "Audio-Stream"
 
@@ -97,15 +97,15 @@ Latency:
   en: "Latency"
   de: "Latenz"
 
-Deterministic_delivery:
+Deterministic delivery:
   en: "Deterministic delivery"
   de: "deterministische Übertragung"
 
-Guaranteed_delivery:
+Guaranteed delivery:
   en: "Guaranteed delivery"
   de: "garantierte Zustellung"
 
-CAT_cable:
+CAT cable:
   en: "CAT cable"
   de: "CAT-Kabel"
 
@@ -121,27 +121,27 @@ QoS:
   en: "QoS"
   de: "QoS"
 
-IP_network:
+IP network:
   en: "IP network"
   de: "IP-Netzwerk"
 
-star_topology:
+star topology:
   en: "star topology"
   de: "Stern-Topologie"
 
-hop_hops:
+hop hops:
   en: "hop / hops"
   de: "Hop / Hops"
 
-plug_and_play:
+plug and play:
   en: "plug-and-play"
   de: "Plug-and-Play"
 
-redundant_network:
+redundant network:
   en: "redundant network"
   de: "redundantes Netzwerk"
 
-Avnu_Certification:
+Avnu Certification:
   en: "Avnu Certification"
   de: "Avnu-Zertifizierung"
 
@@ -149,11 +149,11 @@ specification:
   en: "Specification"
   de: "Spezifikation"
 
-manufacturer_independent:
+manufacturer independent:
   en: "manufacturer-independent"
   de: "herstellerunabhängig"
 
-certified_products:
+certified products:
   en: "certified products"
   de: "zertifizierte Produkte"
 
@@ -161,11 +161,11 @@ Network:
   en: "Network"
   de: "Netzwerk"
 
-Network_Adapter:
+Network Adapter:
   en: "Network Adapter"
   de: "Netzwerkadapter"
 
-Network_Interface:
+Network Interface:
   en: "Network Interface / Network Card"
   de: "Netzwerkkarte"
 
@@ -173,23 +173,23 @@ Setup:
   en: "Setup"
   de: "Einrichtung / Setup"
 
-Video_stream:
+Video stream:
   en: "Video stream"
   de: "Videostream"
 
-Audio_Interface:
+Audio Interface:
   en: "Audio Interface"
   de: "Audiointerface"
 
-Real_time_Kernel:
+Real time Kernel:
   en: "Real-time Kernel"
   de: "Echtzeit-Kernel"
 
-Presentation_Time_Offset:
+Presentation Time Offset:
   en: "Presentation Time Offset"
   de: "Presentation Time Offset"
 
-Network_time:
+Network time:
   en: "Network time"
   de: "Netzwerkzeit"
 
@@ -209,11 +209,11 @@ Delay:
   en: "Delay"
   de: "Delay"
 
-Ingress_Port:
+Ingress Port:
   en: "Ingress-Port"
   de: "Eingangsport"
 
-Egress_Port:
+Egress Port:
   en: "Egress-Port"
   de: "Ausgangsport"
 

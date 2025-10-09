@@ -1,0 +1,12 @@
+{{- /* layouts/shortcodes/termbase.html */ -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $term := .Get 0 -}}
+{{- $translation := "" -}}
+
+{{- with index .Site.Data.termbase $term -}}
+  {{- $translation = index . $lang | default $term -}}
+{{- else -}}
+  {{- $translation = $term -}}
+{{- end -}}
+
+{{- $translation | safeHTML -}}
