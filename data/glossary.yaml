@@ -171,10 +171,10 @@ Ingress port:
 Listener:
   reference: '{{< global_reference ref="IEEE8021BA" clause="3">}}'
   en:
-    short: 'Receiver.'
+    short: 'Stream receiver'
     explanation: 'The receiver of a {{< tooltip "Stream">}} sent by a {{< tooltip "Talker">}}.'
   de:
-    short: 'Empfänger.'
+    short: 'Empfänger eines Streams'
     explanation: 'Der Empfänger eines {{< tooltip "Streams" "Stream">}}, der von einem {{< tooltip "Talker">}} gesendet wird.'
 
 MAC:

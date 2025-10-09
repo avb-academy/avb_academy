@@ -10,18 +10,18 @@ weight: 4
 - The Forward Queuing for Time-Sensitive Streams (FQTSS) ensures that packets are transmitted so that they reach their destination in time.  
 - **Up to** 75% of the available bandwidth can be used for Milan traffic. If no stream requires the bandwidth, it is available for all other traffic.  
 {{% /notice %}} -->
+
 {{% notice info %}}
 - Die garantierte Latenz von Milan AVB wird durch {{< termbase "Traffic Shaping">}} Mechanismen sichergestellt.
-- Das {{< termbase "Stream Reservation Protocol">}} (SRP) reserviert nur die {{< termbase "Bandwidth">}} eines Streams auf dem Pfad zwischen Talker und Listener. Die übrige {{< termbase "Bandwidth">}} bleibt für andere Datenübertragungen frei.
+- Das {{< termbase "Stream Reservation Protocol">}} (SRP) reserviert nur die {{< termbase "Bandwidth">}} eines Streams auf dem Pfad zwischen Talker und Listener. Die übrige {{< termbase "Bandwidth">}} bleibt für anderen Netzwerkverkehr frei.
 - Mit {{< termbase "Forward Queuing for Time-Sensitive Streams">}} (FQTSS) wird sichergestellt, dass Pakete pünktlich ihr Ziel erreichen.
-- **Bis zu 75%** der verfügbaren {{< termbase "Bandwidth">}} können für Milan-Verkehr genutzt werden. Wird die Bandbreite nicht benötigt, steht frei zur Verfügung.
+- **Bis zu 75%** der verfügbaren {{< termbase "Bandwidth">}} können für Milan-Verkehr genutzt werden. Wird die Bandbreite nicht benötigt, steht sie allen anderen Datenströmen zur Verfügung.
 {{% /notice %}}
 
 <!-- {{< termbase "Traffic Shaping">}}  
 {{< termbase "Traffic shaping">}}  
 {{< termbase "traffic shaping">}}  
 {{< termbase "traffic Shaping">}} -->
-
 
 <!-- Traffic shaping is an essential part of Milan AVB and the biggest difference compared to other networked audio protocols. -->
 {{< termbase "Traffic Shaping">}} ist ein zentraler Bestandteil von Milan AVB und macht den größten Unterschied zu anderen {{< termbase "Networked audio">}} Protokollen aus.

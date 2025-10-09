@@ -25,9 +25,25 @@ Stream Reservation:
   en: "Stream Reservation"
   de: "Stream-Reservierung"
 
+Forward Queuing for Time-Sensitive Streams:
+  en: "Forward Queuing for Time-Sensitive Streams"
+  de: "Forward Queuing for Time-Sensitive Streams"
+
+Stream Reservation Protocol:
+  en: "Stream Reservation Protocol"
+  de: "Stream Reservation Protocol"
+
 Traffic Shaping:
   en: "Traffic Shaping"
   de: "Traffic Shaping"
+
+Traffic Shaper:
+  en: "Traffic Shaper"
+  de: "Traffic Shaper"
+
+Credit Based:
+  en: "credit-based"
+  de: "credit-based"
 
 Clock synchronization:
   en: "Clock synchronization"
@@ -140,6 +156,10 @@ plug and play:
 redundant network:
   en: "redundant network"
   de: "redundantes Netzwerk"
+
+Networked Audio:
+  en: "Networked Audio"
+  de: "Audionetzwerk"
 
 Avnu Certification:
   en: "Avnu Certification"
