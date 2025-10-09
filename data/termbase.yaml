@@ -3,179 +3,153 @@ AVB:
   de: "AVB"
   acronym: "AVB"
 
-TSN:
-  en: "Time-Sensitive Networking"
-  de: "TSN"
-  acronym: "TSN"
+Audio Interface:
+  en: "Audio Interface"
+  de: "Audiointerface"
 
-IEEE:
-  en: "IEEE"
-  de: "IEEE"
-  acronym: "IEEE"
-
-Milan:
-  en: "Milan"
-  de: "Milan"
-
-Stream:
-  en: "Stream"
-  de: "Stream"
-
-Stream Reservation:
-  en: "Stream Reservation"
-  de: "Stream-Reservierung"
-
-Forward Queuing for Time-Sensitive Streams:
-  en: "Forward Queuing for Time-Sensitive Streams"
-  de: "Forward Queuing for Time-Sensitive Streams"
-
-Stream Reservation Protocol:
-  en: "Stream Reservation Protocol"
-  de: "Stream Reservation Protocol"
-
-Traffic Shaping:
-  en: "Traffic Shaping"
-  de: "Traffic Shaping"
-
-Traffic Shaper:
-  en: "Traffic Shaper"
-  de: "Traffic Shaper"
-
-Credit Based:
-  en: "credit-based"
-  de: "credit-based"
-
-Clock synchronization:
-  en: "Clock synchronization"
-  de: "Taktsynchronisation"
-
-gPTP:
-  en: "Generalized Precision Time Protocol"
-  de: "Generalized Precision Time Protocol"
-
-Bandwidth:
-  en: "Bandwidth"
-  de: "Bandbreite"
-
-Low Latency:
-  en: "Low Latency"
-  de: "geringe Latenz"
-
-Interoperability:
-  en: "Interoperability"
-  de: "Interoperabilität"
-
-Transport Layer:
-  en: "Transport Layer"
-  de: "Netzwerk-Transportschicht"
+Audio Stream:
+  en: "Audio stream"
+  de: "Audio-Stream"
 
 Avnu Alliance:
   en: "Avnu Alliance"
   de: "Avnu Alliance"
 
-time aware:
-  en: "time-aware"
-  de: "time-aware"
+Avnu Certification:
+  en: "Avnu Certification"
+  de: "Avnu-Zertifizierung"
 
-Network traffic:
-  en: "Network traffic"
-  de: "Netzwerkverkehr"
+Bandwidth:
+  en: "Bandwidth"
+  de: "Bandbreite"
 
-Packet:
-  en: "Packet"
-  de: "Paket"
+Best Effort:
+  en: "best-effort"
+  de: "Best-Effort"
 
-Control protocol:
+Bridge:
+  en: "Bridge"
+  de: "Bridge"
+
+CAT Cable:
+  en: "CAT cable"
+  de: "CAT-Kabel"
+
+Certified Products:
+  en: "certified products"
+  de: "zertifizierte Produkte"
+
+Clock Synchronization:
+  en: "Clock synchronization"
+  de: "Taktsynchronisation"
+
+Control Protocol:
   en: "Control protocol"
   de: "Steuerprotokoll"
 
-Device discovery:
+Credit Based:
+  en: "credit-based"
+  de: "credit-based"
+
+Credit Counter:
+  en: "credit counter"
+  de: "Kreditzähler"
+
+Delay:
+  en: "Delay"
+  de: "Delay"
+
+Deterministic Delivery:
+  en: "Deterministic delivery"
+  de: "deterministische Übertragung"
+
+Device Discovery:
   en: "Device discovery"
   de: "Geräte-Discovery"
+
+Egress Port:
+  en: "Egress-Port"
+  de: "Ausgangsport"
+
+Egress Ports:
+  en: "Egress-Ports"
+  de: "Ausgangsports"
+
+Endstation:
+  en: "Endstation"
+  de: "Endstation"
 
 Enumeration:
   en: "Enumeration"
   de: "Enumeration"
 
-Playout delay:
-  en: "Playout delay"
-  de: "Ausspielverzögerung"
-
-Switch:
-  en: "Switch"
-  de: "Switch"
-
-Audio stream:
-  en: "Audio stream"
-  de: "Audio-Stream"
-
-Latency:
-  en: "Latency"
-  de: "Latenz"
-
-Deterministic delivery:
-  en: "Deterministic delivery"
-  de: "deterministische Übertragung"
-
-Guaranteed delivery:
-  en: "Guaranteed delivery"
-  de: "garantierte Zustellung"
-
-CAT cable:
-  en: "CAT cable"
-  de: "CAT-Kabel"
-
-Mbps:
-  en: "Mbps"
-  de: "Mbps"
+Forward Queuing For Time-sensitive Streams:
+  en: "Forward Queuing for Time-Sensitive Streams"
+  de: "Forward Queuing for Time-Sensitive Streams"
 
 Gbps:
   en: "Gbps"
   de: "Gbps"
 
-QoS:
-  en: "QoS"
-  de: "QoS"
+Gptp:
+  en: "Generalized Precision Time Protocol"
+  de: "Generalized Precision Time Protocol"
 
-IP network:
+Guaranteed Delivery:
+  en: "Guaranteed delivery"
+  de: "garantierte Zustellung"
+
+Hop:
+  en: "hop"
+  de: "Hop"
+
+Hops:
+  en: "hops"
+  de: "Hops"
+
+IEEE:
+  en: "IEEE"
+  de: "IEEE"
+
+IP Network:
   en: "IP network"
   de: "IP-Netzwerk"
 
-star topology:
-  en: "star topology"
-  de: "Stern-Topologie"
+Ingress Port:
+  en: "Ingress-Port"
+  de: "Eingangsport"
 
-hop hops:
-  en: "hop / hops"
-  de: "Hop / Hops"
+Ingress Ports:
+  en: "Ingress-Ports"
+  de: "Eingangsports"
 
-plug and play:
-  en: "plug-and-play"
-  de: "Plug-and-Play"
+Interoperability:
+  en: "Interoperability"
+  de: "Interoperabilität"
 
-redundant network:
-  en: "redundant network"
-  de: "redundantes Netzwerk"
+Latency:
+  en: "Latency"
+  de: "Latenz"
 
-Networked Audio:
-  en: "Networked Audio"
-  de: "Audionetzwerk"
+Listener:
+  en: "Listener"
+  de: "Listener"
 
-Avnu Certification:
-  en: "Avnu Certification"
-  de: "Avnu-Zertifizierung"
+Low Latency:
+  en: "Low Latency"
+  de: "geringe Latenz"
 
-specification:
-  en: "Specification"
-  de: "Spezifikation"
-
-manufacturer independent:
+Manufacturer Independent:
   en: "manufacturer-independent"
   de: "herstellerunabhängig"
 
-certified products:
-  en: "certified products"
-  de: "zertifizierte Produkte"
+Mbps:
+  en: "Mbps"
+  de: "Mbps"
+
+Milan:
+  en: "Milan"
+  de: "Milan"
 
 Network:
   en: "Network"
@@ -189,58 +163,120 @@ Network Interface:
   en: "Network Interface / Network Card"
   de: "Netzwerkkarte"
 
-Setup:
-  en: "Setup"
-  de: "Einrichtung / Setup"
-
-Video stream:
-  en: "Video stream"
-  de: "Videostream"
-
-Audio Interface:
-  en: "Audio Interface"
-  de: "Audiointerface"
-
-Real time Kernel:
-  en: "Real-time Kernel"
-  de: "Echtzeit-Kernel"
-
-Presentation Time Offset:
-  en: "Presentation Time Offset"
-  de: "Presentation Time Offset"
-
-Network time:
+Network Time:
   en: "Network time"
   de: "Netzwerkzeit"
 
-Endstation:
-  en: "Endstation"
-  de: "Endstation"
+Network Traffic:
+  en: "Network traffic"
+  de: "Netzwerkverkehr"
 
-Talker:
-  en: "Talker"
-  de: "Talker"
+Networked Audio:
+  en: "Networked Audio"
+  de: "Audionetzwerk"
 
-Listener:
-  en: "Listener"
-  de: "Listener"
+Packet:
+  en: "Packet"
+  de: "Paket"
 
-Delay:
-  en: "Delay"
-  de: "Delay"
+Packets:
+  en: "Packets"
+  de: "Pakete"
 
-Ingress Port:
-  en: "Ingress-Port"
-  de: "Eingangsport"
+Playout Delay:
+  en: "Playout delay"
+  de: "Ausspielverzögerung"
 
-Egress Port:
-  en: "Egress-Port"
-  de: "Ausgangsport"
+Plug And Play:
+  en: "plug-and-play"
+  de: "Plug-and-Play"
 
 Port:
   en: "Port"
   de: "Port"
 
-Bridge:
-  en: "Bridge"
-  de: "Bridge"
+Ports:
+  en: "Ports"
+  de: "Ports"
+
+Presentation Time Offset:
+  en: "Presentation Time Offset"
+  de: "Presentation Time Offset"
+
+Qos:
+  en: "QoS"
+  de: "QoS"
+
+Real Time Kernel:
+  en: "Real-time Kernel"
+  de: "Echtzeit-Kernel"
+
+Redundant Network:
+  en: "redundant network"
+  de: "redundantes Netzwerk"
+
+Setup:
+  en: "Setup"
+  de: "Einrichtung / Setup"
+
+Specification:
+  en: "Specification"
+  de: "Spezifikation"
+
+Star Topology:
+  en: "star topology"
+  de: "Stern-Topologie"
+
+Stream:
+  en: "Stream"
+  de: "Stream"
+
+Streams:
+  en: "Streams"
+  de: "Streams"
+
+Stream Reservation:
+  en: "Stream Reservation"
+  de: "Stream-Reservierung"
+
+Stream Reservation Protocol:
+  en: "Stream Reservation Protocol"
+  de: "Stream Reservation Protocol"
+
+Switch:
+  en: "Switch"
+  de: "Switch"
+
+TSN:
+  en: "Time-Sensitive Networking"
+  de: "TSN"
+  acronym: "TSN"
+
+Talker:
+  en: "Talker"
+  de: "Talker"
+
+Time Aware:
+  en: "time-aware"
+  de: "time-aware"
+
+Time Critical:
+  en: "time-critical"
+  de: "zeitkritisch"
+
+Traffic Shaper:
+  en: "Traffic Shaper"
+  de: "Traffic Shaper"
+
+Traffic Shaping:
+  en: "Traffic Shaping"
+  de: "Traffic Shaping"
+
+Transport Layer:
+  en: "Transport Layer"
+  de: "Netzwerk-Transportschicht"
+
+Video Stream:
+  en: "Video stream"
+  de: "Videostream"
+
