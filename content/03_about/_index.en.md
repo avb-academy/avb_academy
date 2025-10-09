@@ -25,9 +25,11 @@ Special thanks to the contributors for their invaluable efforts in reviewing, co
 - Stijn Geysen
 - Paul Schuladen
 
-Contributions are welcome!  
-You can contribute by opening issues or submitting pull requests on GitHub, or feel free to reach out by email.  
+Contributions, suggestions, and feedback are always welcome!  
+You can open an issue or submit a pull request on GitHub:  
 [Check out the GitHub repository here](https://github.com/avb-academy/avb_academy).
+
+If that feels too technical or complicated, just send me an email with your ideas and suggestions.
 
 ## License
 

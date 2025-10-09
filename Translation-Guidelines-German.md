@@ -48,26 +48,6 @@ Examples (use tooltip on first mention in German text):
 - `{{< tooltip "MSRP">}}`
 - ...
 
-
-### 4.2. Common Technical Terms
-Use standard German technical vocabulary for general networking or AV terms; where industry usage prefers the English word, prefer that.
-
-| English Term            | Preferred German         | Notes |
-|-------------------------|--------------------------|-------|
-| Stream                  | Stream                   | Commonly used as-is |
-| Network                 | Netzwerk                 | Standard translation |
-| Latency                 | Latenz                   | Standard technical term |
-| Bandwidth               | Bandbreite               | Translate |
-| Clock synchronization   | Taktsynchronisation      | Translate |
-| Frame                   | Frame                    | Kept in English |
-| Packet                  | Paket                    | Translate |
-| Port                    | Port                     | Kept in English |
-| Bridge                  | Bridge                   | Keep in AVB context |
-| Audio stream            | Audiostream              | Compound word |
-| Video stream            | Videostream              | Compound word |
-
----
-
 ## 5. Style and Tone
 
 - Write in **formal but approachable German**.
@@ -76,8 +56,6 @@ Use standard German technical vocabulary for general networking or AV terms; whe
 - Keep sentences **concise** and avoid unnecessary complexity.
 - Mirror the structure of the English source where it helps clarity, but adapt idiomatically to natural German.
 - Avoid repeatedly showing English and German forms; introduce once (with tooltip) and then use the chosen form consistently.
-
----
 
 ## 6. Hugo Tooltip Integration
 
@@ -126,21 +104,7 @@ Example:
 - When in doubt, consult a technical reviewer familiar with AVB/TSN.
 - Record new approved terms in the central termbase and update glossary entries accordingly.
 
-## 9. Glossary (Quick Reference)
-
-| English Term                  | Preferred German                                          | Notes |
-|-------------------------------|-----------------------------------------------------------|-------|
-| Audio stream                  | Audiostream                                               | Compound word |
-| Network latency               | Netzwerklatenz                                            | Compound noun |
-| AVB Bridge                    | AVB-Bridge                                                | Keep acronym, hyphenate |
-| Bandwidth                     | Bandbreite                                                | Translate |
-| Frame                         | Frame                                                     | Keep English |
-| Stream Reservation Protocol   | SRP (Stream Reservation Protocol)| Use acronym and tooltip |
-| Time-Sensitive Networking     | TSN                                                       | Do not translate; tooltip |
-| Clock synchronization         | Taktsynchronisation                                       | Translate |
-| IEEE 802.1AS                  | IEEE 802.1AS                                              | Standard numbers unchanged |
-
-## 10. Example Translations
+## 9. Example Translations
 
 **English Source:**  
 `{{< tooltip "AVB">}} ensures precise time synchronization across all devices in a network.`
@@ -157,7 +121,7 @@ Example:
 `Das Stream Reservation Protocol (SRP) verwaltet die Bandbreitenzuweisung für {{< tooltip "AVB">}}-Streams.`
 
 
-## 11. Review Process
+## 10. Review Process
 
 - Each translation should be **peer-reviewed** by a native German speaker with technical knowledge of AVB/TSN.
 - Reviewers should confirm:
@@ -166,7 +130,7 @@ Example:
   - Stylistic consistency and tone
 - After approval, update the termbase with any new or changed translations.
 
-## 12. Summary / Quick Checklist
+## 11. Summary / Quick Checklist
 
 - ✅ Guidelines written in English for translators and reviewers.  
 - ✅ Use tooltips `{{< tooltip "Term">}}` on first mention of technical, brand, and standard terms.  
@@ -175,5 +139,20 @@ Example:
 - ✅ Hyphenate English terms when forming German compounds (e.g., `{{< tooltip "AVB">}}-Streams`).  
 - ✅ Peer-review every translation and update the shared termbase.
 
-## 13. Termbase
-Please refer to the [Termbase-English-German](Termbase-English-German.md)
+## 12. Termbase
+Please refer to the [Termbase-English-German](data/termbase.yaml) for the complete termbase. In case you need to update the termbase, please include it in your PR.
+
+Use standard German technical vocabulary for general networking or AV terms; where industry usage prefers the English word, prefer that.
+
+| English Term            | Preferred German         | Notes |
+|-------------------------|--------------------------|-------|
+| Stream                  | Stream                   | Commonly used as-is |
+| Network                 | Netzwerk                 | Standard translation |
+| Latency                 | Latenz                   | Standard technical term |
+| Bandwidth               | Bandbreite               | Translate |
+| Clock synchronization   | Taktsynchronisation      | Translate |
+| Packet                  | Paket                    | Translate |
+| Port                    | Port                     | Kept in English |
+| Bridge                  | Bridge                   | Keep in AVB context |
+| Audio stream            | Audiostream              | Compound word |
+| Video stream            | Videostream              | Compound word |
