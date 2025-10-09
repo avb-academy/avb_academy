@@ -1,12 +1,60 @@
 {{- /* layouts/shortcodes/termbase.html */ -}}
 {{- $lang := .Site.Language.Lang -}}
-{{- $term := .Get 0 -}}
+{{- $input := .Get 0 -}}
+{{- $normalized := title $input -}} {{/* normalize to match YAML key (Title Case) */}}
 {{- $translation := "" -}}
+{{- $found := true -}}
 
-{{- with index .Site.Data.termbase $term -}}
-  {{- $translation = index . $lang | default $term -}}
+{{/* Lookup translation in termbase.yaml */}}
+{{- with index .Site.Data.termbase $normalized -}}
+  {{- $translation = index . $lang | default $normalized -}}
 {{- else -}}
-  {{- $translation = $term -}}
+  {{- $translation = $normalized -}}
+  {{- $found = false -}}
 {{- end -}}
 
-{{- $translation | safeHTML -}}
+{{/* Detect capitalization pattern */}}
+{{- $isAllCaps := eq $input (upper $input) -}}
+{{- $isLower := eq $input (lower $input) -}}
+{{- $isTitleCase := eq $input $normalized -}}
+
+{{/* Detect “mixed case” (e.g. traffic Shaping) */}}
+{{- $wordsInput := split $input " " -}}
+{{- $isMixedCase := and (not $isAllCaps) (not $isLower) (not $isTitleCase)
+    (and (ge (len $wordsInput) 2)
+         (and (eq (lower (index $wordsInput 0)) (index $wordsInput 0))
+              (ne (title (index $wordsInput 1)) (lower (index $wordsInput 1))))) -}}
+
+{{/* Apply capitalization behavior */}}
+{{- if $isAllCaps -}}
+  {{- $translation = upper $translation -}}
+{{- else if $isLower -}}
+  {{- $translation = lower $translation -}}
+{{- else if $isMixedCase -}}
+  {{- $words := split $translation " " -}}
+  {{- if gt (len $words) 1 -}}
+    {{- $first := lower (index $words 0) -}}
+    {{- $rest := delimit (after 1 $words) " " -}}
+    {{- $translation = printf "%s %s" $first $rest -}}
+  {{- else -}}
+    {{- $translation = lower $translation -}}
+  {{- end -}}
+{{- else if (and (not $isAllCaps) (not $isLower) (not $isTitleCase)) -}}
+  {{- $words := split $translation " " -}}
+  {{- if gt (len $words) 1 -}}
+    {{- $first := title (index $words 0) -}}
+    {{- $rest := delimit (after 1 $words) " " -}}
+    {{- $translation = printf "%s %s" $first (lower $rest) -}}
+  {{- else -}}
+    {{- $translation = title $translation -}}
+  {{- end -}}
+{{- else -}}
+  {{- $translation = $translation -}}
+{{- end -}}
+
+{{/* Render, highlighting missing terms */}}
+{{- if not $found -}}
+  <span style="color: red; font-weight: bold;" title="Term not found in termbase">{{ $translation }}</span>
+{{- else -}}
+  {{ $translation | safeHTML -}}
+{{- end -}}
