@@ -83,7 +83,7 @@ Enumeration:
   en: "Enumeration"
   de: "Enumeration"
 
-Forward Queuing For Time-sensitive Streams:
+Forward Queuing for Time-Sensitive Streams:
   en: "Forward Queuing for Time-Sensitive Streams"
   de: "Forward Queuing for Time-Sensitive Streams"
 
@@ -215,6 +215,10 @@ Redundant Network:
   en: "redundant network"
   de: "redundantes Netzwerk"
 
+Sample Rate:
+  en: "Sample Rate"
+  de: "Sample Rate"
+
 Setup:
   en: "Setup"
   de: "Einrichtung / Setup"
@@ -230,6 +234,10 @@ Star Topology:
 Stream:
   en: "Stream"
   de: "Stream"
+
+Streaming:
+  en: "Streaming"
+  de: "Streaming"
 
 Streams:
   en: "Streams"
