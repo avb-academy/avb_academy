@@ -5,8 +5,7 @@ weight: 40
 ---
 
 {{% notice info %}}
-
-- The {{< tooltip "Switches" "Switch">}} are not included in the Milan specification - only {{< tooltip "Endstations" "Endstation">}} are. Therefore, {{< tooltip "Switches" "Switch">}} are AVB certified.
+- The Switches are not included in the Milan specification - only Endstations are. Therefore, Switches are AVB certified.
 - Ingress port: Input port
 - Egress port: Output port
 {{% /notice %}}
