@@ -1,5 +1,5 @@
 ---
-title: "Milan Leitfaden"
+title: "Milan Leitfäden"
 date: 2025-02-11
 weight: 4
 ---
