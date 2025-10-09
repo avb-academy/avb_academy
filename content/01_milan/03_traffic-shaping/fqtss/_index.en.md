@@ -10,8 +10,7 @@ Switch ports are described based on the traffic direction for the current observ
 - An {{< tooltip "egress port" "Egress port">}} describes traffic flowing out of a switch. 
 
 {{% notice info %}}
-
-The following examples refer to the following setup: All three streams that enter at three different ports of a switch are forwarded to the remaining port.
+The following examples refer to the following setup: All three streams that enter at three different ports of a switch are forwarded to the remaining port. The setup is shown in [Fig. 1](#fig-fqtss-routing).
 {{% /notice %}}
 
 {{< figure src="/images/traffic-shaping-routing.drawio.svg" alt="Example Routing of 3 Streams" fig-num="1" title="Example Routing of 3 Streams" id="fig-fqtss-routing" >}}
@@ -34,7 +33,7 @@ Due to the fact, that without traffic shaping, packets that ingress the switch a
 
 ## Credit-based Forwarding
 
-Using the Credit-based Shaper additionally to Strict Priority Scheduling as shown in [Fig. 1](#fig-strict-prio), can on one hand shape the resulting traffic stream into a uniformly distributed stream and on the other hand increase fairness towards lower priority traffic.
+Using the Credit-based Shaper additionally to Strict Priority Scheduling as shown in [Fig. 3](#fig-credit-based), can on one hand shape the resulting traffic stream into a uniformly distributed stream and on the other hand increase fairness towards lower priority traffic.
 
 The core idea behind the Credit-based Shaper is simple:  
 
