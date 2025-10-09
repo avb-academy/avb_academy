@@ -5,9 +5,8 @@ weight: 60
 ---
 
 {{% notice warning %}}
-    This section presents adapters that should work with Milan AVB networks.
-
-    **Please make sure before you buy that the adapter is working with your system.** 
+This section presents adapters that should work with Milan AVB networks.  
+**Please make sure before you buy that the adapter is working with your system.** 
 {{% /notice %}}
 
 Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware.
@@ -16,6 +15,7 @@ Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md)
 
 These adapters are either natively supported by macOS or have proven reliable in AVB setups on Apple hardware.
 
+- Built-in network interfaces 
 - Thunderbolt 3 to Thunderbolt 2 Adapter
 - [Sonnettech Thunderbolt AVB Adapter](https://www.sonnettech.com/product/thunderbolt-avb-adapter/overview.html)
 - [OWC Thunderbolt 10G Adapter](https://www.owc.com/solutions/thunderbolt-3-10g-ethernet-adapter)
