@@ -1,0 +1,226 @@
+AVB:
+  en: "AVB"
+  de: "AVB"
+  acronym: "AVB"
+
+TSN:
+  en: "Time-Sensitive Networking"
+  de: "TSN"
+  acronym: "TSN"
+
+IEEE:
+  en: "IEEE"
+  de: "IEEE"
+  acronym: "IEEE"
+
+Milan:
+  en: "Milan"
+  de: "Milan"
+
+Stream:
+  en: "Stream"
+  de: "Stream"
+
+Stream_Reservation:
+  en: "Stream Reservation"
+  de: "Stream-Reservierung"
+
+Traffic_Shaping:
+  en: "Traffic Shaping"
+  de: "Traffic Shaping"
+
+Clock_synchronization:
+  en: "Clock synchronization"
+  de: "Taktsynchronisation"
+
+gPTP:
+  en: "Generalized Precision Time Protocol"
+  de: "Generalized Precision Time Protocol"
+
+Bandwidth:
+  en: "Bandwidth"
+  de: "Bandbreite"
+
+Low_Latency:
+  en: "Low Latency"
+  de: "geringe Latenz"
+
+Interoperability:
+  en: "Interoperability"
+  de: "Interoperabilität"
+
+Transport_Layer:
+  en: "Transport Layer"
+  de: "Netzwerk-Transportschicht"
+
+Avnu_Alliance:
+  en: "Avnu Alliance"
+  de: "Avnu Alliance"
+
+time_aware:
+  en: "time-aware"
+  de: "time-aware"
+
+Network_traffic:
+  en: "Network traffic"
+  de: "Netzwerkverkehr"
+
+Packet:
+  en: "Packet"
+  de: "Paket"
+
+Control_protocol:
+  en: "Control protocol"
+  de: "Steuerprotokoll"
+
+Device_discovery:
+  en: "Device discovery"
+  de: "Geräte-Discovery"
+
+Enumeration:
+  en: "Enumeration"
+  de: "Enumeration"
+
+Playout_delay:
+  en: "Playout delay"
+  de: "Ausspielverzögerung"
+
+Switch:
+  en: "Switch"
+  de: "Switch"
+
+Audio_stream:
+  en: "Audio stream"
+  de: "Audio-Stream"
+
+Latency:
+  en: "Latency"
+  de: "Latenz"
+
+Deterministic_delivery:
+  en: "Deterministic delivery"
+  de: "deterministische Übertragung"
+
+Guaranteed_delivery:
+  en: "Guaranteed delivery"
+  de: "garantierte Zustellung"
+
+CAT_cable:
+  en: "CAT cable"
+  de: "CAT-Kabel"
+
+Mbps:
+  en: "Mbps"
+  de: "Mbps"
+
+Gbps:
+  en: "Gbps"
+  de: "Gbps"
+
+QoS:
+  en: "QoS"
+  de: "QoS"
+
+IP_network:
+  en: "IP network"
+  de: "IP-Netzwerk"
+
+star_topology:
+  en: "star topology"
+  de: "Stern-Topologie"
+
+hop_hops:
+  en: "hop / hops"
+  de: "Hop / Hops"
+
+plug_and_play:
+  en: "plug-and-play"
+  de: "Plug-and-Play"
+
+redundant_network:
+  en: "redundant network"
+  de: "redundantes Netzwerk"
+
+Avnu_Certification:
+  en: "Avnu Certification"
+  de: "Avnu-Zertifizierung"
+
+specification:
+  en: "Specification"
+  de: "Spezifikation"
+
+manufacturer_independent:
+  en: "manufacturer-independent"
+  de: "herstellerunabhängig"
+
+certified_products:
+  en: "certified products"
+  de: "zertifizierte Produkte"
+
+Network:
+  en: "Network"
+  de: "Netzwerk"
+
+Network_Adapter:
+  en: "Network Adapter"
+  de: "Netzwerkadapter"
+
+Network_Interface:
+  en: "Network Interface / Network Card"
+  de: "Netzwerkkarte"
+
+Setup:
+  en: "Setup"
+  de: "Einrichtung / Setup"
+
+Video_stream:
+  en: "Video stream"
+  de: "Videostream"
+
+Audio_Interface:
+  en: "Audio Interface"
+  de: "Audiointerface"
+
+Real_time_Kernel:
+  en: "Real-time Kernel"
+  de: "Echtzeit-Kernel"
+
+Presentation_Time_Offset:
+  en: "Presentation Time Offset"
+  de: "Presentation Time Offset"
+
+Network_time:
+  en: "Network time"
+  de: "Netzwerkzeit"
+
+Endstation:
+  en: "Endstation"
+  de: "Endstation"
+
+Talker:
+  en: "Talker"
+  de: "Talker"
+
+Listener:
+  en: "Listener"
+  de: "Listener"
+
+Delay:
+  en: "Delay"
+  de: "Delay"
+
+Ingress_Port:
+  en: "Ingress-Port"
+  de: "Eingangsport"
+
+Egress_Port:
+  en: "Egress-Port"
+  de: "Ausgangsport"
+
+Port:
+  en: "Port"
+  de: "Port"
+
+Bridge:
+  en: "Bridge"
+  de: "Bridge"
