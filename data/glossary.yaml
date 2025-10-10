@@ -171,10 +171,10 @@ Ingress port:
 Listener:
   reference: '{{< global_reference ref="IEEE8021BA" clause="3">}}'
   en:
-    short: 'Receiver.'
+    short: 'Stream receiver'
     explanation: 'The receiver of a {{< tooltip "Stream">}} sent by a {{< tooltip "Talker">}}.'
   de:
-    short: 'Empfänger.'
+    short: 'Empfänger eines Streams'
     explanation: 'Der Empfänger eines {{< tooltip "Streams" "Stream">}}, der von einem {{< tooltip "Talker">}} gesendet wird.'
 
 MAC:
@@ -286,8 +286,10 @@ Stream:
 
 Switch:
   en:
+    short: 'Forwards network traffic between ports'
     explanation: 'Switch and {{< tooltip "Bridge">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
   de:
+    short: 'Leitet Netzwerkverkehr zwischen Ports weiter'
     explanation: 'Die Begriffe {{< tooltip "Switch">}} und {{< tooltip "Bridge">}} werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen „time-aware“ sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
 
 Talker:

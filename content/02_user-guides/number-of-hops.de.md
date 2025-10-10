@@ -25,7 +25,7 @@ Jede Weiterleitung eines Pakets durch einen Switch wird als Hop bezeichnet.
 Als Faustregel gilt, dass die Worst-Case-Aufenthaltsdauer eines Pakets in einem Switch etwa 140 µs in einem 1 Gbps-Netzwerk und 280 µs in einem 100 Mbps-Netzwerk beträgt.
 
 <!-- Milan specifies a latency limit of 2ms for guaranteed packet delivery. This allows for a maximum of 14 hops on a 1Gbps network and 7 hops on a 100Mbps network. As shown in [Fig. 1](#fig-number-of-hops-100Mbps) and [Fig. 2](#fig-number-of-hops-1000Mbps), fewer hops result in lower latency within a Milan network. -->
-Milan legt ein Latenz-Limit von 2 ms für die garantierte Paketübertragung fest. Dadurch sind maximal 14 Hops in einem 1 Gbps-Netzwerk und 7 Hops in einem 100 Mbps-Netzwerk möglich. Wie in [Fig. 1](#fig-number-of-hops-100Mbps) und [Fig. 2](#fig-number-of-hops-1000Mbps) dargestellt, führt eine geringere Anzahl an Hops zu niedrigerer Latenz innerhalb eines Milan-Netzwerks.
+Milan legt ein Latenz-Limit von 2 ms für die garantierte Paketübertragung fest. Dadurch sind maximal 14 Hops in einem 1 Gbps-Netzwerk und 7 Hops in einem 100 Mbps-Netzwerk möglich. Wie in [Abb. 1](#fig-number-of-hops-100Mbps) und [Abb. 2](#fig-number-of-hops-1000Mbps) dargestellt, führt eine geringere Anzahl an Hops zu niedrigerer Latenz innerhalb eines Milan-Netzwerks.
 
 <!-- |                 | 100Mbps | 1Gbps |
 |-----------------|-----------|---------|

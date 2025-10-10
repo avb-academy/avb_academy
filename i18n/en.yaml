@@ -14,3 +14,5 @@ search_placeholder:
   other: "Search glossary..."
 tooltip_not_found:
   other: "Definition not found."
+Fig.:
+  other: "Fig."

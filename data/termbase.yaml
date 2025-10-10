@@ -27,6 +27,10 @@ Bandwidth Usage:
   en: "Bandwidth Usage"
   de: "Bandbreitennutzung"
 
+Best Effort:
+  en: "best-effort"
+  de: "Best-Effort"
+
 Bridge:
   en: "Bridge"
   de: "Bridge"
@@ -43,9 +47,29 @@ Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
 
+Connection Management:
+  en: "Connection Management"
+  de: "Connection Management"
+
+Control:
+  en: "Control"
+  de: "Steuerung"
+
 Control Protocol:
-  en: "Control protocol"
-  de: "Steuerprotokoll"
+  en: "Control Protocol"
+  de: "Control Protocol"
+
+Controller:
+  en: "Controller"
+  de: "Controller"
+
+Credit Based:
+  en: "credit-based"
+  de: "credit-based"
+
+Credit Counter:
+  en: "credit counter"
+  de: "Kreditzähler"
 
 Delay:
   en: "Delay"
@@ -57,11 +81,15 @@ Deterministic Delivery:
 
 Device Discovery:
   en: "Device discovery"
-  de: "Geräte-Discovery"
+  de: "Device Discovery"
 
 Egress Port:
   en: "Egress-Port"
   de: "Ausgangsport"
+
+Egress Ports:
+  en: "Egress-Ports"
+  de: "Ausgangsports"
 
 Endstation:
   en: "Endstation"
@@ -70,6 +98,10 @@ Endstation:
 Enumeration:
   en: "Enumeration"
   de: "Enumeration"
+
+Forward Queuing For Time-sensitive Streams:
+  en: "Forward Queuing for Time-Sensitive Streams"
+  de: "Forward Queuing for Time-Sensitive Streams"
 
 Gbps:
   en: "Gbps"
@@ -88,7 +120,7 @@ Hop:
   de: "Hop"
 
 Hops:
-  en: "Hops"
+  en: "hops"
   de: "Hops"
 
 IEEE:
@@ -103,6 +135,10 @@ IP Network:
 Ingress Port:
   en: "Ingress-Port"
   de: "Eingangsport"
+
+Ingress Ports:
+  en: "Ingress-Ports"
+  de: "Eingangsports"
 
 Interoperability:
   en: "Interoperability"
@@ -140,6 +176,10 @@ Milan:
   en: "Milan"
   de: "Milan"
 
+Monitor:
+  en: "monitor"
+  de: "überwacht"
+
 Network:
   en: "Network"
   de: "Netzwerk"
@@ -159,6 +199,10 @@ Network Time:
 Network Traffic:
   en: "Network traffic"
   de: "Netzwerkverkehr"
+
+Networked Audio:
+  en: "Networked Audio"
+  de: "Audionetzwerk"
 
 Packet:
   en: "Packet"
@@ -232,6 +276,14 @@ Stream Reservation:
   en: "Stream Reservation"
   de: "Stream-Reservierung"
 
+Stream Reservation Protocol:
+  en: "Stream Reservation Protocol"
+  de: "Stream Reservation Protocol"
+
+Streaming:
+  en: "Streaming"
+  de: "Streaming"
+
 Streams:
   en: "Streams"
   de: "Streams"
@@ -252,6 +304,14 @@ Talker:
 Time Aware:
   en: "time-aware"
   de: "time-aware"
+
+Time Critical:
+  en: "time-critical"
+  de: "zeitkritisch"
+
+Traffic Shaper:
+  en: "Traffic Shaper"
+  de: "Traffic Shaper"
 
 Traffic Shaping:
   en: "Traffic Shaping"
