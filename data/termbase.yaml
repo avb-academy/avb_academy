@@ -83,9 +83,13 @@ Guaranteed Delivery:
   en: "Guaranteed delivery"
   de: "garantierte Zustellung"
 
-Hop Hops:
-  en: "hop / hops"
-  de: "Hop / Hops"
+Hop:
+  en: "Hop"
+  de: "Hop"
+
+Hops:
+  en: "Hops"
+  de: "Hops"
 
 IEEE:
   en: "IEEE"
@@ -180,6 +184,10 @@ Port:
   en: "Port"
   de: "Port"
 
+Ports:
+  en: "Ports"
+  de: "Ports"
+
 Presentation Time Offset:
   en: "Presentation Time Offset"
   de: "Presentation Time Offset"
@@ -203,10 +211,6 @@ Redundant Network:
 Sample Rate:
   en: "Sample Rate"
   de: "Sample Rate"
-
-Sample Rates:
-  en: "Sample Rates"
-  de: "Sample Rates"
 
 Setup:
   en: "Setup"
