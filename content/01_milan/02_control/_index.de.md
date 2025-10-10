@@ -14,7 +14,7 @@ weight: 3
 {{% /notice %}}
 
 <!-- Milan AVB comes with a specification how to configure and monitor the devices. This is specified in the *AVB/TSN Discovery, Enumeration, Connection management, and Control* protocol (ATDECC). -->
-Milan AVB enthält eine Spezifikation, wie Geräte konfiguriert und {{< termbase "monitor">}} werden. Diese ist im *AVB/TSN Discovery, Enumeration, Connection management, and Control* Protocol (ATDECC) festgelegt.
+Milan AVB enthält eine Spezifikation, wie Geräte konfiguriert und {{< termbase "Monitor">}} werden. Diese ist im *AVB/TSN Discovery, Enumeration, Connection management, and Control* Protocol (ATDECC) festgelegt.
 
 <!-- The three main tasks are: -->
 Das Protokoll erfüllt drei Hauptaufgaben:

@@ -192,6 +192,10 @@ Network Interface:
   en: "Network Interface / Network Card"
   de: "Netzwerkkarte"
 
+Network Synchronization:
+  en: "Network Synchronization"
+  de: "Netzwerksynchronisation"
+
 Network Time:
   en: "Network time"
   de: "Netzwerkzeit"
@@ -255,6 +259,10 @@ Redundant Network:
 Sample Rate:
   en: "Sample Rate"
   de: "Sample Rate"
+
+Sample Rates:
+  en: "Sample Rates"
+  de: "Sample Rates"
 
 Setup:
   en: "Setup"
