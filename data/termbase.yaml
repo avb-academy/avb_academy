@@ -23,6 +23,10 @@ Bandwidth:
   en: "Bandwidth"
   de: "Bandbreite"
 
+Bandwidth Usage:
+  en: "Bandwidth Usage"
+  de: "Bandbreitennutzung"
+
 Best Effort:
   en: "best-effort"
   de: "Best-Effort"
@@ -112,12 +116,8 @@ Guaranteed Delivery:
   de: "garantierte Zustellung"
 
 Hop:
-  en: "hop"
+  en: "Hop"
   de: "Hop"
-
-Hop Hops:
-  en: "hop / hops"
-  de: "Hop / Hops"
 
 Hops:
   en: "hops"
@@ -164,6 +164,14 @@ Mbps:
   en: "Mbps"
   de: "Mbps"
 
+Media Time:
+  en: "Media Time"
+  de: "Medientakt"
+
+Media Transport:
+  en: "Media Transport"
+  de: "Datenübertragung"
+
 Milan:
   en: "Milan"
   de: "Milan"
@@ -204,6 +212,10 @@ Packets:
   en: "Packets"
   de: "Pakete"
 
+Playback:
+  en: "Playback"
+  de: "Wiedergabe"
+
 Playout Delay:
   en: "Playout delay"
   de: "Ausspielverzögerung"
@@ -231,6 +243,10 @@ Qos:
 Real Time Kernel:
   en: "Real-time Kernel"
   de: "Echtzeit-Kernel"
+
+Recording:
+  en: "Recording"
+  de: "Aufnahme"
 
 Redundant Network:
   en: "redundant network"
