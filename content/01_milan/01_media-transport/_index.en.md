@@ -5,10 +5,10 @@ weight: 2
 ---
 
 {{% notice info %}}
-- Data is encapsulated in {{< tooltip "Streams" "Stream">}} to use available bandwidth more efficiently.
-- Audio transport in Milan: 32bit {{< tooltip "PCM">}} data.
-- {{< tooltip "Media Time">}} controls playback/recording in relation to the {{< tooltip "Network Time">}}
-- A {{< tooltip "Stream">}} has a configurable Presentation Time Offset in the range of 0.25ms to 2ms.
+- Data is encapsulated in Streams to use available bandwidth more efficiently.
+- Audio transport in Milan: 32bit PCM data.
+- Media Time controls playback/recording in relation to the Network Time.
+- A Stream has a configurable Presentation Time Offset in the range of 0.25ms to 2ms.
 - Bandwidth usage of Streams is explained in the [Traffic Shaping](../03_traffic-shaping/stream-reservation/_index.md#how-much-traffic-is-reserved-for-my-audio-stream) section.
 {{% /notice %}}
 
@@ -42,4 +42,4 @@ In summary:
 - **Network Time** is the shared global time base provided to all devices in the network by {{< tooltip "gPTP">}}.
 - **Media Time** is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
 
-From a transport perspective, a {{< tooltip "Stream">}} can carry either Network Time synchronization data or Media Time clocking data.
+From a transport perspective, a {{< tooltip "Stream">}} can carry either audio date or Media Time clocking data.
