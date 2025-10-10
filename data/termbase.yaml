@@ -83,7 +83,7 @@ Enumeration:
   en: "Enumeration"
   de: "Enumeration"
 
-Forward Queuing for Time-Sensitive Streams:
+Forward Queuing For Time-sensitive Streams:
   en: "Forward Queuing for Time-Sensitive Streams"
   de: "Forward Queuing for Time-Sensitive Streams"
 
@@ -103,6 +103,10 @@ Hop:
   en: "hop"
   de: "Hop"
 
+Hop Hops:
+  en: "hop / hops"
+  de: "Hop / Hops"
+
 Hops:
   en: "hops"
   de: "Hops"
@@ -110,6 +114,7 @@ Hops:
 IEEE:
   en: "IEEE"
   de: "IEEE"
+  acronym: "IEEE"
 
 IP Network:
   en: "IP network"
@@ -235,14 +240,6 @@ Stream:
   en: "Stream"
   de: "Stream"
 
-Streaming:
-  en: "Streaming"
-  de: "Streaming"
-
-Streams:
-  en: "Streams"
-  de: "Streams"
-
 Stream Reservation:
   en: "Stream Reservation"
   de: "Stream-Reservierung"
@@ -250,6 +247,14 @@ Stream Reservation:
 Stream Reservation Protocol:
   en: "Stream Reservation Protocol"
   de: "Stream Reservation Protocol"
+
+Streaming:
+  en: "Streaming"
+  de: "Streaming"
+
+Streams:
+  en: "Streams"
+  de: "Streams"
 
 Switch:
   en: "Switch"
