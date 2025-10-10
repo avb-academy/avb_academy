@@ -37,6 +37,22 @@ def write_yaml(filepath, data):
 filepath = "data/termbase.yaml"
 termbase = read_yaml(filepath)
 
+# Detect duplicates after smart_title
+title_keys = {}
+duplicates = []
+for k, v in termbase.items():
+    t_key = smart_title(k)
+    if t_key in title_keys:
+        duplicates.append((k, t_key))
+    else:
+        title_keys[t_key] = v
+
+# Warn about duplicates
+if duplicates:
+    print("⚠️ Warning: Duplicate keys detected after title-casing:")
+    for original, transformed in duplicates:
+        print(f"  Original: '{original}' → Transformed: '{transformed}'")
+
 # Apply smart title-casing to top-level keys and sort alphabetically
 sorted_termbase = OrderedDict(
     sorted(((smart_title(k), v) for k, v in termbase.items()), key=lambda item: item[0])
