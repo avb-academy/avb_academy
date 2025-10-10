@@ -1,55 +1,55 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
-  <diagram name="Seite-1" id="PgYi46Rjj1gsR976CkO2">
-    <mxGraphModel dx="1244" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="jtS35bym35iqkQwVJULc-10" value="Stream 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-1" target="jtS35bym35iqkQwVJULc-4" edge="1">
-          <mxGeometry x="-0.5981" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-1" value="Endstation 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry y="10" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-11" value="Stream 2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-2" target="jtS35bym35iqkQwVJULc-5" edge="1">
-          <mxGeometry x="-0.5307" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-2" value="Endstation 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry y="90" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-13" value="Stream 3 +&lt;br&gt;&lt;div&gt;BE-Traffic&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-3" target="jtS35bym35iqkQwVJULc-6" edge="1">
-          <mxGeometry x="-0.5556" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-3" value="Endstation 3" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-9" value="Switch" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="279" width="270" height="220" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-4" value="Port 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
-          <mxGeometry y="30" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-5" value="Port 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
-          <mxGeometry y="90" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-6" value="Port 3" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
-          <mxGeometry y="150" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-7" value="Port 4" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
-          <mxGeometry x="150" y="90" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-12" value="Endstation 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="707" y="90" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jtS35bym35iqkQwVJULc-14" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Stream1,&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Stream2,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Stream3,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;BE-Traffic&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-7" target="jtS35bym35iqkQwVJULc-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Seite-1" id="PgYi46Rjj1gsR976CkO2">
+        <mxGraphModel dx="1086" dy="377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="jtS35bym35iqkQwVJULc-10" value="Stream 1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-1" target="jtS35bym35iqkQwVJULc-4" edge="1">
+                    <mxGeometry x="-0.5981" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-1" value="Endstation 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-11" value="Stream 2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-2" target="jtS35bym35iqkQwVJULc-5" edge="1">
+                    <mxGeometry x="-0.5307" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-2" value="Endstation 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-13" value="Stream 3 +&lt;br&gt;&lt;div&gt;BE-Traffic&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-3" target="jtS35bym35iqkQwVJULc-6" edge="1">
+                    <mxGeometry x="-0.5556" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-3" value="Endstation 3" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-9" value="Switch" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="279" width="270" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-4" value="Port 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
+                    <mxGeometry y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-5" value="Port 2" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
+                    <mxGeometry y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-6" value="Port 3" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
+                    <mxGeometry y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-7" value="Port 4" style="rounded=1;whiteSpace=wrap;html=1;" parent="jtS35bym35iqkQwVJULc-9" vertex="1">
+                    <mxGeometry x="150" y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-12" value="Endstation 4" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="707" y="90" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="jtS35bym35iqkQwVJULc-14" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Stream1,&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Stream2,&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Stream3,&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;BE-Traffic&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jtS35bym35iqkQwVJULc-7" target="jtS35bym35iqkQwVJULc-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

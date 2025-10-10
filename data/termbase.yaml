@@ -23,6 +23,10 @@ Bandwidth:
   en: "Bandwidth"
   de: "Bandbreite"
 
+Best Effort:
+  en: "best-effort"
+  de: "Best-Effort"
+
 Bridge:
   en: "Bridge"
   de: "Bridge"
@@ -43,6 +47,14 @@ Control Protocol:
   en: "Control protocol"
   de: "Steuerprotokoll"
 
+Credit Based:
+  en: "credit-based"
+  de: "credit-based"
+
+Credit Counter:
+  en: "credit counter"
+  de: "Kreditzähler"
+
 Delay:
   en: "Delay"
   de: "Delay"
@@ -59,6 +71,10 @@ Egress Port:
   en: "Egress-Port"
   de: "Ausgangsport"
 
+Egress Ports:
+  en: "Egress-Ports"
+  de: "Ausgangsports"
+
 Endstation:
   en: "Endstation"
   de: "Endstation"
@@ -66,6 +82,10 @@ Endstation:
 Enumeration:
   en: "Enumeration"
   de: "Enumeration"
+
+Forward Queuing For Time-sensitive Streams:
+  en: "Forward Queuing for Time-Sensitive Streams"
+  de: "Forward Queuing for Time-Sensitive Streams"
 
 Gbps:
   en: "Gbps"
@@ -79,9 +99,17 @@ Guaranteed Delivery:
   en: "Guaranteed delivery"
   de: "garantierte Zustellung"
 
+Hop:
+  en: "hop"
+  de: "Hop"
+
 Hop Hops:
   en: "hop / hops"
   de: "Hop / Hops"
+
+Hops:
+  en: "hops"
+  de: "Hops"
 
 IEEE:
   en: "IEEE"
@@ -95,6 +123,10 @@ IP Network:
 Ingress Port:
   en: "Ingress-Port"
   de: "Eingangsport"
+
+Ingress Ports:
+  en: "Ingress-Ports"
+  de: "Eingangsports"
 
 Interoperability:
   en: "Interoperability"
@@ -144,9 +176,17 @@ Network Traffic:
   en: "Network traffic"
   de: "Netzwerkverkehr"
 
+Networked Audio:
+  en: "Networked Audio"
+  de: "Audionetzwerk"
+
 Packet:
   en: "Packet"
   de: "Paket"
+
+Packets:
+  en: "Packets"
+  de: "Pakete"
 
 Playout Delay:
   en: "Playout delay"
@@ -159,6 +199,10 @@ Plug And Play:
 Port:
   en: "Port"
   de: "Port"
+
+Ports:
+  en: "Ports"
+  de: "Ports"
 
 Presentation Time Offset:
   en: "Presentation Time Offset"
@@ -175,6 +219,10 @@ Real Time Kernel:
 Redundant Network:
   en: "redundant network"
   de: "redundantes Netzwerk"
+
+Sample Rate:
+  en: "Sample Rate"
+  de: "Sample Rate"
 
 Setup:
   en: "Setup"
@@ -196,6 +244,18 @@ Stream Reservation:
   en: "Stream Reservation"
   de: "Stream-Reservierung"
 
+Stream Reservation Protocol:
+  en: "Stream Reservation Protocol"
+  de: "Stream Reservation Protocol"
+
+Streaming:
+  en: "Streaming"
+  de: "Streaming"
+
+Streams:
+  en: "Streams"
+  de: "Streams"
+
 Switch:
   en: "Switch"
   de: "Switch"
@@ -212,6 +272,14 @@ Talker:
 Time Aware:
   en: "time-aware"
   de: "time-aware"
+
+Time Critical:
+  en: "time-critical"
+  de: "zeitkritisch"
+
+Traffic Shaper:
+  en: "Traffic Shaper"
+  de: "Traffic Shaper"
 
 Traffic Shaping:
   en: "Traffic Shaping"
