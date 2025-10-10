@@ -43,9 +43,21 @@ Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
 
+Connection Management:
+  en: "Connection Management"
+  de: "Connection Management"
+
+Control:
+  en: "Control"
+  de: "Steuerung"
+
 Control Protocol:
-  en: "Control protocol"
-  de: "Steuerprotokoll"
+  en: "Control Protocol"
+  de: "Control Protocol"
+
+Controller:
+  en: "Controller"
+  de: "Controller"
 
 Credit Based:
   en: "credit-based"
@@ -65,7 +77,7 @@ Deterministic Delivery:
 
 Device Discovery:
   en: "Device discovery"
-  de: "Geräte-Discovery"
+  de: "Device Discovery"
 
 Egress Port:
   en: "Egress-Port"
@@ -155,6 +167,10 @@ Mbps:
 Milan:
   en: "Milan"
   de: "Milan"
+
+Monitor:
+  en: "monitor"
+  de: "überwacht"
 
 Network:
   en: "Network"
