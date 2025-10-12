@@ -35,13 +35,25 @@ Bridge:
   en: "Bridge"
   de: "Bridge"
 
+Bridged Endstation:
+  en: "Bridged Endstation"
+  de: "Bridged Endstation"
+
 CAT Cable:
   en: "CAT cable"
   de: "CAT-Kabel"
 
+Cable:
+  en: "Cable"
+  de: "Kabel"
+
 Certified Products:
   en: "certified products"
   de: "zertifizierte Produkte"
+
+Clock:
+  en: "Clock"
+  de: "Clock"
 
 Clock Synchronization:
   en: "Clock synchronization"
@@ -172,9 +184,17 @@ Media Transport:
   en: "Media Transport"
   de: "Datenübertragung"
 
+Microphone:
+  en: "Microphone"
+  de: "Mikrofon"
+
 Milan:
   en: "Milan"
   de: "Milan"
+
+Mixing Console:
+  en: "Mixing Console"
+  de: "Mischpult"
 
 Monitor:
   en: "monitor"
@@ -236,9 +256,17 @@ Presentation Time Offset:
   en: "Presentation Time Offset"
   de: "Presentation Time Offset"
 
+Primary:
+  en: "Primary"
+  de: "Primary"
+
 Qos:
   en: "QoS"
   de: "QoS"
+
+Real Time:
+  en: "Real-time"
+  de: "Echtzeit"
 
 Real Time Kernel:
   en: "Real-time Kernel"
@@ -256,6 +284,10 @@ Sample Rate:
   en: "Sample Rate"
   de: "Sample Rate"
 
+Secondary:
+  en: "Secondary"
+  de: "Secondary"
+
 Setup:
   en: "Setup"
   de: "Einrichtung / Setup"
@@ -263,6 +295,10 @@ Setup:
 Specification:
   en: "Specification"
   de: "Spezifikation"
+
+Stage Box:
+  en: "Stage Box"
+  de: "Stagebox"
 
 Star Topology:
   en: "star topology"
