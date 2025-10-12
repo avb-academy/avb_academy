@@ -5,9 +5,9 @@ weight: 1
 ---
 
 {{% notice info %}}
-- A Milan AVB network has one clock leader. The {{< tooltip "BTCA">}} is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
-- The {{< tooltip "GM">}} is elected based on parameters that describe the clock quality of the device. The best quality wins.
-- Network Time is the shared global time base provided to all devices in the network by {{< tooltip "gPTP">}}.
+- A Milan AVB network has one clock leader. The BTCA is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
+- The GM is elected based on parameters that describe the clock quality of the device. The best quality wins.
+- Network Time is the shared global time base provided to all devices in the network by gPTP.
 - Media Time is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
 {{% /notice %}}
 
@@ -21,14 +21,14 @@ Milan timing is divided into two parts: the {{< tooltip "Network Time">}}, provi
 
 <div class="text-image-container">
   <div class="text">
-    <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a Grand Master (GM) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected.</p>
+    <p>Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations" "Endstation">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a GrandMaster (GM) has to be elected. This GrandMaster will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected.</p>
   </div>
   <div class="image">
     <img src="/images/gPTP-BTCA.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
   </div>
 </div>
 
-The election of the the {{< tooltip "gPTP" >}} GrandMaster is based on parameters that describe the clock quality of the device. Of course the best clock quality is elected as the {{< tooltip "GM">}}. In case multiple devices have the same clock quality, the device with the lowest {{< tooltip "MAC" >}} address is selected. Switches are preferred over Endstations.
+The election of the {{< tooltip "gPTP" >}} GrandMaster is based on parameters that describe the clock quality of the device. Of course the best clock quality is elected as the {{< tooltip "GM">}}. In case multiple devices have the same clock quality, the device with the lowest {{< tooltip "MAC" >}} address is selected. Switches are preferred over Endstations.
   
 After the election process, the {{< tooltip "GM">}} provides its time to all network participants.
 
@@ -44,13 +44,13 @@ This contrasts with PTPv1, which uses the end-to-end approach that may introduce
 
 {{< figure src="/images/PTPv1-sync.drawio.svg" alt="Port to Port sync" fig-num="2" title="PTPv1 sync process is End to End" id="fig-gPTP-sync">}}
 
-## Network Clock Domain
+## Network Time Domain
 All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster belong to a single domain. Each domain is exclusively clocked by one {{< tooltip "gPTP" >}} {{< tooltip "GM">}}. In {{< tooltip "Milan">}}, audio streams cannot be shared between different {{< tooltip "gPTP" >}} domains because there is no timing relationship between them.
 
-## Media Clock
+## {{< termbase "Media Time">}}
 
-To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called Media Clocking.
+To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called {{< termbase "Media Time">}}.
 
-Media Clocking can be achieved in two ways: by locking to the timing information in an Audio {{< tooltip "Stream" >}}, or by using a Clock Reference Format (CRF) Stream. Both methods allow devices to align their local audio clocks with the rest of the network. More details on the Media formats can be found in [Media Transport](../01_media-transport/_index.md).
+{{< termbase "Media Time">}} can be achieved in two ways: by locking to the timing information in an Audio {{< tooltip "Stream" >}}, or by using a Clock Reference Format (CRF) Stream. Both methods allow devices to align their local audio clocks with the rest of the network. More details on the Media formats can be found in [Media Transport](../01_media-transport/_index.md).
 
-Support for {{< tooltip "CRF" >}} is optional and depends on the device capabilities. Smaller devices often rely on AAF streams alone for Media Clocking.
+Support for {{< tooltip "CRF" >}} is optional and depends on the device capabilities. Smaller devices often rely on {{< tooltip "AAF">}} streams alone for their {{< termbase "Media Time">}}.

@@ -1,7 +1,9 @@
 {{- /* layouts/shortcodes/termbase.html */ -}}
 {{- $lang := .Site.Language.Lang -}}
 {{- $input := .Get 0 -}}
-{{- $normalized := title $input -}} {{/* normalize to match YAML key (Title Case) */}}
+{{- $normalized := $input -}}
+{{/*  <p>DEBUG: input='{{ $input }}' normalized='{{ $normalized }}'</p>
+<p>DEBUG: keys: {{ range $k, $v := .Site.Data.termbase }}{{ $k }} | {{ end }}</p>  */}}
 {{- $translation := "" -}}
 {{- $found := true -}}
 
