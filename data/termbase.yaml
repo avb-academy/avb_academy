@@ -55,6 +55,10 @@ Clock:
   en: "Clock"
   de: "Clock"
 
+Clocks:
+  en: "Clocks"
+  de: "Clocks"
+
 Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
@@ -361,3 +365,22 @@ Video Stream:
   en: "Video stream"
   de: "Videostream"
 
+Analog To Digital Converter:
+  en: "Analog To Digital Converter"
+  de: "Analog Zu Digital Umsetzer"
+
+Analog To Digital Converters:
+  en: "Analog To Digital Converters"
+  de: "Analog Zu Digital Umsetzer"
+
+Digital To Analog Converter:
+  en: "Digital To Analog Converter"
+  de: "Digital Zu Analog Umsetzer"
+
+Digital To Analog Converters:
+  en: "Digital To Analog Converters"
+  de: "Digital Zu Analog Umsetzer"
+
+Master Clock:
+  en: "Master Clock"
+  de: "Master Clock"
