@@ -3,6 +3,18 @@ AVB:
   de: "AVB"
   acronym: "AVB"
 
+Analog To Digital Converter:
+  en: "Analog To Digital Converter"
+  de: "Analog Zu Digital Umsetzer"
+
+Analog To Digital Converters:
+  en: "Analog To Digital Converters"
+  de: "Analog Zu Digital Umsetzer"
+
+Audio Data:
+  en: "Audio Data"
+  de: "Audiodaten"
+
 Audio Interface:
   en: "Audio Interface"
   de: "Audiointerface"
@@ -55,13 +67,17 @@ Clock:
   en: "Clock"
   de: "Clock"
 
-Clocks:
-  en: "Clocks"
-  de: "Clocks"
+Clock Data:
+  en: "Clock Data"
+  de: "Synchronisationsdaten"
 
 Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
+
+Clocks:
+  en: "Clocks"
+  de: "Clocks"
 
 Connection Management:
   en: "Connection Management"
@@ -70,6 +86,10 @@ Connection Management:
 Control:
   en: "Control"
   de: "Steuerung"
+
+Control Data:
+  en: "Control Data"
+  de: "Steuerdaten"
 
 Control Protocol:
   en: "Control Protocol"
@@ -98,6 +118,14 @@ Deterministic Delivery:
 Device Discovery:
   en: "Device discovery"
   de: "Device Discovery"
+
+Digital To Analog Converter:
+  en: "Digital To Analog Converter"
+  de: "Digital Zu Analog Umsetzer"
+
+Digital To Analog Converters:
+  en: "Digital To Analog Converters"
+  de: "Digital Zu Analog Umsetzer"
 
 Egress Port:
   en: "Egress-Port"
@@ -175,6 +203,10 @@ Low Latency:
 Manufacturer Independent:
   en: "manufacturer-independent"
   de: "herstellerunabhängig"
+
+Master Clock:
+  en: "Master Clock"
+  de: "Master Clock"
 
 Mbps:
   en: "Mbps"
@@ -365,22 +397,3 @@ Video Stream:
   en: "Video stream"
   de: "Videostream"
 
-Analog To Digital Converter:
-  en: "Analog To Digital Converter"
-  de: "Analog Zu Digital Umsetzer"
-
-Analog To Digital Converters:
-  en: "Analog To Digital Converters"
-  de: "Analog Zu Digital Umsetzer"
-
-Digital To Analog Converter:
-  en: "Digital To Analog Converter"
-  de: "Digital Zu Analog Umsetzer"
-
-Digital To Analog Converters:
-  en: "Digital To Analog Converters"
-  de: "Digital Zu Analog Umsetzer"
-
-Master Clock:
-  en: "Master Clock"
-  de: "Master Clock"
