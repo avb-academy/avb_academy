@@ -397,6 +397,10 @@ Time Critical:
   en: "time-critical"
   de: "zeitkritisch"
 
+Time Synchronization:
+  en: "Time Synchronization"
+  de: "Zeitsynchronisation"
+
 Traffic Shaper:
   en: "Traffic Shaper"
   de: "Traffic Shaper"
