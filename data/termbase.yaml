@@ -15,6 +15,10 @@ Audio Data:
   en: "Audio Data"
   de: "Audiodaten"
 
+Audio Dropout:
+  en: "Audio Dropout"
+  de: "Audio-Aussetzer"
+
 Audio Interface:
   en: "Audio Interface"
   de: "Audiointerface"
@@ -49,7 +53,7 @@ Bridge:
 
 Bridged Endstation:
   en: "Bridged Endstation"
-  de: "Bridged Endstation"
+  de: "Bridged Enstation"
 
 CAT Cable:
   en: "CAT cable"
@@ -63,6 +67,10 @@ Certified Products:
   en: "certified products"
   de: "zertifizierte Produkte"
 
+Click:
+  en: "Click"
+  de: "Klick"
+
 Clock:
   en: "Clock"
   de: "Clock"
@@ -71,6 +79,10 @@ Clock Data:
   en: "Clock Data"
   de: "Synchronisationsdaten"
 
+Clock Leader:
+  en: "Clock Leader"
+  de: "Clock Leader"
+
 Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
@@ -78,6 +90,10 @@ Clock Synchronization:
 Clocks:
   en: "Clocks"
   de: "Clocks"
+
+Comb Filter:
+  en: "Comb Filter"
+  de: "Kammfilter"
 
 Connection Management:
   en: "Connection Management"
@@ -109,7 +125,7 @@ Credit Counter:
 
 Delay:
   en: "Delay"
-  de: "Delay"
+  de: "Verzögerung"
 
 Deterministic Delivery:
   en: "Deterministic delivery"
@@ -127,6 +143,14 @@ Digital To Analog Converters:
   en: "Digital To Analog Converters"
   de: "Digital Zu Analog Umsetzer"
 
+Domain:
+  en: "Domain"
+  de: "Domäne"
+
+Domains:
+  en: "Domains"
+  de: "Domänen"
+
 Egress Port:
   en: "Egress-Port"
   de: "Ausgangsport"
@@ -134,6 +158,10 @@ Egress Port:
 Egress Ports:
   en: "Egress-Ports"
   de: "Ausgangsports"
+
+End To End:
+  en: "end-to-end"
+  de: "Ende-zu-Ende"
 
 Endstation:
   en: "Endstation"
@@ -151,9 +179,17 @@ Gbps:
   en: "Gbps"
   de: "Gbps"
 
+Glitch:
+  en: "Glitch"
+  de: "Störung"
+
 Gptp:
   en: "Generalized Precision Time Protocol"
   de: "Generalized Precision Time Protocol"
+
+Grandmaster:
+  en: "GrandMaster"
+  de: "GrandMaster"
 
 Guaranteed Delivery:
   en: "Guaranteed delivery"
@@ -188,6 +224,10 @@ Interoperability:
   en: "Interoperability"
   de: "Interoperabilität"
 
+Jitter:
+  en: "Jitter"
+  de: "Jitter"
+
 Latency:
   en: "Latency"
   de: "Latenz"
@@ -213,7 +253,7 @@ Mbps:
   de: "Mbps"
 
 Media Time:
-  en: "Media Time"
+  en: "Media Clock"
   de: "Medientakt"
 
 Media Transport:
@@ -244,9 +284,21 @@ Network Adapter:
   en: "Network Adapter"
   de: "Netzwerkadapter"
 
+Network Delay:
+  en: "Network Delay"
+  de: "Netzwerkverzögerung"
+
 Network Interface:
   en: "Network Interface / Network Card"
   de: "Netzwerkkarte"
+
+Network Performance:
+  en: "Network Performance"
+  de: "Netzwerkperformance"
+
+Network Synchronization:
+  en: "Network Synchronization"
+  de: "Netzwerksynchronisation"
 
 Network Time:
   en: "Network time"
@@ -260,6 +312,10 @@ Networked Audio:
   en: "Networked Audio"
   de: "Audionetzwerk"
 
+Networks:
+  en: "Network"
+  de: "Netzwerke"
+
 Packet:
   en: "Packet"
   de: "Paket"
@@ -267,6 +323,18 @@ Packet:
 Packets:
   en: "Packets"
   de: "Pakete"
+
+Pdelay Request:
+  en: "PDelay Request"
+  de: "PDelay Request"
+
+Pdelay Response:
+  en: "PDelay Response"
+  de: "PDelay Response"
+
+Peer Delay:
+  en: "Peer Delay"
+  de: "Peer Delay"
 
 Playback:
   en: "Playback"
@@ -320,6 +388,14 @@ Sample Rate:
   en: "Sample Rate"
   de: "Sample Rate"
 
+Sample Rates:
+  en: "Sample Rates"
+  de: "Sample Rates"
+
+Sampling:
+  en: "Sampling"
+  de: "Abtastung"
+
 Secondary:
   en: "Secondary"
   de: "Secondary"
@@ -372,6 +448,10 @@ Switch:
   en: "Switch"
   de: "Switch"
 
+Synchronization:
+  en: "Synchronization"
+  de: "Synchronisation"
+
 TSN:
   en: "Time-Sensitive Networking"
   de: "TSN"
@@ -385,9 +465,21 @@ Time Aware:
   en: "time-aware"
   de: "time-aware"
 
+Time Base:
+  en: "Time Base"
+  de: "Zeitbasis"
+
 Time Critical:
   en: "time-critical"
   de: "zeitkritisch"
+
+Time Synchronization:
+  en: "Time Synchronization"
+  de: "Zeitsynchronisation"
+
+Timing:
+  en: "Timing"
+  de: "Timing"
 
 Traffic Shaper:
   en: "Traffic Shaper"
@@ -404,4 +496,8 @@ Transport Layer:
 Video Stream:
   en: "Video stream"
   de: "Videostream"
+
+Worst-case Scenario:
+  en: "Worst-Case Scenario"
+  de: "schlimmster Fall"
 

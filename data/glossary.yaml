@@ -278,7 +278,7 @@ SRP:
 Stream:
   reference: '{{< global_reference ref="IEEE1722" >}}'
   en:
-    short: 'Container for audio channels.'
+    short: 'Container for audio or clock data.'
     explanation: 'Used to transmit data between a {{< tooltip "Talker">}} and a {{< tooltip "Listener" >}} within a network. Basis for the bandwidth reservation calculation. [More explanation](../00_introduction-to-audio-networks/stream.md)'
   de:
     short: 'Container für Audiokanäle.'

@@ -28,7 +28,7 @@ Audio Video Bridging (AVB) ist ein Satz von Spezifikationen innerhalb der größ
 - Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.md)
 - Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.md) -->
 - Stream-Reservierung zur garantierten Bandbreitenzuteilung: [Weitere Infos zur Stream-Reservierung](01_milan/03_traffic-shaping/stream-reservation/_index.md)  
-- Präzise Zeitsynchronisation im Netzwerk mittels {{< tooltip "gPTP" >}}: [Weitere Infos zum Netzwerk-Timing](01_milan/00_network-timing/_index.md)  
+- Präzise {{< termbase "Time Synchronization">}} im Netzwerk mittels {{< tooltip "gPTP" >}}: [Weitere Infos zum Netzwerk-Timing](01_milan/00_network-timing/_index.md)  
 - Latenzarme Paketweiterleitung durch Credit-Based Traffic Shaping: [Weitere Infos zum Traffic Shaping](01_milan/03_traffic-shaping/fqtss/_index.md)
 
 <!-- ## Milan: The ProAV Flavor of AVB -->
