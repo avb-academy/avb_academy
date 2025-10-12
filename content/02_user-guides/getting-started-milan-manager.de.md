@@ -36,6 +36,3 @@ weight: 20
 | Beschreibung | Screenshot |
 |--------------|------------|
 | Eine ausführliche Dokumentation zu den Funktionen des Milan Managers ist nach der Installation verfügbar. Klicke dazu auf *Main Menu* → *Help*. | ![Milan Manager help](/images/04-Milan-Manager.png) |
-
-Was ich angepasst habe:
-
