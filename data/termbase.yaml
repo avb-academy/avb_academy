@@ -35,6 +35,10 @@ Bridge:
   en: "Bridge"
   de: "Bridge"
 
+Bridged Endstation:
+  en: "Bridged Endstation"
+  de: "Bridged Enstation"
+
 CAT Cable:
   en: "CAT cable"
   de: "CAT-Kabel"

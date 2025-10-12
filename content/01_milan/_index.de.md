@@ -11,7 +11,7 @@ weight: 2
 {{% /notice %}} -->
 {{% notice info %}}
 - Endstation: Ein Gerät, das Audio in das Milan-Format umwandelt ({{< termbase "Talker">}}) oder Netzwerk-Signale in Audio zurückwandelt ({{< termbase "Listener">}}). Manche Geräte kombinieren beide Funktionen.
-- Switch: Ein Gerät, das Datenpakete zwischen {{< termbase "Ports">}} weiterleitet.
+- Switch: Ein Gerät, das Pakete zwischen {{< termbase "Ports">}} weiterleitet.
 - Milan arbeitet auf OSI Layer 2, daher erfolgt die Adressierung ausschließlich über MAC-Adressen.
 {{% /notice %}}
 
@@ -25,7 +25,7 @@ Dieses Kapitel ist so gestaltet, dass es leicht verständlich ist. Technische Be
 ## Milan Fachbegriffe
 
 <!-- Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme in a Milan network. The terms are explained in the following. -->
-Die Grafik in [Abb. 1](fig-milan-names) zeigt, wie die Bezeichnungen in einem Milan-{{<termbase "Network">}} vergeben werden. Die einzelnen Begriffe werden im Folgenden erklärt.
+Die Grafik in [Abb. 1](fig-milan-names) zeigt, wie die Bezeichnungen in einem Milan-{{< termbase "Network">}} vergeben werden. Die einzelnen Begriffe werden im Folgenden erklärt.
 
 <!-- {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Names" id="fig-milan-names">}} -->
 {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Fachbegriffe" id="fig-milan-names">}}
@@ -46,7 +46,7 @@ Eine {{< termbase "Talker">}}-Endstation wandelt ein Audiosignal in das Milan-{{
 #### {{< termbase "Listener">}}-Endstation
 
 <!-- A Listener extracts an audio signal from the network. Could be an amplifier. -->
-Eine {{< termbase "Listener">}}-Endstation entnimmt ein Audiosignal aus dem Milan-{{< termbase "Network">}}. Beispiele dafür sind Verstärker.
+Eine {{< termbase "Listener">}}-Endstation entnimmt ein Audiosignal aus dem Milan-{{< termbase "Network">}}. Ein Beispiel dafür ist ein Verstärker.
 
 <!-- ### Switch -->
 ### {{< termbase "Switch">}}
@@ -58,11 +58,10 @@ Ein {{< termbase "Switch">}} leitet {{< termbase "Packets">}} zwischen verschied
 ### {{< termbase "Bridged Endstation">}}
 
 <!-- A Bridged Endstation incorporates the Talker and or Listener functionality as well as the Switch functionality. -->
-Eine {{< termbase "Bridged Endstation">}} vereint die Funktionen eines {{< tooltip "Talker">}} und/oder {{< tooltip "Listener">}} mit den Funktionen eines {{< tooltip "Switches" "Switch">}}.
+Eine {{< termbase "Bridged Endstation">}} vereint die Funktionen eines {{< termbase "Talker">}} und/oder {{< termbase "Listener">}} mit den Funktionen eines {{< termbase "Switch">}}.
 
 <!-- ## OSI layers -->
 ## OSI Layers
 
 <!-- Milan operates on Open Systems Interconnection (OSI) layer 2. Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control (MAC) addresses. -->
-Milan arbeitet auf der OSI-Schicht 2 (Open Systems Interconnection). Das bedeutet, dass keine IP-Adressen benötigt werden. Die Adressierung erfolgt ausschliesslich über Medium Access Control (MAC)-Adressen.
-
+Milan arbeitet auf der OSI-Schicht 2 (Open Systems Interconnection). Das bedeutet, dass keine IP-Adressen benötigt werden. Die Adressierung erfolgt ausschließlich über Medium Access Control (MAC)-Adressen.
