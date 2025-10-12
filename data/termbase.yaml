@@ -397,3 +397,10 @@ Video Stream:
   en: "Video stream"
   de: "Videostream"
 
+Source:
+  en: "Source"
+  de: "Quelle"
+
+Sink:
+  en: "Sink"
+  de: "Senke"
