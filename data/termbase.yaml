@@ -3,6 +3,18 @@ AVB:
   de: "AVB"
   acronym: "AVB"
 
+Analog To Digital Converter:
+  en: "Analog To Digital Converter"
+  de: "Analog Zu Digital Umsetzer"
+
+Analog To Digital Converters:
+  en: "Analog To Digital Converters"
+  de: "Analog Zu Digital Umsetzer"
+
+Audio Data:
+  en: "Audio Data"
+  de: "Audiodaten"
+
 Audio Dropout:
   en: "Audio Dropout"
   de: "Audio-Aussetzer"
@@ -47,6 +59,10 @@ CAT Cable:
   en: "CAT cable"
   de: "CAT-Kabel"
 
+Cable:
+  en: "Cable"
+  de: "Kabel"
+
 Certified Products:
   en: "certified products"
   de: "zertifizierte Produkte"
@@ -59,6 +75,10 @@ Clock:
   en: "Clock"
   de: "Clock"
 
+Clock Data:
+  en: "Clock Data"
+  de: "Synchronisationsdaten"
+
 Clock Leader:
   en: "Clock Leader"
   de: "Clock Leader"
@@ -66,6 +86,10 @@ Clock Leader:
 Clock Synchronization:
   en: "Clock synchronization"
   de: "Taktsynchronisation"
+
+Clocks:
+  en: "Clocks"
+  de: "Clocks"
 
 Comb Filter:
   en: "Comb Filter"
@@ -78,6 +102,10 @@ Connection Management:
 Control:
   en: "Control"
   de: "Steuerung"
+
+Control Data:
+  en: "Control Data"
+  de: "Steuerdaten"
 
 Control Protocol:
   en: "Control Protocol"
@@ -106,6 +134,14 @@ Deterministic Delivery:
 Device Discovery:
   en: "Device discovery"
   de: "Device Discovery"
+
+Digital To Analog Converter:
+  en: "Digital To Analog Converter"
+  de: "Digital Zu Analog Umsetzer"
+
+Digital To Analog Converters:
+  en: "Digital To Analog Converters"
+  de: "Digital Zu Analog Umsetzer"
 
 Domain:
   en: "Domain"
@@ -208,6 +244,10 @@ Manufacturer Independent:
   en: "manufacturer-independent"
   de: "herstellerunabhängig"
 
+Master Clock:
+  en: "Master Clock"
+  de: "Master Clock"
+
 Mbps:
   en: "Mbps"
   de: "Mbps"
@@ -220,9 +260,17 @@ Media Transport:
   en: "Media Transport"
   de: "Datenübertragung"
 
+Microphone:
+  en: "Microphone"
+  de: "Mikrofon"
+
 Milan:
   en: "Milan"
   de: "Milan"
+
+Mixing Console:
+  en: "Mixing Console"
+  de: "Mischpult"
 
 Monitor:
   en: "monitor"
@@ -312,9 +360,17 @@ Presentation Time Offset:
   en: "Presentation Time Offset"
   de: "Presentation Time Offset"
 
+Primary:
+  en: "Primary"
+  de: "Primary"
+
 Qos:
   en: "QoS"
   de: "QoS"
+
+Real Time:
+  en: "Real-time"
+  de: "Echtzeit"
 
 Real Time Kernel:
   en: "Real-time Kernel"
@@ -340,13 +396,29 @@ Sampling:
   en: "Sampling"
   de: "Abtastung"
 
+Secondary:
+  en: "Secondary"
+  de: "Secondary"
+
 Setup:
   en: "Setup"
   de: "Einrichtung / Setup"
 
+Sink:
+  en: "Sink"
+  de: "Senke"
+
+Source:
+  en: "Source"
+  de: "Quelle"
+
 Specification:
   en: "Specification"
   de: "Spezifikation"
+
+Stage Box:
+  en: "Stage Box"
+  de: "Stagebox"
 
 Star Topology:
   en: "star topology"
