@@ -328,6 +328,14 @@ Setup:
   en: "Setup"
   de: "Einrichtung / Setup"
 
+Sink:
+  en: "Sink"
+  de: "Senke"
+
+Source:
+  en: "Source"
+  de: "Quelle"
+
 Specification:
   en: "Specification"
   de: "Spezifikation"
@@ -397,10 +405,3 @@ Video Stream:
   en: "Video stream"
   de: "Videostream"
 
-Source:
-  en: "Source"
-  de: "Quelle"
-
-Sink:
-  en: "Sink"
-  de: "Senke"
