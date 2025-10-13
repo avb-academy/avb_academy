@@ -47,7 +47,7 @@ Die Ergebnisse jeder Frage findet ihr jeweils auf einer eigenen Seite, damit all
 - [Q09: How would you access AVB Academy?](q009.md)
 - [Q10: Any additional comments or suggestions?](q010.md) -->
 
-- [Q00: Bevorzugte Sprache der Teilnehmer](q000.md)
+- [Q00: Bevorzugte Sprache der Teilnehmenden](q000.md)
 - [Q01: Deine Rolle in der Veranstaltungsbranche?](q001.md)
 - [Q02: Auf welchen Veranstaltungen arbeitest du?](q002.md)
 - [Q03: Welche Erfahrung hast du mit Audio-Netzwerken?](q003.md)
