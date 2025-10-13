@@ -6,19 +6,19 @@ tags: ["Umfrage-2025"]
 ---
 
 <!-- First of all, a heartfelt thank you to all participants. Your feedback not only brings real value to this project but also clearly demonstrates the need for a public, unbranded knowledge base focused on AVB. The level of interest, willingness to contribute, and preferred learning styles all point toward a strong, engaged community ready to learn, share, and grow together. -->
-Zunächst ein herzliches Dankeschön an alle Teilnehmerinnen und Teilnehmer der Umfrage. Euer Feedback ist für dieses Projekt von großem Wert und zeigt deutlich, dass es eine öffentliche, unabhängige Wissensplattform rund um AVB braucht. Das große Interesse, die Bereitschaft zur aktiven Mitwirkung und die bevorzugten Lernformen machen deutlich, dass hier eine engagierte Community entsteht, die gemeinsam lernen, sich austauschen und weiterwachsen möchte.
+Ein großes Dankeschön an alle, die an unserer Umfrage teilgenommen haben. Euer Feedback hilft uns nicht nur, die AVB Academy weiterzuentwickeln, es zeigt auch, wie wichtig eine öffentliche, unabhängige Wissensplattform rund um Milan AVB ist. Das Interesse, die Bereitschaft mitzuwirken und die bevorzugten Lernweisen zeigen deutlich: Hier entsteht eine aktive Community, die zusammen lernen, Erfahrungen teilen und weiter wachsen möchte.
 
 <!-- The AVB Academy is an open educational project dedicated to making the technical details of Milan AVB accessible to a broad audience that does not want to read the full IEEE specifications for an initial understanding. -->
-Die AVB Academy ist ein offenes Bildungsprojekt. Sie macht die technischen Details von Milan AVB einer breiten Öffentlichkeit zugänglich, besonders für alle, die sich zunächst ein grundlegendes Verständnis verschaffen möchten, ohne direkt die vollständigen IEEE-Spezifikationen lesen zu müssen.
+Die AVB Academy ist ein offenes Projekt, das die technischen Details von Milan AVB verständlich machen soll. Besonders für alle, die sich erst einmal einen Überblick verschaffen wollen, ohne direkt die gesamten IEEE-Spezifikationen lesen zu müssen.
 
 <!-- To validate assumptions about our potential user base, we launched this survey alongside the public beta release in February 2025. -->
-Um einige Annahmen über die Nutzerbasis zu prüfen, wurde diese Umfrage zusammen mit dem Public-Beta-Release im Februar 2025 gestartet.
+Um ein besseres Bild unserer Nutzerinnen und Nutzer zu bekommen, haben wir die Umfrage zusammen mit dem Public-Beta-Release im Februar 2025 gestartet.
 
 <!-- The survey ran from February 17, 2025, to July 6, 2025, with a total duration of four months. -->
-Die Umfrage lief vom 17. Februar bis zum 6. Juli 2025 und hatte damit eine Gesamtdauer von vier Monaten.
+Die Umfrage lief vom 17. Februar bis zum 6. Juli 2025 – insgesamt also vier Monate.
 
 <!-- To ensure accessibility, the 10 survey questions were provided in English, German, French, and Spanish. -->
-Damit die Umfrage für alle zugänglich ist, wurden die 10 Fragen auf Englisch, Deutsch, Französisch und Spanisch angeboten.
+Damit wirklich alle mitmachen konnten, standen die 10 Fragen in Englisch, Deutsch, Französisch und Spanisch zur Verfügung.
 
 <!-- {{% notice info %}}
 This report presents the aggregated results, independent of language preference, to maintain clarity and brevity. For language-specific data, the full raw dataset is available here: [Github](https://github.com/avb-academy/survey-2025).
@@ -26,9 +26,9 @@ This report presents the aggregated results, independent of language preference,
 In order to keep the survey results clear and lean, the results for each question are presented on a separate page.
 {{% /notice %}} -->
 {{% notice info %}}
-Dieser Bericht fasst die Ergebnisse zusammen, unabhängig von der bevorzugten Sprache, um Klarheit und Übersicht zu gewährleisten. Die vollständigen Rohdaten stehen hier zur Verfügung: [Github](https://github.com/avb-academy/survey-2025).
+In diesem Bericht fassen wir die Ergebnisse zusammen, unabhängig von der bevorzugten Sprache. So bleibt alles übersichtlich. Die kompletten Rohdaten gibt es hier: [Github](https://github.com/avb-academy/survey-2025).
 
-Zur besseren Lesbarkeit werden die Ergebnisse jeder Frage auf einer eigenen Seite gezeigt.
+Die Ergebnisse jeder Frage findet ihr jeweils auf einer eigenen Seite, damit alles gut lesbar bleibt.
 {{% /notice %}}
 
 ---
