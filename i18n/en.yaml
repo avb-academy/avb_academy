@@ -1,0 +1,18 @@
+imprint:
+  other: Imprint
+licensing:
+  other: Licensing
+newsletter:
+  other: Newsletter
+short_definition:
+  other: "Short definition:"
+explanation:
+  other: "Explanation:"
+reference:
+  other: "Reference:"
+search_placeholder:
+  other: "Search glossary..."
+tooltip_not_found:
+  other: "Definition not found."
+Fig.:
+  other: "Fig."

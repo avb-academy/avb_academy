@@ -20,7 +20,7 @@ AVB Academy is an online resource designed to help users understand the Milan pr
 
 This website is not affiliated with Avnu or any other organizations involved in Milan standardization; it represents a personal project.
 
-## Installation Instructions
+## Install Instructions
 
 To set up the AVB Academy locally, follow these steps:
 
@@ -52,6 +52,9 @@ Contributions very welcome! If you'd like to help improve AVB Academy, you can:
 2. Make changes and submit a pull request.
 3. Ensure that all new content follows the established guidelines (e.g., adding new glossary terms, improving existing explanations).
 4. Review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Translation contributions
+At this point the AVB Academy is available in English and German. For a German translation contribution, please see the [English–German Translation Guidelines](Translation-Guidelines-German.md).
 
 ### Converting drawio figures
 

@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'AVB Academy'
 theme = 'hugo-theme-relearn'
 
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
 [params]
   themeVariantAuto = ['zen-light', 'zen-dark']
 
@@ -13,8 +16,16 @@ theme = 'hugo-theme-relearn'
 ignoreLogs = ["warning-goldmark-raw-html"]
 
 [module]
-[[module.mounts]]
-  source = 'static'
-  target = 'static'
-  excludeFiles = ['**/*.drawio', '**/*.bkp', 'images/*.sh']
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+    excludeFiles = ['**/*.drawio', '**/*.bkp', 'images/*.sh']
 
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 2

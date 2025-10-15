@@ -1,3 +1,4 @@
+{{- $lang := .Site.Language.Lang -}}
 {{- $displayedWord := .Get 0 -}}
 {{- $referencedWord := $displayedWord -}}
 
@@ -5,20 +6,33 @@
     {{- $referencedWord = .Get 1 -}}
 {{- end -}}
 
-{{- $tooltipText := "Definition not found." -}}
+{{- $tooltipText := i18n "tooltip_not_found" -}}
 {{- $glossaryKey := "" -}}
 
 {{- with index .Site.Data.glossary $referencedWord -}}
     {{- $glossaryKey = $referencedWord -}}
 
     {{- if reflect.IsMap . -}}
-        {{- $tooltipText = .short | default "Click for more information." -}}  <!-- Use summary if available, fallback to default text -->
+        {{- $termLang := index . $lang -}}
+        {{- if reflect.IsMap $termLang -}}
+            {{- $tooltipText = $termLang.short | default (i18n "tooltip_not_found") -}}
+        {{- else -}}
+            {{- $tooltipText = $termLang | default (i18n "tooltip_not_found") -}}
+        {{- end -}}
     {{- else -}}
-        {{- $tooltipText = . | default "Click for more information." -}}  <!-- Use the old format with fallback text -->
+        {{- $tooltipText = . | default (i18n "tooltip_not_found") -}}
     {{- end -}}
 {{- end -}}
 
-{{- printf `<a href="/glossary/#%s" class="tooltip" title="%s">%s</a>` 
-    ($glossaryKey | urlize) 
-    $tooltipText 
-    $displayedWord | safeHTML -}}
+{{- if $glossaryKey }}
+    {{- $glossaryURL := (printf "/glossary/#%s" ($glossaryKey | urlize)) | relLangURL -}}
+    {{- printf `<a href="%s" class="tooltip" title="%s">%s</a>` 
+        $glossaryURL
+        $tooltipText 
+        $displayedWord | safeHTML -}}
+{{- else }}
+    {{- /* Begriff existiert nicht → Tooltip nur ohne Link */ -}}
+    {{- printf `<span class="tooltip" title="%s">%s</span>` 
+        $tooltipText 
+        $displayedWord | safeHTML -}}
+{{- end }}

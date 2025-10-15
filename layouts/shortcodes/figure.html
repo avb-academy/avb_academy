@@ -16,8 +16,10 @@
     <img src="{{ $src }}" alt="{{ $alt }}" class="lazy lightbox-image" loading="lazy" />
   </a>
 
+  {{ $figLabel := i18n "Fig." }}
+
   {{ if $figNum }}
-    <figcaption>Fig. {{ $figNum }}: {{ $title }}</figcaption>
+    <figcaption>{{ $figLabel }} {{ $figNum }}: {{ $title }}</figcaption>
   {{ else if $caption }}
     <figcaption>{{ $caption }}</figcaption>
   {{ end }}
