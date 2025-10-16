@@ -1,50 +1,71 @@
-{{/* layouts/partials/comments.html — safe for Hugo v0.148 */}}
+{{- /* ----------------------------- */ -}}
+{{- /* Comments Partial - Working Version */ -}}
+{{- /* ----------------------------- */ -}}
 
-{{ $commentsFolder := site.Data.comments }}
-{{ $filePath := "" }}
-{{ $safeSlug := "" }}
+{{- $filePath := .File.Path -}}
 
-{{ if .File }}
-    {{ $filePath = .File.Path }}
-    {{ $safeSlug = $filePath | replaceRE "^/" "" | replaceRE "/$" "" }}
-    {{ $safeSlug = replace $safeSlug "_index.en.md" "_index_en_md" }}
-    {{ $safeSlug = replace $safeSlug "_index.de.md" "_index_de_md" }}
-    {{ $safeSlug = replace $safeSlug "_index.md" "_index_md" }}
+{{- /* Safely get base filename */ -}}
+{{- $baseName := .File.BaseFileName -}}
+{{- if not $baseName -}}
+    {{- $splitPath := split $filePath "/" -}}
+    {{- $baseName = index (last 1 $splitPath) 0 -}}
+{{- end -}}
 
-    {{ $parts := split $safeSlug "/" }}
+{{- /* Generate safeSlug and genericSlug */ -}}
+{{- $safeSlug := replace $baseName "." "_" -}}
+{{- $genericSlug := $safeSlug -}}
+{{- if or (hasSuffix $genericSlug "_en") (hasSuffix $genericSlug "_de") -}}
+    {{- $genericSlug = substr $genericSlug 0 (sub (len $genericSlug) 3) -}}
+{{- end -}}
 
-    {{/* Safely traverse comments tree */}}
-    {{ range $parts }}
-        {{ if and $commentsFolder (isset $commentsFolder .) }}
-            {{ $commentsFolder = index $commentsFolder . }}
-        {{ else }}
-            {{ $commentsFolder = dict }} {{/* Never let it be nil */}}
-        {{ end }}
-    {{ end }}
-{{ else }}
-    {{ $commentsFolder = dict }}
-{{ end }}
+{{- $lang := .Lang -}}
+{{- $allComments := slice -}}
 
-{{/* Debug info */}}
-<div style="border:1px solid #ccc; padding:0.5rem; margin:0.5rem 0;">
-    <strong>Debug Info:</strong>
-    <ul>
-        <li>Lang: {{ .Lang }}</li>
-        <li>File Path: {{ $filePath }}</li>
-        <li>Safe Slug: {{ $safeSlug }}</li>
-        <li>Comments Found: {{ if $commentsFolder }}✅ yes{{ else }}❌ no{{ end }}</li>
-    </ul>
+{{- /* Language-specific comments */ -}}
+{{- $langKey := printf "%s_%s_md" $genericSlug $lang -}}
+{{- with index site.Data.comments $langKey -}}
+    {{- $allComments = $allComments | append . -}}
+{{- end -}}
+
+{{- /* Generic fallback comments */ -}}
+{{- $fallbackKeys := slice $genericSlug -}}
+{{- if eq $lang "en" -}}
+    {{- $fallbackKeys = $fallbackKeys | append (printf "%s_md" $genericSlug) -}}
+{{- end -}}
+
+{{- range $fallbackKeys -}}
+    {{- with index site.Data.comments . -}}
+        {{- $allComments = $allComments | append . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- /* Flatten nested comments */ -}}
+{{- $flatComments := slice -}}
+{{- range $allComments -}}
+    {{- range . -}}
+        {{- $flatComments = $flatComments | append . -}}
+    {{- end -}}
+{{- end -}}
+
+<div class="debug-comments">
+<strong>Debug Info:</strong><br>
+Lang: {{ $lang }}<br>
+File Path: {{ $filePath }}<br>
+Safe Slug: {{ $safeSlug }}<br>
+Generic Slug: {{ $genericSlug }}<br>
+Comments Found: {{ if gt (len $flatComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
 </div>
 
-{{/* Render comments if present */}}
-{{ if gt (len $commentsFolder) 0 }}
-    {{ range $key, $comment := $commentsFolder }}
+{{- if gt (len $flatComments) 0 -}}
+<div class="comments-list">
+    {{- range $flatComments -}}
         <div class="comment">
-            <strong>{{ $comment.name }}</strong>
-            <small>({{ time $comment.date | dateFormat "2006-01-02 15:04:05" }})</small>
-            <p>{{ $comment.message }}</p>
+            <div class="comment-author">{{ .name }}</div>
+            <div class="comment-date">{{ .date }}</div>
+            <div class="comment-content">{{ .message | safeHTML }}</div>
         </div>
-    {{ end }}
-{{ else }}
-    <p>No comments yet.</p>
-{{ end }}
+    {{- end -}}
+</div>
+{{- else -}}
+<div class="no-comments">No comments yet.</div>
+{{- end -}}
