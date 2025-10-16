@@ -1,45 +1,37 @@
-{{- /* ----------------------------- */ -}}
-{{- /* Comments Partial - Legacy Style, Sorted by Date */ -}}
-{{- /* ----------------------------- */ -}}
+{{- /* ------------------------------------------ */ -}}
+{{- /* Comments Partial – Multilingual + Legacy */ -}}
+{{- /* Always load both: _xx_md and _en_md/_de_md */ -}}
+{{- /* ------------------------------------------ */ -}}
 
 {{- $filePath := .File.Path -}}
+{{- $safeSlug := $filePath | replaceRE "[/.-]" "_" -}}
 
-{{- /* Safely get base filename */ -}}
-{{- $baseName := .File.BaseFileName -}}
-{{- if not $baseName -}}
-    {{- $splitPath := split $filePath "/" -}}
-    {{- $baseName = index (last 1 $splitPath) 0 -}}
-{{- end -}}
-
-{{- /* Generate safeSlug and genericSlug */ -}}
-{{- $safeSlug := replace $baseName "." "_" -}}
+{{- /* Strip language suffix (_en_md, _de_md) for generic key */ -}}
 {{- $genericSlug := $safeSlug -}}
-{{- if or (hasSuffix $genericSlug "_en") (hasSuffix $genericSlug "_de") -}}
-    {{- $genericSlug = substr $genericSlug 0 (sub (len $genericSlug) 3) -}}
+{{- if or (hasSuffix $genericSlug "_en_md") (hasSuffix $genericSlug "_de_md") -}}
+    {{- $genericSlug = substr $genericSlug 0 (sub (len $genericSlug) 6) -}}
 {{- end -}}
 
 {{- $lang := .Lang -}}
 {{- $allComments := slice -}}
 
-{{- /* Language-specific comments */ -}}
+{{- /* 1. Language-specific comments, e.g. _index_en_md */ -}}
 {{- $langKey := printf "%s_%s_md" $genericSlug $lang -}}
 {{- with index site.Data.comments $langKey -}}
     {{- $allComments = $allComments | append . -}}
 {{- end -}}
 
-{{- /* Generic fallback comments */ -}}
-{{- $fallbackKeys := slice $genericSlug -}}
-{{- if eq $lang "en" -}}
-    {{- $fallbackKeys = $fallbackKeys | append (printf "%s_md" $genericSlug) -}}
-{{- end -}}
+{{- /* 2. Legacy/base comments, only for English pages */ -}}
+{{- $legacyKey := "" -}} {{/* declare variable first to make it global in this scope */}}
 
-{{- range $fallbackKeys -}}
-    {{- with index site.Data.comments . -}}
+{{- if eq $lang "en" -}}
+    {{- $legacyKey = printf "%s_md" $genericSlug -}}
+    {{- with index site.Data.comments $legacyKey -}}
         {{- $allComments = $allComments | append . -}}
     {{- end -}}
 {{- end -}}
 
-{{- /* Flatten nested comments */ -}}
+{{- /* Flatten nested lists */ -}}
 {{- $flatComments := slice -}}
 {{- range $allComments -}}
     {{- range . -}}
@@ -47,7 +39,7 @@
     {{- end -}}
 {{- end -}}
 
-{{- /* Sort comments by date descending */ -}}
+{{- /* Sort comments by date (descending) */ -}}
 {{- $sortedComments := sort $flatComments "date" "desc" -}}
 
 <div class="debug-comments">
@@ -56,6 +48,8 @@ Lang: {{ $lang }}<br>
 File Path: {{ $filePath }}<br>
 Safe Slug: {{ $safeSlug }}<br>
 Generic Slug: {{ $genericSlug }}<br>
+Lang Key: {{ $langKey }}<br>
+Legacy Key: {{ $legacyKey }}<br>
 Comments Found: {{ if gt (len $sortedComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
 </div>
 
