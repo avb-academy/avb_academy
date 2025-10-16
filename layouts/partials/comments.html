@@ -28,7 +28,10 @@
 {{- end -}}
 
 {{- /* Language-specific comments */ -}}
-{{- $base := .File.TranslationBaseName -}}
+{{- $base := "None" -}}
+{{- with .File -}}
+    {{- $base = .TranslationBaseName -}}
+{{- end -}}
 {{- $langFile := printf "%s_%s_md" $base $lang -}}
 {{- with index $nested $langFile -}}
     {{- $allComments = $allComments | append . -}}
