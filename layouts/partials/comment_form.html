@@ -2,8 +2,11 @@
 <p><em>Note: Comments are moderated and will appear after approval.</em></p>
 
 <form method="POST" action="https://comment-worker.simongapp.workers.dev">
-  {{/*  <p><strong>Debug Slug:</strong> {{ .File.Path }}</p>  */}}
-  <input type="hidden" name="slug" value="{{ .File.Path }}">
+  {{ if .File }}
+    <input type="hidden" name="slug" value="{{ .File.Path }}">
+  {{ else }}
+    <input type="hidden" name="slug" value="unknown-page">
+  {{ end }}
 
   <label for="name">Name</label>
   <input type="text" name="name" id="name" required>
