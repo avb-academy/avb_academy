@@ -28,14 +28,16 @@
 {{- end -}}
 
 {{- /* Language-specific comments */ -}}
-{{- $langFile := printf "_index_%s_md" $lang -}}
+{{- $base := .File.TranslationBaseName -}}
+{{- $langFile := printf "%s_%s_md" $base $lang -}}
 {{- with index $nested $langFile -}}
     {{- $allComments = $allComments | append . -}}
 {{- end -}}
 
 {{- /* Legacy comments (English only) */ -}}
+{{- $legacyFile := "None"}}
 {{- if eq $lang "en" -}}
-    {{- $legacyFile := "_index_md" -}}
+    {{- $legacyFile = printf "%s_md" $base -}}
     {{- with index $nested $legacyFile -}}
         {{- $allComments = $allComments | append . -}}
     {{- end -}}
@@ -53,15 +55,16 @@
 {{- $sortedComments := sort $flatComments "date" "desc" -}}
 
 {{- /* ------------------- Debug Info ------------------- */ -}}
-<div class="debug-comments">
+{{/*  <div class="debug-comments">
 <strong>Debug Info:</strong><br>
 Lang: {{ $lang }}<br>
 File Path: {{ if $filePath }}{{ $filePath }}{{ else }}(no file){{ end }}<br>
 Folder Segments: {{ if $folderSegments }}{{ delimit $folderSegments "/" }}{{ else }}(root){{ end }}<br>
+Base: {{ $base }} <br>
 Lang File: {{ $langFile }}<br>
-Legacy File: _index_md<br>
+Legacy File: {{ $legacyFile }}<br>
 Comments Found: {{ if gt (len $sortedComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
-</div>
+</div>  */}}
 
 {{- /* ------------------- Render Comments ------------------- */ -}}
 {{- if gt (len $sortedComments) 0 -}}
