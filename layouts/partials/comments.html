@@ -1,5 +1,5 @@
 {{- /* ----------------------------- */ -}}
-{{- /* Comments Partial - Working Version */ -}}
+{{- /* Comments Partial - Legacy Style, Sorted by Date */ -}}
 {{- /* ----------------------------- */ -}}
 
 {{- $filePath := .File.Path -}}
@@ -47,25 +47,30 @@
     {{- end -}}
 {{- end -}}
 
+{{- /* Sort comments by date descending */ -}}
+{{- $sortedComments := sort $flatComments "date" "desc" -}}
+
 <div class="debug-comments">
 <strong>Debug Info:</strong><br>
 Lang: {{ $lang }}<br>
 File Path: {{ $filePath }}<br>
 Safe Slug: {{ $safeSlug }}<br>
 Generic Slug: {{ $genericSlug }}<br>
-Comments Found: {{ if gt (len $flatComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
+Comments Found: {{ if gt (len $sortedComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
 </div>
 
-{{- if gt (len $flatComments) 0 -}}
-<div class="comments-list">
-    {{- range $flatComments -}}
+{{- if gt (len $sortedComments) 0 -}}
+<div class="comments-container">
+    <h2>Comments</h2>
+    {{- range $comment := $sortedComments -}}
         <div class="comment">
-            <div class="comment-author">{{ .name }}</div>
-            <div class="comment-date">{{ .date }}</div>
-            <div class="comment-content">{{ .message | safeHTML }}</div>
+            <strong>{{ $comment.name }}</strong><br>
+            {{- $date := time $comment.date -}}
+            <small>{{ $date.Format "2006-01-02 15:04:05" }}</small>
+            <p>{{ $comment.message | safeHTML }}</p>
         </div>
     {{- end -}}
 </div>
 {{- else -}}
-<div class="no-comments">No comments yet.</div>
+<p>No comments yet.</p>
 {{- end -}}
