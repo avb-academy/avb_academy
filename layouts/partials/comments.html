@@ -1,37 +1,47 @@
 {{- /* ------------------------------------------ */ -}}
-{{- /* Comments Partial – Multilingual + Legacy */ -}}
-{{- /* Always load both: _xx_md and _en_md/_de_md */ -}}
+{{- /* Comments Partial – Fully Nested + Multilingual + Legacy */ -}}
+{{- /* Hugo 0.148+ safe, no variable reassignment errors */ -}}
 {{- /* ------------------------------------------ */ -}}
 
-{{- $filePath := .File.Path -}}
-{{- $safeSlug := $filePath | replaceRE "[/.-]" "_" -}}
-
-{{- /* Strip language suffix (_en_md, _de_md) for generic key */ -}}
-{{- $genericSlug := $safeSlug -}}
-{{- if or (hasSuffix $genericSlug "_en_md") (hasSuffix $genericSlug "_de_md") -}}
-    {{- $genericSlug = substr $genericSlug 0 (sub (len $genericSlug) 6) -}}
+{{- /* Initialize variables safely */ -}}
+{{- $filePath := "" -}}
+{{- $rawFolder := "." -}}
+{{- with .File -}}
+    {{- $filePath = .Path -}}
+    {{- $rawFolder = path.Dir .Path -}}
 {{- end -}}
-
 {{- $lang := .Lang -}}
 {{- $allComments := slice -}}
 
-{{- /* 1. Language-specific comments, e.g. _index_en_md */ -}}
-{{- $langKey := printf "%s_%s_md" $genericSlug $lang -}}
-{{- with index site.Data.comments $langKey -}}
+{{- /* Split folder path into segments and normalize hyphens */ -}}
+{{- $folderSegments := slice -}}
+{{- if ne $rawFolder "." -}}
+    {{- $folderSegments = split $rawFolder "/" -}}
+    {{- $folderSegments = apply $folderSegments "replaceRE" `-` "_" "." -}}
+{{- end -}}
+
+{{- /* Traverse nested comment data safely */ -}}
+{{- $nested := site.Data.comments -}}
+{{- range $i, $seg := $folderSegments -}}
+    {{- $next := index $nested $seg | default dict -}}
+    {{- $nested = $next -}}
+{{- end -}}
+
+{{- /* Language-specific comments */ -}}
+{{- $langFile := printf "_index_%s_md" $lang -}}
+{{- with index $nested $langFile -}}
     {{- $allComments = $allComments | append . -}}
 {{- end -}}
 
-{{- /* 2. Legacy/base comments, only for English pages */ -}}
-{{- $legacyKey := "" -}} {{/* declare variable first to make it global in this scope */}}
-
+{{- /* Legacy comments (English only) */ -}}
 {{- if eq $lang "en" -}}
-    {{- $legacyKey = printf "%s_md" $genericSlug -}}
-    {{- with index site.Data.comments $legacyKey -}}
+    {{- $legacyFile := "_index_md" -}}
+    {{- with index $nested $legacyFile -}}
         {{- $allComments = $allComments | append . -}}
     {{- end -}}
 {{- end -}}
 
-{{- /* Flatten nested lists */ -}}
+{{- /* Flatten nested comment lists */ -}}
 {{- $flatComments := slice -}}
 {{- range $allComments -}}
     {{- range . -}}
@@ -39,20 +49,21 @@
     {{- end -}}
 {{- end -}}
 
-{{- /* Sort comments by date (descending) */ -}}
+{{- /* Sort comments by date descending */ -}}
 {{- $sortedComments := sort $flatComments "date" "desc" -}}
 
+{{- /* ------------------- Debug Info ------------------- */ -}}
 <div class="debug-comments">
 <strong>Debug Info:</strong><br>
 Lang: {{ $lang }}<br>
-File Path: {{ $filePath }}<br>
-Safe Slug: {{ $safeSlug }}<br>
-Generic Slug: {{ $genericSlug }}<br>
-Lang Key: {{ $langKey }}<br>
-Legacy Key: {{ $legacyKey }}<br>
+File Path: {{ if $filePath }}{{ $filePath }}{{ else }}(no file){{ end }}<br>
+Folder Segments: {{ if $folderSegments }}{{ delimit $folderSegments "/" }}{{ else }}(root){{ end }}<br>
+Lang File: {{ $langFile }}<br>
+Legacy File: _index_md<br>
 Comments Found: {{ if gt (len $sortedComments) 0 }}✅ yes{{ else }}❌ no{{ end }}
 </div>
 
+{{- /* ------------------- Render Comments ------------------- */ -}}
 {{- if gt (len $sortedComments) 0 -}}
 <div class="comments-container">
     <h2>Comments</h2>
