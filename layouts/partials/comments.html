@@ -1,79 +1,50 @@
-{{/* comments.html — multilingual + legacy fallback (v3, tested logic) */}}
-{{ if .Page.File }}
-  {{ $slug := .Page.File.Path | replaceRE "^/" "" | replaceRE "/$" "" }}
-  {{ $safeSlug := $slug }}
+{{/* layouts/partials/comments.html — safe for Hugo v0.148 */}}
 
-  {{/* 1. Handle multilingual filenames like _index.en.md or _index.de.md */}}
-  {{ if in $safeSlug "_index.en.md" }}
+{{ $commentsFolder := site.Data.comments }}
+{{ $filePath := "" }}
+{{ $safeSlug := "" }}
+
+{{ if .File }}
+    {{ $filePath = .File.Path }}
+    {{ $safeSlug = $filePath | replaceRE "^/" "" | replaceRE "/$" "" }}
     {{ $safeSlug = replace $safeSlug "_index.en.md" "_index_en_md" }}
-  {{ else if in $safeSlug "_index.de.md" }}
     {{ $safeSlug = replace $safeSlug "_index.de.md" "_index_de_md" }}
-  {{ else if in $safeSlug "_index.md" }}
     {{ $safeSlug = replace $safeSlug "_index.md" "_index_md" }}
-  {{ end }}
 
-  {{/* 2. Replace hyphens with underscores for consistency */}}
-  {{ $safeSlug = $safeSlug | replaceRE "-" "_" }}
+    {{ $parts := split $safeSlug "/" }}
 
-  {{/* 3. Navigate through the data/comments folder */}}
-  {{ $parts := split $safeSlug "/" }}
-  {{ $commentsFolder := site.Data.comments }}
-  {{ range $parts }}
-    {{ if $commentsFolder }}
-      {{ $commentsFolder = index $commentsFolder . }}
+    {{/* Safely traverse comments tree */}}
+    {{ range $parts }}
+        {{ if and $commentsFolder (isset $commentsFolder .) }}
+            {{ $commentsFolder = index $commentsFolder . }}
+        {{ else }}
+            {{ $commentsFolder = dict }} {{/* Never let it be nil */}}
+        {{ end }}
     {{ end }}
-  {{ end }}
-
-  {{/* 4. Try legacy fallback for EN pages only */}}
-  {{ $legacySafeSlug := "" }}
-  {{ if (and (not $commentsFolder) (eq .Lang "en")) }}
-    {{ $legacySafeSlug = replace $safeSlug "_index_en_md" "_index_md" }}
-    {{ $legacyParts := split $legacySafeSlug "/" }}
-    {{ $legacyFolder := site.Data.comments }}
-    {{ range $legacyParts }}
-      {{ if $legacyFolder }}
-        {{ $legacyFolder = index $legacyFolder . }}
-      {{ end }}
-    {{ end }}
-    {{ $commentsFolder = $legacyFolder }}
-  {{ end }}
-
-  <div style="border:1px solid #ccc; padding:0.75rem; margin:1rem 0;">
-    <p><strong>Debug Info:</strong></p>
-    <ul>
-      <li>Lang: {{ .Lang }}</li>
-      <li>File Path: {{ .Page.File.Path }}</li>
-      <li>Safe Slug: {{ $safeSlug }}</li>
-      {{ if $legacySafeSlug }}
-        <li>Legacy Slug Tried: {{ $legacySafeSlug }}</li>
-      {{ end }}
-      <li>Comments Found: {{ if $commentsFolder }}✅ yes{{ else }}❌ no{{ end }}</li>
-    </ul>
-  </div>
-
-  {{ if $commentsFolder }}
-    {{ $.Scratch.Set "comments" (slice) }}
-    {{ range $key, $comment := $commentsFolder }}
-      {{ $.Scratch.Add "comments" (slice $comment) }}
-    {{ end }}
-    {{ $comments := $.Scratch.Get "comments" }}
-    {{ $sorted := sort $comments "date" "desc" }}
-
-    <div class="comments-container">
-      <h2>Comments</h2>
-      {{ range $comment := $sorted }}
-        <div class="comment">
-          <strong>{{ $comment.name }}</strong><br>
-          {{ $date := time $comment.date }}
-          <small>{{ $date.Format "2006-01-02 15:04:05" }}</small>
-          <p>{{ $comment.message }}</p>
-        </div>
-      {{ end }}
-    </div>
-  {{ else }}
-    <p>No comments yet.</p>
-  {{ end }}
-
 {{ else }}
-  <p>Comments are not available on this page.</p>
+    {{ $commentsFolder = dict }}
+{{ end }}
+
+{{/* Debug info */}}
+<div style="border:1px solid #ccc; padding:0.5rem; margin:0.5rem 0;">
+    <strong>Debug Info:</strong>
+    <ul>
+        <li>Lang: {{ .Lang }}</li>
+        <li>File Path: {{ $filePath }}</li>
+        <li>Safe Slug: {{ $safeSlug }}</li>
+        <li>Comments Found: {{ if $commentsFolder }}✅ yes{{ else }}❌ no{{ end }}</li>
+    </ul>
+</div>
+
+{{/* Render comments if present */}}
+{{ if gt (len $commentsFolder) 0 }}
+    {{ range $key, $comment := $commentsFolder }}
+        <div class="comment">
+            <strong>{{ $comment.name }}</strong>
+            <small>({{ time $comment.date | dateFormat "2006-01-02 15:04:05" }})</small>
+            <p>{{ $comment.message }}</p>
+        </div>
+    {{ end }}
+{{ else }}
+    <p>No comments yet.</p>
 {{ end }}
