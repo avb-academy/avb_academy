@@ -2,32 +2,43 @@
 {{- $lang := .Site.Language.Lang -}}
 {{- $input := .Get 0 -}}
 {{- $normalized := $input -}}
-{{/*  <p>DEBUG: input='{{ $input }}' normalized='{{ $normalized }}'</p>
-<p>DEBUG: keys: {{ range $k, $v := .Site.Data.termbase }}{{ $k }} | {{ end }}</p>  */}}
 {{- $translation := "" -}}
 {{- $found := true -}}
 
-{{/* Lookup translation in termbase.yaml */}}
-{{- with index .Site.Data.termbase $normalized -}}
-  {{- $translation = index . $lang | default $normalized -}}
+{{/* --- CASE-INSENSITIVE LOOKUP --- */}}
+{{- $keyLower := lower $input -}}
+{{- $matchedKey := "" -}}
+{{- range $k, $v := .Site.Data.termbase -}}
+  {{- if eq (lower $k) $keyLower -}}
+    {{- $matchedKey = $k -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if ne $matchedKey "" -}}
+  {{- with index .Site.Data.termbase $matchedKey -}}
+    {{- $translation = index . $lang | default $matchedKey -}}
+  {{- else -}}
+    {{- $translation = $matchedKey -}}
+    {{- $found = false -}}
+  {{- end -}}
 {{- else -}}
-  {{- $translation = $normalized -}}
+  {{- $translation = $input -}}
   {{- $found = false -}}
 {{- end -}}
 
-{{/* Detect capitalization pattern */}}
+{{/* --- DETECT CAPITALIZATION PATTERN --- */}}
 {{- $isAllCaps := eq $input (upper $input) -}}
 {{- $isLower := eq $input (lower $input) -}}
-{{- $isTitleCase := eq $input $normalized -}}
+{{- $isTitleCase := eq $input (title $input) -}}
 
-{{/* Detect “mixed case” (e.g. traffic Shaping) */}}
+{{/* --- DETECT “mixed case” (e.g. traffic Shaping) --- */}}
 {{- $wordsInput := split $input " " -}}
 {{- $isMixedCase := and (not $isAllCaps) (not $isLower) (not $isTitleCase)
     (and (ge (len $wordsInput) 2)
          (and (eq (lower (index $wordsInput 0)) (index $wordsInput 0))
               (ne (title (index $wordsInput 1)) (lower (index $wordsInput 1))))) -}}
 
-{{/* Apply capitalization behavior */}}
+{{/* --- APPLY CAPITALIZATION BEHAVIOR --- */}}
 {{- if $isAllCaps -}}
   {{- $translation = upper $translation -}}
 {{- else if $isLower -}}
@@ -50,11 +61,13 @@
   {{- else -}}
     {{- $translation = title $translation -}}
   {{- end -}}
+{{- else if $isTitleCase -}}
+  {{- $translation = title $translation -}}
 {{- else -}}
   {{- $translation = $translation -}}
 {{- end -}}
 
-{{/* Render, highlighting missing terms */}}
+{{/* --- RENDER OUTPUT --- */}}
 {{- if not $found -}}
   <span style="color: red; font-weight: bold;" title="Term not found in termbase">{{ $translation }}</span>
 {{- else -}}
