@@ -34,7 +34,7 @@ Die Grafik in [Abb. 1](fig-milan-names) zeigt, wie die Bezeichnungen in einem Mi
 ### {{< termbase "Endstation">}}
 
 <!-- A device that converts audio from or into the Milan network. Endstations can contain either Talker or Listener functionality or contain both. Endstations are Milan certified. -->
-Eine Endstation ist ein Gerät, das Audio in das Milan-Netzwerk einspeist oder daraus empfängt. Sie kann entweder die Funktion eines {{< termbase "Talker">}}, eines {{< termbase "Listener">}} oder beider Funktionen übernehmen. Alle {{< termbase "Endstation">}}en sind Milan-zertifiziert.
+Eine {{< termbase "Endstation">}} ist ein Gerät, das Audio in das Milan-Netzwerk einspeist oder daraus empfängt. Sie kann entweder die Funktion eines {{< termbase "Talker">}}, eines {{< termbase "Listener">}} oder beider Funktionen übernehmen. Alle {{< termbase "Endstations">}} sind Milan-zertifiziert.
 
 <!-- ### Talker -->
 #### {{< termbase "Talker">}}-Endstation

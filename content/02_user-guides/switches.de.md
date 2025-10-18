@@ -10,7 +10,7 @@ weight: 40
 - Egress port: Output port
 {{% /notice %}} -->
 {{% notice info %}}
-- Switches werden in der Milan-Spezifikation nicht berücksichtigt – nur Endstationen. Daher sind Switches AVB-zertifiziert.
+- Switches werden in der Milan-Spezifikation nicht berücksichtigt – nur {{< termbase "Endstations">}}. Daher sind Switches AVB-zertifiziert.
 - Ingress-Port: Eingangsport
 - Egress-Port: Ausgangsport
 {{% /notice %}}
