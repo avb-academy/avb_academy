@@ -19,7 +19,7 @@ ignoreLogs = ["warning-goldmark-raw-html"]
   [[module.mounts]]
     source = 'static'
     target = 'static'
-    excludeFiles = ['**/*.drawio', '**/*.bkp', 'images/*.sh', 'build_scripts/']
+    excludeFiles = ['**/*.drawio', '**/*.drawio.svg', '**/*.bkp', 'images/*.sh', 'build_scripts/']
 
 [languages]
   [languages.en]

@@ -22,7 +22,7 @@ parser.add_argument(
     help="Force regeneration of all .drawio files even if up to date"
 )
 args, unknown = parser.parse_known_args()
-FORCE = args.force  # Default is False
+FORCE = args.force
 
 # --- Load the termbase ---
 print(f"[INFO] Loading termbase from: {TERMS_PATH}")
@@ -38,37 +38,33 @@ def translate_svg(content: str, lang: str, file_name: str) -> str:
 
     translations_lower = {key.lower(): value.get(lang, None) for key, value in termbase.items()}
     missing_terms = set()
-
-    # Parse SVG preserving XML
     soup = BeautifulSoup(content, "lxml-xml")
 
-    # Process all divs containing @@ placeholders
-    for div in soup.find_all("div"):
-        # find all text nodes with @@...@@ inside this div
-        text_nodes = [node for node in div.descendants if isinstance(node, NavigableString) and "@@" in node]
-        for tn in text_nodes:
-            raw_text = tn.string
+    def translate_placeholder(text: str) -> str:
+        """Replace @@term@@ with translation."""
+        def repl(match):
+            term = unescape(match.group(1)).strip()
+            translation = translations_lower.get(term.lower())
+            if translation is None:
+                missing_terms.add(term)
+                summary["errors"] += 1
+                print(f"[ERROR] Term '{term}' missing for language '{lang}', using fallback")
+                return term
+            return translation
+        return re.sub(r"@@(.*?)@@", repl, text)
 
-            def replace_placeholder(match):
-                term = match.group(1)
-                term_clean = unescape(term).strip()
-                translation = translations_lower.get(term_clean.lower())
-                if translation is None:
-                    print(f"[ERROR] Term '{term_clean}' not found or missing '{lang}' entry. Fallback to '{term_clean}'")
-                    missing_terms.add(term_clean)
-                    summary["errors"] += 1
-                    return term_clean
-                # preserve capitalization
-                if term_clean.istitle():
-                    translation = translation.title()
-                elif term_clean.isupper():
-                    translation = translation.upper()
-                elif term_clean.islower():
-                    translation = translation.lower()
-                return translation
+    # --- Translate foreignObject divs ---
+    for fo in soup.find_all("foreignObject"):
+        for div in fo.find_all("div"):
+            for node in div.descendants:
+                if isinstance(node, NavigableString):
+                    new_text = translate_placeholder(str(node))
+                    node.replace_with(NavigableString(new_text))
 
-            new_text = re.sub(r"@@(.*?)@@", replace_placeholder, raw_text)
-            tn.replace_with(NavigableString(new_text))
+    # --- Translate <text> elements outside foreignObject ---
+    for text_elem in soup.find_all("text"):
+        if text_elem.string:
+            text_elem.string.replace_with(translate_placeholder(text_elem.string))
 
     if missing_terms:
         print(f"[INFO] Missing terms ({len(missing_terms)}): {', '.join(sorted(missing_terms))}")
