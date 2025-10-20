@@ -11,6 +11,10 @@ Analog To Digital Converters:
   en: "Analog To Digital Converters"
   de: "Analog Zu Digital Umsetzer"
 
+Audio:
+  en: "Audio"
+  de: "Audio"
+
 Audio Data:
   en: "Audio Data"
   de: "Audiodaten"
@@ -63,9 +67,17 @@ Cable:
   en: "Cable"
   de: "Kabel"
 
+Capable:
+  en: "Capable"
+  de: "Fähig"
+
 Certified Products:
   en: "certified products"
   de: "zertifizierte Produkte"
+
+Channel:
+  en: "Channel"
+  de: "Kanal"
 
 Click:
   en: "Click"
@@ -123,9 +135,21 @@ Credit Counter:
   en: "credit counter"
   de: "Kreditzähler"
 
+Data Destination:
+  en: "Data Destination"
+  de: "Datenziel"
+
+Data Source:
+  en: "Data Source"
+  de: "Datenquelle"
+
 Delay:
   en: "Delay"
   de: "Verzögerung"
+
+Destination:
+  en: "Destination"
+  de: "Ziel"
 
 Deterministic Delivery:
   en: "Deterministic delivery"
@@ -152,11 +176,11 @@ Domains:
   de: "Domänen"
 
 Egress Port:
-  en: "Egress-Port"
+  en: "Egress Port"
   de: "Ausgangsport"
 
 Egress Ports:
-  en: "Egress-Ports"
+  en: "Egress Ports"
   de: "Ausgangsports"
 
 End To End:
@@ -166,6 +190,10 @@ End To End:
 Endstation:
   en: "Endstation"
   de: "Endstation"
+
+Endstations:
+  en: "Endstations"
+  de: "Endstations"
 
 Enumeration:
   en: "Enumeration"
@@ -213,11 +241,11 @@ IP Network:
   de: "IP-Netzwerk"
 
 Ingress Port:
-  en: "Ingress-Port"
+  en: "Ingress Port"
   de: "Eingangsport"
 
 Ingress Ports:
-  en: "Ingress-Ports"
+  en: "Ingress Ports"
   de: "Eingangsports"
 
 Interoperability:
@@ -231,6 +259,10 @@ Jitter:
 Latency:
   en: "Latency"
   de: "Latenz"
+
+Legend:
+  en: "Legend"
+  de: "Legende"
 
 Listener:
   en: "Listener"
@@ -295,6 +327,10 @@ Network Interface:
 Network Performance:
   en: "Network Performance"
   de: "Netzwerkperformance"
+
+Network Speed:
+  en: "Network speed"
+  de: "Netzwerkgeschwindigkeit"
 
 Network Synchronization:
   en: "Network Synchronization"
@@ -501,6 +537,3 @@ Worst-case Scenario:
   en: "Worst-Case Scenario"
   de: "schlimmster Fall"
 
-Endstations:
-  en: "Endstations"
-  de: "Endstations"
