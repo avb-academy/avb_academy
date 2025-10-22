@@ -61,7 +61,7 @@ Da alle Geräte im Netzwerk ein gemeinsames Verständnis von Zeit besitzen, kann
 Weitere Informationen dazu finden sich im Kapitel [{{< termbase "Traffic Shaping">}}](../03_traffic-shaping/_index.md).
 
 <!-- ## Media Clock Data -->
-## {{< termbase "Media Time">}} Daten
+## {{< termbase "Media Time">}} Daten {#media-time-daten}
 
 <!-- The previous section [Network Synchronization](../00_network-timing/_index.md) explains the distinction between {{< tooltip "Network Time">}} and {{< tooltip "Media Time">}} in {{< tooltip "Milan">}}. -->
 Im vorherigen Kapitel [Netzwerksynchronisation](../00_network-timing/_index.md) wurde der Unterschied zwischen {{< termbase "Network Time">}} und {{< termbase "Media Time">}} in {{< termbase "Milan">}} erläutert.

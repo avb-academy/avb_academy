@@ -37,7 +37,7 @@ Das {{< termbase "Timing" >}} in Milan ist in zwei Bereiche unterteilt:
 So lässt sich klar zwischen der globalen {{< termbase "Synchronization" >}} im Netzwerk und der auf Audio bezogenen Taktung unterscheiden.
 
 <!-- ## Network Clock Leader Election -->
-## Auswahl des {{< termbase "Clock Leader" >}} im {{< termbase "Network" >}}
+## Auswahl des {{< termbase "Clock Leader" >}} im {{< termbase "Network" >}} {#auswahl-des-clock-leader-im-network}
 
 <!-- Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a Grand Master (GM) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected. -->
 <div class="text-image-container">
@@ -59,7 +59,7 @@ Das Gerät mit der höchsten {{< termbase "Clock" >}}-Qualität wird als {{< ter
 Nach dem Wahlprozess verteilt der {{< tooltip "GM" >}} seine {{< termbase "Network Time" >}} an alle Teilnehmer im {{< termbase "Network" >}}.
 
 <!-- ## Network Clock Device Synchronization -->
-## Gerätesynchronisation im {{< termbase "Network" >}}
+## Gerätesynchronisation im {{< termbase "Network" >}} {#gerätesynchronisation-im-network}
 
 <!-- In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter. -->
 Bei {{< tooltip "gPTP" >}} erfolgt die {{< termbase "Synchronization" >}} direkt an den {{< termbase "Port" >}}s der Netzwerkgeräte.  
@@ -77,14 +77,14 @@ Im Gegensatz dazu verwendet PTPv1 einen {{< termbase "End To End" >}}-Ansatz, de
 {{< figure src="/images/PTPv1-sync.drawio.svg" alt="Port to Port sync" fig-num="2" title="Bei PTPv1 wird Ende-zu-Ende synchronisiert" id="fig-gPTP-sync">}}
 
 <!-- ## Network Time Domain -->
-## Die {{< termbase "Network Time" >}}
+## Die {{< termbase "Network Time" >}} {#network-time}
 
 <!-- All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster belong to a single domain. Each domain is exclusively clocked by one {{< tooltip "gPTP" >}} {{< tooltip "GM">}}. In {{< tooltip "Milan">}}, audio streams cannot be shared between different {{< tooltip "gPTP" >}} domains because there is no timing relationship between them. -->
 Alle Geräte, die auf denselben {{< tooltip "gPTP" >}}-{{< termbase "Grandmaster" >}} synchronisiert sind, gehören zur gleichen Zeit-{{< termbase "Domain" >}}. Jede {{< termbase "Domain" >}} ist ausschließlich auf einen {{< tooltip "gPTP" >}}-{{< termbase "Grandmaster" >}} bezogen.  
 In {{< termbase "Milan" >}} können {{< termbase "Streams" >}} nicht zwischen verschiedenen Zeit-{{< termbase "Domains" >}} ausgetauscht werden, da zwischen ihnen kein gemeinsamer zeitlicher Zusammenhang besteht.
 
 <!-- ## Media Time -->
-## Der {{< termbase "Media Time">}}
+## Der {{< termbase "Media Time">}} {#media-time}
 
 <!-- To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called Media Time. -->
 Um eine präzise Audio-{{< termbase "Playback" >}} und -{{< termbase "Recording" >}} zu gewährleisten, müssen {{< tooltip "Endstations" "Endstation" >}} ihre Audio-{{< termbase "Clock" >}} auf die gemeinsame {{< termbase "Network Time" >}} synchronisieren. Diese Synchronisation wird als {{< termbase "Media Time" >}} bezeichnet.

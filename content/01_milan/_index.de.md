@@ -31,31 +31,31 @@ Die Grafik in [Abb. 1](fig-milan-names) zeigt, wie die Bezeichnungen in einem Mi
 {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Fachbegriffe" id="fig-milan-names">}}
 
 <!-- ### Endstation -->
-### {{< termbase "Endstation">}}
+### {{< termbase "Endstation">}} {#endstation}
 
 <!-- A device that converts audio from or into the Milan network. Endstations can contain either Talker or Listener functionality or contain both. Endstations are Milan certified. -->
 Eine {{< termbase "Endstation">}} ist ein Gerät, das Audio in das Milan-Netzwerk einspeist oder daraus empfängt. Sie kann entweder die Funktion eines {{< termbase "Talker">}}, eines {{< termbase "Listener">}} oder beider Funktionen übernehmen. Alle {{< termbase "Endstations">}} sind Milan-zertifiziert.
 
 <!-- ### Talker -->
-#### {{< termbase "Talker">}}-Endstation
+#### {{< termbase "Talker">}}-Endstation {#talker-endstation}
 
 <!-- A Talker converts an audio signal into the Milan network. Could be a digital microphone or a stage box. -->
 Eine {{< termbase "Talker">}}-Endstation wandelt ein Audiosignal in das Milan-{{< termbase "Network">}} um. Beispiele dafür sind ein digitales Mikrofon oder eine Stagebox.
 
 <!-- ### Listener -->
-#### {{< termbase "Listener">}}-Endstation
+#### {{< termbase "Listener">}}-Endstation {#listener-endstation}
 
 <!-- A Listener extracts an audio signal from the network. Could be an amplifier. -->
 Eine {{< termbase "Listener">}}-Endstation entnimmt ein Audiosignal aus dem Milan-{{< termbase "Network">}}. Ein Beispiel dafür ist ein Verstärker.
 
 <!-- ### Switch -->
-### {{< termbase "Switch">}}
+### {{< termbase "Switch">}} {#Switch}
 
 <!-- A Switch forwards streams from a Talker to a Listener. Usually, a Switch is the gPTP in a network. Switches are AVB certified. -->
 Ein {{< termbase "Switch">}} leitet {{< termbase "Packets">}} zwischen verschiedenen {{< termbase "Ports">}} weiter. Meistens werden die Pakete von einem {{< termbase "Talker">}} zu einem {{< termbase "Listener">}} über die {{< termbase "Ports">}} des Switches übertragen. In der Regel übernimmt ein Switch dabei die Rolle des {{< tooltip "gPTP">}}-{{< termbase "Grandmaster">}} in einem {{< termbase "Network">}}. Alle Switches sind AVB-zertifiziert.
 
 <!-- ### Bridged Endstation -->
-### {{< termbase "Bridged Endstation">}}
+### {{< termbase "Bridged Endstation">}} {#bridged-endstation}
 
 <!-- A Bridged Endstation incorporates the Talker and or Listener functionality as well as the Switch functionality. -->
 Eine {{< termbase "Bridged Endstation">}} vereint die Funktionen eines {{< termbase "Talker">}} und/oder {{< termbase "Listener">}} mit den Funktionen eines {{< termbase "Switch">}}.

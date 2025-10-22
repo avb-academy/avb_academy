@@ -14,7 +14,7 @@ Wenn das {{< termbase "Stream Reservation Protocol">}} den Übertragungsweg vom 
 Es ist wichtig hervorzuheben, dass **bis zu 75 %** der verfügbaren {{< termbase "Bandwidth">}} für Milan AVB genutzt werden **können**. Diese wird jedoch nicht pauschal reserviert und blockiert somit nicht den übrigen {{< termbase "Network Traffic">}}. Benötigt ein {{< termbase "Stream">}} beispielsweise nur 2 % der verfügbaren {{< termbase "Bandwidth">}}, wird genau dieser Anteil reserviert, während die verbleibende {{< termbase "Bandwidth">}} für anderen {{< termbase "Network Traffic">}} frei bleibt.
 
 <!-- ## How much traffic is reserved for my audio stream? -->
-## Bandbreitenreservierung für Audio-{{< termbase "Streams">}}
+## Bandbreitenreservierung für Audio-{{< termbase "Streams">}} {#bandbreitenreservierung-für-audio-streams}
 
 <!-- The following table provides a quick guide on how much bandwidth is reserved for different combinations of channels and sample rates. -->
 Die folgende Tabelle zeigt, wie viel {{< termbase "Bandwidth">}} für unterschiedliche Kombinationen aus Kanalanzahl und {{< termbase "Sample Rate">}} reserviert wird.
