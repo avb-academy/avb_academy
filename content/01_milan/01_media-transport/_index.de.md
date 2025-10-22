@@ -25,7 +25,7 @@ weight: 2
 In {{< termbase "Milan">}} {{< termbase "AVB">}} werden Audiodaten über {{< tooltip "Streams" "Stream">}} übertragen. Grundlage dafür ist das Audio Video Transmission Protocol (AVTP), das die Struktur der zu übertragenden {{< termbase "Packets">}} definiert.
 
 <!-- The specification adopts the AVTP Audio Format (AAF) for audio transport. This is not to be confused with the Advanced Authoring Format. It mandates that each {{< tooltip "PCM">}} sample be transmitted as a 32-bit value, with shorter samples zero-padded as needed. -->
-Die {{< termbase "Specification">}} verwendet das AVTP Audio Format (AAF) für die Übertragung von Audiodaten. Hinweis: Dabei handelt es sich **nicht** um das Advanced Authoring Format.  
+Die {{< termbase "Specification">}} verwendet das AVTP Audio Format (AAF) für die Übertragung von Audiodaten. Hinweis: Dabei handelt es sich nicht um das Advanced Authoring Format.  
 Die {{< tooltip "AAF">}}-Spezifikation legt fest, dass jedes {{< tooltip "PCM">}}-Sample als 32-Bit-Wert übertragen wird. Kürzere Samples werden mit Nullen aufgefüllt, um die Wortbreite zu erreichen.
 
 <!-- A {{< tooltip "Talker">}} in a Milan network defines the outgoing {{< tooltip "Stream">}} format, specifying the number of audio channels in the {{< tooltip "Stream">}}. The {{< tooltip "Listener">}} is required to adapt to the format provided by the {{< tooltip "Talker">}}. -->
