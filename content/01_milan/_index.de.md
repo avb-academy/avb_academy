@@ -25,7 +25,7 @@ Dieses Kapitel ist so gestaltet, dass es leicht verständlich ist. Technische Be
 ## Milan Fachbegriffe
 
 <!-- Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme in a Milan network. The terms are explained in the following. -->
-Die Grafik in [Abb. 1](fig-milan-names) zeigt, wie die Bezeichnungen in einem Milan-{{< termbase "Network">}} vergeben werden. Die einzelnen Begriffe werden im Folgenden erklärt.
+Die Grafik in [Abb. 1](#fig-milan-names) zeigt, wie die Bezeichnungen in einem Milan-{{< termbase "Network">}} vergeben werden. Die einzelnen Begriffe werden im Folgenden erklärt.
 
 <!-- {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Names" id="fig-milan-names">}} -->
 {{< figure src="/images/milan-names.drawio.svg" alt="Milan Names" fig-num="1" title="Milan Fachbegriffe" id="fig-milan-names">}}
