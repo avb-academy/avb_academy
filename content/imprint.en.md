@@ -1,8 +1,13 @@
 ---
 title: "Imprint"
-layout: "single"
-weight: 100
-languages: ["en", "de"]
+menu:
+  footer:
+    name: "Imprint"
+    weight: 210
+cascade:
+  - _build:
+      list: never
+      render: always
 ---
 
 ## Angaben gemäß §5 TMG
