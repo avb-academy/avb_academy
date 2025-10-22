@@ -22,10 +22,10 @@ Have a look at [Fig. 1](#fig-milan-names) which shows the general naming scheme 
 ### Endstation
 A device that converts audio from or into the Milan network. Endstations can contain either {{< termbase "Talker">}} or {{< termbase "Listener">}} functionality or contain both. Endstations are Milan certified.
 
-#### {{< termbase "Talker">}} Endstation
+#### {{< termbase "Talker">}} Endstation {#talker-endstation}
 A {{< termbase "Talker">}} converts an audio signal into the Milan network. Could be a digital microphone or a stage box.
 
-#### {{< termbase "Listener">}} Endstation
+#### {{< termbase "Listener">}} Endstation {#listener-endstation}
 A {{< termbase "Listener">}} extracts an audio signal from the Milan network. Could be an amplifier.
 
 ### Switch

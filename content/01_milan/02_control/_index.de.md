@@ -27,7 +27,7 @@ Das Protokoll erfüllt drei Hauptaufgaben:
 - **{{< termbase "Control Protocol">}}**: Legt fest, wie Geräte gesteuert und konfiguriert werden. Dazu gehören die Verwaltung von Geräteeinstellungen und Konfigurationen sowie die Gewährleistung eines ordnungsgemäßen Betriebs innerhalb des Netzwerks.
 
 <!-- ## Controllers -->
-## {{< termbase "Controller">}}
+## {{< termbase "Controller">}} {#controller}
 
 <!-- There are currently a couple of solutions available: -->
 Derzeit sind einige Lösungen verfügbar:

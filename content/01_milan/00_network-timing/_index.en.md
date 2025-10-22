@@ -47,7 +47,7 @@ This contrasts with PTPv1, which uses the end-to-end approach that may introduce
 ## Network Time Domain
 All devices synchronized to the same {{< tooltip "gPTP" >}} GrandMaster belong to a single domain. Each domain is exclusively clocked by one {{< tooltip "gPTP" >}} {{< tooltip "GM">}}. In {{< tooltip "Milan">}}, audio streams cannot be shared between different {{< tooltip "gPTP" >}} domains because there is no timing relationship between them.
 
-## {{< termbase "Media Time">}}
+## {{< termbase "Media Time">}} {#media-time}
 
 To ensure accurate playback and recording, {{< tooltip "Endstations" "Endstation" >}} must synchronize the timing of their audio playback/recording to the shared {{< tooltip "Network Time" >}}. This synchronization is called {{< termbase "Media Time">}}.
 
