@@ -11,8 +11,8 @@ weight: 40
 {{% /notice %}} -->
 {{% notice info %}}
 - Switches werden in der Milan-Spezifikation nicht berücksichtigt – nur {{< termbase "Endstations">}}. Daher sind Switches AVB-zertifiziert.
-- Ingress-Port: Eingangsport
-- Egress-Port: Ausgangsport
+- Ingress-Port: {{< termbase "Ingress Port">}}
+- Egress-Port: {{< termbase "Egress Port">}}
 {{% /notice %}}
 
 <!-- AVB {{< tooltip "Switches" "Switch">}} do not require manual QoS configuration, as it is common with other Audio over IP protocols. With Milan, QoS configuration is automatically managed by the protocol. The fundamentals are detailed in [Stream Reservation Protocol (SRP)](../01_milan/03_traffic-shaping/stream-reservation/_index.md). -->
@@ -24,5 +24,5 @@ Wie bereits im Kapitel [Netzwerksynchronisation](../01_milan/00_network-timing/_
 <!-- The AVB certification process ensures that all relevant features are supported by a switch. Therefore, only AVB-certified {{< tooltip "Switches" "Switch">}} are recommended for use in a Milan AVB network. A list of certified {{< tooltip "Switches" "Switch">}} is available on the Avnu website: [Certified Product Registry](https://avnu.org/certified-product-registry?cert=Network%20Device&type=). -->
 Der AVB-Zertifizierungsprozess stellt sicher, dass alle für Milan relevanten Funktionen von einem Switch unterstützt werden. Daher werden nur AVB-zertifizierte {{< tooltip "Switches" "Switch">}} für den Einsatz in einem Milan-AVB-Netzwerk empfohlen. Eine Liste aller zertifizierten Produkte ist auf der Avnu-Website verfügbar: [Certified Product Registry](https://avnu.org/certified-product-registry?cert=Network%20Device&type=).
 
-<!-- When digging deeper in the functionality of a switch, it is important to understand that ports are defined based on the direction of the data flow under investigation: an ingress port serves as the input (mnemonic: ingress = input), while an egress port serves as the exit (mnemonic: egress = exit). For example, the traffic shaping mechanisms described in [Forward Queuing for Time-Sensitive Streams (FQTSS)](../01_milan/03_traffic-shaping/fqtss/_index.md) refer to the {{< tooltip "ingress" "Ingress port">}} and {{< tooltip "egress" "Egress port">}} port of a switch. -->
-Beim genaueren Betrachten der Funktionalität eines Switches ist es wichtig, die Richtung des Datenflusses zu verstehen. Daher wird zwischen Eingangsport und Ausgangsport unterschieden. Zum Beispiel beziehen sich die im Kapitel [Forward Queuing for Time-Sensitive Streams (FQTSS)](../01_milan/03_traffic-shaping/fqtss/_index.md) beschriebenen Traffic-Shaping-Mechanismen auf den Eingangsport bzw. den Ausgangsport eines Switches.
+<!-- When digging deeper in the functionality of a switch, it is important to understand that ports are defined based on the direction of the data flow under investigation: an ingress port serves as the input (mnemonic: ingress = input), while an egress port serves as the exit (mnemonic: egress = exit). For example, the traffic shaping mechanisms described in [Forward Queuing for Time-Sensitive Streams (FQTSS)](../01_milan/03_traffic-shaping/fqtss/_index.md) refer to the {{< tooltip "egress" "Egress port">}} port of a switch. -->
+Beim genaueren Betrachten der Funktionalität eines Switches ist es wichtig, die Richtung des Datenflusses zu verstehen. Daher wird zwischen {{< termbase "Ingress Port">}} und {{< termbase "Egress Port">}} unterschieden. Zum Beispiel beziehen sich die im Kapitel [Forward Queuing for Time-Sensitive Streams (FQTSS)](../01_milan/03_traffic-shaping/fqtss/_index.md) beschriebenen Traffic-Shaping-Mechanismen auf den {{< termbase "Egress Port">}} eines Switches.
