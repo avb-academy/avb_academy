@@ -16,7 +16,7 @@ Maximale Anzahl an Netzwerk-Hops (abhängig von der Netzwerkgeschwindigkeit):
 {{% /notice %}}
 
 <!-- A Milan AVB network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "PTO">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. -->
-Ein Milan AVB Netzwerk ist vollständig time-aware, das heißt, die {{< tooltip "Switches" "Switch" >}} berücksichtigen die Worst-Case-Aufenthaltszeit eines Pakets. Im Gegensatz zu anderen Audio-Netzwerkprotokollen stellt Milan sicher, dass die benötigte Übertragungszeit vor dem Versenden eines Pakets bestimmt werden kann. Durch die Konfiguration des {{< tooltip "Stream">}} {{< tooltip "PTO">}} im {{< tooltip "Talker" >}} lässt sich im Vorfeld überprüfen, ob eine Deadline eingehalten werden kann.
+Ein Milan AVB Netzwerk ist vollständig time-aware, das heißt, die {{< tooltip "Switches" "Switch" >}} berücksichtigen die Worst-Case-Aufenthaltszeit eines Pakets im Switch. Im Gegensatz zu anderen Audio-Netzwerkprotokollen stellt Milan sicher, dass die benötigte Übertragungszeit vor dem Versenden eines Pakets bestimmt werden kann. Durch die Konfiguration des {{< tooltip "Stream">}} {{< tooltip "PTO">}} im {{< tooltip "Talker" >}} lässt sich im Vorfeld überprüfen, ob eine Deadline eingehalten werden kann.
 
 <!-- Each transition a packet makes through a switch is known as a hop. -->
 Jede Weiterleitung eines Pakets durch einen Switch wird als Hop bezeichnet.
