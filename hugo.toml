@@ -8,6 +8,7 @@ defaultContentLanguageInSubdir = true
 
 [params]
   themeVariantAuto = ['zen-light', 'zen-dark']
+  termbaseStrict = true
 
 [markup]
   [markup.goldmark.renderer]

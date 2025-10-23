@@ -69,7 +69,12 @@
 
 {{/* --- RENDER OUTPUT --- */}}
 {{- if not $found -}}
-  <span style="color: red; font-weight: bold;" title="Term not found in termbase">{{ $translation }}</span>
+  {{- if site.Params.termbaseStrict -}}
+    {{- errorf "Termbase lookup failed for '%s' in '%s'" $input .Page.Path -}}
+  {{- else -}}
+    {{- warnf "Termbase term not found: '%s' (%s)" $input .Page.Path -}}
+  {{- end -}}
+  <span style="color: red; font-weight: bold;">{{ $translation }}</span>
 {{- else -}}
   {{ $translation | safeHTML -}}
 {{- end -}}
