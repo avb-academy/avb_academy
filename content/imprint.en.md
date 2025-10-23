@@ -5,7 +5,7 @@ menu:
     name: "Imprint"
     weight: 210
 cascade:
-  - _build:
+  - build:
       list: never
       render: always
 ---
