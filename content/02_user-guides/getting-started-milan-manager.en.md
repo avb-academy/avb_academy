@@ -10,14 +10,14 @@ weight: 20
 - An extensive offline documentation can be found locally after installing the software. [Here is how to find it](#offline-documentation).
 {{% /notice %}}
 
-| Description        | Screenshot     |
+| Step        | Screenshot     |
 |--------------------|------------------|
-| After opening Milan Manager for the first time, select the *Devices* tab. **Important** This step only has to be configured with a new unconfigured Milan Network! | ![Milan Manager devices tab](/images/00-Milan-Manager.png) |
-| Select the Media Clock Master for the Media Clock Domain. | ![Milan Manager Media Clock Domain configuration](/images/01-Milan-Manager.png) |
-| In the *Overview* tab, connect the streams from the Talker to the Listener | ![Milan Manager Stream configuration](/images/02-Milan-Manager.png) |
-| In the *Routing* tab, select the Listener and configure the channels routing| ![Milan Manager Channel patch](/images/03-Milan-Manager.png) |
+| **{{< termbase "Media Time">}} Configuration** <br><br> **Important** This step only has to be configured with a new unconfigured Milan Network! <br><br> After opening Milan Manager for the first time, select the *Devices* tab. | ![Milan Manager devices tab](/images/00-Milan-Manager.png) |
+| Select the {{< termbase "Media Time">}} Master for the Media Clock Domain. | ![Milan Manager Media Clock Domain configuration](/images/01-Milan-Manager.png) |
+| **Stream Connection** <br><br> In the *Overview* tab, connect the streams from the Talker to the Listener | ![Milan Manager Stream configuration](/images/02-Milan-Manager.png) |
+| **Channel Routing** <br><br> In the *Routing* tab, select the Listener and configure the channels routing| ![Milan Manager Channel patch](/images/03-Milan-Manager.png) |
 
 ## Offline documentation
-| Description | Screenshot |
+| Step | Screenshot |
 |-------------|------------|
 | Extensive documentation on the features of Milan Manager is available after installing the software. Navigate to *Main Menu* - *Help*. | ![Milan Manager help](/images/04-Milan-Manager.png) |
