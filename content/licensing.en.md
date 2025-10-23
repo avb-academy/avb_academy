@@ -5,7 +5,7 @@ menu:
     name: "Licensing"
     weight: 200
 cascade:
-  - _build:
+  - build:
       list: never
       render: always
 ---
