@@ -4,15 +4,15 @@ date: 2025-02-18
 ---
 
 <!-- Milan AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below. -->
-Milan AVB nutzt {{< tooltip "FQTSS">}} für das {{< termbase "Traffic Shaping">}}. Der Ansatz wird im Folgenden ausführlich erläutert.
+Milan AVB nutzt {{< tooltip "FQTSS">}} für das {{< termbase "Traffic Shaping">}}. "Forward Queuing" lässt sich auf Deutsch mit "Warteschlangenspeicher" übersetzen. 
 
 <!-- Switch ports are described based on the traffic direction for the current observation. -->
 Die Switch-Ports werden je nach Richtung des aktuellen Datenverkehrs beschrieben.
 
 <!-- - An {{< tooltip "ingress port" "Ingress port">}} describes traffic flowing into a switch.
 - An {{< tooltip "egress port" "Egress port">}} describes traffic flowing out of a switch. -->
-- Ein {{< termbase "Ingress Port">}} beschreibt den Datenverkehr, der in einen Switch hineinfließt. Englische Bezeichnung: {{< tooltip "Ingress port">}}  
-- Ein {{< termbase "Egress Port">}} beschreibt den Datenverkehr, der aus einem Switch herausfließt. Englische Bezeichnung: {{< tooltip "Egress port">}}
+- Ein {{< tooltip "Ingress Port">}} beschreibt den Datenverkehr, der in einen Switch hineinfließt. Auf Deutsch: {{< termbase "Ingress port">}}  
+- Ein {{< tooltip "Egress Port">}} beschreibt den Datenverkehr, der aus einem Switch herausfließt. Auf Deutsch: {{< termbase "Egress port">}}
 
 <!-- {{% notice info %}}
 The following examples refer to the following setup: All three streams that enter at three different ports of a switch are forwarded to the remaining port. The setup is shown in [Fig. 1](#fig-fqtss-routing).
@@ -28,15 +28,15 @@ Die folgenden Beispiele beziehen sich auf folgendes Szenario: Alle drei {{< term
 ## Strict Priority Paket-Weiterleitung
 
 <!-- The following figure shows all three streams from their respective {{< tooltip "ingress port" "Ingress port">}} forwarded to the {{< tooltip "egress port" "Egress port">}} considering Strict Priority Scheduling only. The packets are forwarded according to their priority immediately.  -->
-Die Grafik in [Abb. 2](#fig-strict-prio) zeigt, wie alle drei {{< termbase "Streams">}} von ihren jeweiligen {{< termbase "Ingress Ports">}} zu ihrem {{< termbase "Egress Port">}} weitergeleitet werden. Dabei erfolgt die Weiterleitung nach dem Strict-Priority-Scheduling-Prinzip, also sofort entsprechend der Priorität der {{< termbase "Packets">}}:
+Die Grafik in [Abb. 2](#fig-strict-prio) zeigt, wie alle drei {{< termbase "Streams">}} von ihren jeweiligen {{< termbase "Ingress Ports">}} zum {{< termbase "Egress Port">}} weitergeleitet werden. Dabei erfolgt die Weiterleitung nach dem Strict-Priority-Scheduling-Prinzip, also sofort entsprechend der Priorität der {{< termbase "Packets">}}:
 
 <!-- - AV packets: packets have a high priority.
 - Best-Effort: packets have low priority. -->
 - AV {{< termbase "Packets">}}: haben hohe Priorität  
-- Best-Effort {{< termbase "Packets">}}: haben niedrige Priorität
+- Best-Effort (BE) {{< termbase "Packets">}}: haben niedrige Priorität
 
 <!-- Considering strict priority forwarding only leads to time-critical packets being forwarded always first when the forwarding algorithm would have the choice between a time-critical and a Best-Effort packet. -->
-Beim Strict-Priority-Forwarding werden {{< termbase "Time Critical">}} {{< termbase "Packets">}} immer zuerst weitergeleitet, sobald eine Entscheidung zwischen {{< termbase "Time Critical">}} und {{< termbase "Best Effort">}} erforderlich ist.
+Beim Strict-Priority-Forwarding werden {{< termbase "Packets">}}, die {{< termbase "time critical">}} sind, immer zuerst weitergeleitet, sobald eine Entscheidung zwischen {{< termbase "time critical">}} und {{< termbase "Best Effort">}} erforderlich ist.
 
 <!-- This results in a blocking delay on lower-priority packets whenever high-priority packets are prioritized. -->
 Dadurch kommt es bei niedrig priorisierten Paketen zu Verzögerungen, solange höher priorisierte {{< termbase "Packets">}} bevorzugt weitergeleitet werden.
@@ -51,10 +51,11 @@ Ohne {{< termbase "Traffic Shaping">}} werden Pakete am {{< termbase "Ingress Po
 ## Credit-based Paket-Weiterleitung
 
 <!-- Using the Credit-based Shaper additionally to Strict Priority Scheduling as shown in [Fig. 2](#fig-strict-prio), can on one hand shape the resulting traffic stream into a uniformly distributed stream and on the other hand increase fairness towards lower priority traffic. -->
-Durch den Einsatz eines {{< termbase "Credit Based">}} Shapers zusätzlich zur Strict-Priority-Weiterleitung, wie in [Abb. 3](#fig-credit-based) gezeigt, ergeben sich folgende Vorteile: Die {{< termbase "Packets">}} am {{< termbase "Egress Port">}} werden gleichmäßiger verteilt, und die Fairness gegenüber niedrig priorisierten Paketen wird erhöht.
+Durch den Einsatz eines Shapers (Deutsch: formt den Datenverkehr), der {{< termbase "credit based">}} ist, kann sich zusammen mit der Strict-Priority-Weiterleitung, wie in [Abb. 3](#fig-credit-based) gezeigt, ein Vorteil ergeben: Die {{< termbase "Packets">}} am {{< termbase "Egress Port">}} werden gleichmäßiger verteilt, und die Fairness gegenüber niedrig priorisierten Paketen wird erhöht.
+
 
 <!-- The core idea behind the Credit-based Shaper is simple:   -->
-Die grundlegende Idee des {{< termbase "Credit Based">}} Shapers ist einfach:
+Die grundlegende Idee des {{< termbase "credit based" >}}en Shapers ist einfach:
 
 <!-- Each priority level has a credit counter.   -->
 Jeder Prioritätsklasse wird ein {{< termbase "Credit Counter">}} zugewiesen.
