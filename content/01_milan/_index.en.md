@@ -7,7 +7,7 @@ weight: 2
 {{% notice info %}}
 -  Endstation: A device that either converts audio into Milan ({{< termbase "Talker">}}), or from Milan into audio (Listener). The {{< termbase "Talker">}}/{{< termbase "Listener">}} functionality can be combined in the same device. All Endstations are Milan certified
 - Switch: A device that forwards Streams from Talkers to Listeners and usually is the gPTP Grandmaster.
-- Milan operates on OSI layer 2. Therefore, all addressing is done with MAC addresses.
+- Milan operates on OSI {{< termbase "layer">}} 2. Therefore, all addressing is done with MAC addresses.
 {{% /notice %}}
 
 Milan AVB is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specification that is tailored to the needs of the ProAV industry.
@@ -35,4 +35,4 @@ A Switch forwards streams from a {{< termbase "Talker">}} to a Listener. Usually
 A Bridged Endstation incorporates the {{< termbase "Talker">}} and or {{< termbase "Listener">}} functionality as well as the Switch functionality.
 
 ## OSI layers
-Milan operates on Open Systems Interconnection (OSI) layer 2. Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control (MAC) addresses.
+Milan operates on Open Systems Interconnection (OSI) {{< termbase "Data Link">}} {{< termbase "Layer">}} ({{< termbase "Layer">}} 2). Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control (MAC) addresses.

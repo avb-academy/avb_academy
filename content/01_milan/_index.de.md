@@ -12,7 +12,7 @@ weight: 2
 {{% notice info %}}
 - Endstation: Ein Gerät, das Audio in das Milan-Format umwandelt ({{< termbase "Talker">}}) oder Netzwerk-Signale in Audio zurückwandelt ({{< termbase "Listener">}}). Manche Geräte kombinieren beide Funktionen.
 - Switch: Ein Gerät, das Pakete zwischen {{< termbase "Ports">}} weiterleitet.
-- Milan arbeitet auf OSI Layer 2, daher erfolgt die Adressierung ausschließlich über MAC-Adressen.
+- Milan arbeitet auf OSI {{< termbase "Layer" >}} 2, daher erfolgt die Adressierung ausschließlich über MAC-Adressen.
 {{% /notice %}}
 
 <!-- Milan AVB is based on a set of IEEE specifications. As explained in the [Introduction](../_index.md#milan-the-proav-flavor-of-avb), Milan is a tightly constrained specification that is tailored to the needs of the ProAV industry. -->
@@ -61,7 +61,7 @@ Ein {{< termbase "Switch">}} leitet {{< termbase "Packets">}} zwischen verschied
 Eine {{< termbase "Bridged Endstation">}} vereint die Funktionen eines {{< termbase "Talker">}} und/oder {{< termbase "Listener">}} mit den Funktionen eines {{< termbase "Switch">}}.
 
 <!-- ## OSI layers -->
-## OSI Layers
+## OSI Schichten
 
 <!-- Milan operates on Open Systems Interconnection (OSI) layer 2. Meaning there is no need for IP addresses. All addressing in Milan is done via Medium Access Control (MAC) addresses. -->
-Milan arbeitet auf der OSI-Schicht 2 (Open Systems Interconnection). Das bedeutet, dass keine IP-Adressen benötigt werden. Die Adressierung erfolgt ausschließlich über Medium Access Control (MAC)-Adressen.
+Milan arbeitet auf der Open Systems Interconnection (OSI) {{< termbase "Data Link">}}s {{< termbase "Layer">}} ({{< termbase "Layer">}} 2). Das bedeutet, dass keine IP-Adressen benötigt werden. Die Adressierung erfolgt ausschließlich über {{< termbase "Media Access Control">}} (MAC)-Adressen.
