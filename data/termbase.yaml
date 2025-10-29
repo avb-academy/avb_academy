@@ -139,6 +139,10 @@ Data Destination:
   en: "Data Destination"
   de: "Datenziel"
 
+Data Link:
+  en: "Data Link"
+  de: "Sicherung"
+
 Data Source:
   en: "Data Source"
   de: "Datenquelle"
@@ -260,6 +264,10 @@ Latency:
   en: "Latency"
   de: "Latenz"
 
+Layer:
+  en: "Layer"
+  de: "Schicht"
+
 Legend:
   en: "Legend"
   de: "Legende"
@@ -283,6 +291,10 @@ Master Clock:
 Mbps:
   en: "Mbps"
   de: "Mbps"
+
+Media Access Control:
+  en: "Media Access Control"
+  de: "Media Access Control"
 
 Media Time:
   en: "Media Clock"
@@ -536,15 +548,3 @@ Video Stream:
 Worst-case Scenario:
   en: "Worst-Case Scenario"
   de: "schlimmster Fall"
-
-Layer:
-  en: "Layer"
-  de: "Schicht"
-
-Data Link:
-  en: "Data Link"
-  de: "Sicherung"
-
-Media Access Control:
-  en: "Media Access Control"
-  de: "Media Access Control"
