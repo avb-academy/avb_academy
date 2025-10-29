@@ -26,46 +26,29 @@
   {{- $found = false -}}
 {{- end -}}
 
-{{/* --- DETECT CAPITALIZATION PATTERN --- */}}
-{{- $isAllCaps := eq $input (upper $input) -}}
-{{- $isLower := eq $input (lower $input) -}}
-{{- $isTitleCase := eq $input (title $input) -}}
-
-{{/* --- DETECT “mixed case” (e.g. traffic Shaping) --- */}}
+{{/* --- APPLY WORD-BY-WORD CAPITALIZATION MIRRORING --- */}}
 {{- $wordsInput := split $input " " -}}
-{{- $isMixedCase := and (not $isAllCaps) (not $isLower) (not $isTitleCase)
-    (and (ge (len $wordsInput) 2)
-         (and (eq (lower (index $wordsInput 0)) (index $wordsInput 0))
-              (ne (title (index $wordsInput 1)) (lower (index $wordsInput 1))))) -}}
+{{- $wordsTrans := split $translation " " -}}
+{{- $outWords := slice -}}
 
-{{/* --- APPLY CAPITALIZATION BEHAVIOR --- */}}
-{{- if $isAllCaps -}}
-  {{- $translation = upper $translation -}}
-{{- else if $isLower -}}
-  {{- $translation = lower $translation -}}
-{{- else if $isMixedCase -}}
-  {{- $words := split $translation " " -}}
-  {{- if gt (len $words) 1 -}}
-    {{- $first := lower (index $words 0) -}}
-    {{- $rest := delimit (after 1 $words) " " -}}
-    {{- $translation = printf "%s %s" $first $rest -}}
-  {{- else -}}
-    {{- $translation = lower $translation -}}
+{{- range $i, $w := $wordsTrans -}}
+  {{- $src := "" -}}
+  {{- if lt $i (len $wordsInput) -}}
+    {{- $src = index $wordsInput $i -}}
   {{- end -}}
-{{- else if (and (not $isAllCaps) (not $isLower) (not $isTitleCase)) -}}
-  {{- $words := split $translation " " -}}
-  {{- if gt (len $words) 1 -}}
-    {{- $first := title (index $words 0) -}}
-    {{- $rest := delimit (after 1 $words) " " -}}
-    {{- $translation = printf "%s %s" $first (lower $rest) -}}
+
+  {{- if eq $src (upper $src) -}}
+    {{- $outWords = $outWords | append (upper $w) -}}
+  {{- else if eq $src (lower $src) -}}
+    {{- $outWords = $outWords | append (lower $w) -}}
+  {{- else if eq $src (title $src) -}}
+    {{- $outWords = $outWords | append (title $w) -}}
   {{- else -}}
-    {{- $translation = title $translation -}}
+    {{- $outWords = $outWords | append $w -}}
   {{- end -}}
-{{- else if $isTitleCase -}}
-  {{- $translation = title $translation -}}
-{{- else -}}
-  {{- $translation = $translation -}}
 {{- end -}}
+
+{{- $translation = delimit $outWords " " -}}
 
 {{/* --- RENDER OUTPUT --- */}}
 {{- if not $found -}}
