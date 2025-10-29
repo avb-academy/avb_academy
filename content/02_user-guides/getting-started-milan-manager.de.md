@@ -12,7 +12,8 @@ weight: 20
 {{% notice info %}}
 - Milan Manager herunterladen: https://milanmanager.com  
 - Signalfluss: vom Talker zum Listener von links nach oben  
-- Offline-Dokumentation: wird mit der Installation geliefert. [Mehr Infos hier](#offline-dokumentation)  
+- Offline-Dokumentation: wird mit der Installation geliefert. [Mehr Infos hier](#offline-dokumentation)
+- Eine Liste aller bekannten Milan Controller gibt es hier [Steuerung](../01_milan/02_control/_index.md#controller)
 {{% /notice %}}
 
 <!-- | Description        | Screenshot     |
