@@ -537,3 +537,14 @@ Worst-case Scenario:
   en: "Worst-Case Scenario"
   de: "schlimmster Fall"
 
+Layer:
+  en: "Layer"
+  de: "Schicht"
+
+Data Link:
+  en: "Data Link"
+  de: "Sicherung"
+
+Media Access Control:
+  en: "Media Access Control"
+  de: "Media Access Control"
