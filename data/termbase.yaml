@@ -5,11 +5,11 @@ AVB:
 
 Analog To Digital Converter:
   en: "Analog To Digital Converter"
-  de: "Analog Zu Digital Umsetzer"
+  de: "Analog-Digital-Wandler"
 
 Analog To Digital Converters:
   en: "Analog To Digital Converters"
-  de: "Analog Zu Digital Umsetzer"
+  de: "Analog-Digital-Wandler"
 
 Audio:
   en: "Audio"
@@ -161,11 +161,11 @@ Device Discovery:
 
 Digital To Analog Converter:
   en: "Digital To Analog Converter"
-  de: "Digital Zu Analog Umsetzer"
+  de: "Digital-Analog-Wandler"
 
 Digital To Analog Converters:
   en: "Digital To Analog Converters"
-  de: "Digital Zu Analog Umsetzer"
+  de: "Digital-Analog-Wandler"
 
 Domain:
   en: "Domain"
