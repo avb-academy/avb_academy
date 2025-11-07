@@ -7,12 +7,12 @@ weight: 20
 <!-- {{% notice info %}}
 - Get Milan Manager from: https://milanmanager.com/
 - The signal flow from Talker to Listener is depicted from the left to the top
-- An extensive offline documentation can be found locally after installing the software. [Here is how to find it](#offline-documentation).
+- An extensive online documentation can be found here: [docs.milanmanager.com](https://docs.milanmanager.com).
 {{% /notice %}} -->
 {{% notice info %}}
 - Milan Manager herunterladen: https://milanmanager.com  
 - Signalfluss: vom Talker zum Listener von links nach oben  
-- Offline-Dokumentation: wird mit der Installation geliefert. [Mehr Infos hier](#offline-dokumentation)
+- Die online Dokumentation ist hier auf Englisch verfügbar: [docs.milanmanager.com](https://docs.milanmanager.com).
 - Eine Liste aller bekannten Milan Controller gibt es hier [Steuerung](../01_milan/02_control/_index.md#controller)
 {{% /notice %}}
 
