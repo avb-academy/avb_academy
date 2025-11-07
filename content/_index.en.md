@@ -2,6 +2,10 @@
 title: "AVB Academy"
 ---
 
+{{% notice style="green" icon="fa-solid fa-bullhorn" title="Neu: Jetzt auch auf Deutsch!" %}}
+Die AVB Academy gibts jetzt auch auf Deutsch: [Zur deutschen Version]({{< relref path="." lang="de" >}})
+{{% /notice %}}
+
 # Introduction
 
 You are looking for information about the Milan protocol, and someone mentioned that you can find it at the AVB Academy. However, you might be wondering: why AVB Academy when you are interested in Milan? Before answering that question, let us take a step back. What forms the foundation of Milan?
