@@ -45,9 +45,8 @@ Bitte nutze die [Milan Certified Product Registry](https://avnu.org/certified-pr
 <!-- ## Linux systems -->
 ## Linux-Betriebssysteme
 
-<!-- These Intel chipsets are known to support IEEE 1588 and 802.1Q features, which are prerequisites for AVB functionality. Use with a real-time kernel is recommended for best results. -->
-Die folgenden Intel-Chipsätze sind dafür bekannt, IEEE 1588- und 802.1Q-Funktionen zu unterstützen, die für die AVB-Funktionalität erforderlich sind.  
-Für beste Ergebnisse wird empfohlen, die Chipsätze mit einem Echtzeit-Kernel zu verwenden.
+<!-- These Intel chipsets are known to support IEEE 802.1AS (gPTP) and 802.1Qav features, which are prerequisites for AVB functionality. Often, marketing refers to the gPTP support as IEEE 1588 support but pure IEEE 1588 support does not guarantee IEEE 802.1AS support. The use with a real-time kernel is recommended for best results. -->
+Diese Intel-Chipsätze sind dafür bekannt, IEEE 802.1AS (gPTP) und 802.1Qav zu unterstützen. Beides grundlegende Voraussetzungen für AVB. In Marketingmaterialien wird häufig von IEEE 1588-Unterstützung gesprochen, jedoch garantiert reine IEEE 1588-Kompatibilität keine Unterstützung von IEEE 802.1AS. Für optimale Ergebnisse wird empfohlen, die Chipsätze zusammen mit einem Echtzeit-Kernel zu verwenden.
 
 <!-- - [Intel i210](https://www.intel.de/content/www/de/de/products/details/ethernet/gigabit-controllers/i210-controllers.html)
 - [Intel i226](https://www.intel.de/content/www/de/de/products/details/ethernet/gigabit-controllers/i226-controllers/products.html) -->
