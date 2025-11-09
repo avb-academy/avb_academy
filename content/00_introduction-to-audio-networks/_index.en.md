@@ -19,7 +19,7 @@ Consider the following scenario: A microphone is connected to a stage box. The s
 
 The microphone is connected to an input of the stage box using a XLR cable ([Fig. 1](#fig-audio-setup), No. 1). The loudspeaker is connected to an output of the stage box with an appropriate cable ([Fig. 1](#fig-audio-setup), No. 2), depending on whether there is a separate amplifier in the loop or not. The details are out of scope for this description. The intention here is to describe an input path and an output path.
 
-The connection between the stage box and the mixing console is made with network cables. It is a common practice to use a redundant connection featuring a {{< tooltip "Primary">}} ([Fig. 1](#fig-audio-setup), No. 3) and {{< tooltip "Secondary">}} ([Fig. 1](#fig-audio-setup), No. 4) port (labeled with P/S) to enhance operational security. The redundant connection is an optional feature and might not always be provided by a networked audio device.
+The connection between the stage box and the mixing console is made with network cables. It is a common practice to use a redundant connection featuring a {{< tooltip "Primary">}} ([Fig. 1](#fig-audio-setup), No. 3) and {{< tooltip "Secondary">}} ([Fig. 1](#fig-audio-setup), No. 4) port (labeled with P/S) so that data keeps flowing in the event of a failure of either the primary or secondary connection. The redundant connection is an optional feature and might not always be provided by a networked audio device.
 
 The {{< tooltip "Secondary">}} port “mirrors” the data {{< tooltip "Primary">}} port. The description in the following will not distinguish between the two ports.
 
