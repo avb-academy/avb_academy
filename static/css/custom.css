@@ -286,8 +286,8 @@ ul.columnize li .breadcrumbs {
 
 ul li a {
   white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
   max-width: 100%;
 }
 
