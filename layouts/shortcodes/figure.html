@@ -11,6 +11,23 @@
 {{/* Insert language code before last dot in filename */}}
 {{ $localizedSrc := replaceRE "(?i)(\\.[^.]+)$" (printf ".%s$1" $lang) $src }}
 
+{{/* Compute localized file path in static folder */}}
+{{ $localizedFilePath := (printf "static%s" $localizedSrc) }}
+
+{{/* Check if localized file exists on disk */}}
+{{ $localizedFileExists := fileExists $localizedFilePath }}
+
+{{/* If localized file does NOT exist, fall back to original src */}}
+{{ if not $localizedFileExists }}
+  {{ $localizedSrc = $src }}
+{{ end }}
+
+{{/* Debug output — remove these <p> lines when done testing */}}
+{{/*  <p> src: {{ $src }}</p>
+<p> localizedSrc: {{ $localizedSrc}} </p>
+<p> localizedFilePath: {{ $localizedFilePath }} </p>
+<p> localizedFileExists: {{ $localizedFileExists}} </p>  */}}
+
 <figure id="{{ $id }}">
   <!-- Lightbox trigger -->
   <a href="#{{ $id }}" class="lightbox-link" title="{{ $alt }}">
