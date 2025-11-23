@@ -22,14 +22,9 @@ A {{< tooltip "Talker">}} in a Milan network defines the outgoing {{< tooltip "S
 
 The Milan Base Format specifies support for channel counts of either 1, 2, 4, 6, 8 audio channels per {{< tooltip "Stream">}}. The support for the Base Format is mandatory for {{< tooltip "Listeners" "Listener">}} and part of the Milan [certification](../../02_user-guides/certified-products.md). This ensures interoperability between any {{< tooltip "Talker">}} and {{< tooltip "Listener">}}.
 
-<div class="text-image-container">
-  <div class="text">
-    <p>A {{< tooltip "Stream">}} can be viewed as a container for audio data. In addition to the audio content, it also includes Ethernet information, such as the source and destination {{< tooltip "MAC">}} addresses. Ethernet information is present in every packet. This mandatory overhead for each packet should make it evident that using a larger number of audio channels per {{< tooltip "Stream">}} is more efficient than using a smaller number.</p>
-  </div>
-  <div class="image">
-    <img src="/images/stream-format.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
-  </div>
-</div>
+{{< textimage src="/images/stream-format.drawio.svg" alt="Stream format diagram" side="right" >}}
+A {{< tooltip "Stream">}} can be viewed as a container for audio data. In addition to the audio content, it also includes Ethernet information, such as the source and destination {{< tooltip "MAC">}} addresses. Ethernet information is present in every packet. This mandatory overhead for each packet should make it evident that using a larger number of audio channels per {{< tooltip "Stream">}} is more efficient than using a smaller number.
+{{< /textimage >}}
 
 It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed {{< tooltip "PTO" >}} before it starts streaming. The value range for the PTO is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with Milan to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md).
 

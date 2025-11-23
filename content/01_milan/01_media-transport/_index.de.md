@@ -37,23 +37,14 @@ Das {{< termbase "Milan">}} Base Format unterstützt Konfigurationen mit entwede
 Jeder {{< tooltip "Listener">}} muss das Base Format unterstützen; dies wird im Rahmen der {{< termbase "Milan">}} [Zertifizierung](../../02_user-guides/certified-products.md) überprüft.  
 So wird die {{< termbase "Interoperability">}} zwischen {{< tooltip "Talker">}} und {{< tooltip "Listener">}} gewährleistet.
 
-<!-- <div class="text-image-container">
-  <div class="text">
-    <p>A {{< tooltip "Stream">}} can be viewed as a container for audio data. In addition to the audio content, it also includes Ethernet information, such as the source and destination {{< tooltip "MAC">}} addresses. Ethernet information is present in every packet. This mandatory overhead for each packet should make it evident that using a larger number of audio channels per {{< tooltip "Stream">}} is more efficient than using a smaller number.</p>
-  </div>
-  <div class="image">
-    <img src="/images/stream-format.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
-  </div>
-</div> -->
-<div class="text-image-container">
-  <div class="text">
-    <p>Ein {{< termbase "Stream">}} kann als Container für Audiodaten betrachtet werden. Neben den Audiosamples enthält der Stream auch Ethernet-Informationen wie die Quell- und Ziel-{{< tooltip "MAC">}}-Adresse. Diese Informationen sind in jedem Ethernet-Paket enthalten.  
-    Dieser unvermeidbare Overhead macht deutlich, dass die Übertragung einer größeren Anzahl von Audiokanälen pro Stream effizienter ist als die Nutzung vieler kleiner Streams.</p>
-  </div>
-  <div class="image">
-    <img src="/images/stream-format.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
-  </div>
-</div>
+<!-- {{< textimage src="/images/stream-format.drawio.svg" alt="Stream format diagram" side="right" >}}
+A {{< tooltip "Stream">}} can be viewed as a container for audio data. In addition to the audio content, it also includes Ethernet information, such as the source and destination {{< tooltip "MAC">}} addresses. Ethernet information is present in every packet. This mandatory overhead for each packet should make it evident that using a larger number of audio channels per {{< tooltip "Stream">}} is more efficient than using a smaller number.
+{{< /textimage >}} -->
+
+{{< textimage src="/images/stream-format.drawio.svg" alt="Stream format diagram" side="right" >}}
+Ein {{< termbase "Stream">}} kann als Container für Audiodaten betrachtet werden. Neben den Audiosamples enthält der Stream auch Ethernet-Informationen wie die Quell- und Ziel-{{< tooltip "MAC">}}-Adresse. Diese Informationen sind in jedem Ethernet-Paket enthalten.  
+Dieser unvermeidbare Overhead macht deutlich, dass die Übertragung einer größeren Anzahl von Audiokanälen pro Stream effizienter ist als die Nutzung vieler kleiner Streams.
+{{< /textimage >}}
 
 <!-- It is worth noting that a {{< tooltip "Stream">}} is configured with a fixed {{< tooltip "PTO" >}} before it starts streaming. The value range for the PTO is from 0.25ms to 2ms. Due to the fact that all devices in the network have a shared understanding of time, it is possible with Milan to guarantee the latency that has been configured for the {{< tooltip "Stream">}}. Details on how this is possible are described in [Traffic Shaping Section](../03_traffic-shaping/_index.md). -->
 Ein {{< termbase "Stream">}} wird mit einer festen {{< tooltip "PTO">}} konfiguriert, bevor die Übertragung beginnt. Der Wertebereich der {{< termbase "Presentation Time Offset">}} liegt zwischen 0,25 ms und 2 ms.  

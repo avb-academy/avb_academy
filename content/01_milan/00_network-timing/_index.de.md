@@ -39,17 +39,15 @@ So lässt sich klar zwischen der globalen {{< termbase "Synchronization" >}} im 
 <!-- ## Network Clock Leader Election -->
 ## Auswahl des {{< termbase "Clock Leader" >}} im {{< termbase "Network" >}} {#auswahl-des-clock-leader-im-network}
 
-<!-- Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a Grand Master (GM) has to be elected. This Grand Master will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected. -->
-<div class="text-image-container">
-  <div class="text">
-    <p>Betrachten wir ein Milan {{< termbase "Network" >}}, das gerade eingeschaltet wurde. Es besteht aus mehreren {{< tooltip "Endstations" "Endstation" >}} und {{< tooltip "Switches" "Switch" >}}.  
-    Im ersten Schritt muss ein {{< termbase "Grandmaster" >}} (GM) gewählt werden. Dieser verteilt seine {{< termbase "Network Time" >}} an alle Teilnehmer, sodass alle Geräte eine absolute, gemeinsame Zeitbasis haben.  
-    Der Auswahlprozess wird durch den Best Time Transmitter Algorithm (BTCA) definiert und läuft automatisch ab, sobald eine Änderung im {{< termbase "Network" >}} erkannt wird.</p>
-  </div>
-  <div class="image">
-    <img src="/images/gPTP-BTCA.drawio.svg" alt="Image" style="max-width: 100%; height: auto;">
-  </div>
-</div>
+<!-- {{< textimage src="/images/gPTP-BTCA.drawio.svg" alt="Image" side="right" >}}
+Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations" "Endstation">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a GrandMaster (GM) has to be elected. This GrandMaster will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected.
+{{< /textimage >}} -->
+
+{{< textimage src="/images/gPTP-BTCA.drawio.svg" alt="Image" side="right" >}}
+Betrachten wir ein Milan {{< termbase "Network" >}}, das gerade eingeschaltet wurde. Es besteht aus mehreren {{< tooltip "Endstations" "Endstation" >}} und {{< tooltip "Switches" "Switch" >}}.  
+Im ersten Schritt muss ein {{< termbase "Grandmaster" >}} (GM) gewählt werden. Dieser verteilt seine {{< termbase "Network Time" >}} an alle Teilnehmer, sodass alle Geräte eine absolute, gemeinsame Zeitbasis haben.  
+Der Auswahlprozess wird durch den Best Time Transmitter Algorithm (BTCA) definiert und läuft automatisch ab, sobald eine Änderung im {{< termbase "Network" >}} erkannt wird.
+{{< /textimage>}}
 
 <!-- The election of the {{< tooltip "gPTP" >}} GrandMaster is based on parameters that describe the clock quality of the device. Of course the best clock quality is elected as the {{< tooltip "GM">}}. In case multiple devices have the same clock quality, the device with the lowest {{< tooltip "MAC" >}} address is selected. Switches are preferred over Endstations. -->
 Die Wahl des {{< tooltip "gPTP" >}} {{< termbase "Grandmaster" >}} basiert auf Parametern, die die {{< termbase "Clock" >}}-Qualität des Geräts beschreiben.  
