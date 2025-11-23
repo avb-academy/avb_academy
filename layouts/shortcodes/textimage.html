@@ -1,0 +1,34 @@
+{{ $src := .Get "src" | string }}
+{{ $alt := .Get "alt" | default "Image" }}
+{{ $side := .Get "side" | default "right" }}
+
+{{ $lang := .Site.Language.Lang }}
+{{ $localizedSrc := replaceRE "(?i)(\\.[^.]+)$" (printf ".%s$1" $lang) $src }}
+
+{{ $localizedFilePath := (printf "static%s" $localizedSrc) }}
+{{ $localizedFileExists := fileExists $localizedFilePath }}
+
+{{ if not $localizedFileExists }}
+  {{ $localizedSrc = $src }}
+{{ end }}
+
+{{/* CSS class for controlling side */}}
+{{ $containerClass := (printf "text-image-container image-%s" $side) }}
+
+<div class="{{ $containerClass }}">
+  {{ if eq $side "left" }}
+    <div class="image">
+      <img src="{{ $localizedSrc }}" alt="{{ $alt }}" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="text">
+      {{ .Inner }}
+    </div>
+  {{ else }}
+    <div class="text">
+      {{ .Inner }}
+    </div>
+    <div class="image">
+      <img src="{{ $localizedSrc }}" alt="{{ $alt }}" style="max-width: 100%; height: auto;">
+    </div>
+  {{ end }}
+</div>
