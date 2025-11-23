@@ -1,6 +1,8 @@
+{{/* Get parameters */}}
 {{ $src := .Get "src" | string }}
 {{ $alt := .Get "alt" | string }}
-{{ $id := printf "R-image-%x" (sha1 $src) }}
+{{ $figId := .Get "id" | default (printf "fig-%x" (sha1 $src)) }}
+{{ $lightboxId := printf "R-image-%x" (sha1 $src) }}
 {{ $figNum := .Get "fig-num" }}
 {{ $title := .Get "title" }}
 {{ $caption := .Get "caption" }}
@@ -22,23 +24,18 @@
   {{ $localizedSrc = $src }}
 {{ end }}
 
-{{/* Debug output — remove these <p> lines when done testing */}}
-{{/*  <p> src: {{ $src }}</p>
-<p> localizedSrc: {{ $localizedSrc}} </p>
-<p> localizedFilePath: {{ $localizedFilePath }} </p>
-<p> localizedFileExists: {{ $localizedFileExists}} </p>  */}}
-
-<figure id="{{ $id }}">
+<figure id="{{ $figId }}">
   <!-- Lightbox trigger -->
-  <a href="#{{ $id }}" class="lightbox-link" title="{{ $alt }}">
+  <a href="#{{ $lightboxId }}" class="lightbox-link" title="{{ $alt }}">
     <img src="{{ $localizedSrc }}" alt="{{ $alt }}" class="figure-image lazy lightbox" loading="lazy" />
   </a>
 
   <!-- Lightbox target -->
-  <a href="javascript:history.back();" class="lightbox-back" id="{{ $id }}">
+  <a href="javascript:history.back();" class="lightbox-back" id="{{ $lightboxId }}">
     <img src="{{ $localizedSrc }}" alt="{{ $alt }}" class="lazy lightbox-image" loading="lazy" />
   </a>
 
+  {{/* Figure caption */}}
   {{ $figLabel := i18n "Fig." }}
 
   {{ if $figNum }}
