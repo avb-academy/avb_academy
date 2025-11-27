@@ -44,7 +44,7 @@ done
 
 # --- Delete public folder for clean start ---
 echo "Deleting public folder"
-rm -rf public
+rm -rf public/
 
 # --- Activate virtual environment ---
 echo "Activating virtual environment..."
