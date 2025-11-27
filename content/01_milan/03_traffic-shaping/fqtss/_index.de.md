@@ -11,8 +11,8 @@ Die Switch-Ports werden je nach Richtung des aktuellen Datenverkehrs beschrieben
 
 <!-- - An {{< tooltip "ingress port" "Ingress port">}} describes traffic flowing into a switch.
 - An {{< tooltip "egress port" "Egress port">}} describes traffic flowing out of a switch. -->
-- Ein {{< tooltip "Ingress Port">}} beschreibt den Datenverkehr, der in einen Switch hineinfließt. Auf Deutsch: {{< termbase "Ingress port">}}  
-- Ein {{< tooltip "Egress Port">}} beschreibt den Datenverkehr, der aus einem Switch herausfließt. Auf Deutsch: {{< termbase "Egress port">}}
+- Ein {{< tooltip "Ingress port">}} beschreibt den Datenverkehr, der in einen Switch hineinfließt. Auf Deutsch: {{< termbase "Ingress port">}}  
+- Ein {{< tooltip "Egress port">}} beschreibt den Datenverkehr, der aus einem Switch herausfließt. Auf Deutsch: {{< termbase "Egress port">}}
 
 <!-- {{% notice info %}}
 The following examples refer to the following setup: All three streams that enter at three different ports of a switch are forwarded to the remaining port. The setup is shown in [Fig. 1](#fig-fqtss-routing).

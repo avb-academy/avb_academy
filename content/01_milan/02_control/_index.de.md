@@ -25,7 +25,7 @@ Das Protokoll erfüllt drei Hauptaufgaben:
 - **Connection Management**: This includes establishing, managing, and tearing down connections between devices on the network.
 - **Control Protocol**: This part of the standard specifies how devices can be controlled and configured. This includes managing device settings, handling configurations, and ensuring that devices operate correctly within the network. -->
 - **{{< termbase "Device Discovery">}}**: Stellt sicher, dass Geräte im Netzwerk erkannt, zuverlässig identifiziert und enumeriert werden können.  
-- **{{< termbase "Connection Management">}}**: Regelt Aufbau, Verwaltung und Abbau von Verbindungen zwischen Geräten im Netzwerk.  
+- **{{< termbase "Connection Management">}}**: Regelt Aufbau, Verwaltung und Abbau von {{< termbase "Streams">}} zwischen Geräten im Netzwerk.  
 - **{{< termbase "Control Protocol">}}**: Legt fest, wie Geräte gesteuert und konfiguriert werden. Dazu gehören die Verwaltung von Geräteeinstellungen und Konfigurationen sowie die Gewährleistung eines ordnungsgemäßen Betriebs innerhalb des Netzwerks.
 
 <!-- ## Controllers -->
