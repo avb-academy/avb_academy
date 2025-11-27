@@ -1,0 +1,63 @@
+{{- /* layouts/shortcodes/termbase.html */ -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $input := .Get 0 -}}
+{{- $normalized := $input -}}
+{{- $translation := "" -}}
+{{- $found := true -}}
+
+{{/* --- CASE-INSENSITIVE LOOKUP --- */}}
+{{- $keyLower := lower $input -}}
+{{- $matchedKey := "" -}}
+{{- range $k, $v := .Site.Data.termbase -}}
+  {{- if eq (lower $k) $keyLower -}}
+    {{- $matchedKey = $k -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if ne $matchedKey "" -}}
+  {{- with index .Site.Data.termbase $matchedKey -}}
+    {{- $translation = index . $lang | default $matchedKey -}}
+  {{- else -}}
+    {{- $translation = $matchedKey -}}
+    {{- $found = false -}}
+  {{- end -}}
+{{- else -}}
+  {{- $translation = $input -}}
+  {{- $found = false -}}
+{{- end -}}
+
+{{/* --- APPLY WORD-BY-WORD CAPITALIZATION MIRRORING --- */}}
+{{- $wordsInput := split $input " " -}}
+{{- $wordsTrans := split $translation " " -}}
+{{- $outWords := slice -}}
+
+{{- range $i, $w := $wordsTrans -}}
+  {{- $src := "" -}}
+  {{- if lt $i (len $wordsInput) -}}
+    {{- $src = index $wordsInput $i -}}
+  {{- end -}}
+
+  {{- if eq $src (upper $src) -}}
+    {{- $outWords = $outWords | append (upper $w) -}}
+  {{- else if eq $src (lower $src) -}}
+    {{- $outWords = $outWords | append (lower $w) -}}
+  {{- else if eq $src (title $src) -}}
+    {{- $outWords = $outWords | append (title $w) -}}
+  {{- else -}}
+    {{- $outWords = $outWords | append $w -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $translation = delimit $outWords " " -}}
+
+{{/* --- RENDER OUTPUT --- */}}
+{{- if not $found -}}
+  {{- if site.Params.termbaseStrict -}}
+    {{- errorf "Termbase lookup failed for '%s' in '%s'" $input .Page.Path -}}
+  {{- else -}}
+    {{- warnf "Termbase term not found: '%s' (%s)" $input .Page.Path -}}
+  {{- end -}}
+  <span style="color: red; font-weight: bold;">{{ $translation }}</span>
+{{- else -}}
+  {{ $translation | safeHTML -}}
+{{- end -}}

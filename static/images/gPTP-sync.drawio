@@ -7,7 +7,7 @@
         <mxCell id="13" value="" style="group;spacingLeft=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2" value="gPTP GM&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Time-aware&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Switch&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=25;" parent="13" vertex="1">
+        <mxCell id="2" value="gPTP GM&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@@Time Aware@@&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@@Switch@@&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;spacingLeft=25;" parent="13" vertex="1">
           <mxGeometry width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="12" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.clock;aspect=fixed;" parent="13" vertex="1">
@@ -21,7 +21,7 @@
         <mxCell id="GvNWRyxPNGRTKHPqQMS5-20" value="Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="GvNWRyxPNGRTKHPqQMS5-13" target="GvNWRyxPNGRTKHPqQMS5-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GvNWRyxPNGRTKHPqQMS5-13" value="gPTP&amp;nbsp;Follower&lt;div&gt;Time-aware Switch&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="GvNWRyxPNGRTKHPqQMS5-13" value="gPTP&amp;nbsp;Follower&lt;div&gt;@@Time Aware@@ @@Switch@@&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="236" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GvNWRyxPNGRTKHPqQMS5-21" value="Response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="GvNWRyxPNGRTKHPqQMS5-14" target="GvNWRyxPNGRTKHPqQMS5-13" edge="1">
@@ -32,13 +32,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GvNWRyxPNGRTKHPqQMS5-14" value="gPTP&amp;nbsp;Follower&lt;div&gt;Time-aware Switch&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="GvNWRyxPNGRTKHPqQMS5-14" value="gPTP&amp;nbsp;Follower&lt;div&gt;@@Time Aware@@ @@Switch@@&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="471" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GvNWRyxPNGRTKHPqQMS5-23" value="Response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="GvNWRyxPNGRTKHPqQMS5-15" target="GvNWRyxPNGRTKHPqQMS5-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GvNWRyxPNGRTKHPqQMS5-15" value="gPTP&amp;nbsp;Follower&lt;div&gt;Endstation&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="GvNWRyxPNGRTKHPqQMS5-15" value="gPTP&amp;nbsp;Follower&lt;div&gt;@@Endstation@@&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="707" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="GvNWRyxPNGRTKHPqQMS5-18" value="Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="2" target="GvNWRyxPNGRTKHPqQMS5-13" edge="1">

@@ -4,3 +4,6 @@ public/
 .DS_Store
 todo.md
 static/logo/*.png
+static/images/*.drawio.svg
+static/images/*.drawio.en.svg
+static/images/*.drawio.de.svg

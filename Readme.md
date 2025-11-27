@@ -20,7 +20,7 @@ AVB Academy is an online resource designed to help users understand the Milan pr
 
 This website is not affiliated with Avnu or any other organizations involved in Milan standardization; it represents a personal project.
 
-## Installation Instructions
+## Install Instructions
 
 To set up the AVB Academy locally, follow these steps:
 
@@ -30,7 +30,11 @@ To set up the AVB Academy locally, follow these steps:
    cd avb-academy
    ```
 2. Install Hugo: https://gohugo.io/installation/
-3. Run the hugo server locally
+3. Run the build script for images  
+    ```bash 
+    ./build.sh --images
+    ```
+4. Run the hugo server locally
     ```bash
     hugo server
     ```
@@ -43,6 +47,7 @@ AVB Academy offers various features to help users learn about Milan AVB:
 - **Glossary**: A searchable glossary that includes terms and detailed descriptions.
 - **Tooltips**: Glossary terms are highlighted and provide tooltips for quick explanations.
 - **Search Functionality**: Easily find terms, articles, or documentation.
+- **Termbase**: A yaml based dictionary for automatic translation of technical terms.
 
 ## Contributing
 
@@ -53,13 +58,25 @@ Contributions very welcome! If you'd like to help improve AVB Academy, you can:
 3. Ensure that all new content follows the established guidelines (e.g., adding new glossary terms, improving existing explanations).
 4. Review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-### Converting drawio figures
-
-**Important**: The script is designed for macOS applications. It will likely not work with other OS.
-
-The conversion of drawio to svg is currently a manual process. There is a bash script available. Run `convert_drawio.sh` in the in `static/images/` folder. Run `convert_drawio.sh -h` to see available options.
-
 By participating in AVB Academy, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### Translation contributions
+At this point the AVB Academy is available in English and German. For a German translation contribution, please see the [English–German Translation Guidelines](Translation-Guidelines-German.md).
+
+### Creating and Converting draw.io Figures
+
+The preferred format for explanatory figures is draw.io. Based on the draw.io source file, the corresponding SVG file will be generated with translations applied automatically.  
+
+To ensure correct translation of technical terms, enclose each term to be translated between two `@` symbols.  
+
+**Example:** `@@Bandwidth@@` will be translated as `Bandwidth` in the English SVG and `Bandbreite` in the German SVG.  
+
+**Important:** All translatable terms must be defined in `data/termbase.yaml`.
+
+To generate all SVGs from the draw.io files, run:  
+```bash
+./build.sh --images
+```
 
 ## Disclaimer
 

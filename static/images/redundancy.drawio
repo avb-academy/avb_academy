@@ -1,34 +1,36 @@
-<mxfile host="65bd71144e">
-    <diagram id="e3gQ99MkIlDCbDy__mkD" name="Page-1">
-        <mxGraphModel dx="495" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="6" value="Primary" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" parent="1" source="2" target="3" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="7" value="Secondary" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="2" target="4" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="2" value="Milan Talker&lt;br&gt;(redundant)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="80" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="Primary" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="3" target="5" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="3" value="Primary&lt;br&gt;Switch" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="280" y="40" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="8" value="Secondary" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="4" target="5" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="4" value="Secondary Switch" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="280" y="120" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" value="Milan Listener&lt;br&gt;(redundant)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="80" width="120" height="60" as="geometry"/>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram id="e3gQ99MkIlDCbDy__mkD" name="Page-1">
+    <mxGraphModel dx="1306" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6" value="@@Primary@@" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="@@Secondary@@" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="2" target="4" edge="1">
+          <mxGeometry x="0.0069" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2" value="Milan @@Talker@@&lt;div&gt;(redundant)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="@@Primary@@" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="3" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;@@Primary@@&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;@@Switch@@&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="@@Secondary@@" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;@@Secondary@@&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;@@Switch@@&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Milan @@Listener@@&lt;div&gt;(redundant)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>

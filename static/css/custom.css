@@ -24,6 +24,10 @@ a.tooltip {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
   white-space: nowrap;
+  display: inline;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 a.tooltip::after {
@@ -57,7 +61,6 @@ a.tooltip::after {
   white-space: nowrap;
 }
 
-
 #R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn),
 .content a:not(.tooltip):not(.no-triangle):not(.btn) {
   white-space: normal;          /* allow wrapping */
@@ -67,7 +70,6 @@ a.tooltip::after {
   font-weight: bold;
   text-decoration: none;
 }
-
 
 #R-body-inner a:not(.tooltip):not(.no-triangle):not(.btn):hover,
 .content a:not(.tooltip):not(.no-triangle):not(.btn):hover {
@@ -139,17 +141,24 @@ footer.footline a::before {
 .text-image-container .text,
 .text-image-container .image {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
+/* Fix applied here: 
+   Remove flex layout on .text to keep inline flow for tooltips and normal text */
 .text-image-container .text {
   padding-right: 20px;
+  padding-left: 0;
+  display: block;
+  flex-direction: initial;
+  justify-content: initial;
 }
 
 .text-image-container .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-left: 20px;
+  padding-right: 0;
 }
 
 .text-image-container .image figure,
@@ -177,22 +186,58 @@ footer.footline a::before {
   line-height: 1.4;
 }
 
+/* Layout for image on the right (default) */
+.text-image-container.image-right {
+  flex-direction: row;
+}
+
+.text-image-container.image-right .text {
+  padding-right: 20px;
+  padding-left: 0;
+  order: 0;
+}
+
+.text-image-container.image-right .image {
+  padding-left: 20px;
+  padding-right: 0;
+  order: 1;
+}
+
+/* Layout for image on the left */
+.text-image-container.image-left {
+  flex-direction: row;
+}
+
+.text-image-container.image-left .image {
+  padding-right: 20px;
+  padding-left: 0;
+  order: 0;
+}
+
+.text-image-container.image-left .text {
+  padding-left: 20px;
+  padding-right: 0;
+  order: 1;
+}
+
 /* Mobile Styles */
 @media (max-width: 767px) {
-  .text-image-container {
-    flex-direction: column;
+  /* Collapse ALL text-image containers to one column */
+  .text-image-container,
+  .text-image-container.image-left,
+  .text-image-container.image-right {
+    flex-direction: column !important;
   }
 
   .text-image-container .text,
   .text-image-container .image {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .text-image-container .image {
-    margin-top: 1em; /* Optional spacing between text and image */
+    margin-top: 1em;
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   /* Only apply filter to inline figure images, not to lightbox */
@@ -206,7 +251,6 @@ footer.footline a::before {
     background-color: white !important;
   }
 }
-
 
 /* Tag colors default (optional, adjust if you want) */
 .R-taxonomy.taxonomy-tags.cstyle {
@@ -286,8 +330,8 @@ ul.columnize li .breadcrumbs {
 
 ul li a {
   white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
   max-width: 100%;
 }
 
@@ -296,4 +340,3 @@ a.child-link {
   word-break: break-word;
   overflow-wrap: anywhere;
 }
-

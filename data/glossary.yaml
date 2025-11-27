@@ -3,138 +3,260 @@
 # 1000BASE-T: "Describes the speed and configuration of an Ethernet network"
 
 AAF:
-  short: "Audio Format in Milan Streams"
-  explanation: "{{< tooltip \"AVTP\">}} Audio Format."
-  reference: "{{< global_reference ref=\"IEEE1722\" clause=\"7\" >}}"
+  reference: '{{< global_reference ref="IEEE1722" clause="7" >}}'
+  en:
+    short: 'Audio Format in Milan Streams.'
+    explanation: '{{< tooltip "AVTP">}} Audio Format.'
+  de:
+    short: 'Audioformat in Milan-Streams.'
+    explanation: '{{< tooltip "AVTP">}} Audioformat.'
 
-ADC: "Analog to Digital converter"
+ADC:
+  en:
+    short: 'Analog-to-Digital Converter.'
+    explanation: 'Converts analog signals into digital signals.'
+  de:
+    short: 'Analog-Digital-Wandler.'
+    explanation: 'Wandelt analoge Signale in digitale Signale um.'
 
-ATDECC: 
-  short: "Control protocol for Milan"
-  explanation: "Short for *\"AVB/TSN Device Discovery, Enumeration, Connection Management, and Control\"*."
-  reference: "{{< global_reference ref=\"IEEE17221\" >}}"
+ATDECC:
+  reference: '{{< global_reference ref="IEEE17221" >}}'
+  en:
+    short: 'Control protocol for Milan.'
+    explanation: 'Short for *"AVB/TSN Device Discovery, Enumeration, Connection Management, and Control".*'
+  de:
+    short: 'Steuerprotokoll für Milan.'
+    explanation: 'Abkürzung für *"AVB/TSN Device Discovery, Enumeration, Connection Management, and Control".*'
 
-AVB: 
-  short: "Audio Video Bridging"
-  explanation: "Describes the basis for {{< tooltip \"Milan\">}}."
-  reference: "{{< global_reference ref=\"IEEE8021BA\" >}}"  
+AVB:
+  reference: '{{< global_reference ref="IEEE8021BA" >}}'
+  en:
+    short: 'Audio Video Bridging.'
+    explanation: 'Describes the basis for {{< tooltip "Milan">}}.'
+  de:
+    short: 'Audio Video Bridging.'
+    explanation: 'Die Grundlage für {{< tooltip "Milan">}}.'
 
 AVTP:
-  short: "Audio Video Transport Protocol" 
-  explanation: "Specifies the media transport in a {{< tooltip \"Milan\">}} network."
-  reference: "{{< global_reference ref=\"IEEE1722\" >}}"
-
-# AVTPDU: "AVTP data units as defined in IEEE1722-2016. Utilize the commonly known Protocol Data Unit (PDU) format"  
+  reference: '{{< global_reference ref="IEEE1722" >}}'
+  en:
+    short: 'Audio Video Transport Protocol.'
+    explanation: 'Specifies the media transport in a {{< tooltip "Milan">}} network.'
+  de:
+    short: 'Audio Video Transport Protocol.'
+    explanation: 'Definiert, wie Mediendaten in einem {{< tooltip "Milan">}}-Netzwerk übertragen werden.'
+    
+AVTPDU:
+  reference: '{{< global_reference ref="IEEE1722" >}}'
+  en:
+    short: 'AV-Transmission-Protocol Data Unit.'
+    explanation: 'Defines the Protocol Data Unit (PDU) format for Audio-Video traffic in {{< tooltip "AVB">}} networks.'
+  de:
+    short: 'AV-Transmission-Protocol Data Unit.'
+    explanation: 'Definiert das Protocol Data Unit (PDU)-Format für Audio-Video-Traffic in {{< tooltip "AVB">}}-Netzwerken.'
 
 Avnu Alliance:
-  short: "Industry alliance to develop Milan"
-  explanation: "The Avnu Alliance is a consortium of member companies working together to create an interoperable ecosystem of low-latency, time-synchronized, highly reliable networking devices using the {{< tooltip \"IEEE\">}} open standard {{< tooltip \"TSN\" >}}."
-  reference: "[Avnu Alliance Website](https://avnu.org/)"
+  reference: '[Avnu Alliance Website](https://avnu.org/)'
+  en:
+    short: 'Industry alliance to develop Milan.'
+    explanation: 'The Avnu Alliance is a consortium of member companies working together to create an interoperable ecosystem of low-latency, time-synchronized, highly reliable networking devices using the {{< tooltip "IEEE">}} open standard {{< tooltip "TSN" >}}.'
+  de:
+    short: 'Industrieallianz für die Entwicklung von Milan.'
+    explanation: 'Die Avnu Alliance ist ein Konsortium von Mitgliedsunternehmen, die gemeinsam ein interoperables Ökosystem aus latenzarmen, zeit-synchronisierten und hochzuverlässigen Netzwerkgeräten auf Basis des {{< tooltip "IEEE">}} offenen Standards {{< tooltip "TSN" >}} entwickeln.'
 
 # BMCA: "Best TimeTransmitter Clock Algorithm. Formerly known as Best Master Clock Algorithm. Used to determine the best gPTP Clock Leader in a network. Specified in gPTP"  
 
 Bridge:
-  explanation: "{{< tooltip \"Switch\">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip \"AVB\">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md))."
+  en:
+    explanation: '{{< tooltip "Switch">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
+  de:
+    explanation: 'Die Begriffe {{< tooltip "Switch">}} und Bridge werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen time-aware sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
 
 # Bridged Endstation: "A device that contains a Switch as well as an Endstation"  
 
-BTCA: 
-  short: "Best TimeTransmitter Clock Algorithm"
-  explanation: "Formerly known as \"Best Master Clock Algorithm\". Used to determine the best {{< tooltip \"gPTP\">}} Clock Leader in a network."
-  reference: "{{< global_reference ref=\"IEEE8021AS\" clause=\"10.3\">}}"
+BTCA:
+  reference: '{{< global_reference ref="IEEE8021AS" clause="10.3">}}'
+  en:
+    short: 'Best TimeTransmitter Clock Algorithm.'
+    explanation: 'Formerly known as "Best Master Clock Algorithm". Used to determine the best {{< tooltip "gPTP">}} Clock Leader in a network.'
+  de:
+    short: 'Best TimeTransmitter Clock Algorithm.'
+    explanation: 'Auch bekannt als "Best Master Clock Algorithm". Mithilfe des BTCA wird der beste {{< tooltip "gPTP">}} Clock Leader in einem Netzwerk bestimmt.'
 
-CRF: 
-  short: "Clock Reference Format"
-  explanation: "Mechanism to improve audio clock accuracy in {{< tooltip \"Milan\" >}} networks. Commonly referred to as Media Clock."
-  reference: "{{< global_reference ref=\"IEEE1722\" clause=\"10\" >}}"
+CRF:
+  reference: '{{< global_reference ref="IEEE1722" clause="10" >}}'
+  en:
+    short: 'Clock Reference Format.'
+    explanation: 'Mechanism to improve audio clock accuracy in {{< tooltip "Milan" >}} networks. Commonly referred to as Media Clock.'
+  de:
+    short: 'Clock Reference Format.'
+    explanation: 'Ein Mechanismus in {{< tooltip "Milan" >}}-Netzwerken, der die Genauigkeit des Taktgebers verbessert. Im Allgemeinen auch als Media Clock bekannt.'
 
-DAC: "Digital to Analog converter"
+DAC:
+  en:
+    short: 'Digital-to-Analog Converter.'
+    explanation: 'Converts digital signals into analog signals.'
+  de:
+    short: 'Digital-Analog-Wandler.'
+    explanation: 'Wandelt digitale Signale in analoge Signale um.'
 
 Egress port:
-  short: "Traffic exit port"
-  explanation: "Describes a port through which traffic is exiting a device. Used to describe the traffic flow in a {{< tooltip \"Switch\">}}."  
+  en:
+    short: 'Traffic exit port.'
+    explanation: 'Describes a port through which traffic is exiting a device. Used to describe the traffic flow in a {{< tooltip "Switch">}}.'
+  de:
+    short: 'Ausgangsport.'
+    explanation: 'Ein Port, durch den Netzwerkpakete ein Gerät verlassen. Wird für die Beschreibung von Netzwerkflüssen in {{< tooltip "Switches" "Switch">}} verwendet.'
 
 Endstation:
-  short: "Converts audio from/to Milan"
-  explanation: "A device converting audio into or from the {{< tooltip \"Milan\">}} network. An Endstation is Milan certified."
-  reference: "{{< global_reference ref=\"IEEE802\" >}}"
+  reference: '{{< global_reference ref="IEEE802" >}}'
+  en:
+    short: 'Converts audio to/from Milan.'
+    explanation: 'A device converting audio into or from the {{< tooltip "Milan">}} network. An Endstation is Milan certified.'
+  de:
+    short: 'Wandelt Audiosignale zu/von Milan.'
+    explanation: 'Ein Gerät, das Audio entweder von Milan oder zu Milan umwandelt. Eine Endstation ist Milan zertifiziert.'
 
 # EPON: "Ethernet Passive Optical Network"
 # FOH: "Front of House. Where the mixing consoles are located that mix for the audience"
 
 FQTSS:
-  short: "Forwarding and Queuing for Time-Sensitive Streams"
-  explanation: "Specifies how to handle traffic of different priorities. And makes sure that {{< tooltip \"Milan\">}} traffic arrives on time at the {{< tooltip \"Listener\">}}."
-  reference: "{{< global_reference ref=\"IEEE8021Q\" clause=\"34\">}}"
+  aliases:
+    - 'Traffic Shaping'
+  reference: '{{< global_reference ref="IEEE8021Q" clause="34">}}'
+  en:
+    short: 'Forwarding and Queuing for Time-Sensitive Streams.'
+    explanation: 'Specifies how to handle traffic of different priorities and ensures that {{< tooltip "Milan">}} traffic arrives on time at the {{< tooltip "Listener">}}.'
+  de:
+    short: 'Forwarding and Queuing for Time-Sensitive Streams.'
+    explanation: 'Definiert, wie Netzwerkpakete mit unterschiedlichen Prioritäten behandelt werden. Grundlage für deterministisches Verhalten in {{< tooltip "Milan">}}-Netzwerken.'
 
-GM: 
-  short: "GrandMaster"
-  explanation: "The GrandMaster provides the global network time with the {{< tooltip \"gPTP\">}} protocol. It has been elected using the {{< tooltip \"BTCA\">}}."
-  reference: "{{<global_reference ref=\"IEEE8021AS\">}}"
+GM:
+  reference: '{{< global_reference ref="IEEE8021AS">}}'
+  en:
+    short: 'GrandMaster.'
+    explanation: 'The GrandMaster provides the global network time using the {{< tooltip "gPTP">}} protocol. It is elected using the {{< tooltip "BTCA">}}.'
+  de:
+    short: 'GrandMaster.'
+    explanation: 'Der GrandMaster gibt die globale Netzwerkzeit mithilfe des {{< tooltip "gPTP">}}-Protokolls vor. Der GrandMaster wird durch den {{< tooltip "BTCA">}}-Algorithmus bestimmt.'
 
-gPTP: 
-  short: "Generalized Precision Timing Protocol"
-  explanation: "The Generalized Precision Timing Protocol (gPTP) is a profile of {{< tooltip \"PTPv2\" >}}. It provides precise timing and synchronization in Ethernet networks."
-  reference: "{{< global_reference ref=\"IEEE8021AS\" >}}"
-
+gPTP:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    short: 'Generalized Precision Timing Protocol.'
+    explanation: 'The Generalized Precision Timing Protocol (gPTP) is a profile of {{< tooltip "PTPv2">}}. It provides precise timing and synchronization in Ethernet networks.'
+  de:
+    short: 'Generalized Precision Timing Protocol.'
+    explanation: 'Das Generalized Precision Timing Protocol (gPTP) ist ein Profil von {{< tooltip "PTPv2">}}. Es bildet die Grundlage des Netzwerktimings in Ethernet-Netzwerken.'
+  
 # Hop: "The process of a packet traversing a switch. The number of hops defines latency in a Milan network"
 
-IEEE: 
-  short: "Institute of Electrical and Electronics Engineers"
-  explanation: "The IEEE is an American professional association for electrical engineering, electronics engineering, and other related disciplines."
-  reference: "[IEEE Website](https://www.ieee.org/)"
+IEEE:
+  reference: '[IEEE Website](https://www.ieee.org/)'
+  en:
+    short: 'Institute of Electrical and Electronics Engineers.'
+    explanation: 'The IEEE is a US-American professional association for electrical engineering, electronics engineering, and other related disciplines.'
+  de:
+    short: 'Institut of Electrical and Electronics Engineers.'
+    explanation: 'Die IEEE ist eine US-amerikanische Vereinigung für Elektrotechnik, Elektronik und ähnliche Disziplinen.'
 
-Ingress port: 
-  short: "Traffic input port"
-  explanation: "Describes a port through which traffic is entering a device. Used to describe the traffic flow in a Switch."  
+Ingress port:
+  en:
+    short: 'Traffic input port.'
+    explanation: 'Describes a port through which traffic is entering a device. Used to describe the traffic flow in a {{< tooltip "Switch">}}.'
+  de:
+    short: 'Eingangsport.'
+    explanation: 'Beschreibt einen Port, durch den Netzwerkpakete in ein Gerät gelangen. Wird für die Beschreibung von Netzwerkflüssen in {{< tooltip "Switches" "Switch">}} verwendet.'
 
 Listener:
-  short: "Receiver of a Stream"
-  explanation: "The receiver of a {{< tooltip \"Stream\">}} created by a {{< tooltip \"Talker\">}}, e.g., an amplifier."
-  reference: "{{< global_reference ref=\"IEEE8021BA\" clause=\"3\">}}"
+  reference: '{{< global_reference ref="IEEE8021BA" clause="3">}}'
+  en:
+    short: 'Stream receiver'
+    explanation: 'The receiver of a {{< tooltip "Stream">}} sent by a {{< tooltip "Talker">}}.'
+  de:
+    short: 'Empfänger eines Streams'
+    explanation: 'Der Empfänger eines {{< tooltip "Streams" "Stream">}}, der von einem {{< tooltip "Talker">}} gesendet wird.'
 
-MAC: 
-  short: "Medium Access Control"
-  explanation: "Layer that controls the hardware responsible for interaction with the wired or wireless transmission medium."
-  reference: "{{< global_reference ref=\"IEEE802\">}}"
+MAC:
+  reference: '{{< global_reference ref="IEEE802">}}'
+  en:
+    short: 'Medium Access Control.'
+    explanation: 'Layer that controls the hardware responsible for interaction with the wired or wireless transmission medium.'
+  de:
+    short: 'Medium Access Control.'
+    explanation: 'Der Layer, der die Hardware kontrolliert, die auf dem kabelgebundenen oder kabellosen Medium operiert.'
 
-MSRP: 
-  short: "Multiple Stream Registration Protocol"
-  explanation: "Facilitates the reservation and management of multiple {{< tooltip \"Streams\" \"Stream\">}} in a coordinated manner. Is an extension to {{< tooltip \"SRP\">}}."
-  reference: "{{< global_reference ref=\"IEEE8021Q\" clause=\"35\">}}"
+MSRP:
+  reference: '{{< global_reference ref="IEEE8021Q" clause="35">}}'
+  en:
+    short: 'Multiple Stream Registration Protocol.'
+    explanation: 'Facilitates the reservation and management of multiple {{< tooltip "Streams" "Stream">}} in a coordinated manner. It is an extension to {{< tooltip "SRP">}}.'
+  de:
+    short: 'Multiple Stream Registration Protocol.'
+    explanation: 'Grundlage für das automatische Bandbreitenmanagement. Verwaltet die {{< tooltip "Streams" "Stream">}} als Erweiterung des {{< tooltip "SRP">}}-Protokolls.'
 
-Milan: 
-  short: "Media Independent Local Area Network"
-  explanation: "The term Milan is used to describe a ProAV network based on the {{< tooltip \"AVB\" >}} specifications."
-  reference: "{{< global_reference ref=\"MILANSpec\">}}"
+Milan:
+  reference: '{{< global_reference ref="MILANSpec">}}'
+  en:
+    short: 'Media Independent Local Area Network.'
+    explanation: 'The term Milan is used to describe a ProAV network based on the {{< tooltip "AVB" >}} specifications.'
+  de:
+    short: 'Media Independent Local Area Network.'
+    explanation: 'Der Begriff Milan bezeichnet ein ProAV-Netzwerk, das auf den {{< tooltip "AVB">}}-Spezifikationen aufbaut.'
 
 # OS: "Open System Interconnection"  
 
-OSI Layer: 
-  short: "Path through a computer system"
-  explanation: "The OSI Layer model is an abstract way to describe the path a packet has to take through a computer system."
-  reference: "[Wikipedia OSI model](https://en.wikipedia.org/wiki/OSI_model)"
-
+OSI Layer:
+  aliases:
+    - 'Transport Layer'
+  reference: '[Wikipedia OSI model](https://en.wikipedia.org/wiki/OSI_model)'
+  en:
+    short: 'Path through a computer system.'
+    explanation: 'The OSI Layer model is an abstract way to describe the path a packet has to take through a computer system.'
+  de:
+    short: 'Weg durch ein Computersystem.'
+    explanation: 'Das OSI-Layer-Modell beschreibt abstrakt den Weg, den ein Paket durch ein Computersystem nehmen muss, um verarbeitet zu werden.'
+  
 # PDU: "Protocol Data Unit"  
-PCM: "Pulse Code Modulation"  
+
+PCM:
+  en:
+    short: 'Pulse Code Modulation.'
+    explanation: 'A lossless compression method for audio signals.'
+  de:
+    short: 'Pulse Code Modulation.'
+    explanation: 'Eine verlustfreie Komprimierungsmethode für Audiosignale.'
+
 # PCP: "Priority Code Point. Specifies a priority value between 0 and 7 used by QoS disciplines to differentiate traffic"  
 
 Primary:
-  short: "Primary connection"
-  explanation: "In a redundant network, the first connection is called Primary. The second connection is called {{< tooltip \"Secondary\">}}."
-  reference: "{{< global_reference ref=\"MILANSpec\" clause=\"8.2.2\">}}"
+  reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
+  en:
+    short: 'Primary connection.'
+    explanation: 'In a redundant network, the first connection is called Primary. The second connection is called {{< tooltip "Secondary">}}.'
+  de:
+    short: 'Primäre Verbindung.'
+    explanation: 'In einem redundanten Netzwerk wird die erste Verbindung als "Primäre Verbindung" bezeichnet. Die zweite Verbindung wird {{< tooltip "Secondary">}} genannt.'
 
-PTPv2: 
-  short: "Precision Timing Protocol v2"
-  explanation: "Precision Timing Protocol version 2. This is the basis for {{< tooltip \"gPTP\" >}}."
-  reference: "{{< global_reference ref=\"IEEE1588\">}}"  
-
+PTPv2:
+  reference: '{{< global_reference ref="IEEE1588">}}'
+  en:
+    short: 'Precision Timing Protocol v2.'
+    explanation: 'Precision Timing Protocol version 2. This is the basis for {{< tooltip "gPTP" >}}.'
+  de:
+    short: 'Precision Timing Protocol v2.'
+    explanation: 'Das Precision Timing Protocol Version 2 bildet die Grundlage für {{< tooltip "gPTP">}}.'
+  
 # QoS: "Quality of Service"  
 
 Secondary:
-  short: "Secondary connection"
-  explanation: "In a redundant network, the second connection is called Secondary. The first connection is called {{< tooltip \"Primary\">}}."
-  reference: "{{< global_reference ref=\"MILANSpec\" clause=\"8.2.2\">}}"
+  reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
+  en:
+    short: 'Secondary connection.'
+    explanation: 'In a redundant network, the second connection is called Secondary. The first connection is called {{< tooltip "Primary">}}.'
+  de:
+    short: 'Sekundäre Verbindung.'
+    explanation: 'In einem redundanten Netzwerk wird die zweite Verbindung als "Sekundäre Verbindung" bezeichnet. Die erste Verbindung wird {{< tooltip "Primary">}} genannt.'
 
 # SR class: "Stream Reservation class"  
 
@@ -143,46 +265,88 @@ Secondary:
 # SR class B: "Stream Reservation class B. Max. end-to-end latency: 50ms"  
 
 SRP:
-  short: "Stream Reservation Protocol"
-  explanation: "Handles the reservation of rereferences for individual {{<tooltip \"Streams\" \"Stream\">}}."
-  reference: "{{< global_reference ref=\"IEEE8021Q\" clause=\"35\" >}}"
+  aliases:
+    - 'Stream Reservation'
+  reference: '{{< global_reference ref="IEEE8021Q" clause="35" >}}'
+  en:
+    short: 'Stream Reservation Protocol.'
+    explanation: 'Handles the reservation of references for individual {{< tooltip "Streams" "Stream">}}.'
+  de:
+    short: 'Stream Reservation Protocol.'
+    explanation: 'Das Stream Reservation Protocol verwaltet die Reservierung einzelner {{< tooltip "Streams" "Stream">}}.'
 
 Stream:
-  short: "Container for audio channels"
-  explanation: "Used to transmit data between a {{< tooltip \"Talker\">}} and a {{< tooltip \"Listener\" >}} within a network. Basis for the bandwidth reservation calculation. [More explanation](../00_introduction-to-audio-networks/stream.md)"
-  reference: "{{< global_reference ref=\"IEEE1722\" >}}"
+  reference: '{{< global_reference ref="IEEE1722" >}}'
+  en:
+    short: 'Container for audio or clock data.'
+    explanation: 'Used to transmit data between a {{< tooltip "Talker">}} and a {{< tooltip "Listener" >}} within a network. Basis for the bandwidth reservation calculation. [More explanation](../00_introduction-to-audio-networks/stream.md)'
+  de:
+    short: 'Container für Audiokanäle.'
+    explanation: 'Dient dazu, Daten zwischen einem {{< tooltip "Talker">}} und einem {{< tooltip "Listener">}} innerhalb eines Netzwerks zu übertragen. Bildet die Grundlage für die Bandbreitenreservierung. [Weitere Infos](../00_introduction-to-audio-networks/stream.md)'
 
 Switch:
-  explanation: "Switch and {{< tooltip \"Bridge\">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip \"AVB\">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md))."  
+  en:
+    short: 'Forwards network traffic between ports'
+    explanation: 'Switch and {{< tooltip "Bridge">}} are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
+  de:
+    short: 'Leitet Netzwerkverkehr zwischen Ports weiter'
+    explanation: 'Die Begriffe {{< tooltip "Switch">}} und {{< tooltip "Bridge">}} werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen „time-aware“ sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
 
-Talker: 
-  short: "Producer of a Stream"
-  explanation: "The reference of a {{< tooltip \"Stream\">}} to be received by a {{< tooltip \"Listener\">}}, e.g., a stage box."
-  reference: "{{< global_reference ref=\"IEEE8021BA\" clause=\"3\" >}}"
+Talker:
+  reference: '{{< global_reference ref="IEEE8021BA" clause="3" >}}'
+  en:
+    short: 'Stream producer.'
+    explanation: 'The source of a {{< tooltip "Stream">}} to be received by a {{< tooltip "Listener">}}.'
+  de:
+    short: 'Produzent eines Streams.'
+    explanation: 'Die Quelle eines {{< tooltip "Stream">}}, der von einem {{< tooltip "Listener">}} empfangen wird.'  
 
-TSN: 
-  short: "Time Sensitive Networking"
-  explanation: "Has evolved from the IEEE AVB working group. TSN the basis for {{< tooltip \"AVB\">}}."
-  reference: "[IEEE TSN TG website](https://1.ieee802.org/tsn/)"
+TSN:
+  reference: '[IEEE TSN TG website](https://1.ieee802.org/tsn/)'
+  en:
+    short: 'Time Sensitive Networking.'
+    explanation: 'Evolved from the IEEE AVB working group. TSN is the basis for {{< tooltip "AVB">}}.'
+  de:
+    short: 'Time Sensitive Networking.'
+    explanation: 'Die Nachfolgegruppe der {{< tooltip "IEEE">}}-Arbeitsgruppe. TSN bildet die Grundlage für {{< tooltip "AVB">}}.'  
 
 PTO:
-  short: "Presentation Time Offset"
-  explanation: The playout time for a packet transmitted from a {{< tooltip "Talker">}}. Also known as {{< tooltip "Delay">}}.
+  en:
+    short: 'Presentation Time Offset.'
+    explanation: 'The playout time for samples in a packet transmitted from a {{< tooltip "Talker">}}. Also known as {{< tooltip "Delay">}}.'
+  de:
+    short: 'Presentation Time Offset.'
+    explanation: 'Die Zeit, die vergehen muss, bis die Samples in einem Paket am {{< tooltip "Listener">}} ausgespielt wird. Auch bekannt als {{< tooltip "Delay">}}.'
 
 Delay:
-  short: The time offset applied to a Stream before playback.
-  explanation: >
-    In audio streaming, Delay refers to the time offset applied to a {{< tooltip "Stream">}} before it is played out.  
-    The technical specification defines this as Presentation Time Offset ({{< tooltip "PTO">}}), while the Milan Manager refers to it as Presentation Time.  
-    Regardless of terminology, the function remains the same: it ensures that streams are synchronized by introducing a controlled delay before playback.
+  en:
+    short: 'The time offset applied to a Stream before playback.'
+    explanation: >
+      'In audio streaming, Delay refers to the time offset applied to a {{< tooltip "Stream">}} before it is played out.  
+      The technical specification defines this as Presentation Time Offset ({{< tooltip "PTO">}}), while the Milan Manager refers to it as Presentation Time.  
+      Regardless of terminology, the function remains the same: it ensures that streams are synchronized by introducing a controlled delay before playback.'
+  de:
+    short: 'Verzögerung bis zur Ausspielung.'
+    explanation: >
+      'Im Audio-Streaming bezeichnet „Verzögerung“ den Zeitversatz, der auf einen {{< tooltip "Stream">}} angewendet wird, bevor er wiedergegeben wird.  
+      Die technische Spezifikation definiert dies als Presentation Time Offset ({{< tooltip "PTO">}}), während der Milan Manager davon als "Presentation Time" spricht.  
+      Unabhängig von der Terminologie bleibt die Funktion dieselbe: Sie sorgt dafür, dass Streams synchronisiert werden, indem vor der Wiedergabe eine kontrollierte Verzögerung eingeführt wird.'
 
 Network Time:
-  short: "Shared time base"
-  explanation: "A common time reference shared by all devices in a Milan network, established using the {{< tooltip \"gPTP\" >}} protocol. This ensures precise synchronization across the entire network."
+  en:
+    short: 'Shared time base.'
+    explanation: 'A common time reference shared by all devices in a Milan network, established using the {{< tooltip "gPTP" >}} protocol. This ensures precise synchronization across the entire network.'
+  de:
+    short: 'Netzwerkzeit.'
+    explanation: 'Eine gemeinsame Zeit, die von allen Geräten im Netzwerk verwendet wird. Sie wird über das {{< tooltip "gPTP">}}-Protokoll verteilt und sorgt für eine präzise Synchronisation im gesamten Netzwerk.'
 
 Media Time:
-  short: "Audio clock timing"
-  explanation: "The local timing used to control audio sampling rates on a device. Media Time is derived from Network Time but is used specifically for media clock recovery and sample-accurate playback."
+  en:
+    short: 'Audio clock timing.'
+    explanation: 'The local timing used to control audio sampling rates on a device. Media Time is derived from Network Time but is used specifically for media clock recovery and sample-accurate playback.'
+  de:
+    short: 'Audio-Taktgeber.'
+    explanation: 'Der lokale Takt, der verwendet wird, um die Sampling-Rate eines Geräts zu steuern. Die Media Time ist von der {{< tooltip "Network Time">}} abgeleitet und wird für die Media Clock Recovery sowie für sample-genaue Wiedergabe verwendet.'
 
 # VLAN: "Virtual LAN"
 

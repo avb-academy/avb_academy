@@ -1,0 +1,551 @@
+AVB:
+  en: "AVB"
+  de: "AVB"
+  acronym: "AVB"
+
+Analog To Digital Converter:
+  en: "Analog To Digital Converter"
+  de: "Analog-Digital-Wandler"
+
+Analog To Digital Converters:
+  en: "Analog To Digital Converters"
+  de: "Analog-Digital-Wandler"
+
+Audio:
+  en: "Audio"
+  de: "Audio"
+
+Audio Data:
+  en: "Audio Data"
+  de: "Audiodaten"
+
+Audio Dropout:
+  en: "Audio Dropout"
+  de: "Audio-Aussetzer"
+
+Audio Interface:
+  en: "Audio Interface"
+  de: "Audiointerface"
+
+Audio Stream:
+  en: "Audio stream"
+  de: "Audio-Stream"
+
+Avnu Alliance:
+  en: "Avnu Alliance"
+  de: "Avnu Alliance"
+
+Avnu Certification:
+  en: "Avnu Certification"
+  de: "Avnu-Zertifizierung"
+
+Bandwidth:
+  en: "Bandwidth"
+  de: "Bandbreite"
+
+Bandwidth Usage:
+  en: "Bandwidth Usage"
+  de: "Bandbreitennutzung"
+
+Best Effort:
+  en: "best-effort"
+  de: "Best-Effort"
+
+Bridge:
+  en: "Bridge"
+  de: "Bridge"
+
+Bridged Endstation:
+  en: "Bridged Endstation"
+  de: "Bridged Enstation"
+
+CAT Cable:
+  en: "CAT cable"
+  de: "CAT-Kabel"
+
+Cable:
+  en: "Cable"
+  de: "Kabel"
+
+Capable:
+  en: "Capable"
+  de: "Fähig"
+
+Certified Products:
+  en: "certified products"
+  de: "zertifizierte Produkte"
+
+Channel:
+  en: "Channel"
+  de: "Kanal"
+
+Click:
+  en: "Click"
+  de: "Klick"
+
+Clock:
+  en: "Clock"
+  de: "Clock"
+
+Clock Data:
+  en: "Clock Data"
+  de: "Synchronisationsdaten"
+
+Clock Leader:
+  en: "Clock Leader"
+  de: "Clock Leader"
+
+Clock Synchronization:
+  en: "Clock synchronization"
+  de: "Taktsynchronisation"
+
+Clocks:
+  en: "Clocks"
+  de: "Clocks"
+
+Comb Filter:
+  en: "Comb Filter"
+  de: "Kammfilter"
+
+Connection Management:
+  en: "Connection Management"
+  de: "Connection Management"
+
+Control:
+  en: "Control"
+  de: "Steuerung"
+
+Control Data:
+  en: "Control Data"
+  de: "Steuerdaten"
+
+Control Protocol:
+  en: "Control Protocol"
+  de: "Control Protocol"
+
+Controller:
+  en: "Controller"
+  de: "Controller"
+
+Credit Based:
+  en: "credit-based"
+  de: "Kreditbasiert"
+
+Credit Counter:
+  en: "credit counter"
+  de: "Kreditzähler"
+
+Data Destination:
+  en: "Data Destination"
+  de: "Datenziel"
+
+Data Link:
+  en: "Data Link"
+  de: "Sicherung"
+
+Data Source:
+  en: "Data Source"
+  de: "Datenquelle"
+
+Delay:
+  en: "Delay"
+  de: "Verzögerung"
+
+Destination:
+  en: "Destination"
+  de: "Ziel"
+
+Deterministic Delivery:
+  en: "Deterministic delivery"
+  de: "deterministische Übertragung"
+
+Device Discovery:
+  en: "Device discovery"
+  de: "Device Discovery"
+
+Digital To Analog Converter:
+  en: "Digital To Analog Converter"
+  de: "Digital-Analog-Wandler"
+
+Digital To Analog Converters:
+  en: "Digital To Analog Converters"
+  de: "Digital-Analog-Wandler"
+
+Domain:
+  en: "Domain"
+  de: "Domäne"
+
+Domains:
+  en: "Domains"
+  de: "Domänen"
+
+Egress Port:
+  en: "Egress Port"
+  de: "Ausgangsport"
+
+Egress Ports:
+  en: "Egress Ports"
+  de: "Ausgangsports"
+
+End To End:
+  en: "end-to-end"
+  de: "Ende-zu-Ende"
+
+Endstation:
+  en: "Endstation"
+  de: "Endstation"
+
+Endstations:
+  en: "Endstations"
+  de: "Endstations"
+
+Enumeration:
+  en: "Enumeration"
+  de: "Enumeration"
+
+Forward Queuing For Time-sensitive Streams:
+  en: "Forward Queuing for Time-Sensitive Streams"
+  de: "Forward Queuing for Time-Sensitive Streams"
+
+Gbps:
+  en: "Gbps"
+  de: "Gbps"
+
+Glitch:
+  en: "Glitch"
+  de: "Störung"
+
+Gptp:
+  en: "Generalized Precision Time Protocol"
+  de: "Generalized Precision Time Protocol"
+
+Grandmaster:
+  en: "GrandMaster"
+  de: "GrandMaster"
+
+Guaranteed Delivery:
+  en: "Guaranteed delivery"
+  de: "garantierte Zustellung"
+
+Hop:
+  en: "Hop"
+  de: "Hop"
+
+Hops:
+  en: "hops"
+  de: "Hops"
+
+IEEE:
+  en: "IEEE"
+  de: "IEEE"
+  acronym: "IEEE"
+
+IP Network:
+  en: "IP network"
+  de: "IP-Netzwerk"
+
+Ingress Port:
+  en: "Ingress Port"
+  de: "Eingangsport"
+
+Ingress Ports:
+  en: "Ingress Ports"
+  de: "Eingangsports"
+
+Interoperability:
+  en: "Interoperability"
+  de: "Interoperabilität"
+
+Jitter:
+  en: "Jitter"
+  de: "Jitter"
+
+Latency:
+  en: "Latency"
+  de: "Latenz"
+
+Layer:
+  en: "Layer"
+  de: "Schicht"
+
+Legend:
+  en: "Legend"
+  de: "Legende"
+
+Listener:
+  en: "Listener"
+  de: "Listener"
+
+Low Latency:
+  en: "Low Latency"
+  de: "geringe Latenz"
+
+Manufacturer Independent:
+  en: "manufacturer-independent"
+  de: "herstellerunabhängig"
+
+Master Clock:
+  en: "Master Clock"
+  de: "Master Clock"
+
+Mbps:
+  en: "Mbps"
+  de: "Mbps"
+
+Media Access Control:
+  en: "Media Access Control"
+  de: "Media Access Control"
+
+Media Time:
+  en: "Media Clock"
+  de: "Medientakt"
+
+Media Transport:
+  en: "Media Transport"
+  de: "Datenübertragung"
+
+Microphone:
+  en: "Microphone"
+  de: "Mikrofon"
+
+Milan:
+  en: "Milan"
+  de: "Milan"
+
+Mixing Console:
+  en: "Mixing Console"
+  de: "Mischpult"
+
+Monitor:
+  en: "monitor"
+  de: "überwacht"
+
+Network:
+  en: "Network"
+  de: "Netzwerk"
+
+Network Adapter:
+  en: "Network Adapter"
+  de: "Netzwerkadapter"
+
+Network Delay:
+  en: "Network Delay"
+  de: "Netzwerkverzögerung"
+
+Network Interface:
+  en: "Network Interface / Network Card"
+  de: "Netzwerkkarte"
+
+Network Performance:
+  en: "Network Performance"
+  de: "Netzwerkperformance"
+
+Network Speed:
+  en: "Network speed"
+  de: "Netzwerkgeschwindigkeit"
+
+Network Synchronization:
+  en: "Network Synchronization"
+  de: "Netzwerksynchronisation"
+
+Network Time:
+  en: "Network time"
+  de: "Netzwerkzeit"
+
+Network Traffic:
+  en: "Network traffic"
+  de: "Netzwerkverkehr"
+
+Networked Audio:
+  en: "Networked Audio"
+  de: "Audionetzwerk"
+
+Networks:
+  en: "Network"
+  de: "Netzwerke"
+
+Packet:
+  en: "Packet"
+  de: "Paket"
+
+Packets:
+  en: "Packets"
+  de: "Pakete"
+
+Pdelay Request:
+  en: "PDelay Request"
+  de: "PDelay Request"
+
+Pdelay Response:
+  en: "PDelay Response"
+  de: "PDelay Response"
+
+Peer Delay:
+  en: "Peer Delay"
+  de: "Peer Delay"
+
+Playback:
+  en: "Playback"
+  de: "Wiedergabe"
+
+Playout Delay:
+  en: "Playout delay"
+  de: "Ausspielverzögerung"
+
+Plug And Play:
+  en: "plug-and-play"
+  de: "Plug-and-Play"
+
+Port:
+  en: "Port"
+  de: "Port"
+
+Ports:
+  en: "Ports"
+  de: "Ports"
+
+Presentation Time Offset:
+  en: "Presentation Time Offset"
+  de: "Presentation Time Offset"
+
+Primary:
+  en: "Primary"
+  de: "Primary"
+
+Qos:
+  en: "QoS"
+  de: "QoS"
+
+Real Time:
+  en: "Real-time"
+  de: "Echtzeit"
+
+Real Time Kernel:
+  en: "Real-time Kernel"
+  de: "Echtzeit-Kernel"
+
+Recording:
+  en: "Recording"
+  de: "Aufnahme"
+
+Redundant Network:
+  en: "redundant network"
+  de: "redundantes Netzwerk"
+
+Sample Rate:
+  en: "Sample Rate"
+  de: "Sample Rate"
+
+Sample Rates:
+  en: "Sample Rates"
+  de: "Sample Rates"
+
+Sampling:
+  en: "Sampling"
+  de: "Abtastung"
+
+Secondary:
+  en: "Secondary"
+  de: "Secondary"
+
+Setup:
+  en: "Setup"
+  de: "Einrichtung / Setup"
+
+Sink:
+  en: "Sink"
+  de: "Senke"
+
+Source:
+  en: "Source"
+  de: "Quelle"
+
+Specification:
+  en: "Specification"
+  de: "Spezifikation"
+
+Stage Box:
+  en: "Stage Box"
+  de: "Stagebox"
+
+Star Topology:
+  en: "star topology"
+  de: "Stern-Topologie"
+
+Stream:
+  en: "Stream"
+  de: "Stream"
+
+Stream Reservation:
+  en: "Stream Reservation"
+  de: "Stream-Reservierung"
+
+Stream Reservation Protocol:
+  en: "Stream Reservation Protocol"
+  de: "Stream Reservation Protocol"
+
+Streaming:
+  en: "Streaming"
+  de: "Streaming"
+
+Streams:
+  en: "Streams"
+  de: "Streams"
+
+Switch:
+  en: "Switch"
+  de: "Switch"
+
+Synchronization:
+  en: "Synchronization"
+  de: "Synchronisation"
+
+TSN:
+  en: "Time-Sensitive Networking"
+  de: "TSN"
+  acronym: "TSN"
+
+Talker:
+  en: "Talker"
+  de: "Talker"
+
+Time Aware:
+  en: "time-aware"
+  de: "time-aware"
+
+Time Base:
+  en: "Time Base"
+  de: "Zeitbasis"
+
+Time Critical:
+  en: "time-critical"
+  de: "zeitkritisch"
+
+Time Synchronization:
+  en: "Time Synchronization"
+  de: "Zeitsynchronisation"
+
+Timing:
+  en: "Timing"
+  de: "Timing"
+
+Traffic Shaper:
+  en: "Traffic Shaper"
+  de: "Traffic Shaper"
+
+Traffic Shaping:
+  en: "Traffic Shaping"
+  de: "Traffic Shaping"
+
+Transport Layer:
+  en: "Transport Layer"
+  de: "Netzwerk-Transportschicht"
+
+Video Stream:
+  en: "Video stream"
+  de: "Videostream"
+
+Worst-case Scenario:
+  en: "Worst-Case Scenario"
+  de: "schlimmster Fall"
+
