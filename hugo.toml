@@ -22,7 +22,11 @@ ignoreLogs = ["warning-goldmark-raw-html"]
     target = 'static'
     excludeFiles = ['**/*.drawio', '**/*.drawio.svg', '**/*.bkp', 'images/*.sh', 'build_scripts/']
 
-  
+  # Explicit mount for msrp_summary.drawio.svg
+  [[module.mounts]]
+    source = 'static/msrp_milan_cheat_sheet/msrp_summary.drawio.svg'
+    target = 'static/msrp_milan_cheat_sheet/msrp_summary.drawio.svg'
+
   # Explicit mount for msrp_details-AVTP.drawio.svg
   [[module.mounts]]
     source = 'static/msrp_milan_cheat_sheet/msrp_details-AVTP.drawio.svg'

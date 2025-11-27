@@ -42,6 +42,10 @@ for arg in "$@"; do
     esac
 done
 
+# --- Delete public folder for clean start ---
+echo "Deleting public folder"
+rm -rf public/
+
 # --- Activate virtual environment ---
 echo "Activating virtual environment..."
 source venv/bin/activate
