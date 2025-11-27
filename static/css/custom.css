@@ -222,17 +222,20 @@ footer.footline a::before {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-  .text-image-container {
-    flex-direction: column;
+  /* Collapse ALL text-image containers to one column */
+  .text-image-container,
+  .text-image-container.image-left,
+  .text-image-container.image-right {
+    flex-direction: column !important;
   }
 
   .text-image-container .text,
   .text-image-container .image {
-    padding: 0;
+    padding: 0 !important;
   }
 
   .text-image-container .image {
-    margin-top: 1em; /* Optional spacing between text and image */
+    margin-top: 1em;
   }
 }
 
