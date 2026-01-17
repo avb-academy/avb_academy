@@ -47,8 +47,9 @@ echo "Deleting public folder"
 rm -rf public/
 
 # --- Activate virtual environment ---
-echo "Activating virtual environment..."
-source venv/bin/activate
+# echo "Activating virtual environment..."
+# source venv/bin/activate
+echo "Using system Python (Docker or host)"
 
 # --- Function to build images ---
 build_images() {

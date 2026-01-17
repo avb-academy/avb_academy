@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup, NavigableString
 
 
 # --- Configuration ---
-DRAWIO_APP = "/Applications/draw.io.app/Contents/MacOS/draw.io"
+# DRAWIO_APP = "/Applications/draw.io.app/Contents/MacOS/draw.io"
+DRAWIO_APP = os.environ.get("DRAWIO_APP", "drawio")
 TERMS_PATH = Path("data/termbase.yaml")
 LANGUAGES = ["en", "de"]
 OUTPUT_SUFFIX = ".svg"
