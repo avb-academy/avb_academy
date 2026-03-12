@@ -1,4 +1,6 @@
+.vscode/
 public/
+
 *.drawio.bkp
 *.lock
 .DS_Store
