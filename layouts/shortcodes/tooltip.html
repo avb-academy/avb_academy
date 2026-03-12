@@ -9,20 +9,54 @@
 {{- $tooltipText := i18n "tooltip_not_found" -}}
 {{- $glossaryKey := "" -}}
 
+{{/* ------------------------------------------------------------ */}}
+{{/* 1. Direct glossary lookup                                   */}}
+{{/* ------------------------------------------------------------ */}}
+
 {{- with index .Site.Data.glossary $referencedWord -}}
     {{- $glossaryKey = $referencedWord -}}
+{{- end -}}
 
-    {{- if reflect.IsMap . -}}
-        {{- $termLang := index . $lang -}}
-        {{- if reflect.IsMap $termLang -}}
-            {{- $tooltipText = $termLang.short | default (i18n "tooltip_not_found") -}}
-        {{- else -}}
-            {{- $tooltipText = $termLang | default (i18n "tooltip_not_found") -}}
+{{/* ------------------------------------------------------------ */}}
+{{/* 2. Alias lookup (only if direct key not found)               */}}
+{{/* ------------------------------------------------------------ */}}
+
+{{- if not $glossaryKey -}}
+    {{- range $key, $value := .Site.Data.glossary -}}
+        {{- with $value.aliases -}}
+            {{- if in . $referencedWord -}}
+                {{- $glossaryKey = $key -}}
+            {{- end -}}
         {{- end -}}
-    {{- else -}}
-        {{- $tooltipText = . | default (i18n "tooltip_not_found") -}}
     {{- end -}}
 {{- end -}}
+
+{{/* ------------------------------------------------------------ */}}
+{{/* 3. Resolve tooltip text                                      */}}
+{{/* ------------------------------------------------------------ */}}
+
+{{- if $glossaryKey -}}
+    {{- with index .Site.Data.glossary $glossaryKey -}}
+
+        {{- if reflect.IsMap . -}}
+            {{- $termLang := index . $lang -}}
+
+            {{- if reflect.IsMap $termLang -}}
+                {{- $tooltipText = $termLang.short | default (i18n "tooltip_not_found") -}}
+            {{- else -}}
+                {{- $tooltipText = $termLang | default (i18n "tooltip_not_found") -}}
+            {{- end -}}
+
+        {{- else -}}
+            {{- $tooltipText = . | default (i18n "tooltip_not_found") -}}
+        {{- end -}}
+
+    {{- end -}}
+{{- end -}}
+
+{{/* ------------------------------------------------------------ */}}
+{{/* 4. Render                                                    */}}
+{{/* ------------------------------------------------------------ */}}
 
 {{- if $glossaryKey }}
     {{- $glossaryURL := (printf "/glossary/#%s" ($glossaryKey | urlize)) | relLangURL -}}
@@ -31,7 +65,6 @@
         $tooltipText 
         $displayedWord | safeHTML -}}
 {{- else }}
-    {{- /* Begriff existiert nicht → Tooltip nur ohne Link */ -}}
     {{- printf `<span class="tooltip" title="%s">%s</span>` 
         $tooltipText 
         $displayedWord | safeHTML -}}

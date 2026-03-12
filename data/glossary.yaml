@@ -123,6 +123,7 @@ Endstation:
 FQTSS:
   aliases:
     - 'Traffic Shaping'
+    - 'Qav'
   reference: '{{< global_reference ref="IEEE8021Q" clause="34">}}'
   en:
     short: 'Forwarding and Queuing for Time-Sensitive Streams.'
@@ -267,6 +268,7 @@ Secondary:
 SRP:
   aliases:
     - 'Stream Reservation'
+    - 'Qat'
   reference: '{{< global_reference ref="IEEE8021Q" clause="35" >}}'
   en:
     short: 'Stream Reservation Protocol.'
@@ -300,6 +302,11 @@ Talker:
   de:
     short: 'Produzent eines Streams.'
     explanation: 'Die Quelle eines {{< tooltip "Stream">}}, der von einem {{< tooltip "Listener">}} empfangen wird.'  
+
+TPID:
+  en:
+    short: 'Tag Protocol Identifier'
+    explanation: 'The identifier for the VLAN tagged frames.'
 
 TSN:
   reference: '[IEEE TSN TG website](https://1.ieee802.org/tsn/)'

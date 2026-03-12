@@ -5,40 +5,42 @@
 
 <div id="glossaryContainer">
   {{ range $term, $entry := $glossary }}
-    {{- $termsToShow := slice $term -}}
-    {{- if $entry.aliases -}}
-      {{- range $i, $alias := $entry.aliases -}}
-        {{- $termsToShow = append $termsToShow (slice $alias) -}}
-      {{- end -}}
-    {{- end -}}
+    <div class="glossary-entry" id="{{ $term | urlize }}">
+      <h2>{{ $term }}</h2>
 
-    {{- range $t := $termsToShow -}}
-      <div class="glossary-entry" id="{{ $t | urlize }}">
-        <h2>{{ $t }}</h2>
-
-        {{- $termLang := index $entry $lang -}}
-        {{- if reflect.IsMap $termLang -}}
-          {{- if $termLang.short -}}
-            <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang.short }}</p>
+      {{- /* Show aliases at the top, if any */ -}}
+      {{- if $entry.aliases -}}
+        <p><strong>{{ i18n "also_known_as" }}</strong> 
+          {{- range $i, $alias := $entry.aliases -}}
+            {{ $alias }}{{ if lt (add $i 1) (len $entry.aliases) }}, {{ end }}
           {{- end -}}
-          <p><strong>{{ i18n "explanation" }}</strong> {{ $termLang.explanation | markdownify }}</p>
-        {{- else -}}
-          <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang | markdownify }}</p>
-        {{- end -}}
+        </p>
+      {{- end -}}
 
-        {{- if $entry.reference -}}
-          <p><strong>{{ i18n "reference" }}</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
+      {{- /* Now show main content */ -}}
+      {{- $termLang := index $entry $lang -}}
+      {{- if reflect.IsMap $termLang -}}
+        {{- if $termLang.short -}}
+          <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang.short }}</p>
         {{- end -}}
+        <p><strong>{{ i18n "explanation" }}</strong> {{ $termLang.explanation | markdownify }}</p>
+      {{- else -}}
+        <p><strong>{{ i18n "short_definition" }}</strong> {{ $termLang | markdownify }}</p>
+      {{- end -}}
 
-        {{- if $entry.see_also -}}
-          <p><strong>{{ i18n "see_also" }}</strong>
-            {{- range $i, $related := $entry.see_also -}}
-              <a href="#{{ $related | urlize }}">{{ $related }}</a>{{ if lt (add $i 1) (len $entry.see_also) }}, {{ end }}
-            {{- end -}}
-          </p>
-        {{- end -}}
-      </div>
-    {{- end -}}
+      {{- if $entry.reference -}}
+        <p><strong>{{ i18n "reference" }}</strong> {{ $entry.reference | safeHTML | markdownify }}</p>
+      {{- end -}}
+
+      {{- if $entry.see_also -}}
+        <p><strong>{{ i18n "see_also" }}</strong>
+          {{- range $i, $related := $entry.see_also -}}
+            <a href="#{{ $related | urlize }}">{{ $related }}</a>{{ if lt (add $i 1) (len $entry.see_also) }}, {{ end }}
+          {{- end -}}
+        </p>
+      {{- end -}}
+
+    </div>
   {{ end }}
 </div>
 

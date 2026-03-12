@@ -5,7 +5,7 @@ licensing:
 newsletter:
   other: Newsletter
 short_definition:
-  other: "Short definition:"
+  other: "Short definition: "
 explanation:
   other: "Explanation:"
 reference:
@@ -16,3 +16,5 @@ tooltip_not_found:
   other: "Definition not found."
 Fig.:
   other: "Fig."
+also_known_as:
+  other: "Also known as: "
