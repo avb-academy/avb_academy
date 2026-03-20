@@ -1,0 +1,21 @@
+{{/* Parameters */}}
+{{ $id := .Get "id" | default (printf "tbl-%x" (sha1 .Inner)) }}
+{{ $num := .Get "fig-num" }}
+{{ $title := .Get "title" }}
+{{ $caption := .Get "caption" }}
+
+{{ $figLabel := i18n "Fig." }}
+
+<figure id="{{ $id }}" class="table-figure">
+  
+  <div class="table-wrapper">
+    {{ .Inner | safeHTML }}
+  </div>
+
+  {{ if $num }}
+    <figcaption>{{ $figLabel }} {{ $num }}: {{ $title }}</figcaption>
+  {{ else if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+  {{ end }}
+
+</figure>

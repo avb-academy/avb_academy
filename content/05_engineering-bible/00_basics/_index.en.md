@@ -22,8 +22,10 @@ In Milan-AVB systems, the control and media transport protocols operate directly
 IP addresses belong to layer 3 and are used for logical addressing and routing between networks. In contrast, MAC addresses are used for communication within a local network segment. When a device wants to send data to an IP address, it must first determine the corresponding MAC address. This mapping is typically performed using the Address Resolution Protocol ({{< tooltip "ARP">}}).
 
 MAC addresses are 48 bits long and are typically written as six groups of hexadecimal values. The first part identifies the manufacturer ({{< tooltip "OUI">}}), while the second part is assigned by the manufacturer to uniquely identify the device.  
-An exemplary MAC address could be: `3C:C0:C6:00:AA:BB`. The following table distinguishes between the Organizationally Unique Identifier (OUI) and the unique part identifying the device. Feel free to look up the organization to which this MAC address belongs to here: [https://oui.is](https://oui.is).
+An exemplary MAC address could be: `3C:C0:C6:00:AA:BB`.  
+See [Fig. 2](#fig-mac-oui) for the separation between the Organizationally Unique Identifier (OUI) and the unique part identifying the device. Feel free to look up the organization to which this MAC address belongs to here: [https://oui.is](https://oui.is).
 
+{{< table-figure id="fig-mac-oui" fig-num="1" title="Structure of a MAC address OUI" >}}
 <table>
   <tr>
     <th colspan="1"> OUID </th>
@@ -34,6 +36,7 @@ An exemplary MAC address could be: `3C:C0:C6:00:AA:BB`. The following table dist
     <td>00:AA:BB</td>
   </tr>
 </table>
+{{< /table-figure >}}
 
 The neat thing about MAC addresses is that they are assigned to the hardware of the Ethernet interface by the manufacturer and are intended to be globally unique. This reduces the risk of configuration errors compared to IP addresses, which must be assigned and managed by the user or network administrator.
 
@@ -56,10 +59,11 @@ In contrast, unicast traffic is typically used for point-to-point communication,
 
 ## Ethernet Frame
 
-An Ethernet frame with the relevant layer 2 fields is shown in Table 3.
-
+An Ethernet frame with the relevant layer 2 fields is shown in [Fig. 2](#fig-ethernet-frame).  
 Before looking into the individual fields, it is important to understand that the Ethernet frame defines how data is structured on the wire. Each field has a fixed position and size, allowing all devices in the network to interpret the frame correctly.  
 Note that the Ethernet frame shown here focuses on the layer 2 payload structure. Lower-level fields such as the preamble and start frame delimiter (SFD), which are used for synchronization on the physical layer, are omitted for clarity.
+
+{{< table-figure id="fig-ethernet-frame" fig-num="2" title="Fields in an Ethernet Frame" >}}
 <table>
   <tr>
     <th colspan="6"><a href=#destination-mac>Destination MAC</a></th>
@@ -97,6 +101,7 @@ Note that the Ethernet frame shown here focuses on the layer 2 payload structure
     <td></td><td></td><td></td><td></td>
   </tr>
 </table>
+{{< /table-figure >}}
 
 In Milan-AVB networks, Ethernet frames are used to transport both control information and time-sensitive media streams. The correct interpretation of these fields is essential for interoperability between devices.
 
@@ -127,7 +132,7 @@ The Drop Eligible Indicator (DEI) is used to indicate whether a frame is eligibl
 #### Virtual LAN Identifier
 The Virtual LAN Identifier (VID) is used to indicate membership for a high priority Stream. Milan traffic uses VID `2`.
 
-#### EtherType
+### EtherType
 
 The EtherType defines the traffic this frame belongs to. In Milan networks we have
 
@@ -142,10 +147,10 @@ The EtherType defines the traffic this frame belongs to. In Milan networks we ha
 
 As you can see, multiple protocol types use the same EtherType. The differentiation is then made using protocol-specific subtype fields within the payload and is described in the respective protocol sections.
 
-#### Payload
+### Payload
 
 The payload contains the actual protocol data being transmitted, such as audio samples, control messages, or reservation information. It can have a size of 42 bytes to 1500 bytes. Payloads smaller than the minimum size are padded with zeros.
 
-#### Cyclic Redundancy Check
+### Cyclic Redundancy Check
 
 The Cyclic Redundancy Check (CRC) is used to detect transmission errors. Frames with invalid CRC values are discarded by receiving devices.
