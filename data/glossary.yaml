@@ -19,6 +19,14 @@ ADC:
     short: 'Analog-Digital-Wandler.'
     explanation: 'Wandelt analoge Signale in digitale Signale um.'
 
+ARP:
+  en:
+    short: 'Address Resolution Protocol'
+    explanation: 'Used to resolve an IP address to its corresponding {{< tooltip "MAC">}} address within a local network segment.'
+  de:
+    short: 'Address Resolution Protocol'
+    explanation: 'Wird verwendet, um zu einer IP Adresse die entsprechende {{< tooltip "MAC">}} Adresse innerhalb eines lokalen Netzwerks zu ermitteln.'
+
 ATDECC:
   reference: '{{< global_reference ref="IEEE17221" >}}'
   en:
@@ -100,6 +108,14 @@ DAC:
     short: 'Digital-Analog-Wandler.'
     explanation: 'Wandelt digitale Signale in analoge Signale um.'
 
+DEI:
+  en:
+    short: 'Drop Eligible Indicator'
+    explanation: 'Indicates whether a frame may be dropped by a switch during congestion.'
+  de:
+    short: 'Drop Eligible Indicator'
+    explanation: 'Zeigt an, ob ein Frame bei Überlastung im Switch verworfen werden darf.'
+
 Egress port:
   en:
     short: 'Traffic exit port.'
@@ -169,6 +185,14 @@ Ingress port:
     short: 'Eingangsport.'
     explanation: 'Beschreibt einen Port, durch den Netzwerkpakete in ein Gerät gelangen. Wird für die Beschreibung von Netzwerkflüssen in {{< tooltip "Switches" "Switch">}} verwendet.'
 
+IP:
+  en:
+    short: 'Internet Protocol'
+    explanation: 'Provides logical addressing and enables routing of network traffic across different networks.'
+  de:
+    short: 'Internet Protocol'
+    explanation: 'Stellt logische Adressierung bereit und ermöglicht das Routing von Netzwerkverkehr über mehrere Netzwerke hinweg.'
+
 Listener:
   reference: '{{< global_reference ref="IEEE8021BA" clause="3">}}'
   en:
@@ -217,6 +241,14 @@ OSI Layer:
   de:
     short: 'Weg durch ein Computersystem.'
     explanation: 'Das OSI-Layer-Modell beschreibt abstrakt den Weg, den ein Paket durch ein Computersystem nehmen muss, um verarbeitet zu werden.'
+
+OUI:
+  en:
+    short: 'Organizationally Unique Identifier'
+    explanation: 'The first 24 bits of a {{< tooltip "MAC">}} address identifying the manufacturer.'
+  de:
+    short: 'Herstellerkennung'
+    explanation: 'Die ersten 24 Bit einer {{< tooltip "MAC">}} Adresse zur Identifikation des Herstellers.'
   
 # PDU: "Protocol Data Unit"  
 
@@ -228,7 +260,13 @@ PCM:
     short: 'Pulse Code Modulation.'
     explanation: 'Eine verlustfreie Komprimierungsmethode für Audiosignale.'
 
-# PCP: "Priority Code Point. Specifies a priority value between 0 and 7 used by QoS disciplines to differentiate traffic"  
+PCP: 
+  en:
+    short: 'Priority Code Point'
+    explanation: 'Specifies a priority value from 0 to 7 used for {{< tooltip "QoS">}} handling in switches.'
+  de:
+    short: 'Priority Code Point'
+    explanation: 'Definiert einen Prioritätswert von 0 bis 7 zur {{< tooltip "QoS">}} Behandlung im Switch.'
 
 Primary:
   reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
@@ -248,7 +286,13 @@ PTPv2:
     short: 'Precision Timing Protocol v2.'
     explanation: 'Das Precision Timing Protocol Version 2 bildet die Grundlage für {{< tooltip "gPTP">}}.'
   
-# QoS: "Quality of Service"  
+QoS: 
+  en: 
+    short: 'Quality of service'
+    explanation: 'Mechanisms used to prioritize and manage network traffic in a switch.'
+  de:
+    short: 'Quality of Service'
+    explanation: 'Mechanismen zur Priorisierung und Steuerung von Netzwerkverkehr im Switch.'
 
 Secondary:
   reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
@@ -259,11 +303,29 @@ Secondary:
     short: 'Sekundäre Verbindung.'
     explanation: 'In einem redundanten Netzwerk wird die zweite Verbindung als "Sekundäre Verbindung" bezeichnet. Die erste Verbindung wird {{< tooltip "Primary">}} genannt.'
 
-# SR class: "Stream Reservation class"  
+SRClass: 
+  en:
+    short: 'Stream Reservation Class'
+    explanation: 'Defines priority and maximum end-to-end latency for streams in a Milan-AVB network.'
+  de:
+    short: 'Stream Reservation Class'
+    explanation: 'Definiert Priorität und maximale Ende-zu-Ende-Latenz für Streams in einem Milan-AVB Netzwerk.'
 
-# SR class A: "Stream Reservation class A. Max. end-to-end latency: 2ms"  
+SRClassA: 
+  en:
+    short: 'Stream Reservation Class A'
+    explanation: 'Defines a stream class with high priority and a maximum end-to-end latency of 2 ms.'
+  de:
+    short: 'Stream Reservation Class A'
+    explanation: 'Definiert eine Streamklasse mit hoher Priorität und einer maximalen Ende-zu-Ende-Latenz von 2 ms.'
 
-# SR class B: "Stream Reservation class B. Max. end-to-end latency: 50ms"  
+SRClassB: 
+  en:
+    short: 'Stream Reservation Class B'
+    explanation: 'Defines a stream class with lower priority and a maximum end-to-end latency of 50 ms.'
+  de:
+    short: 'Stream Reservation Class B'
+    explanation: 'Definiert eine Streamklasse mit geringerer Priorität und einer maximalen Ende-zu-Ende-Latenz von 50 ms.'
 
 SRP:
   aliases:
@@ -306,7 +368,10 @@ Talker:
 TPID:
   en:
     short: 'Tag Protocol Identifier'
-    explanation: 'The identifier for the VLAN tagged frames.'
+    explanation: 'Indicates that a frame contains a {{< tooltip "VLAN">}} tag and identifies the tag protocol.'
+  de:
+    short: 'Tag Protocol Identifier'
+    explanation: 'Zeigt an, dass ein Frame ein {{< tooltip "VLAN">}} Tag enthält und identifiziert das Tag-Protokoll.'
 
 TSN:
   reference: '[IEEE TSN TG website](https://1.ieee802.org/tsn/)'
@@ -355,5 +420,10 @@ Media Time:
     short: 'Audio-Taktgeber.'
     explanation: 'Der lokale Takt, der verwendet wird, um die Sampling-Rate eines Geräts zu steuern. Die Media Time ist von der {{< tooltip "Network Time">}} abgeleitet und wird für die Media Clock Recovery sowie für sample-genaue Wiedergabe verwendet.'
 
-# VLAN: "Virtual LAN"
-
+VLAN:
+  en:
+    short: 'Virtual LAN'
+    explanation: 'A logical network that separates traffic within the same physical network infrastructure.'
+  de:
+    short: 'Virtuelles LAN'
+    explanation: 'Ein logisches Netzwerk zur Trennung von Datenverkehr innerhalb derselben physischen Netzwerkinfrastruktur.'
