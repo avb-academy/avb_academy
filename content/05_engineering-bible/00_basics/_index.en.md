@@ -1,7 +1,7 @@
 ---
 title: "Basics"
 date: 2026-03-12
-weight: 4
+weight: 1
 ---
 
 {{% notice info %}}
