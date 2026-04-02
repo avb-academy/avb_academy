@@ -72,8 +72,6 @@ Avnu Alliance:
     short: 'Industrieallianz für die Entwicklung von Milan.'
     explanation: 'Die Avnu Alliance ist ein Konsortium von Mitgliedsunternehmen, die gemeinsam ein interoperables Ökosystem aus latenzarmen, zeit-synchronisierten und hochzuverlässigen Netzwerkgeräten auf Basis des {{< tooltip "IEEE">}} offenen Standards {{< tooltip "TSN" >}} entwickeln.'
 
-# BMCA: "Best TimeTransmitter Clock Algorithm. Formerly known as Best Master Clock Algorithm. Used to determine the best gPTP Clock Leader in a network. Specified in gPTP"  
-
 Bridge:
   en:
     explanation: '{{< tooltip "Switch">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
@@ -83,6 +81,8 @@ Bridge:
 # Bridged Endstation: "A device that contains a Switch as well as an Endstation"  
 
 BTCA:
+  aliases: 
+    - 'BMCA'
   reference: '{{< global_reference ref="IEEE8021AS" clause="10.3">}}'
   en:
     short: 'Best TimeTransmitter Clock Algorithm.'
@@ -283,6 +283,14 @@ Primary:
   de:
     short: 'Primäre Verbindung.'
     explanation: 'In einem redundanten Netzwerk wird die erste Verbindung als "Primäre Verbindung" bezeichnet. Die zweite Verbindung wird {{< tooltip "Secondary">}} genannt.'
+
+priority1:
+  en:
+    short: 'Clock system description.'
+    explanation: 'Part of the {{< tooltip "gPTP">}} synchronisation. For more details see: [BTCA::priority1](../05_engineering-bible/02_802-1as/00_btca/#priority1).'
+  de:
+    short: 'Beschreibung des {{< termbase "Clock">}}-Systems.'
+    explanation: 'Teil der {{< tooltip "gPTP">}}-Synchronisation. Weitere Details unter: [BTCA::priority1](../05_engineering-bible/02_802-1as/00_btca/#priority1).'
 
 PTPv2:
   reference: '{{< global_reference ref="IEEE1588">}}'

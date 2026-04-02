@@ -320,10 +320,6 @@ Monitor:
   en: "monitor"
   de: "überwacht"
 
-No AVB connection possible:
-  en: "No AVB connection possible"
-  de: "Keine AVB Verbindung möglich"
-
 Network:
   en: "Network"
   de: "Netzwerk"
@@ -367,6 +363,10 @@ Networked Audio:
 Networks:
   en: "Network"
   de: "Netzwerke"
+
+No AVB Connection Possible:
+  en: "No AVB connection possible"
+  de: "Keine AVB Verbindung möglich"
 
 Packet:
   en: "Packet"

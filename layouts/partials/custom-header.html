@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<link href="/css/math.css" rel="stylesheet">
+<script>
+function renderKaTeX() {
+  const article = document.querySelector('article.default');
+  if (article) {
+    renderMathInElement(article, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ]
+    });
+  } else {
+    setTimeout(renderKaTeX, 100); // retry until the article exists
+  }
+}
+
+// start the rendering process
+renderKaTeX();
+</script>
