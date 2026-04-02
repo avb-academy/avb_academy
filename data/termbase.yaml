@@ -320,6 +320,10 @@ Monitor:
   en: "monitor"
   de: "überwacht"
 
+No AVB connection possible:
+  en: "No AVB connection possible"
+  de: "Keine AVB Verbindung möglich"
+
 Network:
   en: "Network"
   de: "Netzwerk"

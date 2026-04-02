@@ -3,6 +3,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.bitfield {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: monospace;
+}
+
+.bitfield th, .bitfield td {
+  border: 1px solid #999;
+  text-align: center;
+  height: 32px;  /* controls vertical size per row */
+  padding: 4px;
+}
+
 figure {
   text-align: center;
   margin: 20px 0;

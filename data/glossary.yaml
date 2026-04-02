@@ -133,7 +133,14 @@ Endstation:
     short: 'Wandelt Audiosignale zu/von Milan.'
     explanation: 'Ein Gerät, das Audio entweder von Milan oder zu Milan umwandelt. Eine Endstation ist Milan zertifiziert.'
 
-# EPON: "Ethernet Passive Optical Network"
+EPON:
+  en:
+    short: 'Ethernet Passive Optical Network'
+    explanation: 'A passive optical network that uses Ethernet as the transmission protocol and relies on unpowered optical splitters to distribute signals.'
+  de:
+    short: 'Ethernet Passive Optical Network'
+    explanation: 'Ein passives optisches Netzwerk das Ethernet als Übertragungsprotokoll verwendet und optische Splitter ohne Stromversorgung zur Signalverteilung nutzt.'
+
 # FOH: "Front of House. Where the mixing consoles are located that mix for the audience"
 
 FQTSS:
