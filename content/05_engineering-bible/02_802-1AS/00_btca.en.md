@@ -19,6 +19,7 @@ The election considers the following attributes, in order of priority:
 2. [clockClass](#clockclass): Clocks are assigned a class reflecting their traceability to a primary time reference. Lower class numbers indicate higher reliability.
 3. [clockAccuracy](#clockaccuracy): Clocks report their accuracy, and the algorithm favors clocks with higher accuracy (smaller deviation from the reference time).
 4. [offsetScaledLogVariance](#offsetscaledlogvariance): The algorithm considers the clock's stability and precision. Smaller variances are preferred.
+5. [priority2](#priority2): priority2 is evaluated after all quality metrics are equal.
 5. [MAC address](#mac-address): If all other parameters are equal, the clock with the lowest MAC address is selected.
 
 ### priority1
@@ -99,6 +100,14 @@ The smallest representable variance corresponds to an extremely stable clock, at
 The largest representable variance corresponds to an extremely unstable or unknown clock, at about {{< imath >}} 2^{127.99609}s^2 {{< /imath >}}. This gives 0xFFFF.  
 
 A value of 0xFFFF also indicates that the variance is too large to represent or has not been computed.
+
+### priority2
+
+The priority2 field allows fine tuning of the clock selection in the {{< tooltip "BTCA">}}. The default value is 248.  
+It is evaluated after priority1, clockClass, clockAccuracy, and offsetScaledLogVariance. This means it is only used when multiple clocks are otherwise considered equal.  
+Lower values are preferred. The ordering is identical to the priority1 field.
+
+The priority2 field provides a final configurable tie breaker before the selection falls back to the MAC address.
 
 ### MAC address
 
