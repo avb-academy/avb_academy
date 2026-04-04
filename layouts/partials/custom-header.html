@@ -1,24 +1,28 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link href="/css/math.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
 
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-<link href="/css/math.css" rel="stylesheet">
-<link href="/css/custom.css" rel="stylesheet">
+
 <script>
+// KaTeX rendering function
 function renderKaTeX() {
-  const article = document.querySelector('article.default');
-  if (article) {
-    renderMathInElement(article, {
-      delimiters: [
-        {left: "$$", right: "$$", display: true},
-        {left: "$", right: "$", display: false}
-      ]
+  const blocks = document.querySelectorAll('div.avb-math, span.avb-math-inline');
+  if (blocks.length > 0) {
+    blocks.forEach((block) => {
+      block.textContent = block.textContent.trim();
+      renderMathInElement(block, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ],
+        throwOnError: false
+      });
     });
   } else {
-    setTimeout(renderKaTeX, 100); // retry until the article exists
+    setTimeout(renderKaTeX, 100);
   }
 }
-
-// start the rendering process
 renderKaTeX();
 </script>
