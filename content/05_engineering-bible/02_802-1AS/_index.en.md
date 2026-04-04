@@ -28,6 +28,12 @@ Frames are big. TODO: Find a way to visualize them. See: Sec. 10.5
 gPTP consits of three main messages:
 
 - Announce Messages: Each device sends out its own Announce Message which is used to determine the Clock Leader. The Clock Leader election is described in detail in the [Best TimeTransmitter Clock Algorithm](00_btca) section.
-- PeerDelayRequest: tba
-- PeerDelayResponse: tba
-- PeerDelayResponseFollowUp: tba
+- Peer Delay Request (Pdelay_Req): tba
+- Peer Delay Response (Pdelay_Resp): tba
+- Peer Delay Response Follow Up (Pdelay_Resp_Follow_Up): tba
+
+## Synchronisation
+
+gPTP is used to synchronize all network participants to a common time. The first step is always to determine a GrandMaster (GM). The election process is based on the clock parameters that each potential {{< tooltip "GM">}} is sending to the network. A detailed description can be found in the [Best TimeTransmitter Clock Algorithm](00_btca) section.
+
+The transmission delay through a switch is compensated by the clock mechanism itself. Therefore, a synchronisation of two connected ports is necessary. The detailed description of the measurement process can be found in [Peer Delay Measurement](01_peer-delay-measurement).
