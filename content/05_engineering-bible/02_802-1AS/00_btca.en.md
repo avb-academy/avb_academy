@@ -4,6 +4,13 @@ date: 2026-04-02
 weight: 1
 ---
 
+{{% notice info %}}
+- The BTCA automatically selects the Grandmaster as defined in IEEE 802.1AS, no manual configuration required.
+- Selection is based on a strict priority order: `priority1`, `clockClass`, `clockAccuracy`, `offsetScaledLogVariance`, `priority2`, then MAC address.
+- For each attribute, lower values are preferred; the first decisive comparison determines the winner.
+- If all attributes are equal, the device with the lowest MAC address is selected.
+{{% /notice %}}
+
 In a network, configuring the Clock Leader does not require manual intervention. The {{< tooltip "gPTP">}} specification defines an algorithm that automatically selects the most suitable Clock Leader for the network.  
 
 This mechanism is called the Best TimeTransmitter Clock Algorithm (BTCA), previously known as the Best Master Clock Algorithm (BMCA). The BTCA ensures that the network always operates under the most reliable and accurate time source available.
@@ -24,7 +31,7 @@ The election considers the following attributes, in order of priority:
 
 ### priority1
 
-The priority1 field is the first considered attribute in the {{< tooltip "BTCA">}}. It describes the type of the system the clock sits in. The lower the quality, the better the clock.  The 802.1AS specification recommends three default values:
+The `priority1` field is the first considered attribute in the {{< tooltip "BTCA">}}. It describes the type of the system the clock sits in. The lower the quality, the better the clock.  The 802.1AS specification recommends three default values:
 
 <!-- IEEE 802.1AS-2011, Table 8-2—Default values for priority1, for the respective media -->
 | System type | Default priority1 value |
@@ -34,13 +41,13 @@ The priority1 field is the first considered attribute in the {{< tooltip "BTCA">
 | Portable time-aware system | 250 |
 | Time-aware system that is not {{< tooltip "GM" >}} capable | 255 |
 
-The priority1 value can be used to force a specific device to become the {{< tooltip "GM">}}. This is only recommended for special situations. Using the default values results in a stable system.
+The `priority1` value can be used to force a specific device to become the {{< tooltip "GM">}}. This is only recommended for special situations. Using the default values results in a stable system.
 
 ### clockClass
 
-The clockClass tells you how reliable the time is that a device distributes when it acts as the {{< tooltip "GM" >}}. The value of the clockClass is based on how closely its time is tied to an official reference. An example for an official reference is GPS time.  
-The clockClass is used by the {{< tooltip "BTCA">}} as part of the Grandmaster selection process. It is considered after [priority1](#priority1). Lower values are preferred.  
-The values for the clockClass are
+The `clockClass` tells you how reliable the time is that a device distributes when it acts as the {{< tooltip "GM" >}}. The value of the `clockClass` is based on how closely its time is tied to an official reference. An example for an official reference is GPS time.  
+The `clockClass` is used by the {{< tooltip "BTCA">}} as part of the Grandmaster selection process. It is considered after [priority1](#priority1). Lower values are preferred.  
+The values for the `clockClass` are
 
 <!-- IEEE 1588-2008, Table 5 - clockClass specifications -->
 | clockClass | Specification|
@@ -54,7 +61,7 @@ The values for the clockClass are
 
 ### clockAccuracy
 
-The clockAccuracy parameter describes how closely the time of a ClockLeader matches a reference time. It represents the maximum expected deviation between the local clock and the reference.  
+The `clockAccuracy` parameter describes how closely the time of a ClockLeader matches a reference time. It represents the maximum expected deviation between the local clock and the reference.  
 Lower values indicate higher accuracy. During the {{< tooltip "BTCA">}}, clocks with better accuracy are preferred.  
 The specified accuracy windows range from 25ns to more than 10s:
 
@@ -73,7 +80,7 @@ The specified accuracy windows range from 25ns to more than 10s:
 
 ### offsetScaledLogVariance
 
-The offsetScaledLogVariance is an estimate of the PTP variance. It describes the precision and frequency stability of the ClockMaster.  
+The `offsetScaledLogVariance` is an estimate of the PTP variance. It describes the precision and frequency stability of the ClockMaster.  
 For connaisseurs of formulas and deep math it is recommended to read through {{< global_reference ref="IEEE1588" clause="7.6.3" >}}. Everybody else can enjoy this summary in the meantime.
 
 
@@ -86,16 +93,15 @@ Technically, the variance is represented as follows:
 3. Multiply the logarithm by {{< imath >}} 2^8 {{< /imath>}} to scale it.
 4. Apply any hysteresis adjustments.
 5. Represent the result as a 16-bit integer using two's complement, with 0x8000 added. Overflow is ignored.
-6. The final number is called the offsetScaledLogVariance.
+6. The final number is called the `offsetScaledLogVariance`.
 
 The value is either manufacturer-specified, measured online, or defaulted:
 
-- Manufacturer-specified: The device may come with a known variance for its clock hardware (e.g., a GPS-disciplined oscillator). The manufacturer can predefine offsetScaledLogVariance based on that.  
-- Measured online: If the device can measure its own clock stability in real time, it can compute the offsetScaledLogVariance from that measurement.  
+- Manufacturer-specified: The device may come with a known variance for its clock hardware (e.g., a GPS-disciplined oscillator). The manufacturer can predefine `offsetScaledLogVariance` based on that.  
+- Measured online: If the device can measure its own clock stability in real time, it can compute the `offsetScaledLogVariance` from that measurement.  
 - Fallback/default: If neither the manufacturer nor online measurement provides a value, the standard specifies 0x4100 as a safe default.
 
-
-The smallest representable variance corresponds to an extremely stable clock, at about {{< imath >}} 3\cdot10^{-39}s^2 {{< /imath >}}. This gives an offsetScaledLogVariance of 0x0000.  
+The smallest representable variance corresponds to an extremely stable clock, at about {{< imath >}} 3\cdot10^{-39}s^2 {{< /imath >}}. This gives an `offsetScaledLogVariance` of 0x0000.  
 
 The largest representable variance corresponds to an extremely unstable or unknown clock, at about {{< imath >}} 2^{127.99609}s^2 {{< /imath >}}. This gives 0xFFFF.  
 
@@ -103,11 +109,11 @@ A value of 0xFFFF also indicates that the variance is too large to represent or 
 
 ### priority2
 
-The priority2 field allows fine tuning of the clock selection in the {{< tooltip "BTCA">}}. The default value is 248.  
-It is evaluated after priority1, clockClass, clockAccuracy, and offsetScaledLogVariance. This means it is only used when multiple clocks are otherwise considered equal.  
-Lower values are preferred. The ordering is identical to the priority1 field.
+The `priority2` field allows fine tuning of the clock selection in the {{< tooltip "BTCA">}}. The default value is 248.  
+It is evaluated after `priority1`, `clockClass`, `clockAccuracy`, and `offsetScaledLogVariance`. This means it is only used when multiple clocks are otherwise considered equal.  
+Lower values are preferred. The ordering is identical to the `priority1` field.
 
-The priority2 field provides a final configurable tie breaker before the selection falls back to the MAC address.
+The `priority2` field provides a final configurable tie breaker before the selection falls back to the MAC address.
 
 ### MAC address
 
