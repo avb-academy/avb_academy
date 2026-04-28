@@ -86,10 +86,10 @@ BTCA:
   reference: '{{< global_reference ref="IEEE8021AS" clause="10.3">}}'
   en:
     short: 'Best TimeTransmitter Clock Algorithm.'
-    explanation: 'Formerly known as "Best Master Clock Algorithm". Used to determine the best {{< tooltip "gPTP">}} Clock Leader in a network.'
+    explanation: 'Formerly known as "Best Master Clock Algorithm". Used to determine the best {{< tooltip "gPTP">}} Clock Leader in a network. See [802.1AS - BTCA](05_engineering-bible/02_802-1AS/00_btca.md) for more details.'
   de:
     short: 'Best TimeTransmitter Clock Algorithm.'
-    explanation: 'Auch bekannt als "Best Master Clock Algorithm". Mithilfe des BTCA wird der beste {{< tooltip "gPTP">}} Clock Leader in einem Netzwerk bestimmt.'
+    explanation: 'Auch bekannt als "Best Master Clock Algorithm". Mithilfe des BTCA wird der beste {{< tooltip "gPTP">}} Clock Leader in einem Netzwerk bestimmt. Mehr infos: [802.1AS - BTCA](05_engineering-bible/02_802-1AS/00_btca.md).'
 
 CRF:
   reference: '{{< global_reference ref="IEEE1722" clause="10" >}}'
@@ -442,3 +442,70 @@ VLAN:
   de:
     short: 'Virtuelles LAN'
     explanation: 'Ein logisches Netzwerk zur Trennung von Datenverkehr innerhalb derselben physischen Netzwerkinfrastruktur.'
+
+Pdelay:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    short: 'Peer Delay'
+    explanation: 'Measures the propagation delay between two directly connected network ports. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) for details.'
+  de:
+    short: 'Peer Delay'
+    explanation: 'Misst die Signallaufzeit zwischen zwei direkt verbundenen Netzwerkports. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+
+Pdelay_Req:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    short: 'Peer Delay Request'
+    explanation: 'Initiates a Peer Delay measurement between two directly connected network ports. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) for details.'
+  de:
+    short: 'Peer Delay Request'
+    explanation: 'Initiiert eine Peer-Delay-Messung zwischen zwei direkt verbundenen Netzwerkports. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+
+Pdelay_Resp:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    short: 'Peer Delay Response'
+    explanation: 'Response to a {{< tooltip "Pdelay_Req" >}} message. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) for details.'
+  de:
+    short: 'Peer Delay Response'
+    explanation: 'Antwort auf eine {{< tooltip "Pdelay_Req" >}} Nachricht. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+
+Pdelay_Resp_Follow_Up:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    short: 'Peer Delay Response Follow-Up'
+    explanation: 'Follow-up message sent after the {{< tooltip "Pdelay_Resp" >}} message. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) for details.'
+  de:
+    short: 'Peer Delay Response Follow-Up'
+    explanation: 'Follow-up-Nachricht, die nach der {{< tooltip "Pdelay_Resp" >}} gesendet wird. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+
+asCapable:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    explanation: 'Indicates whether a port supports the timing requirements of {{< tooltip "AVB" >}}. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) for details.'
+  de:
+    explanation: 'Gibt an, ob ein Netzwerkport die Zeitanforderungen von {{< tooltip "AVB" >}} unterstützt. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+
+neighborPropDelayThresh:
+  aliases:
+    - 'PdelayThreshold'
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    explanation: 'Defines the maximum allowed {{< tooltip "Pdelay" >}} value, which is set to 800 ns for copper connections. The value is determined using the [Propagation Delay Measurement](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
+  de:
+    explanation: 'Definiert den maximal zulässigen {{< tooltip "Pdelay" >}}-Wert, der für Kupferverbindungen auf 800 ns festgelegt ist. Der Wert wird mithilfe der [Propagation Delay Measurement](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) bestimmt.'
+
+PHY:
+  en:
+    short: 'Physical Layer Chip'
+    explanation: 'Abbreviation for the interface to the physical layer via a dedicated hardware chip.'
+  de:
+    short: 'Physical Layer Chip'
+    explanation: 'Abkürzung für die Schnittstelle zum Physical Layer über einen dedizierten Hardware-Chip.'
+
+priority1:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    explanation: 'Attribute used to determine the {{< tooltip "gPTP" >}} {{< tooltip "GM" >}}. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/00_btca) for details.'
+  de:
+    explanation: 'Attribut, das zur Bestimmung des {{< tooltip "gPTP" >}} {{< tooltip "GM" >}} verwendet wird. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/00_btca).'
