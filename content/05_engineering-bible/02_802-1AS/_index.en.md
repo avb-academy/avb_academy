@@ -25,12 +25,11 @@ Frames are big. TODO: Find a way to visualize them. See: Sec. 10.5
 
 ## General
 
-gPTP consits of three main messages:
+gPTP consists of three main messages:
 
-- Announce Messages: Each device sends out its own Announce Message which is used to determine the Clock Leader. The Clock Leader election is described in detail in the [Best TimeTransmitter Clock Algorithm](00_btca) section.
-- Peer Delay Request (Pdelay_Req): tba
-- Peer Delay Response (Pdelay_Resp): tba
-- Peer Delay Response Follow Up (Pdelay_Resp_Follow_Up): tba
+- Announce Messages: Each device sends out its own Announce Message which is used to determine the Clock Leader. The Clock Leader election is described in detail in the [Best TimeTransmitter Clock Algorithm](00_btca) section.  
+
+The Peer Delay measurement process uses three different messages to communicate on a port to port basis: {{< tooltip "Pdelay_Req">}}, {{< tooltip "Pdelay_Resp">}}, {{< tooltip "Pdelay_Resp_Follow_Up">}}. A detailed description of how these messages are used can be found in in the [Peer Delay Measurement Section](01_peer-delay-measurement.md).
 
 ## Synchronisation
 
