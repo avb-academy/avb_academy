@@ -13,8 +13,6 @@ weight: 2
 
 {{< figure src="/images/peer-delay-measurement.drawio.svg" alt="Peer Delay Measurement" fig-num="1" title="Peer Delay Measurement" id="fig-peer-delay-measurement">}}
 
-# TODO: expand glossary, highlight terms
-
 ## Peer Delay Measurement Process
 
 The peer delay measurement process depicted in [Fig. 1](#fig-peer-delay-measurement) shows the following steps:
