@@ -21,9 +21,9 @@ In Milan-AVB systems, the control and media transport protocols operate directly
 
 IP addresses belong to layer 3 and are used for logical addressing and routing between networks. In contrast, MAC addresses are used for communication within a local network segment. When a device wants to send data to an IP address, it must first determine the corresponding MAC address. This mapping is typically performed using the Address Resolution Protocol ({{< tooltip "ARP">}}).
 
-MAC addresses are 48 bits long and are typically written as six groups of hexadecimal values. The first part identifies the manufacturer ({{< tooltip "OUI">}}), while the second part is assigned by the manufacturer to uniquely identify the device.  
+MAC addresses are 48 bits long and are typically written as six groups of hexadecimal values. The first part identifies the manufacturer with Organizationally Unique Identifier (OUI), while the second part is assigned by the manufacturer to uniquely identify the device.  
 An exemplary MAC address could be: `3C:C0:C6:00:AA:BB`.  
-See [Fig. 2](#fig-mac-oui) for the separation between the Organizationally Unique Identifier (OUI) and the unique part identifying the device. Feel free to look up the organization to which this MAC address belongs to here: [https://oui.is](https://oui.is).
+See [Fig. 2](#fig-mac-oui) for the separation between the {{< tooltip "OUI">}} and the unique part identifying the device. Feel free to look up the organization to which this MAC address belongs to here: [https://oui.is](https://oui.is).
 
 {{< table-figure id="fig-mac-oui" fig-num="1" title="Structure of a MAC address OUI" >}}
 <table>
@@ -38,7 +38,7 @@ See [Fig. 2](#fig-mac-oui) for the separation between the Organizationally Uniqu
 </table>
 {{< /table-figure >}}
 
-The neat thing about MAC addresses is that they are assigned to the hardware of the Ethernet interface by the manufacturer and are intended to be globally unique. This reduces the risk of configuration errors compared to IP addresses, which must be assigned and managed by the user or network administrator.
+The neat thing about MAC addresses is that they are assigned to the hardware of the Ethernet interface by the manufacturer and are globally unique. This reduces the risk of configuration errors compared to IP addresses, which must be assigned and managed by the user or network administrator.
 
 MAC addresses can represent different types of destinations. A unicast MAC address identifies a single device, while a multicast MAC address identifies a group of devices. This distinction is encoded directly in the MAC address itself.
 
@@ -48,7 +48,7 @@ Section [Ethernet Frame](#ethernet-frame) gives you an impression what exactly m
 
 ## Unicast vs. Multicast Traffic
 
-All {{< tooltip "Streams" "Stream">}} in Milan-AVB are multicast streams. Instead of sending data to a single receiver, a {{< tooltip "Talker">}} transmits a stream to a multicast {{< tooltip "MAC">}} address. This allows multiple {{< tooltip "Listeners" "Listener">}} to receive the same stream simultaneously.
+All {{< tooltip "Streams" "Stream">}} in Milan-AVB are multicast streams. Instead of sending data to a single receiver, a {{< tooltip "Talker">}} transmits a stream to a multicast {{< tooltip "MAC">}} address. This allows multiple {{< tooltip "Listeners" "Listener">}} to receive the same stream without utilizing additional bandwidth each time a new Listener needs to receive the stream.
 
 Compared to unicast traffic, where a separate data stream must be sent to each receiver, multicast uses bandwidth more efficiently. The stream is transmitted only once by the Talker, and the switches ensure that it is forwarded only to the ports where interested Listeners are connected.
 
@@ -117,7 +117,7 @@ In this example, the source MAC address is `00:1B:C5:0A:C0:00`.
 
 ### Q-tag
 
-The Q-tag specifies the membership to a {{< tooltip "VLAN">}} and the priority. It enables traffic separation and prioritization, which is essential for deterministic audio transport. Some readers might be familiar with that concept. At this point let us point out that {{< tooltip "SRP">}} and {{< tooltip "FQTSS">}} are used to configure traffic reservation and transmission behavior in the switch
+The Q-tag specifies the membership to a {{< tooltip "VLAN">}} and the priority. It enables traffic separation and prioritization, which is essential for deterministic audio transport. The information contained in the Q-tag is the basis for the {{< tooltip "SRP">}} and {{< tooltip "FQTSS">}} protocols. They are used to configure traffic reservation and transmission behavior in the switch
 
 #### Tag Protocol Identifier
 The Tag Protocol Identifier (TPID) is set to a default value of `0x8100` and indicates that a {{< tooltip "VLAN">}} tag is present.

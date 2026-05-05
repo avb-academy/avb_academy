@@ -80,7 +80,7 @@ The specified accuracy windows range from 25ns to more than 10s:
 
 ### offsetScaledLogVariance
 
-The `offsetScaledLogVariance` is an estimate of the PTP variance. It describes the precision and frequency stability of the ClockMaster.  
+The `offsetScaledLogVariance` is an estimate of the {{< tooltip "gPTP">}} variance. It describes the precision and frequency stability of the ClockMaster.  
 For connaisseurs of formulas and deep math it is recommended to read through {{< global_reference ref="IEEE1588" clause="7.6.3" >}}. Everybody else can enjoy this summary in the meantime.
 
 

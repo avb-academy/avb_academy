@@ -1,7 +1,3 @@
-# 10BASE-T: "Describes the speed and configuration of an Ethernet network"  
-# 100BASE-T: "Describes the speed and configuration of an Ethernet network"  
-# 1000BASE-T: "Describes the speed and configuration of an Ethernet network"
-
 AAF:
   reference: '{{< global_reference ref="IEEE1722" clause="7" >}}'
   en:
@@ -53,7 +49,7 @@ AVTP:
   de:
     short: 'Audio Video Transport Protocol.'
     explanation: 'Definiert, wie Mediendaten in einem {{< tooltip "Milan">}}-Netzwerk übertragen werden.'
-    
+
 AVTPDU:
   reference: '{{< global_reference ref="IEEE1722" >}}'
   en:
@@ -77,8 +73,6 @@ Bridge:
     explanation: '{{< tooltip "Switch">}} and Bridge are used synonymously. A Switch forwards traffic from one port to another. {{< tooltip "AVB">}} switches must be time-aware (see: [Network timing](01_milan/00_network-timing/_index.md)) and support traffic shaping (see: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
   de:
     explanation: 'Die Begriffe {{< tooltip "Switch">}} und Bridge werden gleichwertig verwendet. Ein Switch leitet Daten von einem Port zu einem anderen weiter. {{< tooltip "AVB">}}-Switches müssen time-aware sein (siehe: [Network timing](01_milan/00_network-timing/_index.md)) und Traffic Shaping unterstützen (siehe: [Traffic shaping](01_milan/03_traffic-shaping/_index.md)).'
-
-# Bridged Endstation: "A device that contains a Switch as well as an Endstation"  
 
 BTCA:
   aliases: 
@@ -111,10 +105,10 @@ DAC:
 DEI:
   en:
     short: 'Drop Eligible Indicator'
-    explanation: 'Indicates whether a frame may be dropped by a switch during congestion.'
+    explanation: 'Indicates whether a frame may be dropped by a switch during congestion. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#drop-eligible-indicator).'
   de:
     short: 'Drop Eligible Indicator'
-    explanation: 'Zeigt an, ob ein Frame bei Überlastung im Switch verworfen werden darf.'
+    explanation: 'Zeigt an, ob ein Frame bei Überlastung im Switch verworfen werden darf. Siehe [Engineering Bible::Basics](05_engineering-bible/00_basics/#drop-eligible-indicator) für weitere Details.'
 
 Egress port:
   en:
@@ -140,8 +134,6 @@ EPON:
   de:
     short: 'Ethernet Passive Optical Network'
     explanation: 'Ein passives optisches Netzwerk das Ethernet als Übertragungsprotokoll verwendet und optische Splitter ohne Stromversorgung zur Signalverteilung nutzt.'
-
-# FOH: "Front of House. Where the mixing consoles are located that mix for the audience"
 
 FQTSS:
   aliases:
@@ -172,8 +164,6 @@ gPTP:
   de:
     short: 'Generalized Precision Timing Protocol.'
     explanation: 'Das Generalized Precision Timing Protocol (gPTP) ist ein Profil von {{< tooltip "PTPv2">}}. Es bildet die Grundlage des Netzwerktimings in Ethernet-Netzwerken.'
-  
-# Hop: "The process of a packet traversing a switch. The number of hops defines latency in a Milan network"
 
 IEEE:
   reference: '[IEEE Website](https://www.ieee.org/)'
@@ -236,8 +226,6 @@ Milan:
     short: 'Media Independent Local Area Network.'
     explanation: 'Der Begriff Milan bezeichnet ein ProAV-Netzwerk, das auf den {{< tooltip "AVB">}}-Spezifikationen aufbaut.'
 
-# OS: "Open System Interconnection"  
-
 OSI Layer:
   aliases:
     - 'Transport Layer'
@@ -256,8 +244,6 @@ OUI:
   de:
     short: 'Herstellerkennung'
     explanation: 'Die ersten 24 Bit einer {{< tooltip "MAC">}} Adresse zur Identifikation des Herstellers.'
-  
-# PDU: "Protocol Data Unit"  
 
 PCM:
   en:
@@ -270,10 +256,10 @@ PCM:
 PCP: 
   en:
     short: 'Priority Code Point'
-    explanation: 'Specifies a priority value from 0 to 7 used for {{< tooltip "QoS">}} handling in switches.'
+    explanation: 'Specifies a priority value from 0 to 7 used for {{< tooltip "QoS">}} handling in switches. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#priority-code-point).'
   de:
     short: 'Priority Code Point'
-    explanation: 'Definiert einen Prioritätswert von 0 bis 7 zur {{< tooltip "QoS">}} Behandlung im Switch.'
+    explanation: 'Definiert einen Prioritätswert von 0 bis 7 zur {{< tooltip "QoS">}} Behandlung im Switch. Siehe [Engineering Bible::Basics](05_engineering-bible/00_basics/#priority-code-point) für weitere Details.'
 
 Primary:
   reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
@@ -283,14 +269,6 @@ Primary:
   de:
     short: 'Primäre Verbindung.'
     explanation: 'In einem redundanten Netzwerk wird die erste Verbindung als "Primäre Verbindung" bezeichnet. Die zweite Verbindung wird {{< tooltip "Secondary">}} genannt.'
-
-priority1:
-  en:
-    short: 'Clock system description.'
-    explanation: 'Part of the {{< tooltip "gPTP">}} synchronisation. For more details see: [BTCA::priority1](../05_engineering-bible/02_802-1as/00_btca/#priority1).'
-  de:
-    short: 'Beschreibung des {{< termbase "Clock">}}-Systems.'
-    explanation: 'Teil der {{< tooltip "gPTP">}}-Synchronisation. Weitere Details unter: [BTCA::priority1](../05_engineering-bible/02_802-1as/00_btca/#priority1).'
 
 PTPv2:
   reference: '{{< global_reference ref="IEEE1588">}}'
@@ -321,26 +299,26 @@ Secondary:
 SRClass: 
   en:
     short: 'Stream Reservation Class'
-    explanation: 'Defines priority and maximum end-to-end latency for streams in a Milan-AVB network.'
+    explanation: 'Defines priority and maximum end-to-end latency for streams in a Milan-AVB network. See [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes).'
   de:
     short: 'Stream Reservation Class'
-    explanation: 'Definiert Priorität und maximale Ende-zu-Ende-Latenz für Streams in einem Milan-AVB Netzwerk.'
+    explanation: 'Definiert Priorität und maximale Ende-zu-Ende-Latenz für Streams in einem Milan-AVB Netzwerk. Siehe [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes) für weitere Details.'
 
 SRClassA: 
   en:
     short: 'Stream Reservation Class A'
-    explanation: 'Defines a stream class with high priority and a maximum end-to-end latency of 2 ms.'
+    explanation: 'Defines a stream class with high priority and a maximum end-to-end latency of 2 ms. See [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes).'
   de:
     short: 'Stream Reservation Class A'
-    explanation: 'Definiert eine Streamklasse mit hoher Priorität und einer maximalen Ende-zu-Ende-Latenz von 2 ms.'
+    explanation: 'Definiert eine Streamklasse mit hoher Priorität und einer maximalen Ende-zu-Ende-Latenz von 2 ms. Siehe [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes) für weitere Details.'
 
 SRClassB: 
   en:
     short: 'Stream Reservation Class B'
-    explanation: 'Defines a stream class with lower priority and a maximum end-to-end latency of 50 ms.'
+    explanation: 'Defines a stream class with lower priority and a maximum end-to-end latency of 50 ms. See [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes).'
   de:
     short: 'Stream Reservation Class B'
-    explanation: 'Definiert eine Streamklasse mit geringerer Priorität und einer maximalen Ende-zu-Ende-Latenz von 50 ms.'
+    explanation: 'Definiert eine Streamklasse mit geringerer Priorität und einer maximalen Ende-zu-Ende-Latenz von 50 ms. Siehe [Engineering Bible::802.1 - AVB](05_engineering-bible/01_802-1BA/#stream-reservation-classes) für weitere Details.'
 
 SRP:
   aliases:
@@ -383,10 +361,10 @@ Talker:
 TPID:
   en:
     short: 'Tag Protocol Identifier'
-    explanation: 'Indicates that a frame contains a {{< tooltip "VLAN">}} tag and identifies the tag protocol.'
+    explanation: 'Indicates that a frame contains a {{< tooltip "VLAN">}} tag and identifies the tag protocol. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#tag-protocol-identifier) for more details.'
   de:
     short: 'Tag Protocol Identifier'
-    explanation: 'Zeigt an, dass ein Frame ein {{< tooltip "VLAN">}} Tag enthält und identifiziert das Tag-Protokoll.'
+    explanation: 'Zeigt an, dass ein Frame ein {{< tooltip "VLAN">}} Tag enthält und identifiziert das Tag-Protokoll. Siehe [Engineering Bible::Basics](05_engineering-bible/00_basics/#tag-protocol-identifier) für weitere Details.'
 
 TSN:
   reference: '[IEEE TSN TG website](https://1.ieee802.org/tsn/)'
@@ -506,6 +484,65 @@ PHY:
 priority1:
   reference: '{{< global_reference ref="IEEE8021AS" >}}'
   en:
+    explanation: 'Attribute used to determine the {{< tooltip "gPTP" >}} {{< tooltip "GM" >}}. See [802.1AS - gPTP](05_engineering-bible/02_802-1AS/00_btca) for details.'
+  de:
+    explanation: 'Attribut, das zur Bestimmung des {{< tooltip "gPTP" >}} {{< tooltip "GM" >}} verwendet wird. Details siehe [802.1AS - gPTP](05_engineering-bible/02_802-1AS/00_btca).'
+
+priority2:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
     explanation: 'Attribute used to determine the {{< tooltip "gPTP" >}} {{< tooltip "GM" >}}. See [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/00_btca) for details.'
   de:
     explanation: 'Attribut, das zur Bestimmung des {{< tooltip "gPTP" >}} {{< tooltip "GM" >}} verwendet wird. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/00_btca).'
+
+SFD:
+  en:
+    short: 'Start Frame Delimiter'
+    explanation: 'Used for bit synchronisation between network devices'
+  de:
+    short: 'Start Frame Delimiter'
+    explanation: 'Dient der Bitsynchronisation zwischen Netzwerkgeräten'
+
+Q-tag:
+  en:
+    explanation: 'Part of the Ethernet frame used for data transmission in Milan networks. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#q-tag) for more details.'
+  de:
+    explanation: 'Teil des Ethernet Frames, der für die Datenübertragung in Milan Netzwerken verwendet wird. Siehe [Engineering Bible::Grundlagen](05_engineering-bible/00_basics/#q-tag) für weitere Details.'
+
+EtherType:
+  en:
+    explanation: 'Used to define traffic categories. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#ethertype).'
+  de:
+    explanation: 'Dient zur Klassifizierung von Netzwerkverkehr. Siehe [Engineering Bible::Grundlagen](05_engineering-bible/00_basics/#ethertype) für weitere Details.'
+
+CRC:
+  en:
+    short: 'Cyclic Redundancy Check'
+    explanation: 'Mechanism to detect transmission errors. See [Engineering Bible::Basics](05_engineering-bible/00_basics/#cyclic-redundancy-check).'
+  de:
+    short: 'Zyklische Redundanzprüfung'
+    explanation: 'Verfahren zur Erkennung von Übertragungsfehlern. Siehe [Engineering Bible::Grundlagen](05_engineering-bible/00_basics/#cyclic-redundancy-check) für weitere Details.'
+
+clockClass:
+  en:
+    explanation: 'Attribute to describe how reliable the time of a {{< tooltip "GM">}} is. See: [BTCA::clockClass](../05_engineering-bible/02_802-1as/00_btca/#clockclass)'
+  de:
+    explanation: 'Attribut zur Beschreibung der Zuverlässigkeit der Zeit eines {{< tooltip "GM">}}. Siehe [BTCA::clockClass](../05_engineering-bible/02_802-1as/00_btca/#clockclass) für weitere Details.'
+
+clockAccuracy:
+  en:
+    explanation: 'Describes how closely the time of a Clock Leader matches the reference time. See: [BTCA::clockAccuracy](../05_engineering-bible/02_802-1as/00_btca/#clockaccuracy)'
+  de:
+    explanation: 'Beschreibt, wie genau die Zeit eines Clock Leaders mit der Referenzzeit übereinstimmt. Siehe [BTCA::clockAccuracy](../05_engineering-bible/02_802-1as/00_btca/#clockaccuracy) für weitere Details.'
+
+offsetScaledLogVariance:
+  en:
+    explanation: 'Estimates the {{< tooltip "gPTP" >}} variance. See: [BTCA::offsetScaledLogVariance](../05_engineering-bible/02_802-1as/00_btca/#offsetscaledlogvariance)'
+  de:
+    explanation: 'Dient zur Abschätzung der {{< tooltip "gPTP">}} Varianz. Siehe [BTCA::offsetScaledLogVariance](../05_engineering-bible/02_802-1as/00_btca/#offsetscaledlogvariance) für weitere Details.'
+
+Hop:
+  en:
+    explanation: 'A wired connection between two network ports on the way between {{< tooltip "Talker">}} and {{< tooltip "Listener">}}. See: [User Guides::Number of Hops](02_user-guides/number-of-hops)'
+  de:
+    explanation: 'Ein Kabel zwischen zwei Netzwerk Ports auf dem Weg zwischen {{< tooltip "Talker">}} und {{< tooltip "Listener">}}. Siehe [User Guides::Number of Hops](02_user-guides/number-of-hops) für weitere Details.'
