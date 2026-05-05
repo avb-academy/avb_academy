@@ -29,10 +29,10 @@ gPTP consists of three main messages:
 
 - Announce Messages: Each device sends out its own Announce Message which is used to determine the Clock Leader. The Clock Leader election is described in detail in the [Best TimeTransmitter Clock Algorithm](00_btca) section.  
 
-- The Peer Delay measurement process uses three different messages to communicate on a port to port basis: {{< tooltip "Pdelay_Req">}}, {{< tooltip "Pdelay_Resp">}}, {{< tooltip "Pdelay_Resp_Follow_Up">}}. A detailed description of how these messages are used can be found in in the [Peer Delay Measurement Section](01_peer-delay-measurement.md).
+- The Propagation Delay measurement process uses three different messages to communicate on a port to port basis: {{< tooltip "Pdelay_Req">}}, {{< tooltip "Pdelay_Resp">}}, {{< tooltip "Pdelay_Resp_Follow_Up">}}. A detailed description of how these messages are used can be found in in [Propagation Delay Measurement](01_propagation-delay-measurement.md).
 
 ## Synchronisation
 
 gPTP is used to synchronize all network participants to a common time. The first step is always to determine a GrandMaster (GM). The election process is based on the clock parameters that each potential {{< tooltip "GM">}} is sending to the network. A detailed description can be found in the [Best TimeTransmitter Clock Algorithm](00_btca) section.
 
-The transmission delay through a switch is compensated by the clock mechanism itself. Therefore, a synchronisation of two connected ports is necessary. The detailed description of the measurement process can be found in [Peer Delay Measurement](01_peer-delay-measurement).
+The transmission delay through a switch is compensated by the clock mechanism itself. Therefore, a synchronisation of two connected ports is necessary. The detailed description of the measurement process can be found in [Propagation Delay Measurement](01_propagation-delay-measurement).

@@ -31,7 +31,7 @@ After the election process, the {{< tooltip "GM">}} provides its time to all net
 
 In {{< tooltip "gPTP" >}}, synchronization occurs at the ports of network devices, allowing for more accurate time measurements and reducing the effects of network delays and jitter.
 
-The Peer Delay is measured by sending a _PDelay Request_ to a neighbor and recording the time it takes to receive a _PDelay Response_. By also including timestamps of when the response was sent and received, the protocol can accurately calculate the link delay between two peers.
+The Propagation Delay is measured by sending a _PDelay Request_ to a neighbor and recording the time it takes to receive a _PDelay Response_. By also including timestamps of when the response was sent and received, the protocol can accurately calculate the link delay between two peers.
 
 {{< figure src="/images/gPTP-sync.drawio.svg" alt="Port to Port sync" fig-num="1" title="gPTP sync process is Port to Port" id="fig-gPTP-sync">}}
 

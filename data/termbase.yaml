@@ -416,6 +416,10 @@ Primary:
   en: "Primary"
   de: "Primary"
 
+Propagation Delay:
+  en: "Propagation Delay"
+  de: "Lauftzeitverzögerung"
+
 Qos:
   en: "QoS"
   de: "QoS"

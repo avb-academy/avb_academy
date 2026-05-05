@@ -63,8 +63,8 @@ Nach dem Wahlprozess verteilt der {{< tooltip "GM" >}} seine {{< termbase "Netwo
 Bei {{< tooltip "gPTP" >}} erfolgt die {{< termbase "Synchronization" >}} direkt an den {{< termbase "Port" >}}s der Netzwerkgeräte.  
 Dadurch werden die Zeitmessungen präziser, und der Einfluss von {{< termbase "Network Delay" >}} und {{< termbase "Jitter" >}} wird minimiert.
 
-<!-- The Peer Delay is measured by sending a _PDelay Request_ to a neighbor and recording the time it takes to receive a _PDelay Response_. By also including timestamps of when the response was sent and received, the protocol can accurately calculate the link delay between two peers. -->
-Das {{< termbase "Peer Delay" >}} wird ermittelt, indem ein {{< termbase "Pdelay Request" >}} an den benachbarten {{< termbase "Port" >}} gesendet wird. Die Zeitspanne bis zum Eintreffen der {{< termbase "Pdelay Response" >}} vom Nachbarport wird dabei aufgezeichnet.  
+<!-- The Propagation Delay is measured by sending a _PDelay Request_ to a neighbor and recording the time it takes to receive a _PDelay Response_. By also including timestamps of when the response was sent and received, the protocol can accurately calculate the link delay between two peers. -->
+Die {{< termbase "Propagation Delay" >}} wird ermittelt, indem ein {{< termbase "Pdelay Request" >}} an den benachbarten {{< termbase "Port" >}} gesendet wird. Die Zeitspanne bis zum Eintreffen der {{< termbase "Pdelay Response" >}} vom Nachbarport wird dabei aufgezeichnet.  
 Da die {{< termbase "Pdelay Response" >}} zusätzlich Zeitstempel enthält, die den Sende- und Empfangszeitpunkt angeben, kann {{< tooltip "gPTP" >}} die {{< termbase "Delay" >}} zwischen zwei benachbarten {{< termbase "Ports" >}} bestimmen.
 
 {{< figure src="/images/gPTP-sync.drawio.svg" alt="Port to Port synchronisation" fig-num="1" title="Bei gPTP wird von Port zu Port synchronisiert" id="fig-gPTP-sync">}}
