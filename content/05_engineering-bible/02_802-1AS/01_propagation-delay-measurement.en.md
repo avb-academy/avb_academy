@@ -11,6 +11,10 @@ weight: 2
 - Standard Ethernet switches exceed the allowed timing constraints of and are therefore not `asCapable`.
 {{% /notice %}}
 
+{{% notice info %}}
+Sec. 11.1.2
+{{% /notice %}}
+
 The peer delay mechanism is used to measure the propagation delay between two network ports. Each port performs the propagation delay measurement independently. Therefore, both link partners determine the link delay from their own perspective. The mechanism is depicted in [Fig. 1](#fig-propagation-delay-measurement):
 
 {{< figure src="/images/propagation-delay-measurement.drawio.svg" alt="Propagation Delay Measurement using the Peer Delay Mechanism" fig-num="1" title="Propagation Delay Measurement using the Peer Delay Mechanism" id="fig-propagation-delay-measurement">}}
@@ -24,7 +28,9 @@ The peer delay mechanism is used to measure the propagation delay between two ne
 
 Once all timestamps are available, the initiator can calculate the mean propagation delay {{< imath >}} D {{< /imath >}}:
 
-<!-- IEEE802.1AS-2011, Eq. 11-1 -->
+{{% notice info %}}
+IEEE802.1AS-2011, Eq. 11-1
+{{% /notice %}}
 {{< math >}}
 t_{ir} &= t_2 - t_1 \\
 t_{ri} &= t_4 - t_3 \\
