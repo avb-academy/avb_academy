@@ -144,6 +144,7 @@ The EtherType defines the traffic this frame belongs to. In Milan networks we ha
 | {{<tooltip "MSRP">}}  | -       | 0x22EA    | {{< global_reference ref="IEEE8021Q">}}, Table 10-2 | 
 | {{<tooltip "MVRP">}}  | -       | 0x88F5    | {{< global_reference ref="IEEE8021Q">}}, Table 10-2 |
 | {{<tooltip "MMRP">}}  | -       | 0x88F6    | {{< global_reference ref="IEEE8021Q">}}, Table 10-2 |
+| {{<tooltip "gPTP">}}  | -       | 0x88F7    | {{< global_reference ref="IEEE8021AS">}}, Table 10-3 |    
 
 As you can see, multiple protocol types use the same EtherType. The differentiation is then made using protocol-specific subtype fields within the payload and is described in the respective protocol sections.
 
