@@ -365,6 +365,14 @@ Pdelay_Resp_Follow_Up:
     short: 'Peer Delay Response Follow-Up'
     explanation: 'Follow-up-Nachricht, die nach der {{< tooltip "Pdelay_Resp" >}} gesendet wird. Details siehe [802.1AS - gPTP section](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
 
+ppm:
+  en:
+    short: 'Parts Per Million'
+    explanation: 'Unit used to describe the frequency accuracy of a clock or oscillator. For example, a clock with an accuracy of 1 ppm deviates by about 1 second every 11.6 days.'
+  de:
+    short: 'Parts Per Million'
+    explanation: 'Einheit zur Beschreibung der Frequenzgenauigkeit einer Uhr oder eines Oszillators. Zum Beispiel weicht eine Uhr mit einer Genauigkeit von 1 ppm um etwa 1 Sekunde in 11,6 Tagen ab.'
+
 Primary:
   reference: '{{< global_reference ref="MILANSpec" clause="8.2.2">}}'
   en:
@@ -528,6 +536,13 @@ neighborPropDelayThresh:
     explanation: 'Defines the maximum allowed {{< tooltip "Pdelay" >}} value, which is set to 800 ns for copper connections. The value is determined using the [Propagation Delay Measurement](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md).'
   de:
     explanation: 'Definiert den maximal zulässigen {{< tooltip "Pdelay" >}}-Wert, der für Kupferverbindungen auf 800 ns festgelegt ist. Der Wert wird mithilfe der [Propagation Delay Measurement](05_engineering-bible/02_802-1AS/01_peer-delay-measurement.md) bestimmt.'
+
+neighborRateRatio:
+  reference: '{{< global_reference ref="IEEE8021AS" >}}'
+  en:
+    explanation: 'Describes how fast the clock of the link partner runs relative to the local clock. See: [Neighbor Rate Ratio Measurement](05_engineering-bible/02_802-1AS/02_neighbor-rate-ratio-measurement.md)'
+  de:
+    explanation: 'Beschreibt wie schnell the Uhr des Linkpartners läuft relativ zur eigenen Uhr. Siehe [Neighbor Rate Ratio Measurement](05_engineering-bible/02_802-1AS/02_neighbor-rate-ratio-measurement.md) für weitere Details.'
 
 offsetScaledLogVariance:
   en:
