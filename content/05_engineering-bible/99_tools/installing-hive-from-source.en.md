@@ -1,6 +1,13 @@
-# Tutorial: How to Build Hive from Source on Arch Linux
+---
+title: "Build Hive from Source for Arch Linux"
+date: 2020-05-19
+weight: 1
+---
 
-> **Note:** This is both a collection of instructions from the associated repositories along with solutions/workarounds for common pitfalls during installation.
+{{% notice info %}}
+This is both a collection of instructions from the associated repositories along with solutions/workarounds for common pitfalls during installation.  
+This tutorial was written with Arch Linux version 7.0.5-arch1-1.
+{{% /notice %}}
 
 We will be installing all repositories to the home directory `~/` to maintain consistency.
 
