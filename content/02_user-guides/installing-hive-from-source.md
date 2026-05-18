@@ -2,6 +2,8 @@
 
 > **Note:** This is both a collection of instructions from the associated repositories along with solutions/workarounds for common pitfalls during installation.
 
+We will be installing all repositories to the home directory `~/` to maintain consistency.
+
 Before starting, ensure you have updated your package manager:
 
 ```bash
@@ -11,7 +13,7 @@ sudo pacman -Syu
 If you have not done so, install the `base-devel` package to install important dependencies such as `gcc`, `make`, `makepkg`, and other very important dependencies:
 
 ```bash
-sudo pacman -S base-devel
+sudo pacman -S --needed base-devel
 ```
 
 Also ensure you have `git`:
@@ -38,15 +40,26 @@ Repository: https://github.com/L-Acoustics/avdecc
   # Check version with:
   g++ -v
   ```
+ The last line will show the version number (16.1.1 in this example): 
+```bash
+g++ -v
+Using built-in specs.
+COLLECT_GCC=g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 16.1.1 20260430 (GCC)
+```
+
 - **Make** (covered by `base-devel`)
-  ```bash
-  sudo pacman -S make
-  ```
+
 - **pcap developer package**
   ```bash
   sudo pacman -S libpcap
   ```
-- **ncurses developer package** *(optional, for examples)*
+- **ncurses developer package** *(optional, required to run for examples)*
    ```bash
   sudo pacman -S ncurses
   ```
@@ -82,7 +95,7 @@ Repository: https://github.com/L-Acoustics/avdecc
 
 5. Go into the generated output folder:
    ```bash
-   cd .../path/to/hive/_build_linux_x64_makefiles_release
+   cd ~/avdecc/_build_linux_x64_makefiles_release
    ```
 
 6. Compile:
@@ -104,21 +117,36 @@ Repository: https://github.com/christophe-calmejane/hive
   Follow instructions here: https://doc.qt.io/qt-6/qt-online-installation.html
   Take note of the install path for later.
 
+  **Note:** When you download the installer, you will need to set it as executeable:
+  ```bash
+  chmod +x qt-online-installer-linux-x64-4.11.0.run
+  ```
+
 - **g++ 11.0**
   AUR package: https://aur.archlinux.org/packages/gcc11
 
-  Install via `yay`:
-  ```bash
-  sudo yay -s gcc11
-  ```
+  You can either install g++ 11.0 manually or with yay
 
-  Or manually:
+  1. Installing manually:
   ```bash
   git clone https://aur.archlinux.org/gcc11.git
   cd gcc11
   makepkg -si
   ```
-  > **Note:** This step may take time.
+
+  2. Installing via `yay`:
+  ```bash
+  yay -s gcc11
+  ```
+
+   **Note on how to install `yay` if you have not done so:**
+  ```bash
+  git clone https://aur.archlinux.org/yay-bin.git
+  cd yay-bin
+  makepkg -si
+  ```
+
+  > **Note:** Installing GCC11 may take time.
 
 ### Steps
 
@@ -143,9 +171,16 @@ Repository: https://github.com/christophe-calmejane/hive
    cp .hive_config.sample .hive_config
    ```
 
-4. *(If needed)* Reset dirty submodules.
+4. Initialize git submodules
+   ```bash
+   git submodule update --init --recursive
+   ```
+   Then check the status:
+   ```bash
+   git status
+   ```
 
-   You may need to perform a `git reset` inside some submodules (e.g. `3rdparty/sparkleHelper`). If you see output like this:
+   You may need to perform a `git reset` inside some submodules (e.g. `3rdparty/sparkleHelper`). If you see an output like this from `git status`:
 
    ```
    ➜  Hive git:(v1.4.0) git status
@@ -157,7 +192,7 @@ Repository: https://github.com/christophe-calmejane/hive
 
    Run the following to fix it:
    ```bash
-   cd /path/to/Hive/.git/modules/3rdparty/sparkleHelper
+   cd ~/Hive/.git/modules/3rdparty/sparkleHelper
    git reset HEAD --hard
    ```
 
@@ -188,7 +223,7 @@ Repository: https://github.com/christophe-calmejane/hive
 
 8. Go into the generated output folder:
    ```bash
-   cd /path/to/Hive/_build_linux_x64_makefiles_release/
+   cd ~/Hive/_build_linux_x64_makefiles_release/
    ```
 
 9. Compile everything:
@@ -198,17 +233,21 @@ Repository: https://github.com/christophe-calmejane/hive
 
 The Hive binary will be located at:
 ```
-.../Hive/_build_linux_x64_makefiles_release/src/Hive
+~/Hive/_build_linux_x64_makefiles_release/src/Hive
+```
+Copy this binary to the home directory for easier access:
+```bash
+cp ~/Hive/_build_linux_x64_makefiles_release/src/Hive ~/
 ```
 
 ---
 
 ## Running Hive
 
-> **Important:** Before running Hive on Linux, you must grant the program access to raw socket creation. Run the following command (replace `/path/to/Hive` with the actual path to the binary):
+> **Important:** Before running the Hive binary on Linux, you must grant the program access to raw socket creation:
 
 ```bash
-sudo setcap cap_net_raw+ep /path/to/Hive
+sudo setcap cap_net_raw+ep ~/Hive
 ```
 
 Then run the Hive binary:
