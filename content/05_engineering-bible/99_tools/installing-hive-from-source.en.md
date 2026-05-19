@@ -150,7 +150,9 @@ Repository: https://github.com/christophe-calmejane/hive
   makepkg -si
   ```
 
-  > **Note:** Installing GCC11 may take time. If you run into any issues, start with rerunning `sudo pacman -Syu`.
+  {{% notice info %}}
+  Installing GCC11 may take time. If you run into any issues, start with rerunning `sudo pacman -Syu`.
+  {{% /notice %}}
 
 ### Steps
 
