@@ -84,8 +84,6 @@ gcc version 16.1.1 20260430 (GCC)
 
    For example, release `v4.3.1.1` has tag `v4.3.1.1` and commit hash `6d61a92`:
    ```bash
-   git checkout v4.3.1.1
-   # OR
    git checkout 6d61a92
    ```
 
@@ -97,7 +95,6 @@ gcc version 16.1.1 20260430 (GCC)
 4. Run the provided `gen_cmake.sh` script with `-release`:
    ```bash
    ./gen_cmake.sh -release
-   # Run gen_cmake.sh -h for the help menu
    ```
 
 5. Go into the generated output folder:
@@ -168,8 +165,6 @@ Repository: https://github.com/christophe-calmejane/hive
 
    Locate the tag/version-number and commit hash. For example, release `v1.4.0` has tag `v1.4.0` and commit hash `0d28c27`:
    ```bash
-   git checkout v1.4.0
-   # OR
    git checkout 0d28c27
    ```
 
