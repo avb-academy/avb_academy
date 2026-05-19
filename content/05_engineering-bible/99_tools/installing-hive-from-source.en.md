@@ -119,7 +119,7 @@ Repository: https://github.com/christophe-calmejane/hive
 
 - **Qt 6.8.3** — Install via the Qt online installer. Installing the `qt6-base-dev` package can cause build issues.
   Follow instructions here: https://doc.qt.io/qt-6/qt-online-installation.html
-  Take note of the install path for later.
+  Take note of the install path for later. In this example it is in `~/qt/`.
 
   **Note:** When you download the installer, you will need to set it as executeable:
   ```bash
