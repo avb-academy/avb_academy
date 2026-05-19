@@ -139,16 +139,70 @@ Repository: https://github.com/christophe-calmejane/hive
   ```
 
   2. Installing via `yay`:
-  ```bash
-  yay -s gcc11
-  ```
 
-   **Note on how to install `yay` if you have not done so:**
+  Optional: Install yay:
+
   ```bash
   git clone https://aur.archlinux.org/yay-bin.git
   cd yay-bin
   makepkg -si
   ```
+
+  ```bash
+  yay -s gcc11
+  ```
+
+  2.1 The installation process asks you which packages to install:
+  ```bash
+  9 aur/matlab-r2025b-gcc11-meta R2026a-1 (+0 0.00) 
+    A high-level language for numerical computation and visualization (R2025b, GCC11, meta)
+  8 aur/matlab-r2025a-gcc11-meta R2026a-1 (+0 0.00) 
+      A high-level language for numerical computation and visualization (R2025a, GCC11, meta)
+  7 aur/matlab-r2024b-gcc11-meta R2026a-1 (+0 0.00) 
+      A high-level language for numerical computation and visualization (R2024b, GCC11, meta)
+  6 aur/matlab-r2024a-gcc11-meta R2026a-1 (+0 0.00) 
+      A high-level language for numerical computation and visualization (R2024a, GCC11, meta)
+  5 aur/matlab-r2023b-gcc11-meta R2026a-1 (+0 0.00) 
+      A high-level language for numerical computation and visualization (R2023b, GCC11, meta)
+  4 aur/matlab-gcc11-meta R2026a-1 (+0 0.00) 
+      A high-level language for numerical computation and visualization (GCC11, meta)
+  3 aur/gcc11-fortran 11.5.0-1 (+6 0.49) 
+      Fortran front-end for GCC (11.x.x)
+  2 aur/gcc11-libs 11.5.0-1 (+6 0.49) 
+      Runtime libraries shipped by GCC (11.x.x)
+  1 aur/gcc11 11.5.0-1 (+6 0.49) 
+      The GNU Compiler Collection - C and C++ frontends (11.x.x)
+  ==> Packages to install (eg: 1 2 3, 1-3 or ^4)
+  ==> 
+  ```
+  
+  Select `1`.
+
+  2.2 Then you are asked whether you want to clean build
+  ```bash
+  ==> Packages to cleanBuild?
+  ==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+  ==> 
+  ```
+
+  Select `A`
+
+  2.3 Then you are asked if you want to show any diffs:
+
+  ```bash
+  ==> Diffs to show?
+  ==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+  ==> 
+  ```
+
+  Select `N`.
+
+  2.4 Then you are asked if you want to remove the make dependencies after install:
+  ```bash
+  :: Remove make dependencies after install? [y/N]
+  ```
+
+  Select `N`
 
   {{% notice info %}}
   Installing GCC11 may take time. If you run into any issues, start with rerunning `sudo pacman -Syu`.
