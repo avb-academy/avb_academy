@@ -273,11 +273,11 @@ Repository: https://github.com/christophe-calmejane/hive
    ./gen_cmake.sh -release -qtdir ~/Qt/6.8.3/gcc_64/lib/cmake -qtvers 6.8.3 -- -DCMAKE_POLICY_VERSION_MINIMUM=3.5
    ```
 
-   > **Note 1:** The `-qtdir` parameter should be the location of your Qt directory. In this example, Qt was installed to the home directory.
-   >
-   > **Note 2:** Run `gen_cmake.sh -h` to display the help menu.
-   >
-   > **Important:** If you are using CMake >= 4.0, you must add this extra parameter: `-- -DCMAKE_POLICY_VERSION_MINIMUM=3.5`
+   {{% notice info %}}
+   - **Note 1:** The `-qtdir` parameter should be the location of your Qt directory. In this example, Qt was installed to the home directory.
+   - **Note 2:** Run `gen_cmake.sh -h` to display the help menu.
+   - **Important:** If you are using CMake >= 4.0, you must add this extra parameter: `-- -DCMAKE_POLICY_VERSION_MINIMUM=3.5`
+   {{% /notice %}}
 
 8. Go into the generated output folder:
    ```bash
