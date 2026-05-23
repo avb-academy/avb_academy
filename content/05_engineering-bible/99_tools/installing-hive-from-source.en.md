@@ -127,7 +127,8 @@ Repository: https://github.com/christophe-calmejane/hive
   ```
 
   {{% notice caution %}}
-  Make sure to install the correct Qt version: 6.8.3.
+  Make sure to install the correct Qt version: 6.8.3.  
+  The version must be selected in the manual install. 
   {{% /notice %}}
 
 - **g++ 11.0**
