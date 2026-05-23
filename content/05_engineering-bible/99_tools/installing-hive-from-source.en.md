@@ -131,6 +131,9 @@ Repository: https://github.com/christophe-calmejane/hive
   The version must be selected in the manual install. 
   {{% /notice %}}
 
+  ![Qt manual installation step 1](/images/hive-qt-install1.png)
+  ![Qt manual installation step 2](/images/hive-qt-install2.png)
+
 - **g++ 11.0**
   AUR package: https://aur.archlinux.org/packages/gcc11
 
