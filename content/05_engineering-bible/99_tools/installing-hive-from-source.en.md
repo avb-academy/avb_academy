@@ -121,10 +121,14 @@ Repository: https://github.com/christophe-calmejane/hive
   Follow instructions here: https://doc.qt.io/qt-6/qt-online-installation.html
   Take note of the install path for later. In this example it is in `~/qt/`.
 
-  **Note:** When you download the installer, you will need to set it as executeable:
+  **Note:** When you download the installer, you will need to set it as executable:
   ```bash
   chmod +x qt-online-installer-linux-x64-4.11.0.run
   ```
+
+  {{% notice caution %}}
+  Make sure to install the correct Qt version: 6.8.3.
+  {{% /notice %}}
 
 - **g++ 11.0**
   AUR package: https://aur.archlinux.org/packages/gcc11
