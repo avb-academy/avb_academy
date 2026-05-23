@@ -301,10 +301,12 @@ The Hive binary will be located at:
 ```
 ~/Hive/_build_linux_x64_makefiles_release/src/Hive
 ```
-Copy this binary to the home directory for easier access:
-```bash
-cp ~/Hive/_build_linux_x64_makefiles_release/src/Hive ~/
+Create a symlink in PATH
 ```
+sudo ln -s ~/Hive/_build_linux_x64_makefiles_release/src/Hive /usr/local/bin/Hive
+```
+
+You are now able to run Hive from the terminal by typing `Hive`.
 
 ---
 
@@ -313,11 +315,11 @@ cp ~/Hive/_build_linux_x64_makefiles_release/src/Hive ~/
 > **Important:** Before running the Hive binary on Linux, you must grant the program access to raw socket creation:
 
 ```bash
-sudo setcap cap_net_raw+ep ~/Hive
+sudo setcap cap_net_raw+ep ~/Hive/_build_linux_x64_makefiles_release/src/Hive
 ```
 
 Then run the Hive binary:
 
 ```bash
-sudo ./Hive
+sudo Hive
 ```
