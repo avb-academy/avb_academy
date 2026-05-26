@@ -79,6 +79,9 @@ else
 
     echo "Building Hugo site..."
     hugo
+
+    # Copy english 404 to directory root
+    cp public/en/404.html public/404.html
 fi
 
 echo "Build completed successfully."
