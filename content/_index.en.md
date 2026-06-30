@@ -25,7 +25,7 @@ Audio Video Bridging (AVB) is a set of standards within the broader {{< tooltip 
 - Precise time synchronization using {{< tooltip "gPTP">}}: [Details about timing](01_milan/00_network-timing/_index.md)
 - Low-latency forwarding with credit-based traffic shaping: [Details about traffic shaping](01_milan/03_traffic-shaping/fqtss/_index.md)
 
-## Milan: The ProAV Flavor of AVB
+## Milan-AVB: The ProAV Flavor of AVB
 
 {{< tooltip "Milan">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a deterministic and fully standardized network transport layer for professional audio and video devices.
 
