@@ -10,7 +10,7 @@ weight: 1
     - [Clock Data](clock_data): Ensures correct operation of the entire audio systems
     - [Audio Data](audio_data): Digital representation of the analog signal. With a tight real-time requirement.
     - [Control Data](control_data): Set up and monitor the system. Less real-time constraint.
-- In Milan AVB, a Stream is used to send data from a source to a destination. Stream formats are defined by the Milan specification. All Streams are multicast, meaning they do not consume additional bandwidth if connected to multiple destinations.
+- In Milan-AVB , a Stream is used to send data from a source to a destination. Stream formats are defined by the Milan specification. All Streams are multicast, meaning they do not consume additional bandwidth if connected to multiple destinations.
 {{% /notice %}} -->
 {{% notice info%}}
 - Audionetzwerke übertragen digitale Audiodaten zwischen Geräten innerhalb desselben Netzwerks.  
@@ -18,7 +18,7 @@ weight: 1
     - [Synchronisationsdaten](clock_data): Sorgen dafür, dass alle Geräte synchron arbeiten. Dazu zählen Audio-Taktdaten für Streams und Zeitdaten für die Netzwerksynchronisation.  
     - [Audiodaten](audio_data): Digitale Repräsentation eines analogen Signals. Diese Daten haben besonders hohe {{< termbase "Real Time">}}-Anforderungen.  
     - [Steuerdaten](control_data): Unterstützen Konfiguration und Monitoring des Systems. Ihre {{< termbase "Real Time">}}-Anforderungen sind geringer.  
-- In einem Milan AVB {{< termbase "Network">}} werden {{< termbase "Streams">}} verwendet, um Daten zwischen Quelle und Senke zu übertragen. Das Format der Streams ist in der Milan-Spezifikation definiert. Alle {{< termbase "Streams">}} werden als Multicast-Streams gesendet, sodass keine zusätzliche Bandbreite benötigt wird, wenn ein {{< termbase "Stream">}} an mehrere Empfänger geht.
+- In einem Milan-AVB {{< termbase "Network">}} werden {{< termbase "Streams">}} verwendet, um Daten zwischen Quelle und Senke zu übertragen. Das Format der Streams ist in der Milan-Spezifikation definiert. Alle {{< termbase "Streams">}} werden als Multicast-Streams gesendet, sodass keine zusätzliche Bandbreite benötigt wird, wenn ein {{< termbase "Stream">}} an mehrere Empfänger geht.
 {{% /notice %}}
 
 <!-- Consider the following scenario: A microphone is connected to a stage box. The stage box transmits digital audio to the mixing console. The transmission often uses an audio network, as illustrated [Fig. 1](#fig-audio-setup). -->
