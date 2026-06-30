@@ -17,7 +17,7 @@ The Milan ecosystem is evolving rapidly. As a result, this list may not always r
 
 ## Operating system independent
 
-The adapters listed in this section either use a manufacturer provided driver or implement a standardized interface such as USB Audio Class 2.0 (UAC2). As a result, they can be used on different operating systems without relying on an operating system specific Milan-AVB network stack.
+The adapters listed in this section either use a manufacturer provided driver or implement a standardized interface such as USB Audio Class 2.0 (UAC2). As a result, they can be used on different operating systems.
 
 ### USB and Thunderbolt
 - [Joyned MU16](https://joyned.io/products/mu16-usb-to-milan-interface)
@@ -40,6 +40,10 @@ These adapters are either natively supported by macOS or have proven reliable wh
 - [Kalea Informatique USB4 Thunderbolt 3 10G adapter](https://www.kalea-informatique.com/usb4-to-10g-ethernet-adapter.htm)
 - [Sabrent USB4 to 10G adapter](https://sabrent.com/products/nt-p10g)
 
+## Windows systems
+
+There is no known combination of available adapters.
+Please refer to the [Milan certified product registry](https://avnu.org/certified-product-registry/?&cert=Milan) to find a Milan certified audio interface.
 
 ## Linux systems
 
