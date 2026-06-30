@@ -6,13 +6,13 @@ weight: 1
 
 <!-- 
 {{% notice info %}}
-- A Milan AVB network has one clock leader. The BTCA is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
+- A Milan-AVB network has one clock leader. The BTCA is executed automatically each time a change in the network occurs to elect a GrandMaster (GM).
 - The GM is elected based on parameters that describe the clock quality of the device. The best quality wins.
 - Network Time is the shared global time base provided to all devices in the network by gPTP.
 - Media Time is the timing domain used specifically to synchronize audio recording and playback clocks in Endstations.
 {{% /notice %}} -->
 {{% notice info %}}
-- Ein Milan AVB {{< termbase "Network" >}} hat einen {{< termbase "Clock Leader" >}}. Der BTCA wird automatisch ausgeführt, sobald sich etwas im Netzwerk ändert, und wählt dabei den besten {{< termbase "Grandmaster" >}} (GM) aus.  
+- Ein Milan-AVB {{< termbase "Network" >}} hat einen {{< termbase "Clock Leader" >}}. Der BTCA wird automatisch ausgeführt, sobald sich etwas im Netzwerk ändert, und wählt dabei den besten {{< termbase "Grandmaster" >}} (GM) aus.  
 - Der GM wird auf Grundlage von Parametern bestimmt, die die {{< termbase "Clock" >}}-Qualität des Geräts beschreiben. Die höchste Qualität gewinnt.  
 - Die {{< termbase "Network Time" >}} ist die gemeinsame {{< termbase "Time Base" >}}, die allen Geräten im {{< termbase "Network" >}} über gPTP bereitgestellt wird.  
 - Die {{< termbase "Media Time" >}} sorgt dafür, dass die {{< termbase "Recording" >}}- und {{< termbase "Playback" >}}-{{< termbase "Clock" >}}s in Endstations synchronisiert sind.
@@ -25,12 +25,12 @@ In einem weniger kritischen Szenario kann dies zu {{< termbase "Comb Filter" >}}
 Im schlimmsten Fall kann die fehlende {{< termbase "Synchronization" >}} {{< termbase "Audio Dropout" >}}, {{< termbase "Glitch" >}}s und {{< termbase "Click" >}}-Geräusche verursachen, was das Erlebnis erheblich verschlechtern würde.  
 Daher ist eine präzise {{< termbase "Synchronization" >}} unerlässlich, um eine korrekte Audioübertragung im {{< termbase "Network" >}} sicherzustellen.
 
-<!-- Milan AVB employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time. -->
-Milan AVB benutzt das Generalized Precision Timing Protocol (gPTP), um alle Teilnehmer im {{< termbase "Network" >}} zu synchronisieren. Dazu gehören neben {{< tooltip "Endstations" "Endstation" >}} auch {{< tooltip "Switches" "Switch" >}}.  
-Ein Unterschied zu anderen {{< termbase "Networked Audio" >}}-Protokollen ist, dass Milan auch die {{< termbase "Synchronization" >}} der {{< tooltip "Switches" "Switch" >}} berücksichtigt. Damit die Synchronisation funktioniert, müssen die {{< tooltip "Switches" "Switch" >}} {{< termbase "Time Aware" >}} sein und die {{< termbase "Network Time" >}} korrekt verarbeiten können.
+<!-- Milan-AVB employs the Generalized Precision Timing Protocol (gPTP) to synchronize all participants within the network, including both Endstations and switches. Notably, the inclusion of Switches distinguishes Milan-AVB from other existing networked audio protocols, as it requires the Switches to be time-aware and therefore capable of understanding Network time. -->
+Milan-AVB benutzt das Generalized Precision Timing Protocol (gPTP), um alle Teilnehmer im {{< termbase "Network" >}} zu synchronisieren. Dazu gehören neben {{< tooltip "Endstations" "Endstation" >}} auch {{< tooltip "Switches" "Switch" >}}.  
+Ein Unterschied zu anderen {{< termbase "Networked Audio" >}}-Protokollen ist, dass Milan-AVB auch die {{< termbase "Synchronization" >}} der {{< tooltip "Switches" "Switch" >}} berücksichtigt. Damit die Synchronisation funktioniert, müssen die {{< tooltip "Switches" "Switch" >}} {{< termbase "Time Aware" >}} sein und die {{< termbase "Network Time" >}} korrekt verarbeiten können.
 
-<!-- Milan timing is divided into two parts: the {{< tooltip "Network Time">}}, provided to all participants of the network via {{< tooltip "gPTP" >}}, and the timing information that controls the audio sampling clock, referred to as {{< tooltip "Media Time">}}. To avoid confusion between the two domains, these terms clearly distinguish global synchronization from audio-specific clock control. -->
-Das {{< termbase "Timing" >}} in Milan ist in zwei Bereiche unterteilt:  
+<!-- Milan-AVB timing is divided into two parts: the {{< tooltip "Network Time">}}, provided to all participants of the network via {{< tooltip "gPTP" >}}, and the timing information that controls the audio sampling clock, referred to as {{< tooltip "Media Time">}}. To avoid confusion between the two domains, these terms clearly distinguish global synchronization from audio-specific clock control. -->
+Das {{< termbase "Timing" >}} in Milan-AVB ist in zwei Bereiche unterteilt:  
 - Die {{< termbase "Network Time" >}}, die allen Teilnehmern des {{< termbase "Network" >}} über {{< tooltip "gPTP" >}} bereitgestellt wird.  
 - Der {{< termbase "Media Time" >}}, der die Audio-{{< termbase "Clock" >}} steuert.  
 
@@ -40,11 +40,11 @@ So lässt sich klar zwischen der globalen {{< termbase "Synchronization" >}} im 
 ## Auswahl des {{< termbase "Clock Leader" >}} im {{< termbase "Network" >}} {#auswahl-des-clock-leader-im-network}
 
 <!-- {{< textimage src="/images/gPTP-BTCA.drawio.svg" alt="Image" side="right" >}}
-Consider a Milan network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations" "Endstation">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a GrandMaster (GM) has to be elected. This GrandMaster will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected.
+Consider a Milan-AVB network that has just been switched on. It is likely that it consists of multiple {{< tooltip "Endstations" "Endstation">}} and {{< tooltip "Switches" "Switch">}}. In a first step, a GrandMaster (GM) has to be elected. This GrandMaster will distribute its time to all participants allowing them to share a common understanding of time. The election process is defined in an algorithm called Best Time Transmitter Algorithm (BTCA). The algorithm is executed automatically when a change in the network is detected.
 {{< /textimage >}} -->
 
 {{< textimage src="/images/gPTP-BTCA.drawio.svg" alt="Image" side="right" >}}
-Betrachten wir ein Milan {{< termbase "Network" >}}, das gerade eingeschaltet wurde. Es besteht aus mehreren {{< tooltip "Endstations" "Endstation" >}} und {{< tooltip "Switches" "Switch" >}}.  
+Betrachten wir ein Milan-AVB {{< termbase "Network" >}}, das gerade eingeschaltet wurde. Es besteht aus mehreren {{< tooltip "Endstations" "Endstation" >}} und {{< tooltip "Switches" "Switch" >}}.  
 Im ersten Schritt muss ein {{< termbase "Grandmaster" >}} (GM) gewählt werden. Dieser verteilt seine {{< termbase "Network Time" >}} an alle Teilnehmer, sodass alle Geräte eine absolute, gemeinsame Zeitbasis haben.  
 Der Auswahlprozess wird durch den Best Time Transmitter Algorithm (BTCA) definiert und läuft automatisch ab, sobald eine Änderung im {{< termbase "Network" >}} erkannt wird.
 {{< /textimage>}}
