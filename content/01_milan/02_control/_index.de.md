@@ -11,7 +11,7 @@ weight: 3
 {{% /notice %}} -->
 {{% notice info %}}
 - Die {{< termbase "Control">}} von Milan-Geräten erfolgt gemäß dem AVB/TSN Discovery, Enumeration, Connection management, and Control protocol (ATDECC).  
-- Verfügbare {{< termbase "Controller">}} sind unter anderem: [Milan Manager](https://milanmanager.com), [Nebra](https://meyersound.com/product/nebra/), [Hive](https://github.com/christophe-calmejane/Hive/releases)
+- Verfügbare {{< termbase "Controller">}} sind unter anderem: [Milan Manager](https://milanmanager.com), [Nebra](https://meyersound.com/product/nebra/), [Hive](https://github.com/christophe-calmejane/Hive/releases), [JOYNED Dash](https://joyned.io/products/joyned-dash-milan-controller)
 - Die Grundlagen des Milan Managers sind hier beschrieben: [Milan Manager Grundlagen](../../02_user-guides/getting-started-milan-manager.md)
 {{% /notice %}}
 
@@ -42,3 +42,4 @@ Find a quickstart guide for Milan Manager here: [Getting started with Milan Mana
 Die Milan Manager Grundlagen sind hier beschrieben: [Milan Manager Grundlagen](../../02_user-guides/getting-started-milan-manager.md)
 - Nebra: https://meyersound.com/product/nebra/
 - Hive: https://github.com/christophe-calmejane/Hive/releases
+- JOYNED Dash: https://joyned.io/products/joyned-dash-milan-controller
