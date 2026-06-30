@@ -196,6 +196,8 @@ MSRP:
     explanation: 'Grundlage für das automatische Bandbreitenmanagement. Verwaltet die {{< tooltip "Streams" "Stream">}} als Erweiterung des {{< tooltip "SRP">}}-Protokolls.'
 
 Milan:
+  aliases:
+    - 'Milan-AVB'
   reference: '{{< global_reference ref="MILANSpec">}}'
   en:
     short: 'Media Independent Local Area Network.'
