@@ -30,7 +30,7 @@ To set up the AVB Academy locally, follow these steps:
    cd avb-academy
    ```
 2. Install Hugo: https://gohugo.io/installation/
-3. Install drawio-desktop: https://github.com/jgraph/drawio-desktop/releases/tag/v30.0.4
+3. Install drawio-desktop: https://github.com/jgraph/drawio-desktop/releases/tag/v25.0.2
 4. Run the build script for images  
     ```bash 
     ./build.sh --images
