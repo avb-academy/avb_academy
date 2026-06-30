@@ -6,10 +6,10 @@ tags: ["Umfrage-2025"]
 ---
 
 <!-- First of all, a heartfelt thank you to all participants. Your feedback not only brings real value to this project but also clearly demonstrates the need for a public, unbranded knowledge base focused on AVB. The level of interest, willingness to contribute, and preferred learning styles all point toward a strong, engaged community ready to learn, share, and grow together. -->
-Ein großes Dankeschön an alle, die an unserer Umfrage teilgenommen haben. Euer Feedback hilft uns nicht nur, die AVB Academy weiterzuentwickeln, es zeigt auch, wie wichtig eine öffentliche, unabhängige Wissensplattform rund um Milan AVB ist. Das Interesse, die Bereitschaft mitzuwirken und die bevorzugten Lernweisen zeigen deutlich: Hier entsteht eine aktive Community, die zusammen lernen, Erfahrungen teilen und weiter wachsen möchte.
+Ein großes Dankeschön an alle, die an unserer Umfrage teilgenommen haben. Euer Feedback hilft uns nicht nur, die AVB Academy weiterzuentwickeln, es zeigt auch, wie wichtig eine öffentliche, unabhängige Wissensplattform rund um Milan-AVB ist. Das Interesse, die Bereitschaft mitzuwirken und die bevorzugten Lernweisen zeigen deutlich: Hier entsteht eine aktive Community, die zusammen lernen, Erfahrungen teilen und weiter wachsen möchte.
 
-<!-- The AVB Academy is an open educational project dedicated to making the technical details of Milan AVB accessible to a broad audience that does not want to read the full IEEE specifications for an initial understanding. -->
-Die AVB Academy ist ein offenes Projekt, das die technischen Details von Milan AVB verständlich machen soll. Besonders für alle, die sich erst einmal einen Überblick verschaffen wollen, ohne direkt die gesamten IEEE-Spezifikationen lesen zu müssen.
+<!-- The AVB Academy is an open educational project dedicated to making the technical details of Milan-AVB accessible to a broad audience that does not want to read the full IEEE specifications for an initial understanding. -->
+Die AVB Academy ist ein offenes Projekt, das die technischen Details von Milan-AVB verständlich machen soll. Besonders für alle, die sich erst einmal einen Überblick verschaffen wollen, ohne direkt die gesamten IEEE-Spezifikationen lesen zu müssen.
 
 <!-- To validate assumptions about our potential user base, we launched this survey alongside the public beta release in February 2025. -->
 Um ein besseres Bild unserer Nutzerinnen und Nutzer zu bekommen, haben wir die Umfrage zusammen mit dem Public-Beta-Release im Februar 2025 gestartet.
@@ -39,7 +39,7 @@ Die Ergebnisse jeder Frage findet ihr jeweils auf einer eigenen Seite, damit all
 - [Q01: Roles in the Event Industry](q001.md)
 - [Q02: What types of events do you work on?](q002.md)
 - [Q03: What is your experience with audio networking](q003.md)
-- [Q04: Have you worked with Milan AVB before?](q004.md)
+- [Q04: Have you worked with Milan-AVB before?](q004.md)
 - [Q05: What challenges do you face when working with audio networks?](q005.md)
 - [Q06: How do you prefer to learn technical concepts?](q006.md)
 - [Q07: Would you prefer asking questions related to the AVB Academy publicly or privately?](q007.md)
@@ -51,7 +51,7 @@ Die Ergebnisse jeder Frage findet ihr jeweils auf einer eigenen Seite, damit all
 - [Q01: Deine Rolle in der Veranstaltungsbranche?](q001.md)
 - [Q02: Auf welchen Veranstaltungen arbeitest du?](q002.md)
 - [Q03: Welche Erfahrung hast du mit Audio-Netzwerken?](q003.md)
-- [Q04: Hast du bereits mit Milan AVB gearbeitet?](q004.md)
+- [Q04: Hast du bereits mit Milan-AVB gearbeitet?](q004.md)
 - [Q05: Was sind die größten Herausforderungen bei der Arbeit mit Audio-Netzwerken?](q005.md)
 - [Q06: Wie lernst du am liebsten technische Konzepte?](q006.md)
 - [Q07: Stell dir vor, du nutzt die AVB Academy und hast eine Frage. Würdest du diese lieber öffentlich oder privat stellen?](q007.md)
