@@ -30,15 +30,16 @@ To set up the AVB Academy locally, follow these steps:
    cd avb-academy
    ```
 2. Install Hugo: https://gohugo.io/installation/
-3. Run the build script for images  
+3. Install drawio-desktop: https://github.com/jgraph/drawio-desktop/releases/tag/v25.0.2
+4. Run the build script for images  
     ```bash 
     ./build.sh --images
     ```
-4. Run the hugo server locally
+5. Run the hugo server locally
     ```bash
     hugo server
     ```
-5. Open your browser and go to http://localhost:1313 to view the site.
+6. Open your browser and go to http://localhost:1313 to view the site.
 
 ## Usage
 

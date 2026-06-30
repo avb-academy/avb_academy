@@ -46,9 +46,23 @@ done
 echo "Deleting public folder"
 rm -rf public/
 
-# --- Activate virtual environment ---
+# --- Create/Activate virtual environment and install dependencies ---
+VENV_DIR="venv"
+# Check if the virtual environment directory already exists
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Creating Python virtual environment..."
+    python3 -m venv "$VENV_DIR"
+else
+    echo "Virtual environment already exists. Skipping creation."
+fi
+
 echo "Activating virtual environment..."
 source venv/bin/activate
+
+# Install dependencies
+echo "Installing/updating dependencies from requirements.txt..."
+pip install -r requirements.txt
+echo "Installation complete!"
 
 # --- Function to build images ---
 build_images() {
