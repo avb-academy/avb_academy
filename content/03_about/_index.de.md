@@ -4,8 +4,8 @@ date: 2025-02-11
 weight: 1000
 ---
 
-<!-- Milan needs users, and users need Milan, even if they do not realize it yet.  -->
-Milan braucht Nutzer und Nutzer brauchen Milan. Sie wissen es nur noch nicht.
+<!-- Milan-AVB needs users, and users need Milan, even if they do not realize it yet.  -->
+Milan-AVB braucht Nutzer und Nutzer brauchen Milan-AVB. Sie wissen es nur noch nicht.
 
 <!-- This page was created simply because it had not been done before. While companies with Milan-enabled products do a great job educating users about their specific implementations, an independent, unbranded knowledge base focusing on the fundamentals of this powerful technology has long been missing. -->
 Diese Seite wurde aus einem einfachen Grund erstellt: Weil es bisher noch niemand getan hat.  
@@ -20,8 +20,8 @@ Simon Gapp, Februar 2025
 
 ## Disclaimer
 
-<!-- The content on this page reflects personal views and statements. AVB Academy is not affiliated with Avnu or any other organization involved in the standardization of Milan. -->
-Die Inhalte dieser Seite spiegeln persönliche Ansichten und Meinungen wider. Die AVB Academy ist in keiner Weise mit Avnu oder einer anderen Organisation, die an der Standardisierung von Milan beteiligt ist, verbunden.
+<!-- The content on this page reflects personal views and statements. AVB Academy is not affiliated with Avnu or any other organization involved in the standardization of Milan-AVB. -->
+Die Inhalte dieser Seite spiegeln persönliche Ansichten und Meinungen wider. Die AVB Academy ist in keiner Weise mit Avnu oder einer anderen Organisation, die an der Standardisierung von Milan-AVB beteiligt ist, verbunden.
 
 <!-- ## Contributions   -->
 ## Mitwirkende

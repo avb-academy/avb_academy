@@ -31,14 +31,16 @@ Audio Video Bridging (AVB) ist ein Satz von Spezifikationen innerhalb der größ
 - Präzise {{< termbase "Time Synchronization">}} im Netzwerk mittels {{< tooltip "gPTP" >}}: [Weitere Infos zum Netzwerk-Timing](01_milan/00_network-timing/_index.md)  
 - Latenzarme Paketweiterleitung durch Credit-Based Traffic Shaping: [Weitere Infos zum Traffic Shaping](01_milan/03_traffic-shaping/fqtss/_index.md)
 
-<!-- ## Milan: The ProAV Flavor of AVB -->
-## Milan: Der ProAV-Flavor von AVB
+<!-- ## Milan-AVB: The ProAV Flavor of AVB -->
+## Milan-AVB: Der ProAV-Flavor von AVB
 <!-- {{< tooltip "Milan">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a deterministic and fully standardized network transport layer for professional audio and video devices. -->
-{{< tooltip "Milan" >}} ist eine von der {{< tooltip "Avnu Alliance" >}} entwickelte, {{< tooltip "AVB" >}}-basierte Lösung für den professionellen Audio- und Videoeinsatz. Die Milan-Spezifikation definiert eine deterministische und vollständig standardisierte Netzwerk-Transportschicht, um Interoperabilität zwischen professionellen Audio- und Videogeräten sicherzustellen.
+{{< tooltip "Milan-AVB" >}} ist eine von der {{< tooltip "Avnu Alliance" >}} entwickelte, {{< tooltip "AVB" >}}-basierte Lösung für den professionellen Audio- und Videoeinsatz. Die Milan-Spezifikation definiert eine deterministische und vollständig standardisierte Netzwerk-Transportschicht, um Interoperabilität zwischen professionellen Audio- und Videogeräten sicherzustellen.
+
+Auf dieser Website werden die Begriffe "Milan" und "Milan-AVB" synonym verwendet.
 
 <!-- {{% notice info %}}
 This knowledge base dives deep into the technical details of {{< tooltip "Milan">}}, helping engineers and integrators get a solid understanding of how it works and what it offers. For a broader overview and high-level summary, you might want to visit [milanav.com](https://milanav.com).
 {{% /notice %}} -->
 {{% notice info %}}
-Diese Seite geht detailliert auf die technischen Aspekte von {{< tooltip "Milan" >}} ein und vermittelt Entwicklern sowie Integratoren ein fundiertes Verständnis der Technologie. Für einen übergeordneten Überblick empfiehlt sich ein Besuch auf [milanav.com](https://milanav.com) – derzeit nur auf Englisch verfügbar.
+Diese Seite geht detailliert auf die technischen Aspekte von {{< tooltip "Milan-AVB" >}} ein und vermittelt Entwicklern sowie Integratoren ein fundiertes Verständnis der Technologie. Für einen übergeordneten Überblick empfiehlt sich ein Besuch auf [milanav.com](https://milanav.com) – derzeit nur auf Englisch verfügbar.
 {{% /notice %}}

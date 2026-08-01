@@ -3,7 +3,7 @@ title: "Forward Queuing for Time-Sensitive Streams (FQTSS)"
 date: 2025-02-18
 ---
 
-Milan AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
+Milan-AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below.
 
 Switch ports are described based on the traffic direction for the current observation.  
 - An {{< tooltip "ingress port" "Ingress port">}} describes traffic flowing into a switch.  

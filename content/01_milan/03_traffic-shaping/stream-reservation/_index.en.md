@@ -8,7 +8,7 @@ When a {{< tooltip "Listener">}} is configured to listen to a specific {{< toolt
 
 If {{< tooltip "SRP">}} successfully configures a path from Talker to Listener, the Talker starts streaming its data.
 
-It is important to point out that **up to 75%** of the available bandwidth **can** be utilized for Milan AVB. It is not reserved per se. If a stream only needs 2% of the available bandwidth, then only these 2% are reserved, and the rest remains available for other traffic.
+It is important to point out that **up to 75%** of the available bandwidth **can** be utilized for Milan-AVB. It is not reserved per se. If a stream only needs 2% of the available bandwidth, then only these 2% are reserved, and the rest remains available for other traffic.
 
 ## How much bandwidth is reserved for my audio stream?
 

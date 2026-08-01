@@ -3,8 +3,8 @@ title: "Forward Queuing for Time-Sensitive Streams (FQTSS)"
 date: 2025-02-18
 ---
 
-<!-- Milan AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below. -->
-Milan AVB nutzt {{< tooltip "FQTSS">}} für das {{< termbase "Traffic Shaping">}}. "Forward Queuing" lässt sich auf Deutsch mit "Warteschlangenspeicher" übersetzen. 
+<!-- Milan-AVB utilizes {{< tooltip "FQTSS">}} to shape traffic. The approach is explained in detail below. -->
+Milan-AVB nutzt {{< tooltip "FQTSS">}} für das {{< termbase "Traffic Shaping">}}. "Forward Queuing" lässt sich auf Deutsch mit "Warteschlangenspeicher" übersetzen. 
 
 <!-- Switch ports are described based on the traffic direction for the current observation. -->
 Die Switch-Ports werden je nach Richtung des aktuellen Datenverkehrs beschrieben.

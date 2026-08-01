@@ -15,8 +15,8 @@ Maximale Anzahl an Netzwerk-Hops (abhängig von der Netzwerkgeschwindigkeit):
 - 1 Gbps: max. 14 Hops bis zum Presentation Time Offset von 2 ms.
 {{% /notice %}}
 
-<!-- A Milan AVB network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "PTO">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. -->
-Ein Milan AVB Netzwerk ist vollständig time-aware, das heißt, die {{< tooltip "Switches" "Switch" >}} berücksichtigen die Worst-Case-Aufenthaltszeit eines Pakets im Switch. Im Gegensatz zu anderen Audio-Netzwerkprotokollen stellt Milan sicher, dass die benötigte Übertragungszeit vor dem Versenden eines Pakets bestimmt werden kann. Durch die Konfiguration des {{< tooltip "Stream">}} {{< tooltip "PTO">}} im {{< tooltip "Talker" >}} lässt sich im Vorfeld überprüfen, ob eine Deadline eingehalten werden kann.
+<!-- A Milan-AVB network is fully time-aware, meaning switches account for the worst-case residency time of a packet. Unlike other audio network protocols, Milan-AVB ensures that the required transmission time can be determined before a packet is sent. By configuring the {{< tooltip "Stream">}} {{< tooltip "PTO">}} in the {{< tooltip "Talker" >}}, it is possible to verify in advance whether a deadline can be met. -->
+Ein Milan-AVB Netzwerk ist vollständig time-aware, das heißt, die {{< tooltip "Switches" "Switch" >}} berücksichtigen die Worst-Case-Aufenthaltszeit eines Pakets im Switch. Im Gegensatz zu anderen Audio-Netzwerkprotokollen stellt Milan-AVB sicher, dass die benötigte Übertragungszeit vor dem Versenden eines Pakets bestimmt werden kann. Durch die Konfiguration des {{< tooltip "Stream">}} {{< tooltip "PTO">}} im {{< tooltip "Talker" >}} lässt sich im Vorfeld überprüfen, ob eine Deadline eingehalten werden kann.
 
 <!-- Each transition a packet makes through a switch is known as a hop. -->
 Jede Weiterleitung eines Pakets durch einen Switch wird als Hop bezeichnet.
@@ -24,8 +24,8 @@ Jede Weiterleitung eines Pakets durch einen Switch wird als Hop bezeichnet.
 <!-- As a rule of thumb, the worst-case residency time for a packet in a switch is approximately 140µs on a 1Gbps network and 280µs on a 100Mbps network. -->
 Als Faustregel gilt, dass die Worst-Case-Aufenthaltsdauer eines Pakets in einem Switch etwa 140 µs in einem 1 Gbps-Netzwerk und 280 µs in einem 100 Mbps-Netzwerk beträgt.
 
-<!-- Milan specifies a latency limit of 2ms for guaranteed packet delivery. This allows for a maximum of 14 hops on a 1Gbps network and 7 hops on a 100Mbps network. As shown in [Fig. 1](#fig-number-of-hops-100Mbps) and [Fig. 2](#fig-number-of-hops-1000Mbps), fewer hops result in lower latency within a Milan network. -->
-Milan legt ein Latenz-Limit von 2 ms für die garantierte Paketübertragung fest. Dadurch sind maximal 14 Hops in einem 1 Gbps-Netzwerk und 7 Hops in einem 100 Mbps-Netzwerk möglich. Wie in [Abb. 1](#fig-number-of-hops-100Mbps) und [Abb. 2](#fig-number-of-hops-1000Mbps) dargestellt, führt eine geringere Anzahl an Hops zu niedrigerer Latenz innerhalb eines Milan-Netzwerks.
+<!-- Milan-AVB specifies a latency limit of 2ms for guaranteed packet delivery. This allows for a maximum of 14 hops on a 1Gbps network and 7 hops on a 100Mbps network. As shown in [Fig. 1](#fig-number-of-hops-100Mbps) and [Fig. 2](#fig-number-of-hops-1000Mbps), fewer hops result in lower latency within a Milan-AVB network. -->
+Milan-AVB legt ein Latenz-Limit von 2 ms für die garantierte Paketübertragung fest. Dadurch sind maximal 14 Hops in einem 1 Gbps-Netzwerk und 7 Hops in einem 100 Mbps-Netzwerk möglich. Wie in [Abb. 1](#fig-number-of-hops-100Mbps) und [Abb. 2](#fig-number-of-hops-1000Mbps) dargestellt, führt eine geringere Anzahl an Hops zu niedrigerer Latenz innerhalb eines Milan-AVB-Netzwerks.
 
 <!-- |                 | 100Mbps | 1Gbps |
 |-----------------|-----------|---------|
