@@ -27,8 +27,10 @@ Audio Video Bridging (AVB) is a set of standards within the broader {{< tooltip 
 
 ## Milan-AVB: The ProAV Flavor of AVB
 
-{{< tooltip "Milan">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a deterministic and fully standardized network transport layer for professional audio and video devices.
+{{< tooltip "Milan-AVB">}} is a ProAV-specific {{< tooltip "AVB">}} solution developed by the {{< tooltip "Avnu Alliance">}}. It ensures interoperability by defining a deterministic and fully standardized network transport layer for professional audio and video devices.
+
+The terms "Milan" and "Milan-AVB" are used interchangeably throughout this website.
 
 {{% notice info %}}
-This knowledge base dives deep into the technical details of {{< tooltip "Milan">}}, helping engineers and integrators get a solid understanding of how it works and what it offers. For a broader overview and high-level summary, you might want to visit [milanav.com](https://milanav.com).
+This knowledge base dives deep into the technical details of {{< tooltip "Milan-AVB">}}, helping engineers and integrators get a solid understanding of how it works and what it offers. For a broader overview and high-level summary, you might want to visit [milanav.com](https://milanav.com).
 {{% /notice %}}

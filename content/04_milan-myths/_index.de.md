@@ -1,5 +1,5 @@
 ---
-title: "Milan Mythen"
+title: "Milan-AVB Mythen"
 date: 2025-08-04
 weight: 3
 ---
