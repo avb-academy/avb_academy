@@ -195,7 +195,20 @@ MSRP:
     short: 'Multiple Stream Registration Protocol.'
     explanation: 'Grundlage für das automatische Bandbreitenmanagement. Verwaltet die {{< tooltip "Streams" "Stream">}} als Erweiterung des {{< tooltip "SRP">}}-Protokolls.'
 
+Milan-AVB:
+  aliases:
+    - 'Milan'
+  reference: '{{< global_reference ref="MILANSpec">}}'
+  en:
+    short: 'Media Independent Local Area Network.'
+    explanation: 'The term Milan is used to describe a ProAV network based on the {{< tooltip "AVB" >}} specifications.'
+  de:
+    short: 'Media Independent Local Area Network.'
+    explanation: 'Der Begriff Milan bezeichnet ein ProAV-Netzwerk, das auf den {{< tooltip "AVB">}}-Spezifikationen aufbaut.'
+
 Milan:
+  aliases:
+    - 'Milan-AVB'
   reference: '{{< global_reference ref="MILANSpec">}}'
   en:
     short: 'Media Independent Local Area Network.'

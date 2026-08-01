@@ -13,7 +13,7 @@ weight: 20
 - Milan Manager herunterladen: https://milanmanager.com  
 - Signalfluss: vom Talker zum Listener von links nach oben  
 - Die online Dokumentation ist hier auf Englisch verfügbar: [docs.milanmanager.com](https://docs.milanmanager.com).
-- Eine Liste aller bekannten Milan Controller gibt es hier [Steuerung](../01_milan/02_control/_index.md#controller)
+- Eine Liste aller bekannten Milan-AVB Controller gibt es hier [Steuerung](../01_milan/02_control/_index.md#controller)
 {{% /notice %}}
 
 <!-- | Description        | Screenshot     |

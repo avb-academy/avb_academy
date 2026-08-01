@@ -5,7 +5,7 @@ weight: 60
 ---
 
 <!-- {{% notice warning %}}
-This section presents adapters that should work with Milan AVB networks.
+This section presents adapters that should work with Milan-AVB networks.
 
 **Please make sure before you buy that the adapter is working with your system.** 
 {{% /notice %}} -->
@@ -14,15 +14,15 @@ Diese Seite beinhaltet Netzwerkadapter, die mit Milan-AVB-Netzwerken funktionier
 **Bitte vor dem Kauf selbst sicherstellen, dass der Adapter mit deinem Computer kompatibel ist.**
 {{% /notice %}}
 
-<!-- Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware. -->
+<!-- Due to the [strict timing requirements](../01_milan/00_network-timing/_index.md) of Milan-AVB networks, specialized network adapters may be necessary. Different operating systems expose different interfaces, which may or may not support direct access to the network hardware. -->
 Aufgrund der sehr [strikten Anforderungen](../01_milan/00_network-timing/_index.md) an das Timing von Milan-AVB-Netzwerken können spezielle Netzwerkadapter erforderlich sein.  
 Je nach Betriebssystem stehen unterschiedliche Schnittstellen zur Verfügung, die den direkten Zugriff auf die Hardware der Netzwerkkarte ermöglichen.
 
 <!-- {{% notice info %}}
-The Milan ecosystem is evolving rapidly. As a result, this list may not always reflect the latest available hardware. For the most up to date information, refer to the [Avnu Certified Product Registry](https://avnu.org/certified-product-registry/?cert=Milan).
+The Milan-AVB ecosystem is evolving rapidly. As a result, this list may not always reflect the latest available hardware. For the most up to date information, refer to the [Avnu Certified Product Registry](https://avnu.org/certified-product-registry/?cert=Milan).
 {{% /notice %}} -->
 {{% notice info %}}
-Das Milan-Ökosystem entwickelt sich kontinuierlich weiter. Daher spiegelt diese Liste möglicherweise nicht immer den aktuellen Stand der verfügbaren Hardware wider. Die neuesten Informationen gibt es in der [Avnu Certified Product Registry](https://avnu.org/certified-product-registry/?cert=Milan).
+Das Milan-AVB-Ökosystem entwickelt sich kontinuierlich weiter. Daher spiegelt diese Liste möglicherweise nicht immer den aktuellen Stand der verfügbaren Hardware wider. Die neuesten Informationen gibt es in der [Avnu Certified Product Registry](https://avnu.org/certified-product-registry/?cert=Milan).
 {{% /notice %}}
 
 <!-- ## Operating system independent -->

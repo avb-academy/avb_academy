@@ -1,6 +1,6 @@
 # AVB Academy
 
-AVB Academy is a knowledge base dedicated to Milan AVB, focusing on providing detailed and reliable resources about the Milan protocol and its applications in Audio Video Bridging (AVB) networks.
+AVB Academy is a knowledge base dedicated to Milan-AVB, focusing on providing detailed and reliable resources about the Milan-AVB protocol and its applications in Audio Video Bridging (AVB) networks.
 
 Please check out the website under https://avb-academy.com for the full experience.
 
@@ -16,9 +16,9 @@ Please check out the website under https://avb-academy.com for the full experien
 
 ## Introduction
 
-AVB Academy is an online resource designed to help users understand the Milan protocol and its role in AVB networks. It provides a comprehensive glossary, detailed explanations of AVB concepts, and other educational materials.
+AVB Academy is an online resource designed to help users understand the Milan-AVB protocol and its role in AVB networks. It provides a comprehensive glossary, detailed explanations of AVB concepts, and other educational materials.
 
-This website is not affiliated with Avnu or any other organizations involved in Milan standardization; it represents a personal project.
+This website is not affiliated with Avnu or any other organizations involved in Milan-AVB standardization; it represents a personal project.
 
 ## Install Instructions
 
@@ -43,7 +43,7 @@ To set up the AVB Academy locally, follow these steps:
 
 ## Usage
 
-AVB Academy offers various features to help users learn about Milan AVB:
+AVB Academy offers various features to help users learn about Milan-AVB:
 
 - **Glossary**: A searchable glossary that includes terms and detailed descriptions.
 - **Tooltips**: Glossary terms are highlighted and provide tooltips for quick explanations.
@@ -81,7 +81,7 @@ To generate all SVGs from the draw.io files, run:
 
 ## Disclaimer
 
-AVB Academy is a personal statement and is not affiliated with Avnu or any other organizations involved in Milan standardization. The content presented on this website is for educational purposes and does not represent official positions or standards.
+AVB Academy is a personal statement and is not affiliated with Avnu or any other organizations involved in Milan-AVB standardization. The content presented on this website is for educational purposes and does not represent official positions or standards.
 
 ## Contact and Support
 
